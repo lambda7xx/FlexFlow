@@ -1,5 +1,5 @@
 #!/bin/bash
-
+rm -rf /home/lambda/flexgen_offload_dir
 MY_IPADDR=$(hostname -i)
 all_hosts=$MY_IPADDR
 N_GPUS=4
@@ -23,7 +23,7 @@ mpirun \
     --use-mpi \
     --model facebook/opt-6.7b \
     --gpu-batch-size 24 \
-    --percent 100 0 100 0 100 0 \
+    --percent 50 50 0 100 0 100 \
     --comm-device cpu \
     --cut-gen-len 5 \
     --path _DUMMY_

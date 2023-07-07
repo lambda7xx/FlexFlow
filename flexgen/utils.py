@@ -236,7 +236,7 @@ def str2bool(v):
 
 def project_decode_latency(costs, prompt_len, gen_len):
     decode_costs = costs[1:]
-
+    print("decode_costs:",decode_costs)
     if gen_len / prompt_len < 0.1:
         warmup = 2
         decode_latency = (sum(decode_costs[:warmup]) +

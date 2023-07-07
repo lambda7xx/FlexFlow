@@ -23,6 +23,7 @@ from flexgen.timer import timers
 from flexgen.utils import (Task, ExecutionEnv, GB, T, ValueHolder,
     array_1d, array_2d, array_3d, array_4d, str2bool, project_decode_latency)
 
+import time as my_time
 
 #os.environ["NCCL_DEBUG"] = "TRACE"
 
@@ -542,7 +543,7 @@ def run_flexgen_dist(args):
     num_inner_iterations = args.num_inner_iterations if args.num_inner_iterations is not None else args.world_size
     num_prompts = args.num_gpu_batches * args.gpu_batch_size * num_inner_iterations * 1
     prompt_len, gen_len, cut_gen_len = args.prompt_len, args.gen_len, args.cut_gen_len
-
+    gen_len = 128 
     # Task and policy
     warmup_inputs = get_test_inputs(32, num_prompts, tokenizer)
     inputs = get_test_inputs(prompt_len, num_prompts, tokenizer)
@@ -550,6 +551,7 @@ def run_flexgen_dist(args):
     gpu = TorchDevice(f"cuda:{args.local_rank}")
     cpu = TorchDevice("cpu")
     disk = TorchDisk(args.offload_dir, None, args.local_rank)
+    print(f"args.offload_dir:{args.offload_dir}")
     env = ExecutionEnv(gpu=gpu, cpu=cpu, disk=disk, mixed=TorchMixedDevice([gpu, cpu, disk]))
     TorchTensor.name_count = count(start=args.rank, step=args.world_size)
 
@@ -583,13 +585,16 @@ def run_flexgen_dist(args):
         print("warmup - generate")
         output_ids = model.generate(
             warmup_inputs, max_new_tokens=2, verbose=args.verbose)
-
+        print(f"args.gen_len:{args.gen_len}")
         print("benchmark - generate")
         for timer_name in ["generate-prompt", "generate"]:
             timers(timer_name).reset()
+        start = my_time.time()
         output_ids = model.generate(
-            inputs, max_new_tokens=args.gen_len,
+            inputs, max_new_tokens=128,
             debug_mode=args.debug_mode, cut_gen_len=cut_gen_len, verbose=args.verbose)
+        duration = my_time.time() - start 
+        print(f"duration:{duration}")
         prompt_costs = timers("generate-prompt").costs
         generate_costs = timers("generate").costs
     finally:
@@ -613,13 +618,13 @@ def run_flexgen_dist(args):
     _, gpu_peak_mem = gpu.mem_stats()
     _, cpu_peak_mem = cpu.mem_stats()
 
-    if DUMMY_WEIGHT not in args.path:
-        outputs = tokenizer.batch_decode(output_ids, skip_special_tokens=True)
-        show_str = "Outputs:\n" + 70 * '-' + "\n"
-        for i in [0, len(outputs)-1]:
-            show_str += f"{i}: {outputs[i]}\n"
-            show_str += "-" * 70 + "\n"
-        print(show_str)
+    # if DUMMY_WEIGHT not in args.path:
+    outputs = tokenizer.batch_decode(output_ids, skip_special_tokens=True)
+    show_str = "Outputs:\n" + 70 * '-' + "\n"
+    for i in [0, len(outputs)-1]:
+        show_str += f"{i}: {outputs[i]}\n"
+        show_str += "-" * 70 + "\n"
+    print(show_str)
 
     gpu.print_stats()
     cpu.print_stats()

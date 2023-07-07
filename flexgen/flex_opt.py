@@ -10,6 +10,7 @@ import pickle
 import time
 from typing import Union, List, Optional
 
+import json 
 import numpy as np
 from tqdm import tqdm
 import torch
@@ -29,7 +30,7 @@ fix_recursive_import()
 
 DUMMY_WEIGHT = "_DUMMY_"  # Use dummy weights for benchmark purposes
 
-
+bs = 0 
 @dataclasses.dataclass(frozen=True)
 class Policy:
     gpu_batch_size: int
@@ -1171,18 +1172,26 @@ def get_filename(args):
 
 def get_test_inputs(prompt_len, num_prompts, tokenizer):
     prompts = ["Paris is the capital city of"]
+    with open('/home/lambda/FlexGen/flexgen/chatgpt.json', 'r') as file:
+        prompts = json.load(file)[:bs]
+        
+    for prompt in prompts:
+        print(f"prompt:{prompt}")
+        
     input_ids = tokenizer(prompts, padding="max_length",
                           max_length=prompt_len).input_ids
     return (input_ids[0],) * num_prompts
 
 
 def run_flexgen(args):
+    global bs 
     print(f"<run_flexgen>: args.model: {args.model}")
     if args.model == "facebook/galactica-30b":
         tokenizer = AutoTokenizer.from_pretrained("facebook/galactica-30b", padding_side="left")
     else:
         tokenizer = AutoTokenizer.from_pretrained("facebook/opt-30b", padding_side="left")
     num_prompts = args.num_gpu_batches * args.gpu_batch_size
+    bs = num_prompts
     prompt_len, gen_len, cut_gen_len = args.prompt_len, args.gen_len, args.cut_gen_len
 
     # Task and policy
@@ -1248,11 +1257,11 @@ def run_flexgen(args):
 
     if DUMMY_WEIGHT not in args.path:
         outputs = tokenizer.batch_decode(output_ids, skip_special_tokens=True)
-        show_str = "Outputs:\n" + 70 * '-' + "\n"
-        for i in [0, len(outputs)-1]:
+        
+        for i in range(len(outputs)):
+            show_str = "Outputs:\n" + 70 * '-' + "\n"
             show_str += f"{i}: {outputs[i]}\n"
             show_str += "-" * 70 + "\n"
-        if args.verbose >= 2:
             print(show_str)
 
     gpu.print_stats()
@@ -1280,14 +1289,14 @@ def add_parser_arguments(parser):
              "FlexGen will automatically download them from HuggingFace.")
     parser.add_argument("--offload-dir", type=str, default="~/flexgen_offload_dir",
         help="The directory to offload tensors. ")
-    parser.add_argument("--prompt-len", type=int, default=512)
-    parser.add_argument("--gen-len", type=int, default=32)
-    parser.add_argument("--cut-gen-len", type=int,
+    parser.add_argument("--prompt_len", type=int, default=64)
+    parser.add_argument("--gen_len", type=int, default=128)
+    parser.add_argument("--cut_gen_len", type=int,
         help="Cut generation length for fast debugging.")
     parser.add_argument("--debug-mode", type=str,
         choices=["fewer_batch", "breakdown"])
-    parser.add_argument("--gpu-batch-size", type=int, default=4)
-    parser.add_argument("--num-gpu-batches", type=int, default=1)
+    parser.add_argument("--gpu_batch_size", type=int, default=4)
+    parser.add_argument("--num_gpu_batches", type=int, default=1)
     parser.add_argument("--percent", nargs="+", type=int,
         default=[100, 0, 100, 0, 100, 0],
         help="Six numbers. They are "
@@ -1321,7 +1330,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     add_parser_arguments(parser)
     args = parser.parse_args()
-
+    print("batch_size:",args.gpu_batch_size, "args.overlap:",args.overlap)
     assert len(args.percent) == 6
 
     run_flexgen(args)
