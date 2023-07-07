@@ -1,0 +1,78 @@
+/home/lambda/.local/lib/python3.10/site-packages/torch/distributed/distributed_c10d.py:262: UserWarning: torch.distributed.reduce_op is deprecated, please use torch.distributed.ReduceOp instead
+  warnings.warn(
+batch_size: 1 args.overlap: True
+<run_flexgen>: args.model: facebook/opt-13b
+prompt:Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.
+prompt:Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.
+model size: 23.921 GB, cache size: 0.146 GB, hidden size (prefill): 0.002 GB
+init weight...
+warmup - generate
+benchmark - generate
+Outputs:
+----------------------------------------------------------------------
+0: Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.
+
+The product description should include the following:
+
+Product name
+
+Product description
+
+Product features
+
+Product benefits
+
+Product specifications
+
+Product dimensions
+
+Product weight
+
+Product price
+
+Product availability
+
+Product images
+
+Product videos
+
+Product comparison chart
+
+Product comparison table
+
+Product comparison chart
+
+Product comparison table
+
+Product comparison table
+
+Product comparison table
+
+Product comparison table
+
+Product comparison table
+
+Product comparison table
+
+Product comparison table
+
+Product comparison table
+
+Product comparison table
+
+Product comparison table
+
+Product comparison table
+
+Product comparison
+----------------------------------------------------------------------
+
+TorchDevice: cuda:0
+  cur_mem: 9.7878 GB,  peak_mem: 10.8992 GB
+TorchDevice: cpu
+  cur_mem: 14.6330 GB,  peak_mem: 0.0000 GB
+model size: 23.921 GB	cache size: 0.146 GB	hidden size (p): 0.002 GB
+peak gpu mem: 10.899 GB	projected: False
+prefill latency: 2.512 s	prefill throughput: 25.473 token/s
+decode latency: 318.774 s	decode throughput: 0.398 token/s
+total latency: 321.286 s	total throughput: 0.398 token/s

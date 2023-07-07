@@ -1,0 +1,22 @@
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/opt/conda/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/home/lambda/FlexGen/flexgen/flex_opt.py", line 1336, in <module>
+    run_flexgen(args)
+  File "/home/lambda/FlexGen/flexgen/flex_opt.py", line 1228, in run_flexgen
+    model = OptLM(opt_config, env, args.path, policy)
+  File "/home/lambda/FlexGen/flexgen/flex_opt.py", line 638, in __init__
+    self.init_all_weights()
+  File "/home/lambda/FlexGen/flexgen/flex_opt.py", line 801, in init_all_weights
+    self.init_weight(j)
+  File "/home/lambda/FlexGen/flexgen/flex_opt.py", line 652, in init_weight
+    self.layers[j].init_weight(self.weight_home[j], expanded_path)
+  File "/home/lambda/FlexGen/flexgen/flex_opt.py", line 225, in init_weight
+    weights = init_weight_list(weight_specs, self.policy, self.env)
+  File "/home/lambda/FlexGen/flexgen/flex_opt.py", line 113, in init_weight_list
+    weight = home.allocate(shape, dtype, pin_memory=pin_memory)
+  File "/home/lambda/FlexGen/flexgen/pytorch_backend.py", line 190, in allocate
+    data = torch.empty(shape, dtype=dtype, pin_memory=pin_memory, device=self.dev)
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 492.00 MiB (GPU 0; 14.75 GiB total capacity; 14.18 GiB already allocated; 352.81 MiB free; 14.18 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF

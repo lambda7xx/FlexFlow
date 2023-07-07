@@ -1,0 +1,139 @@
+/home/lambda/.local/lib/python3.10/site-packages/torch/distributed/distributed_c10d.py:262: UserWarning: torch.distributed.reduce_op is deprecated, please use torch.distributed.ReduceOp instead
+  warnings.warn(
+batch_size: 2 args.overlap: True
+<run_flexgen>: args.model: facebook/opt-13b
+prompt:Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.
+prompt:Write a short blog post (500 words) about the best dog toys for new dog owners.
+prompt:Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.
+prompt:Write a short blog post (500 words) about the best dog toys for new dog owners.
+model size: 23.921 GB, cache size: 0.293 GB, hidden size (prefill): 0.004 GB
+init weight...
+warmup - generate
+benchmark - generate
+Outputs:
+----------------------------------------------------------------------
+0: Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.
+
+The product description should include the following:
+
+Product name
+
+Product description
+
+Product features
+
+Product benefits
+
+Product specifications
+
+Product dimensions
+
+Product weight
+
+Product price
+
+Product availability
+
+Product images
+
+Product videos
+
+Product comparison chart
+
+Product comparison table
+
+Product comparison chart
+
+Product comparison table
+
+Product comparison table
+
+Product comparison table
+
+Product comparison table
+
+Product comparison table
+
+Product comparison table
+
+Product comparison table
+
+Product comparison table
+
+Product comparison table
+
+Product comparison table
+
+Product comparison table
+
+Product comparison
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+1: Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.
+
+The product description should include the following:
+
+Product name
+
+Product description
+
+Product features
+
+Product benefits
+
+Product specifications
+
+Product dimensions
+
+Product weight
+
+Product price
+
+Product availability
+
+Product images
+
+Product videos
+
+Product comparison chart
+
+Product comparison table
+
+Product comparison chart
+
+Product comparison table
+
+Product comparison table
+
+Product comparison table
+
+Product comparison table
+
+Product comparison table
+
+Product comparison table
+
+Product comparison table
+
+Product comparison table
+
+Product comparison table
+
+Product comparison table
+
+Product comparison table
+
+Product comparison
+----------------------------------------------------------------------
+
+TorchDevice: cuda:0
+  cur_mem: 1.9750 GB,  peak_mem: 3.2386 GB
+TorchDevice: cpu
+  cur_mem: 22.4459 GB,  peak_mem: 0.0000 GB
+model size: 23.921 GB	cache size: 0.293 GB	hidden size (p): 0.004 GB
+peak gpu mem: 3.239 GB	projected: False
+prefill latency: 3.853 s	prefill throughput: 33.224 token/s
+decode latency: 488.933 s	decode throughput: 0.519 token/s
+total latency: 492.786 s	total throughput: 0.519 token/s
