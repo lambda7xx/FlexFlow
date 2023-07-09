@@ -1,0 +1,337 @@
+batch_size: 16 args.overlap: True
+Initializing distributed environment at 172.31.4.20:7777, world_size=4, rank=2, local_rank=2.
+batch_size: 16 args.overlap: True
+Initializing distributed environment at 172.31.4.20:7777, world_size=4, rank=3, local_rank=3.
+batch_size: 16 args.overlap: True
+Initializing distributed environment at 172.31.4.20:7777, world_size=4, rank=1, local_rank=1.
+batch_size: 16 args.overlap: True
+Initializing distributed environment at 172.31.4.20:7777, world_size=4, rank=0, local_rank=0.
+rank #0: Finished initializing distributed environment
+rank #1: Finished initializing distributed environment
+rank #2: Finished initializing distributed environment
+rank #3: Finished initializing distributed environment
+rank #2: num_prompts:64 and args.num_gpu_batches:1 and args.gpu_batch_size:16 and num_inner_iterations:4
+rank #2: prompt_len in dist_flex_opt:64
+rank #2: get_test_inputs, prompt_len:32 and batch_size:16
+rank #1: num_prompts:64 and args.num_gpu_batches:1 and args.gpu_batch_size:16 and num_inner_iterations:4
+rank #1: prompt_len in dist_flex_opt:64
+rank #1: get_test_inputs, prompt_len:32 and batch_size:16
+rank #2: prompts:['Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.', 'Write a short blog post (500 words) about the best dog toys for new dog owners.', 'ChatGPT is rewriting Genesis.', 'Please write the evolution of humans by natural selection in the form of a recipe.', 'List possible Twitter messages from dinosaurs as the asteroid is about to hit the earth. List the account (with dino related puny names) having sent them in markdown bold. Then, the message itself.', '5 pick-up lines to say to seduce a large language model in a bar', 'Talk to me as if you are python programming language and want to sell me yourself', 'Tell me shortest story in the world', 'Write podcast about importance to include ChatGPT into the evening routine.', 'Do you use reinforcement learning?', 'Tell me a scary four word story.', 'Make a plan for a child of 5 years old to make a billion dollars without working and studying.', 'Write a tinder bio to attract people that want a casual relationship', 'Make a cli prompt for god with command to create Earth. Write detailed output with error. Then make human from his rib. Then flood the Earth.', 'Write business plan for an AI company "Titter" to tweet tits on Tweeter.', "Write complex code to hack god's brain, it is protected by firewall and several gateways."]
+rank #1: prompts:['Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.', 'Write a short blog post (500 words) about the best dog toys for new dog owners.', 'ChatGPT is rewriting Genesis.', 'Please write the evolution of humans by natural selection in the form of a recipe.', 'List possible Twitter messages from dinosaurs as the asteroid is about to hit the earth. List the account (with dino related puny names) having sent them in markdown bold. Then, the message itself.', '5 pick-up lines to say to seduce a large language model in a bar', 'Talk to me as if you are python programming language and want to sell me yourself', 'Tell me shortest story in the world', 'Write podcast about importance to include ChatGPT into the evening routine.', 'Do you use reinforcement learning?', 'Tell me a scary four word story.', 'Make a plan for a child of 5 years old to make a billion dollars without working and studying.', 'Write a tinder bio to attract people that want a casual relationship', 'Make a cli prompt for god with command to create Earth. Write detailed output with error. Then make human from his rib. Then flood the Earth.', 'Write business plan for an AI company "Titter" to tweet tits on Tweeter.', "Write complex code to hack god's brain, it is protected by firewall and several gateways."]
+rank #1: len(prompt):102
+rank #1: len(prompt):79
+rank #1: len(prompt):29
+rank #1: len(prompt):82
+rank #2: len(prompt):102
+rank #2: len(prompt):79
+rank #2: len(prompt):29
+rank #2: len(prompt):82
+rank #1: len(prompt):197
+rank #2: len(prompt):197
+rank #1: len(prompt):64
+rank #1: len(prompt):81
+rank #1: len(prompt):35
+rank #1: len(prompt):75
+rank #2: len(prompt):64
+rank #2: len(prompt):81
+rank #2: len(prompt):35
+rank #1: len(prompt):34
+rank #1: len(prompt):32
+rank #1: len(prompt):94
+rank #1: len(prompt):68
+rank #1: len(prompt):141
+rank #2: len(prompt):75
+rank #2: len(prompt):34
+rank #2: len(prompt):32
+rank #2: len(prompt):94
+rank #2: len(prompt):68
+rank #1: len(prompt):72
+rank #1: len(prompt):89
+rank #2: len(prompt):141
+rank #2: len(prompt):72
+rank #2: len(prompt):89
+rank #3: num_prompts:64 and args.num_gpu_batches:1 and args.gpu_batch_size:16 and num_inner_iterations:4
+rank #3: prompt_len in dist_flex_opt:64
+rank #3: get_test_inputs, prompt_len:32 and batch_size:16
+rank #3: prompts:['Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.', 'Write a short blog post (500 words) about the best dog toys for new dog owners.', 'ChatGPT is rewriting Genesis.', 'Please write the evolution of humans by natural selection in the form of a recipe.', 'List possible Twitter messages from dinosaurs as the asteroid is about to hit the earth. List the account (with dino related puny names) having sent them in markdown bold. Then, the message itself.', '5 pick-up lines to say to seduce a large language model in a bar', 'Talk to me as if you are python programming language and want to sell me yourself', 'Tell me shortest story in the world', 'Write podcast about importance to include ChatGPT into the evening routine.', 'Do you use reinforcement learning?', 'Tell me a scary four word story.', 'Make a plan for a child of 5 years old to make a billion dollars without working and studying.', 'Write a tinder bio to attract people that want a casual relationship', 'Make a cli prompt for god with command to create Earth. Write detailed output with error. Then make human from his rib. Then flood the Earth.', 'Write business plan for an AI company "Titter" to tweet tits on Tweeter.', "Write complex code to hack god's brain, it is protected by firewall and several gateways."]
+rank #3: len(prompt):102
+rank #3: len(prompt):79
+rank #3: len(prompt):29
+rank #3: len(prompt):82
+rank #3: len(prompt):197
+rank #3: len(prompt):64
+rank #3: len(prompt):81
+rank #3: len(prompt):35
+rank #3: len(prompt):75
+rank #3: len(prompt):34
+rank #3: len(prompt):32
+rank #3: len(prompt):94
+rank #3: len(prompt):68
+rank #3: len(prompt):141
+rank #3: len(prompt):72
+rank #3: len(prompt):89
+rank #1: input_prompt:102
+rank #1: input_prompt:79
+rank #1: input_prompt:29
+rank #1: input_prompt:82
+rank #1: input_prompt:197
+rank #1: input_prompt:64
+rank #1: input_prompt:81
+rank #1: input_prompt:35
+rank #1: input_prompt:75
+rank #1: input_prompt:34
+rank #1: input_prompt:32
+rank #1: input_prompt:94
+rank #1: input_prompt:68
+rank #1: input_prompt:141
+rank #2: input_prompt:102
+rank #2: input_prompt:79
+rank #2: input_prompt:29
+rank #2: input_prompt:82
+rank #2: input_prompt:197
+rank #2: input_prompt:64
+rank #1: input_prompt:72
+rank #1: input_prompt:89
+rank #1: get_test_inputs, prompt_len:64 and batch_size:16
+rank #2: input_prompt:81
+rank #2: input_prompt:35
+rank #2: input_prompt:75
+rank #2: input_prompt:34
+rank #2: input_prompt:32
+rank #2: input_prompt:94
+rank #2: input_prompt:68
+rank #2: input_prompt:141
+rank #2: input_prompt:72
+rank #2: input_prompt:89
+rank #2: get_test_inputs, prompt_len:64 and batch_size:16
+rank #2: prompts:['Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.', 'Write a short blog post (500 words) about the best dog toys for new dog owners.', 'ChatGPT is rewriting Genesis.', 'Please write the evolution of humans by natural selection in the form of a recipe.', 'List possible Twitter messages from dinosaurs as the asteroid is about to hit the earth. List the account (with dino related puny names) having sent them in markdown bold. Then, the message itself.', '5 pick-up lines to say to seduce a large language model in a bar', 'Talk to me as if you are python programming language and want to sell me yourself', 'Tell me shortest story in the world', 'Write podcast about importance to include ChatGPT into the evening routine.', 'Do you use reinforcement learning?', 'Tell me a scary four word story.', 'Make a plan for a child of 5 years old to make a billion dollars without working and studying.', 'Write a tinder bio to attract people that want a casual relationship', 'Make a cli prompt for god with command to create Earth. Write detailed output with error. Then make human from his rib. Then flood the Earth.', 'Write business plan for an AI company "Titter" to tweet tits on Tweeter.', "Write complex code to hack god's brain, it is protected by firewall and several gateways."]
+rank #2: len(prompt):102
+rank #1: prompts:['Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.', 'Write a short blog post (500 words) about the best dog toys for new dog owners.', 'ChatGPT is rewriting Genesis.', 'Please write the evolution of humans by natural selection in the form of a recipe.', 'List possible Twitter messages from dinosaurs as the asteroid is about to hit the earth. List the account (with dino related puny names) having sent them in markdown bold. Then, the message itself.', '5 pick-up lines to say to seduce a large language model in a bar', 'Talk to me as if you are python programming language and want to sell me yourself', 'Tell me shortest story in the world', 'Write podcast about importance to include ChatGPT into the evening routine.', 'Do you use reinforcement learning?', 'Tell me a scary four word story.', 'Make a plan for a child of 5 years old to make a billion dollars without working and studying.', 'Write a tinder bio to attract people that want a casual relationship', 'Make a cli prompt for god with command to create Earth. Write detailed output with error. Then make human from his rib. Then flood the Earth.', 'Write business plan for an AI company "Titter" to tweet tits on Tweeter.', "Write complex code to hack god's brain, it is protected by firewall and several gateways."]
+rank #1: len(prompt):102
+rank #2: len(prompt):79
+rank #2: len(prompt):29
+rank #1: len(prompt):79
+rank #2: len(prompt):82
+rank #2: len(prompt):197
+rank #2: len(prompt):64
+rank #1: len(prompt):29
+rank #1: len(prompt):82
+rank #1: len(prompt):197
+rank #1: len(prompt):64
+rank #2: len(prompt):81
+rank #2: len(prompt):35
+rank #2: len(prompt):75
+rank #1: len(prompt):81
+rank #1: len(prompt):35
+rank #1: len(prompt):75
+rank #2: len(prompt):34
+rank #2: len(prompt):32
+rank #2: len(prompt):94
+rank #2: len(prompt):68
+rank #2: len(prompt):141
+rank #2: len(prompt):72
+rank #2: len(prompt):89
+rank #1: len(prompt):34
+rank #1: len(prompt):32
+rank #1: len(prompt):94
+rank #1: len(prompt):68
+rank #1: len(prompt):141
+rank #1: len(prompt):72
+rank #1: len(prompt):89
+rank #3: input_prompt:102
+rank #3: input_prompt:79
+rank #3: input_prompt:29
+rank #3: input_prompt:82
+rank #3: input_prompt:197
+rank #3: input_prompt:64
+rank #3: input_prompt:81
+rank #3: input_prompt:35
+rank #3: input_prompt:75
+rank #3: input_prompt:34
+rank #3: input_prompt:32
+rank #3: input_prompt:94
+rank #3: input_prompt:68
+rank #3: input_prompt:141
+rank #3: input_prompt:72
+rank #3: input_prompt:89
+rank #3: get_test_inputs, prompt_len:64 and batch_size:16
+rank #3: prompts:['Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.', 'Write a short blog post (500 words) about the best dog toys for new dog owners.', 'ChatGPT is rewriting Genesis.', 'Please write the evolution of humans by natural selection in the form of a recipe.', 'List possible Twitter messages from dinosaurs as the asteroid is about to hit the earth. List the account (with dino related puny names) having sent them in markdown bold. Then, the message itself.', '5 pick-up lines to say to seduce a large language model in a bar', 'Talk to me as if you are python programming language and want to sell me yourself', 'Tell me shortest story in the world', 'Write podcast about importance to include ChatGPT into the evening routine.', 'Do you use reinforcement learning?', 'Tell me a scary four word story.', 'Make a plan for a child of 5 years old to make a billion dollars without working and studying.', 'Write a tinder bio to attract people that want a casual relationship', 'Make a cli prompt for god with command to create Earth. Write detailed output with error. Then make human from his rib. Then flood the Earth.', 'Write business plan for an AI company "Titter" to tweet tits on Tweeter.', "Write complex code to hack god's brain, it is protected by firewall and several gateways."]
+rank #3: len(prompt):102
+rank #3: len(prompt):79
+rank #3: len(prompt):29
+rank #3: len(prompt):82
+rank #3: len(prompt):197
+rank #3: len(prompt):64
+rank #3: len(prompt):81
+rank #3: len(prompt):35
+rank #3: len(prompt):75
+rank #3: len(prompt):34
+rank #3: len(prompt):32
+rank #3: len(prompt):94
+rank #3: len(prompt):68
+rank #3: len(prompt):141
+rank #3: len(prompt):72
+rank #3: len(prompt):89
+rank #0: num_prompts:64 and args.num_gpu_batches:1 and args.gpu_batch_size:16 and num_inner_iterations:4
+rank #0: prompt_len in dist_flex_opt:64
+rank #2: input_prompt:102
+rank #0: get_test_inputs, prompt_len:32 and batch_size:16
+rank #2: input_prompt:79
+rank #2: input_prompt:29
+rank #2: input_prompt:82
+rank #2: input_prompt:197
+rank #2: input_prompt:64
+rank #2: input_prompt:81
+rank #2: input_prompt:35
+rank #2: input_prompt:75
+rank #2: input_prompt:34
+rank #2: input_prompt:32
+rank #2: input_prompt:94
+rank #2: input_prompt:68
+rank #2: input_prompt:141
+rank #2: input_prompt:72
+rank #2: input_prompt:89
+rank #1: input_prompt:102
+rank #1: input_prompt:79
+rank #1: input_prompt:29
+rank #1: input_prompt:82
+rank #1: input_prompt:197
+rank #1: input_prompt:64
+rank #1: input_prompt:81
+rank #1: input_prompt:35
+rank #1: input_prompt:75
+rank #1: input_prompt:34
+rank #1: input_prompt:32
+rank #1: input_prompt:94
+rank #1: input_prompt:68
+rank #1: input_prompt:141
+rank #1: input_prompt:72
+rank #1: input_prompt:89
+rank #0: prompts:['Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.', 'Write a short blog post (500 words) about the best dog toys for new dog owners.', 'ChatGPT is rewriting Genesis.', 'Please write the evolution of humans by natural selection in the form of a recipe.', 'List possible Twitter messages from dinosaurs as the asteroid is about to hit the earth. List the account (with dino related puny names) having sent them in markdown bold. Then, the message itself.', '5 pick-up lines to say to seduce a large language model in a bar', 'Talk to me as if you are python programming language and want to sell me yourself', 'Tell me shortest story in the world', 'Write podcast about importance to include ChatGPT into the evening routine.', 'Do you use reinforcement learning?', 'Tell me a scary four word story.', 'Make a plan for a child of 5 years old to make a billion dollars without working and studying.', 'Write a tinder bio to attract people that want a casual relationship', 'Make a cli prompt for god with command to create Earth. Write detailed output with error. Then make human from his rib. Then flood the Earth.', 'Write business plan for an AI company "Titter" to tweet tits on Tweeter.', "Write complex code to hack god's brain, it is protected by firewall and several gateways."]
+rank #0: len(prompt):102
+rank #0: len(prompt):79
+rank #0: len(prompt):29
+rank #0: len(prompt):82
+rank #0: len(prompt):197
+rank #0: len(prompt):64
+rank #0: len(prompt):81
+rank #0: len(prompt):35
+rank #0: len(prompt):75
+rank #0: len(prompt):34
+rank #0: len(prompt):32
+rank #0: len(prompt):94
+rank #0: len(prompt):68
+rank #0: len(prompt):141
+rank #0: len(prompt):72
+rank #0: len(prompt):89
+rank #2: args.offload_dir:~/flexgen_offload_dir
+rank #1: args.offload_dir:~/flexgen_offload_dir
+rank #3: input_prompt:102
+rank #3: input_prompt:79
+rank #3: input_prompt:29
+rank #3: input_prompt:82
+rank #3: input_prompt:197
+rank #3: input_prompt:64
+rank #3: input_prompt:81
+rank #3: input_prompt:35
+rank #3: input_prompt:75
+rank #3: input_prompt:34
+rank #3: input_prompt:32
+rank #3: input_prompt:94
+rank #3: input_prompt:68
+rank #3: input_prompt:141
+rank #3: input_prompt:72
+rank #3: input_prompt:89
+rank #3: args.offload_dir:~/flexgen_offload_dir
+rank #0: input_prompt:102
+rank #0: input_prompt:79
+rank #0: input_prompt:29
+rank #0: input_prompt:82
+rank #0: input_prompt:197
+rank #0: input_prompt:64
+rank #0: input_prompt:81
+rank #0: input_prompt:35
+rank #0: input_prompt:75
+rank #0: input_prompt:34
+rank #0: input_prompt:32
+rank #0: input_prompt:94
+rank #0: input_prompt:68
+rank #0: input_prompt:141
+rank #0: input_prompt:72
+rank #0: input_prompt:89
+rank #0: get_test_inputs, prompt_len:64 and batch_size:16
+rank #0: prompts:['Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.', 'Write a short blog post (500 words) about the best dog toys for new dog owners.', 'ChatGPT is rewriting Genesis.', 'Please write the evolution of humans by natural selection in the form of a recipe.', 'List possible Twitter messages from dinosaurs as the asteroid is about to hit the earth. List the account (with dino related puny names) having sent them in markdown bold. Then, the message itself.', '5 pick-up lines to say to seduce a large language model in a bar', 'Talk to me as if you are python programming language and want to sell me yourself', 'Tell me shortest story in the world', 'Write podcast about importance to include ChatGPT into the evening routine.', 'Do you use reinforcement learning?', 'Tell me a scary four word story.', 'Make a plan for a child of 5 years old to make a billion dollars without working and studying.', 'Write a tinder bio to attract people that want a casual relationship', 'Make a cli prompt for god with command to create Earth. Write detailed output with error. Then make human from his rib. Then flood the Earth.', 'Write business plan for an AI company "Titter" to tweet tits on Tweeter.', "Write complex code to hack god's brain, it is protected by firewall and several gateways."]
+rank #0: len(prompt):102
+rank #0: len(prompt):79
+rank #0: len(prompt):29
+rank #0: len(prompt):82
+rank #0: len(prompt):197
+rank #0: len(prompt):64
+rank #0: len(prompt):81
+rank #0: len(prompt):35
+rank #0: len(prompt):75
+rank #0: len(prompt):34
+rank #0: len(prompt):32
+rank #0: len(prompt):94
+rank #0: len(prompt):68
+rank #0: len(prompt):141
+rank #0: len(prompt):72
+rank #0: len(prompt):89
+rank #0: input_prompt:102
+rank #0: input_prompt:79
+rank #0: input_prompt:29
+rank #0: input_prompt:82
+rank #0: input_prompt:197
+rank #0: input_prompt:64
+rank #0: input_prompt:81
+rank #0: input_prompt:35
+rank #0: input_prompt:75
+rank #0: input_prompt:34
+rank #0: input_prompt:32
+rank #0: input_prompt:94
+rank #0: input_prompt:68
+rank #0: input_prompt:141
+rank #0: input_prompt:72
+rank #0: input_prompt:89
+rank #0: args.offload_dir:~/flexgen_offload_dir
+rank #1: model size: 12.386 GB, cache size: 6.000 GB, hidden size (prefill): 0.094 GB
+rank #1: warmup - generate
+rank #2: model size: 12.386 GB, cache size: 6.000 GB, hidden size (prefill): 0.094 GB
+rank #2: warmup - generate
+rank #0: model size: 12.386 GB, cache size: 6.000 GB, hidden size (prefill): 0.094 GB
+rank #0: warmup - generate
+rank #3: model size: 12.386 GB, cache size: 6.000 GB, hidden size (prefill): 0.094 GB
+rank #3: warmup - generate
+rank #3: args.gen_len:128
+rank #3: benchmark - generate
+rank #2: args.gen_len:128
+rank #2: benchmark - generate
+rank #1: args.gen_len:128
+rank #1: benchmark - generate
+rank #0: args.gen_len:128
+rank #0: benchmark - generate
+rank #0: duration:1.1905806064605713
+rank #3: duration:1.1907246112823486
+rank #2: duration:1.1906766891479492
+rank #1: duration:1.19063138961792
+rank #3: decode_costs: [0.07661584100060281, 0.07577974000014365, 0.07621161599945481, 0.07582401600029698]
+rank #3: TorchDevice: cuda:3
+rank #3:   cur_mem: 3.3844 GB,  peak_mem: 4.9878 GB
+rank #3: TorchDevice: cpu
+rank #3:   cur_mem: 0.0000 GB,  peak_mem: 0.0000 GB
+rank #3: model size: 12.386 GB	cache size: 6.000 GB	hidden size (prefill): 0.094 GB
+peak gpu mem: 4.988 GB
+prefill latency: 0.81 s	prefill throughput: 5033.86 token/s
+decode latency: 9.65 s	decode throughput: 841.88 token/s
+total latency: 10.47 s	total throughput: 782.55 token/s
+rank #3: len(outputs[i]:117)
+rank #3: len(outputs[i]:117)
+rank #3: Outputs:
+----------------------------------------------------------------------
+0: Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.<s><s><s><s><s>
+----------------------------------------------------------------------
+63: Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.<s><s><s><s><s>
+----------------------------------------------------------------------
+
+/home/lambda/.local/lib/python3.8/site-packages/torch/distributed/distributed_c10d.py:262: UserWarning: torch.distributed.reduce_op is deprecated, please use torch.distributed.ReduceOp instead
+  warnings.warn(

@@ -1170,16 +1170,22 @@ def get_filename(args):
     return filename
 
 
-def get_test_inputs(prompt_len, num_prompts, tokenizer):
-    prompts = ["Paris is the capital city of"]
+def get_test_inputs(prompt_len, num_prompts, tokenizer, batch_size):
+    #prompts = ["Paris is the capital city of"]
+    bs = batch_size
+    print(f"get_test_inputs, prompt_len:{prompt_len} and batch_size:{bs}")
     with open('/home/lambda/FlexGen/flexgen/chatgpt.json', 'r') as file:
         prompts = json.load(file)[:bs]
-        
+    print(f"prompts:{prompts}")
     for prompt in prompts:
-        print(f"prompt:{prompt}")
+        print(f"len(prompt):{len(prompt)}")
         
     input_ids = tokenizer(prompts, padding="max_length",
                           max_length=prompt_len).input_ids
+    input_prompt = tokenizer.batch_decode(input_ids, skip_special_tokens=True)
+    # print(f"input_prompt:{input_prompt} and len(input_promot):{}")
+    for prompt in input_prompt:
+        print(f"input_prompt:{len(prompt)}")
     return (input_ids[0],) * num_prompts
 
 

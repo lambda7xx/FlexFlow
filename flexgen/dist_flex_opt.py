@@ -542,11 +542,14 @@ def run_flexgen_dist(args):
     tokenizer = AutoTokenizer.from_pretrained(t_name, padding_side="left")
     num_inner_iterations = args.num_inner_iterations if args.num_inner_iterations is not None else args.world_size
     num_prompts = args.num_gpu_batches * args.gpu_batch_size * num_inner_iterations * 1
+    print(f"num_prompts:{num_prompts} and args.num_gpu_batches:{args.num_gpu_batches} and args.gpu_batch_size:{args.gpu_batch_size} and num_inner_iterations:{num_inner_iterations}")
     prompt_len, gen_len, cut_gen_len = args.prompt_len, args.gen_len, args.cut_gen_len
     gen_len = 128 
+    bs = args.num_gpu_batches * args.gpu_batch_size
     # Task and policy
-    warmup_inputs = get_test_inputs(32, num_prompts, tokenizer)
-    inputs = get_test_inputs(prompt_len, num_prompts, tokenizer)
+    print(f"prompt_len in dist_flex_opt:{prompt_len}")
+    warmup_inputs = get_test_inputs(32, num_prompts, tokenizer, bs)
+    inputs = get_test_inputs(prompt_len, num_prompts, tokenizer, bs)
 
     gpu = TorchDevice(f"cuda:{args.local_rank}")
     cpu = TorchDevice("cpu")
@@ -618,13 +621,7 @@ def run_flexgen_dist(args):
     _, gpu_peak_mem = gpu.mem_stats()
     _, cpu_peak_mem = cpu.mem_stats()
 
-    # if DUMMY_WEIGHT not in args.path:
-    outputs = tokenizer.batch_decode(output_ids, skip_special_tokens=True)
-    show_str = "Outputs:\n" + 70 * '-' + "\n"
-    for i in [0, len(outputs)-1]:
-        show_str += f"{i}: {outputs[i]}\n"
-        show_str += "-" * 70 + "\n"
-    print(show_str)
+
 
     gpu.print_stats()
     cpu.print_stats()
@@ -641,6 +638,8 @@ def run_flexgen_dist(args):
                f"total latency: {total_latency:.2f} s\t"
                f"total throughput: {total_throughput:.2f} token/s")
     print(log_str)
+    
+    
 
     if not args.no_log:
         if args.log_file == "auto":
@@ -651,7 +650,14 @@ def run_flexgen_dist(args):
         with open(log_filename, "a") as fout:
             fout.write(log_str + "\n")
 
-
+    # if DUMMY_WEIGHT not in args.path:
+    outputs = tokenizer.batch_decode(output_ids, skip_special_tokens=True)
+    show_str = "Outputs:\n" + 70 * '-' + "\n"
+    for i in [0, len(outputs)-1]:
+        print(f"len(outputs[i]:{len(outputs[i])})")
+        show_str += f"{i}: {outputs[i]}\n"
+        show_str += "-" * 70 + "\n"
+    print(show_str)
 def add_distributed_parser_arguments(parser):
     parser.add_argument('--head-ip', type=str, default=None, help='the IP address of the head node')
     parser.add_argument('--port', type=int, default=None, help='the port of the head node')
@@ -664,7 +670,7 @@ def add_distributed_parser_arguments(parser):
                         choices=['gpu', 'cpu'],
                         help='communication through gpu nvlink or cpu memory '
                              'and socket')
-    parser.add_argument('--num-inner-iterations', metavar='I', type=int, default=None)
+    parser.add_argument('--num_inner_iterations', metavar='I', type=int, default=None)
     parser.add_argument('--async-comm', action='store_true', default=False,
                         help="Use asynchronous communication")
 
@@ -673,7 +679,7 @@ if __name__ == "__main__":
     add_parser_arguments(parser)
     add_distributed_parser_arguments(parser)
     args = parser.parse_args()
-
+    print("batch_size:",args.gpu_batch_size, "args.overlap:",args.overlap)
     if args.head_ip is not None and args.port is not None:
         if args.use_mpi:
             args.world_size = int(os.getenv('OMPI_COMM_WORLD_SIZE'))

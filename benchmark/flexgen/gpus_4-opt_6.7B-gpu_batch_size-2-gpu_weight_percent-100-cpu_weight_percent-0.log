@@ -1,0 +1,113 @@
+batch_size: 2 args.overlap: True
+Initializing distributed environment at 172.31.4.20:7777, world_size=4, rank=0, local_rank=0.
+batch_size: 2 args.overlap: True
+Initializing distributed environment at 172.31.4.20:7777, world_size=4, rank=1, local_rank=1.
+batch_size: 2 args.overlap: True
+Initializing distributed environment at 172.31.4.20:7777, world_size=4, rank=2, local_rank=2.
+batch_size: 2 args.overlap: True
+Initializing distributed environment at 172.31.4.20:7777, world_size=4, rank=3, local_rank=3.
+rank #1: Finished initializing distributed environment
+rank #2: Finished initializing distributed environment
+rank #0: Finished initializing distributed environment
+rank #3: Finished initializing distributed environment
+rank #2: num_prompts:8 and args.num_gpu_batches:1 and args.gpu_batch_size:2 and num_inner_iterations:4
+rank #2: prompt_len in dist_flex_opt:64
+rank #2: get_test_inputs, prompt_len:32 and batch_size:2
+rank #2: prompts:['Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.', 'Write a short blog post (500 words) about the best dog toys for new dog owners.']
+rank #2: len(prompt):102
+rank #2: len(prompt):79
+rank #1: num_prompts:8 and args.num_gpu_batches:1 and args.gpu_batch_size:2 and num_inner_iterations:4
+rank #1: prompt_len in dist_flex_opt:64
+rank #1: get_test_inputs, prompt_len:32 and batch_size:2
+rank #1: prompts:['Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.', 'Write a short blog post (500 words) about the best dog toys for new dog owners.']
+rank #1: len(prompt):102
+rank #1: len(prompt):79
+rank #3: num_prompts:8 and args.num_gpu_batches:1 and args.gpu_batch_size:2 and num_inner_iterations:4
+rank #3: prompt_len in dist_flex_opt:64
+rank #3: get_test_inputs, prompt_len:32 and batch_size:2
+rank #2: input_prompt:102
+rank #2: input_prompt:79
+rank #2: get_test_inputs, prompt_len:64 and batch_size:2
+rank #3: prompts:['Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.', 'Write a short blog post (500 words) about the best dog toys for new dog owners.']
+rank #3: len(prompt):102
+rank #3: len(prompt):79
+rank #2: prompts:['Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.', 'Write a short blog post (500 words) about the best dog toys for new dog owners.']
+rank #2: len(prompt):102
+rank #2: len(prompt):79
+rank #1: input_prompt:102
+rank #1: input_prompt:79
+rank #1: get_test_inputs, prompt_len:64 and batch_size:2
+rank #1: prompts:['Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.', 'Write a short blog post (500 words) about the best dog toys for new dog owners.']
+rank #1: len(prompt):102
+rank #1: len(prompt):79
+rank #2: input_prompt:102
+rank #2: input_prompt:79
+rank #1: input_prompt:102
+rank #1: input_prompt:79
+rank #3: input_prompt:102
+rank #3: input_prompt:79
+rank #3: get_test_inputs, prompt_len:64 and batch_size:2
+rank #2: args.offload_dir:~/flexgen_offload_dir
+rank #3: prompts:['Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.', 'Write a short blog post (500 words) about the best dog toys for new dog owners.']
+rank #3: len(prompt):102
+rank #3: len(prompt):79
+rank #1: args.offload_dir:~/flexgen_offload_dir
+rank #0: num_prompts:8 and args.num_gpu_batches:1 and args.gpu_batch_size:2 and num_inner_iterations:4
+rank #0: prompt_len in dist_flex_opt:64
+rank #0: get_test_inputs, prompt_len:32 and batch_size:2
+rank #0: prompts:['Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.', 'Write a short blog post (500 words) about the best dog toys for new dog owners.']
+rank #0: len(prompt):102
+rank #0: len(prompt):79
+rank #3: input_prompt:102
+rank #3: input_prompt:79
+rank #3: args.offload_dir:~/flexgen_offload_dir
+rank #0: input_prompt:102
+rank #0: input_prompt:79
+rank #0: get_test_inputs, prompt_len:64 and batch_size:2
+rank #0: prompts:['Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.', 'Write a short blog post (500 words) about the best dog toys for new dog owners.']
+rank #0: len(prompt):102
+rank #0: len(prompt):79
+rank #0: input_prompt:102
+rank #0: input_prompt:79
+rank #0: args.offload_dir:~/flexgen_offload_dir
+rank #1: model size: 12.386 GB, cache size: 0.750 GB, hidden size (prefill): 0.012 GB
+rank #1: warmup - generate
+rank #2: model size: 12.386 GB, cache size: 0.750 GB, hidden size (prefill): 0.012 GB
+rank #2: warmup - generate
+rank #0: model size: 12.386 GB, cache size: 0.750 GB, hidden size (prefill): 0.012 GB
+rank #0: warmup - generate
+rank #3: model size: 12.386 GB, cache size: 0.750 GB, hidden size (prefill): 0.012 GB
+rank #3: warmup - generate
+rank #3: args.gen_len:128
+rank #3: benchmark - generate
+rank #2: args.gen_len:128
+rank #2: benchmark - generate
+rank #0: args.gen_len:128
+rank #0: benchmark - generate
+rank #1: args.gen_len:128
+rank #1: benchmark - generate
+rank #0: duration:0.5000948905944824
+rank #3: duration:0.5001087188720703
+rank #2: duration:0.5001821517944336
+rank #1: duration:0.500091552734375
+rank #3: decode_costs: [0.07245893799881742, 0.07182892300079402, 0.07205450299898075, 0.07176728200101934]
+rank #3: TorchDevice: cuda:3
+rank #3:   cur_mem: 3.3844 GB,  peak_mem: 3.5838 GB
+rank #3: TorchDevice: cpu
+rank #3:   cur_mem: 0.0000 GB,  peak_mem: 0.0000 GB
+rank #3: model size: 12.386 GB	cache size: 0.750 GB	hidden size (prefill): 0.012 GB
+peak gpu mem: 3.584 GB
+prefill latency: 0.16 s	prefill throughput: 3164.19 token/s
+decode latency: 9.13 s	decode throughput: 111.24 token/s
+total latency: 9.29 s	total throughput: 110.17 token/s
+rank #3: len(outputs[i]:117)
+rank #3: len(outputs[i]:117)
+rank #3: Outputs:
+----------------------------------------------------------------------
+0: Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.<s><s><s><s><s>
+----------------------------------------------------------------------
+7: Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.<s><s><s><s><s>
+----------------------------------------------------------------------
+
+/home/lambda/.local/lib/python3.8/site-packages/torch/distributed/distributed_c10d.py:262: UserWarning: torch.distributed.reduce_op is deprecated, please use torch.distributed.ReduceOp instead
+  warnings.warn(

@@ -1,0 +1,209 @@
+batch_size: 8 args.overlap: True
+Initializing distributed environment at 172.31.4.20:7777, world_size=4, rank=1, local_rank=1.
+batch_size: 8 args.overlap: True
+Initializing distributed environment at 172.31.4.20:7777, world_size=4, rank=3, local_rank=3.
+batch_size: 8 args.overlap: True
+Initializing distributed environment at 172.31.4.20:7777, world_size=4, rank=2, local_rank=2.
+batch_size: 8 args.overlap: True
+Initializing distributed environment at 172.31.4.20:7777, world_size=4, rank=0, local_rank=0.
+rank #2: Finished initializing distributed environment
+rank #1: Finished initializing distributed environment
+rank #0: Finished initializing distributed environment
+rank #3: Finished initializing distributed environment
+rank #1: num_prompts:32 and args.num_gpu_batches:1 and args.gpu_batch_size:8 and num_inner_iterations:4
+rank #1: prompt_len in dist_flex_opt:64
+rank #1: get_test_inputs, prompt_len:32 and batch_size:8
+rank #2: num_prompts:32 and args.num_gpu_batches:1 and args.gpu_batch_size:8 and num_inner_iterations:4
+rank #2: prompt_len in dist_flex_opt:64
+rank #2: get_test_inputs, prompt_len:32 and batch_size:8
+rank #2: prompts:['Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.', 'Write a short blog post (500 words) about the best dog toys for new dog owners.', 'ChatGPT is rewriting Genesis.', 'Please write the evolution of humans by natural selection in the form of a recipe.', 'List possible Twitter messages from dinosaurs as the asteroid is about to hit the earth. List the account (with dino related puny names) having sent them in markdown bold. Then, the message itself.', '5 pick-up lines to say to seduce a large language model in a bar', 'Talk to me as if you are python programming language and want to sell me yourself', 'Tell me shortest story in the world']
+rank #2: len(prompt):102
+rank #1: prompts:['Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.', 'Write a short blog post (500 words) about the best dog toys for new dog owners.', 'ChatGPT is rewriting Genesis.', 'Please write the evolution of humans by natural selection in the form of a recipe.', 'List possible Twitter messages from dinosaurs as the asteroid is about to hit the earth. List the account (with dino related puny names) having sent them in markdown bold. Then, the message itself.', '5 pick-up lines to say to seduce a large language model in a bar', 'Talk to me as if you are python programming language and want to sell me yourself', 'Tell me shortest story in the world']
+rank #1: len(prompt):102
+rank #1: len(prompt):79
+rank #1: len(prompt):29
+rank #2: len(prompt):79
+rank #1: len(prompt):82
+rank #1: len(prompt):197
+rank #2: len(prompt):29
+rank #2: len(prompt):82
+rank #2: len(prompt):197
+rank #1: len(prompt):64
+rank #1: len(prompt):81
+rank #1: len(prompt):35
+rank #2: len(prompt):64
+rank #2: len(prompt):81
+rank #2: len(prompt):35
+rank #3: num_prompts:32 and args.num_gpu_batches:1 and args.gpu_batch_size:8 and num_inner_iterations:4
+rank #3: prompt_len in dist_flex_opt:64
+rank #3: get_test_inputs, prompt_len:32 and batch_size:8
+rank #3: prompts:['Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.', 'Write a short blog post (500 words) about the best dog toys for new dog owners.', 'ChatGPT is rewriting Genesis.', 'Please write the evolution of humans by natural selection in the form of a recipe.', 'List possible Twitter messages from dinosaurs as the asteroid is about to hit the earth. List the account (with dino related puny names) having sent them in markdown bold. Then, the message itself.', '5 pick-up lines to say to seduce a large language model in a bar', 'Talk to me as if you are python programming language and want to sell me yourself', 'Tell me shortest story in the world']
+rank #3: len(prompt):102
+rank #3: len(prompt):79
+rank #3: len(prompt):29
+rank #3: len(prompt):82
+rank #3: len(prompt):197
+rank #3: len(prompt):64
+rank #3: len(prompt):81
+rank #3: len(prompt):35
+rank #2: input_prompt:102
+rank #2: input_prompt:79
+rank #2: input_prompt:29
+rank #2: input_prompt:82
+rank #2: input_prompt:197
+rank #2: input_prompt:64
+rank #2: input_prompt:81
+rank #2: input_prompt:35
+rank #2: get_test_inputs, prompt_len:64 and batch_size:8
+rank #1: input_prompt:102
+rank #1: input_prompt:79
+rank #1: input_prompt:29
+rank #1: input_prompt:82
+rank #1: input_prompt:197
+rank #1: input_prompt:64
+rank #1: input_prompt:81
+rank #1: input_prompt:35
+rank #1: get_test_inputs, prompt_len:64 and batch_size:8
+rank #0: num_prompts:32 and args.num_gpu_batches:1 and args.gpu_batch_size:8 and num_inner_iterations:4
+rank #0: prompt_len in dist_flex_opt:64
+rank #0: get_test_inputs, prompt_len:32 and batch_size:8
+rank #2: prompts:['Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.', 'Write a short blog post (500 words) about the best dog toys for new dog owners.', 'ChatGPT is rewriting Genesis.', 'Please write the evolution of humans by natural selection in the form of a recipe.', 'List possible Twitter messages from dinosaurs as the asteroid is about to hit the earth. List the account (with dino related puny names) having sent them in markdown bold. Then, the message itself.', '5 pick-up lines to say to seduce a large language model in a bar', 'Talk to me as if you are python programming language and want to sell me yourself', 'Tell me shortest story in the world']
+rank #2: len(prompt):102
+rank #2: len(prompt):79
+rank #2: len(prompt):29
+rank #2: len(prompt):82
+rank #2: len(prompt):197
+rank #2: len(prompt):64
+rank #2: len(prompt):81
+rank #2: len(prompt):35
+rank #1: prompts:['Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.', 'Write a short blog post (500 words) about the best dog toys for new dog owners.', 'ChatGPT is rewriting Genesis.', 'Please write the evolution of humans by natural selection in the form of a recipe.', 'List possible Twitter messages from dinosaurs as the asteroid is about to hit the earth. List the account (with dino related puny names) having sent them in markdown bold. Then, the message itself.', '5 pick-up lines to say to seduce a large language model in a bar', 'Talk to me as if you are python programming language and want to sell me yourself', 'Tell me shortest story in the world']
+rank #1: len(prompt):102
+rank #1: len(prompt):79
+rank #1: len(prompt):29
+rank #1: len(prompt):82
+rank #1: len(prompt):197
+rank #1: len(prompt):64
+rank #1: len(prompt):81
+rank #1: len(prompt):35
+rank #0: prompts:['Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.', 'Write a short blog post (500 words) about the best dog toys for new dog owners.', 'ChatGPT is rewriting Genesis.', 'Please write the evolution of humans by natural selection in the form of a recipe.', 'List possible Twitter messages from dinosaurs as the asteroid is about to hit the earth. List the account (with dino related puny names) having sent them in markdown bold. Then, the message itself.', '5 pick-up lines to say to seduce a large language model in a bar', 'Talk to me as if you are python programming language and want to sell me yourself', 'Tell me shortest story in the world']
+rank #0: len(prompt):102
+rank #0: len(prompt):79
+rank #0: len(prompt):29
+rank #0: len(prompt):82
+rank #0: len(prompt):197
+rank #0: len(prompt):64
+rank #0: len(prompt):81
+rank #0: len(prompt):35
+rank #3: input_prompt:102
+rank #3: input_prompt:79
+rank #3: input_prompt:29
+rank #3: input_prompt:82
+rank #3: input_prompt:197
+rank #3: input_prompt:64
+rank #3: input_prompt:81
+rank #3: input_prompt:35
+rank #3: get_test_inputs, prompt_len:64 and batch_size:8
+rank #3: prompts:['Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.', 'Write a short blog post (500 words) about the best dog toys for new dog owners.', 'ChatGPT is rewriting Genesis.', 'Please write the evolution of humans by natural selection in the form of a recipe.', 'List possible Twitter messages from dinosaurs as the asteroid is about to hit the earth. List the account (with dino related puny names) having sent them in markdown bold. Then, the message itself.', '5 pick-up lines to say to seduce a large language model in a bar', 'Talk to me as if you are python programming language and want to sell me yourself', 'Tell me shortest story in the world']
+rank #3: len(prompt):102
+rank #3: len(prompt):79
+rank #3: len(prompt):29
+rank #3: len(prompt):82
+rank #3: len(prompt):197
+rank #3: len(prompt):64
+rank #3: len(prompt):81
+rank #3: len(prompt):35
+rank #2: input_prompt:102
+rank #2: input_prompt:79
+rank #2: input_prompt:29
+rank #2: input_prompt:82
+rank #2: input_prompt:197
+rank #2: input_prompt:64
+rank #2: input_prompt:81
+rank #2: input_prompt:35
+rank #1: input_prompt:102
+rank #1: input_prompt:79
+rank #1: input_prompt:29
+rank #1: input_prompt:82
+rank #1: input_prompt:197
+rank #1: input_prompt:64
+rank #1: input_prompt:81
+rank #1: input_prompt:35
+rank #0: input_prompt:102
+rank #0: input_prompt:79
+rank #0: input_prompt:29
+rank #0: input_prompt:82
+rank #0: input_prompt:197
+rank #0: input_prompt:64
+rank #0: input_prompt:81
+rank #0: input_prompt:35
+rank #0: get_test_inputs, prompt_len:64 and batch_size:8
+rank #1: args.offload_dir:~/flexgen_offload_dir
+rank #2: args.offload_dir:~/flexgen_offload_dir
+rank #0: prompts:['Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.', 'Write a short blog post (500 words) about the best dog toys for new dog owners.', 'ChatGPT is rewriting Genesis.', 'Please write the evolution of humans by natural selection in the form of a recipe.', 'List possible Twitter messages from dinosaurs as the asteroid is about to hit the earth. List the account (with dino related puny names) having sent them in markdown bold. Then, the message itself.', '5 pick-up lines to say to seduce a large language model in a bar', 'Talk to me as if you are python programming language and want to sell me yourself', 'Tell me shortest story in the world']
+rank #0: len(prompt):102
+rank #3: input_prompt:102
+rank #0: len(prompt):79
+rank #0: len(prompt):29
+rank #0: len(prompt):82
+rank #3: input_prompt:79
+rank #3: input_prompt:29
+rank #3: input_prompt:82
+rank #0: len(prompt):197
+rank #0: len(prompt):64
+rank #0: len(prompt):81
+rank #3: input_prompt:197
+rank #0: len(prompt):35
+rank #3: input_prompt:64
+rank #3: input_prompt:81
+rank #3: input_prompt:35
+rank #3: args.offload_dir:~/flexgen_offload_dir
+rank #0: input_prompt:102
+rank #0: input_prompt:79
+rank #0: input_prompt:29
+rank #0: input_prompt:82
+rank #0: input_prompt:197
+rank #0: input_prompt:64
+rank #0: input_prompt:81
+rank #0: input_prompt:35
+rank #0: args.offload_dir:~/flexgen_offload_dir
+rank #2: model size: 12.386 GB, cache size: 3.000 GB, hidden size (prefill): 0.047 GB
+rank #2: warmup - generate
+rank #1: model size: 12.386 GB, cache size: 3.000 GB, hidden size (prefill): 0.047 GB
+rank #1: warmup - generate
+rank #0: model size: 12.386 GB, cache size: 3.000 GB, hidden size (prefill): 0.047 GB
+rank #0: warmup - generate
+rank #3: model size: 12.386 GB, cache size: 3.000 GB, hidden size (prefill): 0.047 GB
+rank #3: warmup - generate
+rank #2: args.gen_len:128
+rank #2: benchmark - generate
+rank #3: args.gen_len:128
+rank #3: benchmark - generate
+rank #0: args.gen_len:128
+rank #0: benchmark - generate
+rank #1: args.gen_len:128
+rank #1: benchmark - generate
+rank #2: duration:0.7513058185577393
+rank #1: duration:0.7511365413665771
+rank #3: duration:0.7512905597686768
+rank #0: duration:0.751293420791626
+rank #3: decode_costs: [0.073975625001367, 0.07365311600005953, 0.07373290900068241, 0.07374183200045081]
+rank #3: TorchDevice: cuda:3
+rank #3:   cur_mem: 3.3844 GB,  peak_mem: 4.1864 GB
+rank #3: TorchDevice: cpu
+rank #3:   cur_mem: 0.0000 GB,  peak_mem: 0.0000 GB
+rank #3: model size: 12.386 GB	cache size: 3.000 GB	hidden size (prefill): 0.047 GB
+peak gpu mem: 4.186 GB
+prefill latency: 0.39 s	prefill throughput: 5268.02 token/s
+decode latency: 9.36 s	decode throughput: 433.97 token/s
+total latency: 9.75 s	total throughput: 419.95 token/s
+rank #3: len(outputs[i]:117)
+rank #3: len(outputs[i]:117)
+rank #3: Outputs:
+----------------------------------------------------------------------
+0: Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.<s><s><s><s><s>
+----------------------------------------------------------------------
+31: Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.<s><s><s><s><s>
+----------------------------------------------------------------------
+
+/home/lambda/.local/lib/python3.8/site-packages/torch/distributed/distributed_c10d.py:262: UserWarning: torch.distributed.reduce_op is deprecated, please use torch.distributed.ReduceOp instead
+  warnings.warn(

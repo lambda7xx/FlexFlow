@@ -30,13 +30,13 @@ mpirun \
     --head-ip $MY_IPADDR \
     --port 7777 \
     --use-mpi \
-    --model facebook/opt-6.7b \
+    --model facebook/opt-13b \
     --gpu_batch_size $gpu_batch_size \
     --percent $gpu_weight_percent $cpu_weight_percent 100 0 100 0 \
     --comm-device cpu \
     --cut_gen_len 5 \
     --overlap \
-    --path _DUMMY_ > gpus_$N_GPUS-opt_6.7B-gpu_batch_size-$gpu_batch_size-gpu_weight_percent-$gpu_weight_percent-cpu_weight_percent-$cpu_weight_percent.log 2>&1 
+    --path _DUMMY_ > gpus_$N_GPUS-opt_13B-gpu_batch_size-$gpu_batch_size-gpu_weight_percent-$gpu_weight_percent-cpu_weight_percent-$cpu_weight_percent.log 2>&1 
 
 pgrep -fl python | awk '!/dist_flex_opt\.py/{print $1}' | xargs sudo kill
 
