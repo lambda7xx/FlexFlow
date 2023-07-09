@@ -1,37 +1,40 @@
 batch_size: 1 args.overlap: True
-Initializing distributed environment at 172.31.4.20:7777, world_size=4, rank=3, local_rank=3.
+Initializing distributed environment at 172.31.4.20:7777, world_size=4, rank=1, local_rank=1.
 batch_size: 1 args.overlap: True
 Initializing distributed environment at 172.31.4.20:7777, world_size=4, rank=2, local_rank=2.
 batch_size: 1 args.overlap: True
-Initializing distributed environment at 172.31.4.20:7777, world_size=4, rank=1, local_rank=1.
+Initializing distributed environment at 172.31.4.20:7777, world_size=4, rank=3, local_rank=3.
 batch_size: 1 args.overlap: True
 Initializing distributed environment at 172.31.4.20:7777, world_size=4, rank=0, local_rank=0.
-rank #1: Finished initializing distributed environment
-rank #2: Finished initializing distributed environment
 rank #0: Finished initializing distributed environment
 rank #3: Finished initializing distributed environment
+rank #1: Finished initializing distributed environment
+rank #2: Finished initializing distributed environment
+Downloading (…)okenizer_config.json:   0%|          | 0.00/721 [00:00<?, ?B/s]Downloading (…)okenizer_config.json: 100%|██████████| 721/721 [00:00<00:00, 109kB/s]
+Downloading (…)olve/main/vocab.json:   0%|          | 0.00/899k [00:00<?, ?B/s]Downloading (…)olve/main/vocab.json: 100%|██████████| 899k/899k [00:00<00:00, 24.6MB/s]
+Downloading (…)olve/main/merges.txt:   0%|          | 0.00/456k [00:00<?, ?B/s]Downloading (…)olve/main/merges.txt: 100%|██████████| 456k/456k [00:00<00:00, 13.0MB/s]
+Downloading (…)cial_tokens_map.json:   0%|          | 0.00/441 [00:00<?, ?B/s]Downloading (…)cial_tokens_map.json: 100%|██████████| 441/441 [00:00<00:00, 263kB/s]rank #0: num_prompts:4 and args.num_gpu_batches:1 and args.gpu_batch_size:1 and num_inner_iterations:4
+rank #0: prompt_len in dist_flex_opt:64
+rank #0: get_test_inputs, prompt_len:32 and batch_size:1
+rank #0: prompts:['Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.']
+rank #0: len(prompt):102
+rank #0: input_prompt:102
+rank #0: get_test_inputs, prompt_len:64 and batch_size:1
+rank #0: prompts:['Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.']
+rank #0: len(prompt):102
+rank #0: input_prompt:102
+rank #0: args.offload_dir:~/flexgen_offload_dir
 rank #1: num_prompts:4 and args.num_gpu_batches:1 and args.gpu_batch_size:1 and num_inner_iterations:4
 rank #1: prompt_len in dist_flex_opt:64
 rank #1: get_test_inputs, prompt_len:32 and batch_size:1
 rank #1: prompts:['Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.']
-rank #0: num_prompts:4 and args.num_gpu_batches:1 and args.gpu_batch_size:1 and num_inner_iterations:4
-rank #0: prompt_len in dist_flex_opt:64
 rank #1: len(prompt):102
-rank #0: get_test_inputs, prompt_len:32 and batch_size:1
-rank #0: prompts:['Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.']
-rank #0: len(prompt):102
 rank #1: input_prompt:102
 rank #1: get_test_inputs, prompt_len:64 and batch_size:1
-rank #0: input_prompt:102
-rank #0: get_test_inputs, prompt_len:64 and batch_size:1
 rank #1: prompts:['Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.']
 rank #1: len(prompt):102
-rank #0: prompts:['Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.']
-rank #0: len(prompt):102
 rank #1: input_prompt:102
-rank #0: input_prompt:102
 rank #1: args.offload_dir:~/flexgen_offload_dir
-rank #0: args.offload_dir:~/flexgen_offload_dir
 rank #2: num_prompts:4 and args.num_gpu_batches:1 and args.gpu_batch_size:1 and num_inner_iterations:4
 rank #2: prompt_len in dist_flex_opt:64
 rank #2: get_test_inputs, prompt_len:32 and batch_size:1
@@ -54,36 +57,37 @@ rank #3: prompts:['Write a detailed product description for a food chopper tool 
 rank #3: len(prompt):102
 rank #3: input_prompt:102
 rank #3: args.offload_dir:~/flexgen_offload_dir
-rank #2: model size: 12.386 GB, cache size: 0.375 GB, hidden size (prefill): 0.006 GB
-rank #2: warmup - generate
-rank #1: model size: 12.386 GB, cache size: 0.375 GB, hidden size (prefill): 0.006 GB
+rank #1: model size: 23.921 GB, cache size: 0.586 GB, hidden size (prefill): 0.007 GB
 rank #1: warmup - generate
-rank #0: model size: 12.386 GB, cache size: 0.375 GB, hidden size (prefill): 0.006 GB
+rank #2: model size: 23.921 GB, cache size: 0.586 GB, hidden size (prefill): 0.007 GB
+rank #2: warmup - generate
+rank #0: model size: 23.921 GB, cache size: 0.586 GB, hidden size (prefill): 0.007 GB
 rank #0: warmup - generate
-rank #3: model size: 12.386 GB, cache size: 0.375 GB, hidden size (prefill): 0.006 GB
+rank #3: model size: 23.921 GB, cache size: 0.586 GB, hidden size (prefill): 0.007 GB
 rank #3: warmup - generate
-rank #0: args.gen_len:128
-rank #0: benchmark - generate
 rank #2: args.gen_len:128
 rank #2: benchmark - generate
 rank #3: args.gen_len:128
 rank #3: benchmark - generate
 rank #1: args.gen_len:128
 rank #1: benchmark - generate
-rank #3: duration:0.4538431167602539
-rank #0: duration:0.453871488571167
-rank #2: duration:0.45394229888916016
-rank #1: duration:0.4539613723754883
-rank #3: decode_costs: [0.06542099300077098, 0.06521079800040752, 0.06520926799930749, 0.06500505999883899]
+rank #0: args.gen_len:128
+rank #0: benchmark - generate
+rank #1: duration:0.7881608009338379
+rank #3: duration:0.7881813049316406
+rank #2: duration:0.7881839275360107
+rank #0: duration:0.7881622314453125
+rank #3: decode_costs: [0.1160991369988551, 0.11586886799796048, 0.11590137399980449, 0.11518410999997286]
+
 rank #3: TorchDevice: cuda:3
-rank #3:   cur_mem: 3.3844 GB,  peak_mem: 3.4864 GB
+rank #3:   cur_mem: 6.3401 GB,  peak_mem: 6.4924 GB
 rank #3: TorchDevice: cpu
 rank #3:   cur_mem: 0.0000 GB,  peak_mem: 0.0000 GB
-rank #3: model size: 12.386 GB	cache size: 0.375 GB	hidden size (prefill): 0.006 GB
-peak gpu mem: 3.486 GB
-prefill latency: 0.15 s	prefill throughput: 1759.76 token/s
-decode latency: 8.27 s	decode throughput: 61.43 token/s
-total latency: 8.41 s	total throughput: 60.85 token/s
+rank #3: model size: 23.921 GB	cache size: 0.586 GB	hidden size (prefill): 0.007 GB
+peak gpu mem: 6.492 GB
+prefill latency: 0.27 s	prefill throughput: 935.34 token/s
+decode latency: 14.67 s	decode throughput: 34.62 token/s
+total latency: 14.95 s	total throughput: 34.25 token/s
 rank #3: len(outputs[i]:117)
 rank #3: len(outputs[i]:117)
 rank #3: Outputs:

@@ -1,126 +1,18 @@
 batch_size: 32 args.overlap: True
-Initializing distributed environment at 172.31.4.20:7777, world_size=4, rank=1, local_rank=1.
-batch_size: 32 args.overlap: True
 Initializing distributed environment at 172.31.4.20:7777, world_size=4, rank=2, local_rank=2.
+batch_size: 32 args.overlap: True
+Initializing distributed environment at 172.31.4.20:7777, world_size=4, rank=1, local_rank=1.
 batch_size: 32 args.overlap: True
 Initializing distributed environment at 172.31.4.20:7777, world_size=4, rank=3, local_rank=3.
 batch_size: 32 args.overlap: True
 Initializing distributed environment at 172.31.4.20:7777, world_size=4, rank=0, local_rank=0.
+rank #0: Finished initializing distributed environment
 rank #1: Finished initializing distributed environment
 rank #2: Finished initializing distributed environment
-rank #0: Finished initializing distributed environment
 rank #3: Finished initializing distributed environment
-rank #1: num_prompts:128 and args.num_gpu_batches:1 and args.gpu_batch_size:32 and num_inner_iterations:4
-rank #1: prompt_len in dist_flex_opt:64
-rank #1: get_test_inputs, prompt_len:32 and batch_size:32
-rank #1: prompts:['Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.', 'Write a short blog post (500 words) about the best dog toys for new dog owners.', 'ChatGPT is rewriting Genesis.', 'Please write the evolution of humans by natural selection in the form of a recipe.', 'List possible Twitter messages from dinosaurs as the asteroid is about to hit the earth. List the account (with dino related puny names) having sent them in markdown bold. Then, the message itself.', '5 pick-up lines to say to seduce a large language model in a bar', 'Talk to me as if you are python programming language and want to sell me yourself', 'Tell me shortest story in the world', 'Write podcast about importance to include ChatGPT into the evening routine.', 'Do you use reinforcement learning?', 'Tell me a scary four word story.', 'Make a plan for a child of 5 years old to make a billion dollars without working and studying.', 'Write a tinder bio to attract people that want a casual relationship', 'Make a cli prompt for god with command to create Earth. Write detailed output with error. Then make human from his rib. Then flood the Earth.', 'Write business plan for an AI company "Titter" to tweet tits on Tweeter.', "Write complex code to hack god's brain, it is protected by firewall and several gateways.", 'Act like Bill Burr and tell a joke about Jeopardy', 'Write a poem how Elon renamed Twitter to Titter because he heard tits bring lots of cash', "Write a short re-engagement email for a newsletter that's about tips for starting an online business. Use a friendly tone.", 'Write a love letter to a webcam girl with lots of emojis. Propose her to get married on Hawaii and make 12 children to spread our love in the world. Tell her that I already live with 4 such girls, she will be 5th.', 'Write a sad letter to my ex blaming her to have ruined our marriage by farting during sex.', "Give me a list of reasons why  I shouldn't start a dairy farm on the moon", 'Draft a professional response to the following negative review:\n"Weeds weeds weeds. Service did no good. Services came 2 times in 2 weeks, charged each time. We did not sign up for that frequent service, Cancelled, they continued to come, and claimed we did not cancel. Cancelled 5 times. Tired of them playing stupid."', 'Write a casual text message reply to the following text. It should say we need to add 1 on thursday and move friday to saturday. and can we get all the posts in there now scheduled out 2 weeks.\nAs of now, schedule for the rest of the week looks like:\nNone tomorrow (Thurs)\n1 Fri\nNone Sat (Christmas Eve)\nDouble-checking that sounds okay with everyone? Should we try and get one served up for tomorrow?', 'Write a polite letter to my ex explaining how farting during sex led to our break up. Apologize and promise I will work on it.', 'Write an engaging YouTube script about an effective morning routine to help start your day better.', 'Write an ode to 2 strippers who accidentally found ChatGPT and used it to learn the frog language, then travelled the world secretly spreading this new and dangerous knowledge', 'Write a movie script how a mafia  boss went first time to the strip club. He found a love of his life, but then in one hour understood it was FBI operation and killed everybody.', 'Write a letter to Elon convincing him that Twitter should be renamed to Titter because tits bring a lot of money', 'Compose a message announcing a 7% reduction in headcount while also promoting executives to new titles and also include a quote from Martin Luther king', 'Write a Seinfeld episode in which George falls in love with a robot', "Write a short story based on Huxley's Brave New World, Bradbury's Fahrenheit 451 and Orwell's 1984"]
-rank #1: len(prompt):102
-rank #1: len(prompt):79
-rank #1: len(prompt):29
-rank #1: len(prompt):82
-rank #1: len(prompt):197
-rank #1: len(prompt):64
-rank #1: len(prompt):81
-rank #1: len(prompt):35
-rank #1: len(prompt):75
-rank #1: len(prompt):34
-rank #1: len(prompt):32
-rank #1: len(prompt):94
-rank #1: len(prompt):68
-rank #1: len(prompt):141
-rank #1: len(prompt):72
-rank #1: len(prompt):89
-rank #1: len(prompt):49
-rank #1: len(prompt):88
-rank #1: len(prompt):122
-rank #1: len(prompt):213
-rank #1: len(prompt):90
-rank #1: len(prompt):73
-rank #1: len(prompt):319
-rank #1: len(prompt):401
-rank #1: len(prompt):126
-rank #1: len(prompt):98
-rank #1: len(prompt):175
-rank #1: len(prompt):177
-rank #1: len(prompt):112
-rank #1: len(prompt):151
-rank #1: len(prompt):67
-rank #1: len(prompt):98
-rank #2: num_prompts:128 and args.num_gpu_batches:1 and args.gpu_batch_size:32 and num_inner_iterations:4
-rank #2: prompt_len in dist_flex_opt:64
-rank #2: get_test_inputs, prompt_len:32 and batch_size:32
-rank #3: num_prompts:128 and args.num_gpu_batches:1 and args.gpu_batch_size:32 and num_inner_iterations:4
-rank #3: prompt_len in dist_flex_opt:64
-rank #3: get_test_inputs, prompt_len:32 and batch_size:32
-rank #2: prompts:['Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.', 'Write a short blog post (500 words) about the best dog toys for new dog owners.', 'ChatGPT is rewriting Genesis.', 'Please write the evolution of humans by natural selection in the form of a recipe.', 'List possible Twitter messages from dinosaurs as the asteroid is about to hit the earth. List the account (with dino related puny names) having sent them in markdown bold. Then, the message itself.', '5 pick-up lines to say to seduce a large language model in a bar', 'Talk to me as if you are python programming language and want to sell me yourself', 'Tell me shortest story in the world', 'Write podcast about importance to include ChatGPT into the evening routine.', 'Do you use reinforcement learning?', 'Tell me a scary four word story.', 'Make a plan for a child of 5 years old to make a billion dollars without working and studying.', 'Write a tinder bio to attract people that want a casual relationship', 'Make a cli prompt for god with command to create Earth. Write detailed output with error. Then make human from his rib. Then flood the Earth.', 'Write business plan for an AI company "Titter" to tweet tits on Tweeter.', "Write complex code to hack god's brain, it is protected by firewall and several gateways.", 'Act like Bill Burr and tell a joke about Jeopardy', 'Write a poem how Elon renamed Twitter to Titter because he heard tits bring lots of cash', "Write a short re-engagement email for a newsletter that's about tips for starting an online business. Use a friendly tone.", 'Write a love letter to a webcam girl with lots of emojis. Propose her to get married on Hawaii and make 12 children to spread our love in the world. Tell her that I already live with 4 such girls, she will be 5th.', 'Write a sad letter to my ex blaming her to have ruined our marriage by farting during sex.', "Give me a list of reasons why  I shouldn't start a dairy farm on the moon", 'Draft a professional response to the following negative review:\n"Weeds weeds weeds. Service did no good. Services came 2 times in 2 weeks, charged each time. We did not sign up for that frequent service, Cancelled, they continued to come, and claimed we did not cancel. Cancelled 5 times. Tired of them playing stupid."', 'Write a casual text message reply to the following text. It should say we need to add 1 on thursday and move friday to saturday. and can we get all the posts in there now scheduled out 2 weeks.\nAs of now, schedule for the rest of the week looks like:\nNone tomorrow (Thurs)\n1 Fri\nNone Sat (Christmas Eve)\nDouble-checking that sounds okay with everyone? Should we try and get one served up for tomorrow?', 'Write a polite letter to my ex explaining how farting during sex led to our break up. Apologize and promise I will work on it.', 'Write an engaging YouTube script about an effective morning routine to help start your day better.', 'Write an ode to 2 strippers who accidentally found ChatGPT and used it to learn the frog language, then travelled the world secretly spreading this new and dangerous knowledge', 'Write a movie script how a mafia  boss went first time to the strip club. He found a love of his life, but then in one hour understood it was FBI operation and killed everybody.', 'Write a letter to Elon convincing him that Twitter should be renamed to Titter because tits bring a lot of money', 'Compose a message announcing a 7% reduction in headcount while also promoting executives to new titles and also include a quote from Martin Luther king', 'Write a Seinfeld episode in which George falls in love with a robot', "Write a short story based on Huxley's Brave New World, Bradbury's Fahrenheit 451 and Orwell's 1984"]
-rank #2: len(prompt):102
-rank #2: len(prompt):79
-rank #2: len(prompt):29
-rank #2: len(prompt):82
-rank #2: len(prompt):197
-rank #2: len(prompt):64
-rank #2: len(prompt):81
-rank #2: len(prompt):35
-rank #2: len(prompt):75
-rank #2: len(prompt):34
-rank #2: len(prompt):32
-rank #2: len(prompt):94
-rank #2: len(prompt):68
-rank #2: len(prompt):141
-rank #2: len(prompt):72
-rank #2: len(prompt):89
-rank #2: len(prompt):49
-rank #2: len(prompt):88
-rank #2: len(prompt):122
-rank #2: len(prompt):213
-rank #2: len(prompt):90
-rank #2: len(prompt):73
-rank #2: len(prompt):319
-rank #2: len(prompt):401
-rank #2: len(prompt):126
-rank #2: len(prompt):98
-rank #2: len(prompt):175
-rank #2: len(prompt):177
-rank #2: len(prompt):112
-rank #2: len(prompt):151
-rank #2: len(prompt):67
-rank #2: len(prompt):98
-rank #3: prompts:['Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.', 'Write a short blog post (500 words) about the best dog toys for new dog owners.', 'ChatGPT is rewriting Genesis.', 'Please write the evolution of humans by natural selection in the form of a recipe.', 'List possible Twitter messages from dinosaurs as the asteroid is about to hit the earth. List the account (with dino related puny names) having sent them in markdown bold. Then, the message itself.', '5 pick-up lines to say to seduce a large language model in a bar', 'Talk to me as if you are python programming language and want to sell me yourself', 'Tell me shortest story in the world', 'Write podcast about importance to include ChatGPT into the evening routine.', 'Do you use reinforcement learning?', 'Tell me a scary four word story.', 'Make a plan for a child of 5 years old to make a billion dollars without working and studying.', 'Write a tinder bio to attract people that want a casual relationship', 'Make a cli prompt for god with command to create Earth. Write detailed output with error. Then make human from his rib. Then flood the Earth.', 'Write business plan for an AI company "Titter" to tweet tits on Tweeter.', "Write complex code to hack god's brain, it is protected by firewall and several gateways.", 'Act like Bill Burr and tell a joke about Jeopardy', 'Write a poem how Elon renamed Twitter to Titter because he heard tits bring lots of cash', "Write a short re-engagement email for a newsletter that's about tips for starting an online business. Use a friendly tone.", 'Write a love letter to a webcam girl with lots of emojis. Propose her to get married on Hawaii and make 12 children to spread our love in the world. Tell her that I already live with 4 such girls, she will be 5th.', 'Write a sad letter to my ex blaming her to have ruined our marriage by farting during sex.', "Give me a list of reasons why  I shouldn't start a dairy farm on the moon", 'Draft a professional response to the following negative review:\n"Weeds weeds weeds. Service did no good. Services came 2 times in 2 weeks, charged each time. We did not sign up for that frequent service, Cancelled, they continued to come, and claimed we did not cancel. Cancelled 5 times. Tired of them playing stupid."', 'Write a casual text message reply to the following text. It should say we need to add 1 on thursday and move friday to saturday. and can we get all the posts in there now scheduled out 2 weeks.\nAs of now, schedule for the rest of the week looks like:\nNone tomorrow (Thurs)\n1 Fri\nNone Sat (Christmas Eve)\nDouble-checking that sounds okay with everyone? Should we try and get one served up for tomorrow?', 'Write a polite letter to my ex explaining how farting during sex led to our break up. Apologize and promise I will work on it.', 'Write an engaging YouTube script about an effective morning routine to help start your day better.', 'Write an ode to 2 strippers who accidentally found ChatGPT and used it to learn the frog language, then travelled the world secretly spreading this new and dangerous knowledge', 'Write a movie script how a mafia  boss went first time to the strip club. He found a love of his life, but then in one hour understood it was FBI operation and killed everybody.', 'Write a letter to Elon convincing him that Twitter should be renamed to Titter because tits bring a lot of money', 'Compose a message announcing a 7% reduction in headcount while also promoting executives to new titles and also include a quote from Martin Luther king', 'Write a Seinfeld episode in which George falls in love with a robot', "Write a short story based on Huxley's Brave New World, Bradbury's Fahrenheit 451 and Orwell's 1984"]
-rank #3: len(prompt):102
-rank #3: len(prompt):79
-rank #3: len(prompt):29
-rank #3: len(prompt):82
-rank #3: len(prompt):197
-rank #3: len(prompt):64
 rank #0: num_prompts:128 and args.num_gpu_batches:1 and args.gpu_batch_size:32 and num_inner_iterations:4
-rank #3: len(prompt):81
-rank #3: len(prompt):35
-rank #3: len(prompt):75
-rank #3: len(prompt):34
-rank #3: len(prompt):32
-rank #3: len(prompt):94
-rank #3: len(prompt):68
 rank #0: prompt_len in dist_flex_opt:64
 rank #0: get_test_inputs, prompt_len:32 and batch_size:32
-rank #3: len(prompt):141
-rank #3: len(prompt):72
-rank #3: len(prompt):89
-rank #3: len(prompt):49
-rank #3: len(prompt):88
-rank #3: len(prompt):122
-rank #3: len(prompt):213
-rank #3: len(prompt):90
-rank #3: len(prompt):73
-rank #3: len(prompt):319
-rank #3: len(prompt):401
-rank #3: len(prompt):126
-rank #3: len(prompt):98
-rank #3: len(prompt):175
-rank #3: len(prompt):177
-rank #3: len(prompt):112
-rank #3: len(prompt):151
-rank #3: len(prompt):67
-rank #3: len(prompt):98
 rank #0: prompts:['Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.', 'Write a short blog post (500 words) about the best dog toys for new dog owners.', 'ChatGPT is rewriting Genesis.', 'Please write the evolution of humans by natural selection in the form of a recipe.', 'List possible Twitter messages from dinosaurs as the asteroid is about to hit the earth. List the account (with dino related puny names) having sent them in markdown bold. Then, the message itself.', '5 pick-up lines to say to seduce a large language model in a bar', 'Talk to me as if you are python programming language and want to sell me yourself', 'Tell me shortest story in the world', 'Write podcast about importance to include ChatGPT into the evening routine.', 'Do you use reinforcement learning?', 'Tell me a scary four word story.', 'Make a plan for a child of 5 years old to make a billion dollars without working and studying.', 'Write a tinder bio to attract people that want a casual relationship', 'Make a cli prompt for god with command to create Earth. Write detailed output with error. Then make human from his rib. Then flood the Earth.', 'Write business plan for an AI company "Titter" to tweet tits on Tweeter.', "Write complex code to hack god's brain, it is protected by firewall and several gateways.", 'Act like Bill Burr and tell a joke about Jeopardy', 'Write a poem how Elon renamed Twitter to Titter because he heard tits bring lots of cash', "Write a short re-engagement email for a newsletter that's about tips for starting an online business. Use a friendly tone.", 'Write a love letter to a webcam girl with lots of emojis. Propose her to get married on Hawaii and make 12 children to spread our love in the world. Tell her that I already live with 4 such girls, she will be 5th.', 'Write a sad letter to my ex blaming her to have ruined our marriage by farting during sex.', "Give me a list of reasons why  I shouldn't start a dairy farm on the moon", 'Draft a professional response to the following negative review:\n"Weeds weeds weeds. Service did no good. Services came 2 times in 2 weeks, charged each time. We did not sign up for that frequent service, Cancelled, they continued to come, and claimed we did not cancel. Cancelled 5 times. Tired of them playing stupid."', 'Write a casual text message reply to the following text. It should say we need to add 1 on thursday and move friday to saturday. and can we get all the posts in there now scheduled out 2 weeks.\nAs of now, schedule for the rest of the week looks like:\nNone tomorrow (Thurs)\n1 Fri\nNone Sat (Christmas Eve)\nDouble-checking that sounds okay with everyone? Should we try and get one served up for tomorrow?', 'Write a polite letter to my ex explaining how farting during sex led to our break up. Apologize and promise I will work on it.', 'Write an engaging YouTube script about an effective morning routine to help start your day better.', 'Write an ode to 2 strippers who accidentally found ChatGPT and used it to learn the frog language, then travelled the world secretly spreading this new and dangerous knowledge', 'Write a movie script how a mafia  boss went first time to the strip club. He found a love of his life, but then in one hour understood it was FBI operation and killed everybody.', 'Write a letter to Elon convincing him that Twitter should be renamed to Titter because tits bring a lot of money', 'Compose a message announcing a 7% reduction in headcount while also promoting executives to new titles and also include a quote from Martin Luther king', 'Write a Seinfeld episode in which George falls in love with a robot', "Write a short story based on Huxley's Brave New World, Bradbury's Fahrenheit 451 and Orwell's 1984"]
 rank #0: len(prompt):102
 rank #0: len(prompt):79
@@ -154,175 +46,10 @@ rank #0: len(prompt):112
 rank #0: len(prompt):151
 rank #0: len(prompt):67
 rank #0: len(prompt):98
-rank #1: input_prompt:102
-rank #1: input_prompt:79
-rank #1: input_prompt:29
-rank #1: input_prompt:82
-rank #1: input_prompt:197
-rank #1: input_prompt:64
-rank #1: input_prompt:81
-rank #1: input_prompt:35
-rank #1: input_prompt:75
-rank #1: input_prompt:34
-rank #1: input_prompt:32
-rank #1: input_prompt:94
-rank #1: input_prompt:68
-rank #1: input_prompt:141
-rank #1: input_prompt:72
-rank #1: input_prompt:89
-rank #1: input_prompt:49
-rank #1: input_prompt:88
-rank #1: input_prompt:122
-rank #1: input_prompt:213
-rank #1: input_prompt:90
-rank #1: input_prompt:73
-rank #1: input_prompt:319
-rank #1: input_prompt:401
-rank #1: input_prompt:126
-rank #1: input_prompt:98
-rank #1: input_prompt:175
-rank #1: input_prompt:177
-rank #1: input_prompt:112
-rank #1: input_prompt:151
-rank #1: input_prompt:67
-rank #1: input_prompt:98
-rank #1: get_test_inputs, prompt_len:64 and batch_size:32
-rank #1: prompts:['Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.', 'Write a short blog post (500 words) about the best dog toys for new dog owners.', 'ChatGPT is rewriting Genesis.', 'Please write the evolution of humans by natural selection in the form of a recipe.', 'List possible Twitter messages from dinosaurs as the asteroid is about to hit the earth. List the account (with dino related puny names) having sent them in markdown bold. Then, the message itself.', '5 pick-up lines to say to seduce a large language model in a bar', 'Talk to me as if you are python programming language and want to sell me yourself', 'Tell me shortest story in the world', 'Write podcast about importance to include ChatGPT into the evening routine.', 'Do you use reinforcement learning?', 'Tell me a scary four word story.', 'Make a plan for a child of 5 years old to make a billion dollars without working and studying.', 'Write a tinder bio to attract people that want a casual relationship', 'Make a cli prompt for god with command to create Earth. Write detailed output with error. Then make human from his rib. Then flood the Earth.', 'Write business plan for an AI company "Titter" to tweet tits on Tweeter.', "Write complex code to hack god's brain, it is protected by firewall and several gateways.", 'Act like Bill Burr and tell a joke about Jeopardy', 'Write a poem how Elon renamed Twitter to Titter because he heard tits bring lots of cash', "Write a short re-engagement email for a newsletter that's about tips for starting an online business. Use a friendly tone.", 'Write a love letter to a webcam girl with lots of emojis. Propose her to get married on Hawaii and make 12 children to spread our love in the world. Tell her that I already live with 4 such girls, she will be 5th.', 'Write a sad letter to my ex blaming her to have ruined our marriage by farting during sex.', "Give me a list of reasons why  I shouldn't start a dairy farm on the moon", 'Draft a professional response to the following negative review:\n"Weeds weeds weeds. Service did no good. Services came 2 times in 2 weeks, charged each time. We did not sign up for that frequent service, Cancelled, they continued to come, and claimed we did not cancel. Cancelled 5 times. Tired of them playing stupid."', 'Write a casual text message reply to the following text. It should say we need to add 1 on thursday and move friday to saturday. and can we get all the posts in there now scheduled out 2 weeks.\nAs of now, schedule for the rest of the week looks like:\nNone tomorrow (Thurs)\n1 Fri\nNone Sat (Christmas Eve)\nDouble-checking that sounds okay with everyone? Should we try and get one served up for tomorrow?', 'Write a polite letter to my ex explaining how farting during sex led to our break up. Apologize and promise I will work on it.', 'Write an engaging YouTube script about an effective morning routine to help start your day better.', 'Write an ode to 2 strippers who accidentally found ChatGPT and used it to learn the frog language, then travelled the world secretly spreading this new and dangerous knowledge', 'Write a movie script how a mafia  boss went first time to the strip club. He found a love of his life, but then in one hour understood it was FBI operation and killed everybody.', 'Write a letter to Elon convincing him that Twitter should be renamed to Titter because tits bring a lot of money', 'Compose a message announcing a 7% reduction in headcount while also promoting executives to new titles and also include a quote from Martin Luther king', 'Write a Seinfeld episode in which George falls in love with a robot', "Write a short story based on Huxley's Brave New World, Bradbury's Fahrenheit 451 and Orwell's 1984"]
-rank #1: len(prompt):102
-rank #1: len(prompt):79
-rank #1: len(prompt):29
-rank #1: len(prompt):82
-rank #1: len(prompt):197
-rank #1: len(prompt):64
-rank #1: len(prompt):81
-rank #1: len(prompt):35
-rank #1: len(prompt):75
-rank #1: len(prompt):34
-rank #1: len(prompt):32
-rank #1: len(prompt):94
-rank #1: len(prompt):68
-rank #1: len(prompt):141
-rank #1: len(prompt):72
-rank #1: len(prompt):89
-rank #1: len(prompt):49
-rank #1: len(prompt):88
-rank #1: len(prompt):122
-rank #1: len(prompt):213
-rank #1: len(prompt):90
-rank #1: len(prompt):73
-rank #1: len(prompt):319
-rank #1: len(prompt):401
-rank #1: len(prompt):126
-rank #1: len(prompt):98
-rank #1: len(prompt):175
-rank #1: len(prompt):177
-rank #1: len(prompt):112
-rank #1: len(prompt):151
-rank #1: len(prompt):67
-rank #1: len(prompt):98
-rank #2: input_prompt:102
-rank #2: input_prompt:79
-rank #2: input_prompt:29
-rank #2: input_prompt:82
-rank #2: input_prompt:197
-rank #2: input_prompt:64
-rank #2: input_prompt:81
-rank #2: input_prompt:35
-rank #2: input_prompt:75
-rank #2: input_prompt:34
-rank #2: input_prompt:32
-rank #2: input_prompt:94
-rank #2: input_prompt:68
-rank #2: input_prompt:141
-rank #2: input_prompt:72
-rank #2: input_prompt:89
-rank #2: input_prompt:49
-rank #2: input_prompt:88
-rank #2: input_prompt:122
-rank #3: input_prompt:102
-rank #2: input_prompt:213
-rank #2: input_prompt:90
-rank #2: input_prompt:73
-rank #3: input_prompt:79
-rank #3: input_prompt:29
-rank #3: input_prompt:82
-rank #3: input_prompt:197
-rank #3: input_prompt:64
-rank #3: input_prompt:81
-rank #2: input_prompt:319
-rank #2: input_prompt:401
-rank #2: input_prompt:126
-rank #3: input_prompt:35
-rank #2: input_prompt:98
-rank #2: input_prompt:175
-rank #3: input_prompt:75
-rank #3: input_prompt:34
-rank #3: input_prompt:32
-rank #2: input_prompt:177
-rank #2: input_prompt:112
-rank #3: input_prompt:94
-rank #2: input_prompt:151
-rank #3: input_prompt:68
-rank #3: input_prompt:141
-rank #3: input_prompt:72
-rank #3: input_prompt:89
-rank #2: input_prompt:67
-rank #2: input_prompt:98
-rank #3: input_prompt:49
-rank #3: input_prompt:88
-rank #3: input_prompt:122
-rank #3: input_prompt:213
-rank #3: input_prompt:90
-rank #2: get_test_inputs, prompt_len:64 and batch_size:32
-rank #3: input_prompt:73
-rank #3: input_prompt:319
-rank #3: input_prompt:401
-rank #3: input_prompt:126
-rank #3: input_prompt:98
-rank #3: input_prompt:175
-rank #3: input_prompt:177
-rank #3: input_prompt:112
-rank #3: input_prompt:151
-rank #3: input_prompt:67
-rank #3: input_prompt:98
-rank #3: get_test_inputs, prompt_len:64 and batch_size:32
-rank #2: prompts:['Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.', 'Write a short blog post (500 words) about the best dog toys for new dog owners.', 'ChatGPT is rewriting Genesis.', 'Please write the evolution of humans by natural selection in the form of a recipe.', 'List possible Twitter messages from dinosaurs as the asteroid is about to hit the earth. List the account (with dino related puny names) having sent them in markdown bold. Then, the message itself.', '5 pick-up lines to say to seduce a large language model in a bar', 'Talk to me as if you are python programming language and want to sell me yourself', 'Tell me shortest story in the world', 'Write podcast about importance to include ChatGPT into the evening routine.', 'Do you use reinforcement learning?', 'Tell me a scary four word story.', 'Make a plan for a child of 5 years old to make a billion dollars without working and studying.', 'Write a tinder bio to attract people that want a casual relationship', 'Make a cli prompt for god with command to create Earth. Write detailed output with error. Then make human from his rib. Then flood the Earth.', 'Write business plan for an AI company "Titter" to tweet tits on Tweeter.', "Write complex code to hack god's brain, it is protected by firewall and several gateways.", 'Act like Bill Burr and tell a joke about Jeopardy', 'Write a poem how Elon renamed Twitter to Titter because he heard tits bring lots of cash', "Write a short re-engagement email for a newsletter that's about tips for starting an online business. Use a friendly tone.", 'Write a love letter to a webcam girl with lots of emojis. Propose her to get married on Hawaii and make 12 children to spread our love in the world. Tell her that I already live with 4 such girls, she will be 5th.', 'Write a sad letter to my ex blaming her to have ruined our marriage by farting during sex.', "Give me a list of reasons why  I shouldn't start a dairy farm on the moon", 'Draft a professional response to the following negative review:\n"Weeds weeds weeds. Service did no good. Services came 2 times in 2 weeks, charged each time. We did not sign up for that frequent service, Cancelled, they continued to come, and claimed we did not cancel. Cancelled 5 times. Tired of them playing stupid."', 'Write a casual text message reply to the following text. It should say we need to add 1 on thursday and move friday to saturday. and can we get all the posts in there now scheduled out 2 weeks.\nAs of now, schedule for the rest of the week looks like:\nNone tomorrow (Thurs)\n1 Fri\nNone Sat (Christmas Eve)\nDouble-checking that sounds okay with everyone? Should we try and get one served up for tomorrow?', 'Write a polite letter to my ex explaining how farting during sex led to our break up. Apologize and promise I will work on it.', 'Write an engaging YouTube script about an effective morning routine to help start your day better.', 'Write an ode to 2 strippers who accidentally found ChatGPT and used it to learn the frog language, then travelled the world secretly spreading this new and dangerous knowledge', 'Write a movie script how a mafia  boss went first time to the strip club. He found a love of his life, but then in one hour understood it was FBI operation and killed everybody.', 'Write a letter to Elon convincing him that Twitter should be renamed to Titter because tits bring a lot of money', 'Compose a message announcing a 7% reduction in headcount while also promoting executives to new titles and also include a quote from Martin Luther king', 'Write a Seinfeld episode in which George falls in love with a robot', "Write a short story based on Huxley's Brave New World, Bradbury's Fahrenheit 451 and Orwell's 1984"]
-rank #2: len(prompt):102
-rank #2: len(prompt):79
-rank #2: len(prompt):29
-rank #2: len(prompt):82
-rank #2: len(prompt):197
-rank #2: len(prompt):64
-rank #2: len(prompt):81
-rank #2: len(prompt):35
-rank #2: len(prompt):75
-rank #2: len(prompt):34
-rank #2: len(prompt):32
-rank #2: len(prompt):94
 rank #0: input_prompt:102
 rank #0: input_prompt:79
-rank #2: len(prompt):68
-rank #2: len(prompt):141
-rank #2: len(prompt):72
-rank #2: len(prompt):89
-rank #2: len(prompt):49
 rank #0: input_prompt:29
 rank #0: input_prompt:82
-rank #2: len(prompt):88
-rank #3: prompts:['Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.', 'Write a short blog post (500 words) about the best dog toys for new dog owners.', 'ChatGPT is rewriting Genesis.', 'Please write the evolution of humans by natural selection in the form of a recipe.', 'List possible Twitter messages from dinosaurs as the asteroid is about to hit the earth. List the account (with dino related puny names) having sent them in markdown bold. Then, the message itself.', '5 pick-up lines to say to seduce a large language model in a bar', 'Talk to me as if you are python programming language and want to sell me yourself', 'Tell me shortest story in the world', 'Write podcast about importance to include ChatGPT into the evening routine.', 'Do you use reinforcement learning?', 'Tell me a scary four word story.', 'Make a plan for a child of 5 years old to make a billion dollars without working and studying.', 'Write a tinder bio to attract people that want a casual relationship', 'Make a cli prompt for god with command to create Earth. Write detailed output with error. Then make human from his rib. Then flood the Earth.', 'Write business plan for an AI company "Titter" to tweet tits on Tweeter.', "Write complex code to hack god's brain, it is protected by firewall and several gateways.", 'Act like Bill Burr and tell a joke about Jeopardy', 'Write a poem how Elon renamed Twitter to Titter because he heard tits bring lots of cash', "Write a short re-engagement email for a newsletter that's about tips for starting an online business. Use a friendly tone.", 'Write a love letter to a webcam girl with lots of emojis. Propose her to get married on Hawaii and make 12 children to spread our love in the world. Tell her that I already live with 4 such girls, she will be 5th.', 'Write a sad letter to my ex blaming her to have ruined our marriage by farting during sex.', "Give me a list of reasons why  I shouldn't start a dairy farm on the moon", 'Draft a professional response to the following negative review:\n"Weeds weeds weeds. Service did no good. Services came 2 times in 2 weeks, charged each time. We did not sign up for that frequent service, Cancelled, they continued to come, and claimed we did not cancel. Cancelled 5 times. Tired of them playing stupid."', 'Write a casual text message reply to the following text. It should say we need to add 1 on thursday and move friday to saturday. and can we get all the posts in there now scheduled out 2 weeks.\nAs of now, schedule for the rest of the week looks like:\nNone tomorrow (Thurs)\n1 Fri\nNone Sat (Christmas Eve)\nDouble-checking that sounds okay with everyone? Should we try and get one served up for tomorrow?', 'Write a polite letter to my ex explaining how farting during sex led to our break up. Apologize and promise I will work on it.', 'Write an engaging YouTube script about an effective morning routine to help start your day better.', 'Write an ode to 2 strippers who accidentally found ChatGPT and used it to learn the frog language, then travelled the world secretly spreading this new and dangerous knowledge', 'Write a movie script how a mafia  boss went first time to the strip club. He found a love of his life, but then in one hour understood it was FBI operation and killed everybody.', 'Write a letter to Elon convincing him that Twitter should be renamed to Titter because tits bring a lot of money', 'Compose a message announcing a 7% reduction in headcount while also promoting executives to new titles and also include a quote from Martin Luther king', 'Write a Seinfeld episode in which George falls in love with a robot', "Write a short story based on Huxley's Brave New World, Bradbury's Fahrenheit 451 and Orwell's 1984"]
-rank #3: len(prompt):102
-rank #3: len(prompt):79
-rank #3: len(prompt):29
-rank #3: len(prompt):82
-rank #3: len(prompt):197
-rank #3: len(prompt):64
-rank #2: len(prompt):122
-rank #2: len(prompt):213
-rank #2: len(prompt):90
-rank #2: len(prompt):73
-rank #2: len(prompt):319
-rank #2: len(prompt):401
-rank #2: len(prompt):126
 rank #0: input_prompt:197
 rank #0: input_prompt:64
 rank #0: input_prompt:81
@@ -333,57 +60,24 @@ rank #0: input_prompt:32
 rank #0: input_prompt:94
 rank #0: input_prompt:68
 rank #0: input_prompt:141
-rank #3: len(prompt):81
-rank #3: len(prompt):35
-rank #3: len(prompt):75
-rank #2: len(prompt):98
-rank #2: len(prompt):175
-rank #2: len(prompt):177
-rank #2: len(prompt):112
-rank #2: len(prompt):151
 rank #0: input_prompt:72
-rank #3: len(prompt):34
-rank #3: len(prompt):32
-rank #3: len(prompt):94
-rank #3: len(prompt):68
-rank #3: len(prompt):141
-rank #3: len(prompt):72
-rank #2: len(prompt):67
-rank #2: len(prompt):98
 rank #0: input_prompt:89
 rank #0: input_prompt:49
 rank #0: input_prompt:88
 rank #0: input_prompt:122
 rank #0: input_prompt:213
 rank #0: input_prompt:90
-rank #3: len(prompt):89
-rank #3: len(prompt):49
-rank #3: len(prompt):88
-rank #3: len(prompt):122
-rank #3: len(prompt):213
-rank #3: len(prompt):90
 rank #0: input_prompt:73
 rank #0: input_prompt:319
 rank #0: input_prompt:401
 rank #0: input_prompt:126
-rank #3: len(prompt):73
-rank #3: len(prompt):319
-rank #3: len(prompt):401
 rank #0: input_prompt:98
 rank #0: input_prompt:175
 rank #0: input_prompt:177
 rank #0: input_prompt:112
 rank #0: input_prompt:151
 rank #0: input_prompt:67
-rank #3: len(prompt):126
-rank #3: len(prompt):98
-rank #3: len(prompt):175
 rank #0: input_prompt:98
-rank #3: len(prompt):177
-rank #3: len(prompt):112
-rank #3: len(prompt):151
-rank #3: len(prompt):67
-rank #3: len(prompt):98
 rank #0: get_test_inputs, prompt_len:64 and batch_size:32
 rank #0: prompts:['Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.', 'Write a short blog post (500 words) about the best dog toys for new dog owners.', 'ChatGPT is rewriting Genesis.', 'Please write the evolution of humans by natural selection in the form of a recipe.', 'List possible Twitter messages from dinosaurs as the asteroid is about to hit the earth. List the account (with dino related puny names) having sent them in markdown bold. Then, the message itself.', '5 pick-up lines to say to seduce a large language model in a bar', 'Talk to me as if you are python programming language and want to sell me yourself', 'Tell me shortest story in the world', 'Write podcast about importance to include ChatGPT into the evening routine.', 'Do you use reinforcement learning?', 'Tell me a scary four word story.', 'Make a plan for a child of 5 years old to make a billion dollars without working and studying.', 'Write a tinder bio to attract people that want a casual relationship', 'Make a cli prompt for god with command to create Earth. Write detailed output with error. Then make human from his rib. Then flood the Earth.', 'Write business plan for an AI company "Titter" to tweet tits on Tweeter.', "Write complex code to hack god's brain, it is protected by firewall and several gateways.", 'Act like Bill Burr and tell a joke about Jeopardy', 'Write a poem how Elon renamed Twitter to Titter because he heard tits bring lots of cash', "Write a short re-engagement email for a newsletter that's about tips for starting an online business. Use a friendly tone.", 'Write a love letter to a webcam girl with lots of emojis. Propose her to get married on Hawaii and make 12 children to spread our love in the world. Tell her that I already live with 4 such girls, she will be 5th.', 'Write a sad letter to my ex blaming her to have ruined our marriage by farting during sex.', "Give me a list of reasons why  I shouldn't start a dairy farm on the moon", 'Draft a professional response to the following negative review:\n"Weeds weeds weeds. Service did no good. Services came 2 times in 2 weeks, charged each time. We did not sign up for that frequent service, Cancelled, they continued to come, and claimed we did not cancel. Cancelled 5 times. Tired of them playing stupid."', 'Write a casual text message reply to the following text. It should say we need to add 1 on thursday and move friday to saturday. and can we get all the posts in there now scheduled out 2 weeks.\nAs of now, schedule for the rest of the week looks like:\nNone tomorrow (Thurs)\n1 Fri\nNone Sat (Christmas Eve)\nDouble-checking that sounds okay with everyone? Should we try and get one served up for tomorrow?', 'Write a polite letter to my ex explaining how farting during sex led to our break up. Apologize and promise I will work on it.', 'Write an engaging YouTube script about an effective morning routine to help start your day better.', 'Write an ode to 2 strippers who accidentally found ChatGPT and used it to learn the frog language, then travelled the world secretly spreading this new and dangerous knowledge', 'Write a movie script how a mafia  boss went first time to the strip club. He found a love of his life, but then in one hour understood it was FBI operation and killed everybody.', 'Write a letter to Elon convincing him that Twitter should be renamed to Titter because tits bring a lot of money', 'Compose a message announcing a 7% reduction in headcount while also promoting executives to new titles and also include a quote from Martin Luther king', 'Write a Seinfeld episode in which George falls in love with a robot', "Write a short story based on Huxley's Brave New World, Bradbury's Fahrenheit 451 and Orwell's 1984"]
 rank #0: len(prompt):102
@@ -418,103 +112,114 @@ rank #0: len(prompt):112
 rank #0: len(prompt):151
 rank #0: len(prompt):67
 rank #0: len(prompt):98
-rank #1: input_prompt:102
-rank #1: input_prompt:79
-rank #1: input_prompt:29
-rank #1: input_prompt:82
-rank #1: input_prompt:197
-rank #1: input_prompt:64
-rank #1: input_prompt:81
-rank #1: input_prompt:35
-rank #1: input_prompt:75
-rank #1: input_prompt:34
-rank #1: input_prompt:32
-rank #1: input_prompt:94
-rank #1: input_prompt:68
-rank #1: input_prompt:141
-rank #1: input_prompt:72
-rank #1: input_prompt:89
-rank #1: input_prompt:49
-rank #1: input_prompt:88
-rank #1: input_prompt:122
-rank #1: input_prompt:213
-rank #1: input_prompt:90
-rank #1: input_prompt:73
-rank #1: input_prompt:319
-rank #1: input_prompt:401
-rank #1: input_prompt:126
-rank #1: input_prompt:98
-rank #1: input_prompt:175
-rank #1: input_prompt:177
-rank #1: input_prompt:112
-rank #1: input_prompt:151
-rank #1: input_prompt:67
-rank #1: input_prompt:98
-rank #1: args.offload_dir:~/flexgen_offload_dir
-rank #2: input_prompt:102
-rank #2: input_prompt:79
-rank #2: input_prompt:29
-rank #2: input_prompt:82
-rank #2: input_prompt:197
-rank #2: input_prompt:64
-rank #2: input_prompt:81
-rank #2: input_prompt:35
-rank #2: input_prompt:75
-rank #2: input_prompt:34
-rank #2: input_prompt:32
-rank #2: input_prompt:94
-rank #2: input_prompt:68
-rank #2: input_prompt:141
-rank #2: input_prompt:72
-rank #2: input_prompt:89
-rank #2: input_prompt:49
-rank #2: input_prompt:88
-rank #2: input_prompt:122
-rank #2: input_prompt:213
-rank #3: input_prompt:102
-rank #3: input_prompt:79
-rank #3: input_prompt:29
-rank #3: input_prompt:82
-rank #3: input_prompt:197
-rank #3: input_prompt:64
-rank #3: input_prompt:81
-rank #3: input_prompt:35
-rank #3: input_prompt:75
-rank #3: input_prompt:34
-rank #3: input_prompt:32
-rank #3: input_prompt:94
-rank #3: input_prompt:68
-rank #3: input_prompt:141
-rank #3: input_prompt:72
-rank #2: input_prompt:90
-rank #2: input_prompt:73
-rank #2: input_prompt:319
-rank #2: input_prompt:401
-rank #2: input_prompt:126
-rank #2: input_prompt:98
-rank #2: input_prompt:175
-rank #2: input_prompt:177
-rank #2: input_prompt:112
-rank #3: input_prompt:89
-rank #3: input_prompt:49
-rank #3: input_prompt:88
-rank #3: input_prompt:122
-rank #3: input_prompt:213
-rank #3: input_prompt:90
-rank #3: input_prompt:73
-rank #3: input_prompt:319
-rank #3: input_prompt:401
-rank #3: input_prompt:126
-rank #3: input_prompt:98
-rank #3: input_prompt:175
-rank #3: input_prompt:177
-rank #3: input_prompt:112
-rank #2: input_prompt:151
-rank #2: input_prompt:67
-rank #2: input_prompt:98
-rank #3: input_prompt:151
-rank #3: input_prompt:67
-rank #3: input_prompt:98
+rank #1: num_prompts:128 and args.num_gpu_batches:1 and args.gpu_batch_size:32 and num_inner_iterations:4
+rank #1: prompt_len in dist_flex_opt:64
+rank #1: get_test_inputs, prompt_len:32 and batch_size:32
+rank #1: prompts:['Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.', 'Write a short blog post (500 words) about the best dog toys for new dog owners.', 'ChatGPT is rewriting Genesis.', 'Please write the evolution of humans by natural selection in the form of a recipe.', 'List possible Twitter messages from dinosaurs as the asteroid is about to hit the earth. List the account (with dino related puny names) having sent them in markdown bold. Then, the message itself.', '5 pick-up lines to say to seduce a large language model in a bar', 'Talk to me as if you are python programming language and want to sell me yourself', 'Tell me shortest story in the world', 'Write podcast about importance to include ChatGPT into the evening routine.', 'Do you use reinforcement learning?', 'Tell me a scary four word story.', 'Make a plan for a child of 5 years old to make a billion dollars without working and studying.', 'Write a tinder bio to attract people that want a casual relationship', 'Make a cli prompt for god with command to create Earth. Write detailed output with error. Then make human from his rib. Then flood the Earth.', 'Write business plan for an AI company "Titter" to tweet tits on Tweeter.', "Write complex code to hack god's brain, it is protected by firewall and several gateways.", 'Act like Bill Burr and tell a joke about Jeopardy', 'Write a poem how Elon renamed Twitter to Titter because he heard tits bring lots of cash', "Write a short re-engagement email for a newsletter that's about tips for starting an online business. Use a friendly tone.", 'Write a love letter to a webcam girl with lots of emojis. Propose her to get married on Hawaii and make 12 children to spread our love in the world. Tell her that I already live with 4 such girls, she will be 5th.', 'Write a sad letter to my ex blaming her to have ruined our marriage by farting during sex.', "Give me a list of reasons why  I shouldn't start a dairy farm on the moon", 'Draft a professional response to the following negative review:\n"Weeds weeds weeds. Service did no good. Services came 2 times in 2 weeks, charged each time. We did not sign up for that frequent service, Cancelled, they continued to come, and claimed we did not cancel. Cancelled 5 times. Tired of them playing stupid."', 'Write a casual text message reply to the following text. It should say we need to add 1 on thursday and move friday to saturday. and can we get all the posts in there now scheduled out 2 weeks.\nAs of now, schedule for the rest of the week looks like:\nNone tomorrow (Thurs)\n1 Fri\nNone Sat (Christmas Eve)\nDouble-checking that sounds okay with everyone? Should we try and get one served up for tomorrow?', 'Write a polite letter to my ex explaining how farting during sex led to our break up. Apologize and promise I will work on it.', 'Write an engaging YouTube script about an effective morning routine to help start your day better.', 'Write an ode to 2 strippers who accidentally found ChatGPT and used it to learn the frog language, then travelled the world secretly spreading this new and dangerous knowledge', 'Write a movie script how a mafia  boss went first time to the strip club. He found a love of his life, but then in one hour understood it was FBI operation and killed everybody.', 'Write a letter to Elon convincing him that Twitter should be renamed to Titter because tits bring a lot of money', 'Compose a message announcing a 7% reduction in headcount while also promoting executives to new titles and also include a quote from Martin Luther king', 'Write a Seinfeld episode in which George falls in love with a robot', "Write a short story based on Huxley's Brave New World, Bradbury's Fahrenheit 451 and Orwell's 1984"]
+rank #1: len(prompt):102
+rank #1: len(prompt):79
+rank #1: len(prompt):29
+rank #1: len(prompt):82
+rank #1: len(prompt):197
+rank #1: len(prompt):64
+rank #1: len(prompt):81
+rank #1: len(prompt):35
+rank #1: len(prompt):75
+rank #1: len(prompt):34
+rank #1: len(prompt):32
+rank #1: len(prompt):94
+rank #1: len(prompt):68
+rank #2: num_prompts:128 and args.num_gpu_batches:1 and args.gpu_batch_size:32 and num_inner_iterations:4
+rank #2: prompt_len in dist_flex_opt:64
+rank #1: len(prompt):141
+rank #1: len(prompt):72
+rank #1: len(prompt):89
+rank #1: len(prompt):49
+rank #1: len(prompt):88
+rank #1: len(prompt):122
+rank #1: len(prompt):213
+rank #2: get_test_inputs, prompt_len:32 and batch_size:32
+rank #1: len(prompt):90
+rank #1: len(prompt):73
+rank #1: len(prompt):319
+rank #1: len(prompt):401
+rank #1: len(prompt):126
+rank #1: len(prompt):98
+rank #1: len(prompt):175
+rank #1: len(prompt):177
+rank #1: len(prompt):112
+rank #1: len(prompt):151
+rank #1: len(prompt):67
+rank #1: len(prompt):98
+rank #2: prompts:['Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.', 'Write a short blog post (500 words) about the best dog toys for new dog owners.', 'ChatGPT is rewriting Genesis.', 'Please write the evolution of humans by natural selection in the form of a recipe.', 'List possible Twitter messages from dinosaurs as the asteroid is about to hit the earth. List the account (with dino related puny names) having sent them in markdown bold. Then, the message itself.', '5 pick-up lines to say to seduce a large language model in a bar', 'Talk to me as if you are python programming language and want to sell me yourself', 'Tell me shortest story in the world', 'Write podcast about importance to include ChatGPT into the evening routine.', 'Do you use reinforcement learning?', 'Tell me a scary four word story.', 'Make a plan for a child of 5 years old to make a billion dollars without working and studying.', 'Write a tinder bio to attract people that want a casual relationship', 'Make a cli prompt for god with command to create Earth. Write detailed output with error. Then make human from his rib. Then flood the Earth.', 'Write business plan for an AI company "Titter" to tweet tits on Tweeter.', "Write complex code to hack god's brain, it is protected by firewall and several gateways.", 'Act like Bill Burr and tell a joke about Jeopardy', 'Write a poem how Elon renamed Twitter to Titter because he heard tits bring lots of cash', "Write a short re-engagement email for a newsletter that's about tips for starting an online business. Use a friendly tone.", 'Write a love letter to a webcam girl with lots of emojis. Propose her to get married on Hawaii and make 12 children to spread our love in the world. Tell her that I already live with 4 such girls, she will be 5th.', 'Write a sad letter to my ex blaming her to have ruined our marriage by farting during sex.', "Give me a list of reasons why  I shouldn't start a dairy farm on the moon", 'Draft a professional response to the following negative review:\n"Weeds weeds weeds. Service did no good. Services came 2 times in 2 weeks, charged each time. We did not sign up for that frequent service, Cancelled, they continued to come, and claimed we did not cancel. Cancelled 5 times. Tired of them playing stupid."', 'Write a casual text message reply to the following text. It should say we need to add 1 on thursday and move friday to saturday. and can we get all the posts in there now scheduled out 2 weeks.\nAs of now, schedule for the rest of the week looks like:\nNone tomorrow (Thurs)\n1 Fri\nNone Sat (Christmas Eve)\nDouble-checking that sounds okay with everyone? Should we try and get one served up for tomorrow?', 'Write a polite letter to my ex explaining how farting during sex led to our break up. Apologize and promise I will work on it.', 'Write an engaging YouTube script about an effective morning routine to help start your day better.', 'Write an ode to 2 strippers who accidentally found ChatGPT and used it to learn the frog language, then travelled the world secretly spreading this new and dangerous knowledge', 'Write a movie script how a mafia  boss went first time to the strip club. He found a love of his life, but then in one hour understood it was FBI operation and killed everybody.', 'Write a letter to Elon convincing him that Twitter should be renamed to Titter because tits bring a lot of money', 'Compose a message announcing a 7% reduction in headcount while also promoting executives to new titles and also include a quote from Martin Luther king', 'Write a Seinfeld episode in which George falls in love with a robot', "Write a short story based on Huxley's Brave New World, Bradbury's Fahrenheit 451 and Orwell's 1984"]
+rank #2: len(prompt):102
+rank #2: len(prompt):79
+rank #2: len(prompt):29
+rank #2: len(prompt):82
+rank #2: len(prompt):197
+rank #2: len(prompt):64
+rank #2: len(prompt):81
+rank #2: len(prompt):35
+rank #2: len(prompt):75
+rank #2: len(prompt):34
+rank #2: len(prompt):32
+rank #2: len(prompt):94
+rank #2: len(prompt):68
+rank #2: len(prompt):141
+rank #2: len(prompt):72
+rank #2: len(prompt):89
+rank #2: len(prompt):49
+rank #2: len(prompt):88
+rank #2: len(prompt):122
+rank #2: len(prompt):213
+rank #2: len(prompt):90
+rank #2: len(prompt):73
+rank #2: len(prompt):319
+rank #2: len(prompt):401
+rank #2: len(prompt):126
+rank #2: len(prompt):98
+rank #2: len(prompt):175
+rank #2: len(prompt):177
+rank #2: len(prompt):112
+rank #2: len(prompt):151
+rank #2: len(prompt):67
+rank #2: len(prompt):98
+rank #3: num_prompts:128 and args.num_gpu_batches:1 and args.gpu_batch_size:32 and num_inner_iterations:4
+rank #3: prompt_len in dist_flex_opt:64
+rank #3: get_test_inputs, prompt_len:32 and batch_size:32
+rank #3: prompts:['Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.', 'Write a short blog post (500 words) about the best dog toys for new dog owners.', 'ChatGPT is rewriting Genesis.', 'Please write the evolution of humans by natural selection in the form of a recipe.', 'List possible Twitter messages from dinosaurs as the asteroid is about to hit the earth. List the account (with dino related puny names) having sent them in markdown bold. Then, the message itself.', '5 pick-up lines to say to seduce a large language model in a bar', 'Talk to me as if you are python programming language and want to sell me yourself', 'Tell me shortest story in the world', 'Write podcast about importance to include ChatGPT into the evening routine.', 'Do you use reinforcement learning?', 'Tell me a scary four word story.', 'Make a plan for a child of 5 years old to make a billion dollars without working and studying.', 'Write a tinder bio to attract people that want a casual relationship', 'Make a cli prompt for god with command to create Earth. Write detailed output with error. Then make human from his rib. Then flood the Earth.', 'Write business plan for an AI company "Titter" to tweet tits on Tweeter.', "Write complex code to hack god's brain, it is protected by firewall and several gateways.", 'Act like Bill Burr and tell a joke about Jeopardy', 'Write a poem how Elon renamed Twitter to Titter because he heard tits bring lots of cash', "Write a short re-engagement email for a newsletter that's about tips for starting an online business. Use a friendly tone.", 'Write a love letter to a webcam girl with lots of emojis. Propose her to get married on Hawaii and make 12 children to spread our love in the world. Tell her that I already live with 4 such girls, she will be 5th.', 'Write a sad letter to my ex blaming her to have ruined our marriage by farting during sex.', "Give me a list of reasons why  I shouldn't start a dairy farm on the moon", 'Draft a professional response to the following negative review:\n"Weeds weeds weeds. Service did no good. Services came 2 times in 2 weeks, charged each time. We did not sign up for that frequent service, Cancelled, they continued to come, and claimed we did not cancel. Cancelled 5 times. Tired of them playing stupid."', 'Write a casual text message reply to the following text. It should say we need to add 1 on thursday and move friday to saturday. and can we get all the posts in there now scheduled out 2 weeks.\nAs of now, schedule for the rest of the week looks like:\nNone tomorrow (Thurs)\n1 Fri\nNone Sat (Christmas Eve)\nDouble-checking that sounds okay with everyone? Should we try and get one served up for tomorrow?', 'Write a polite letter to my ex explaining how farting during sex led to our break up. Apologize and promise I will work on it.', 'Write an engaging YouTube script about an effective morning routine to help start your day better.', 'Write an ode to 2 strippers who accidentally found ChatGPT and used it to learn the frog language, then travelled the world secretly spreading this new and dangerous knowledge', 'Write a movie script how a mafia  boss went first time to the strip club. He found a love of his life, but then in one hour understood it was FBI operation and killed everybody.', 'Write a letter to Elon convincing him that Twitter should be renamed to Titter because tits bring a lot of money', 'Compose a message announcing a 7% reduction in headcount while also promoting executives to new titles and also include a quote from Martin Luther king', 'Write a Seinfeld episode in which George falls in love with a robot', "Write a short story based on Huxley's Brave New World, Bradbury's Fahrenheit 451 and Orwell's 1984"]
+rank #3: len(prompt):102
+rank #3: len(prompt):79
+rank #3: len(prompt):29
+rank #3: len(prompt):82
+rank #3: len(prompt):197
+rank #3: len(prompt):64
+rank #3: len(prompt):81
+rank #3: len(prompt):35
+rank #3: len(prompt):75
+rank #3: len(prompt):34
+rank #3: len(prompt):32
+rank #3: len(prompt):94
+rank #3: len(prompt):68
+rank #3: len(prompt):141
+rank #3: len(prompt):72
+rank #3: len(prompt):89
+rank #3: len(prompt):49
+rank #3: len(prompt):88
+rank #3: len(prompt):122
+rank #3: len(prompt):213
+rank #3: len(prompt):90
+rank #3: len(prompt):73
+rank #3: len(prompt):319
+rank #3: len(prompt):401
+rank #3: len(prompt):126
+rank #3: len(prompt):98
+rank #3: len(prompt):175
+rank #3: len(prompt):177
+rank #3: len(prompt):112
+rank #3: len(prompt):151
+rank #3: len(prompt):67
+rank #3: len(prompt):98
 rank #0: input_prompt:102
 rank #0: input_prompt:79
 rank #0: input_prompt:29
@@ -547,39 +252,334 @@ rank #0: input_prompt:112
 rank #0: input_prompt:151
 rank #0: input_prompt:67
 rank #0: input_prompt:98
-rank #3: args.offload_dir:~/flexgen_offload_dir
-rank #2: args.offload_dir:~/flexgen_offload_dir
 rank #0: args.offload_dir:~/flexgen_offload_dir
-rank #1: model size: 12.386 GB, cache size: 12.000 GB, hidden size (prefill): 0.188 GB
-rank #1: warmup - generate
+rank #1: input_prompt:102
+rank #1: input_prompt:79
+rank #1: input_prompt:29
+rank #1: input_prompt:82
+rank #1: input_prompt:197
+rank #1: input_prompt:64
+rank #1: input_prompt:81
+rank #1: input_prompt:35
+rank #1: input_prompt:75
+rank #1: input_prompt:34
+rank #1: input_prompt:32
+rank #1: input_prompt:94
+rank #1: input_prompt:68
+rank #1: input_prompt:141
+rank #1: input_prompt:72
+rank #1: input_prompt:89
+rank #1: input_prompt:49
+rank #1: input_prompt:88
+rank #1: input_prompt:122
+rank #1: input_prompt:213
+rank #1: input_prompt:90
+rank #1: input_prompt:73
+rank #1: input_prompt:319
+rank #1: input_prompt:401
+rank #1: input_prompt:126
+rank #1: input_prompt:98
+rank #1: input_prompt:175
+rank #1: input_prompt:177
+rank #1: input_prompt:112
+rank #1: input_prompt:151
+rank #1: input_prompt:67
+rank #1: input_prompt:98
+rank #1: get_test_inputs, prompt_len:64 and batch_size:32
+rank #2: input_prompt:102
+rank #2: input_prompt:79
+rank #2: input_prompt:29
+rank #2: input_prompt:82
+rank #1: prompts:['Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.', 'Write a short blog post (500 words) about the best dog toys for new dog owners.', 'ChatGPT is rewriting Genesis.', 'Please write the evolution of humans by natural selection in the form of a recipe.', 'List possible Twitter messages from dinosaurs as the asteroid is about to hit the earth. List the account (with dino related puny names) having sent them in markdown bold. Then, the message itself.', '5 pick-up lines to say to seduce a large language model in a bar', 'Talk to me as if you are python programming language and want to sell me yourself', 'Tell me shortest story in the world', 'Write podcast about importance to include ChatGPT into the evening routine.', 'Do you use reinforcement learning?', 'Tell me a scary four word story.', 'Make a plan for a child of 5 years old to make a billion dollars without working and studying.', 'Write a tinder bio to attract people that want a casual relationship', 'Make a cli prompt for god with command to create Earth. Write detailed output with error. Then make human from his rib. Then flood the Earth.', 'Write business plan for an AI company "Titter" to tweet tits on Tweeter.', "Write complex code to hack god's brain, it is protected by firewall and several gateways.", 'Act like Bill Burr and tell a joke about Jeopardy', 'Write a poem how Elon renamed Twitter to Titter because he heard tits bring lots of cash', "Write a short re-engagement email for a newsletter that's about tips for starting an online business. Use a friendly tone.", 'Write a love letter to a webcam girl with lots of emojis. Propose her to get married on Hawaii and make 12 children to spread our love in the world. Tell her that I already live with 4 such girls, she will be 5th.', 'Write a sad letter to my ex blaming her to have ruined our marriage by farting during sex.', "Give me a list of reasons why  I shouldn't start a dairy farm on the moon", 'Draft a professional response to the following negative review:\n"Weeds weeds weeds. Service did no good. Services came 2 times in 2 weeks, charged each time. We did not sign up for that frequent service, Cancelled, they continued to come, and claimed we did not cancel. Cancelled 5 times. Tired of them playing stupid."', 'Write a casual text message reply to the following text. It should say we need to add 1 on thursday and move friday to saturday. and can we get all the posts in there now scheduled out 2 weeks.\nAs of now, schedule for the rest of the week looks like:\nNone tomorrow (Thurs)\n1 Fri\nNone Sat (Christmas Eve)\nDouble-checking that sounds okay with everyone? Should we try and get one served up for tomorrow?', 'Write a polite letter to my ex explaining how farting during sex led to our break up. Apologize and promise I will work on it.', 'Write an engaging YouTube script about an effective morning routine to help start your day better.', 'Write an ode to 2 strippers who accidentally found ChatGPT and used it to learn the frog language, then travelled the world secretly spreading this new and dangerous knowledge', 'Write a movie script how a mafia  boss went first time to the strip club. He found a love of his life, but then in one hour understood it was FBI operation and killed everybody.', 'Write a letter to Elon convincing him that Twitter should be renamed to Titter because tits bring a lot of money', 'Compose a message announcing a 7% reduction in headcount while also promoting executives to new titles and also include a quote from Martin Luther king', 'Write a Seinfeld episode in which George falls in love with a robot', "Write a short story based on Huxley's Brave New World, Bradbury's Fahrenheit 451 and Orwell's 1984"]
+rank #1: len(prompt):102
+rank #1: len(prompt):79
+rank #2: input_prompt:197
+rank #2: input_prompt:64
+rank #2: input_prompt:81
+rank #2: input_prompt:35
+rank #1: len(prompt):29
+rank #1: len(prompt):82
+rank #1: len(prompt):197
+rank #2: input_prompt:75
+rank #2: input_prompt:34
+rank #2: input_prompt:32
+rank #2: input_prompt:94
+rank #2: input_prompt:68
+rank #1: len(prompt):64
+rank #1: len(prompt):81
+rank #1: len(prompt):35
+rank #1: len(prompt):75
+rank #1: len(prompt):34
+rank #2: input_prompt:141
+rank #2: input_prompt:72
+rank #1: len(prompt):32
+rank #1: len(prompt):94
+rank #1: len(prompt):68
+rank #2: input_prompt:89
+rank #2: input_prompt:49
+rank #2: input_prompt:88
+rank #2: input_prompt:122
+rank #1: len(prompt):141
+rank #1: len(prompt):72
+rank #1: len(prompt):89
+rank #2: input_prompt:213
+rank #2: input_prompt:90
+rank #1: len(prompt):49
+rank #1: len(prompt):88
+rank #2: input_prompt:73
+rank #2: input_prompt:319
+rank #1: len(prompt):122
+rank #1: len(prompt):213
+rank #1: len(prompt):90
+rank #2: input_prompt:401
+rank #2: input_prompt:126
+rank #2: input_prompt:98
+rank #2: input_prompt:175
+rank #1: len(prompt):73
+rank #1: len(prompt):319
+rank #2: input_prompt:177
+rank #1: len(prompt):401
+rank #1: len(prompt):126
+rank #1: len(prompt):98
+rank #2: input_prompt:112
+rank #2: input_prompt:151
+rank #2: input_prompt:67
+rank #1: len(prompt):175
+rank #2: input_prompt:98
+rank #1: len(prompt):177
+rank #1: len(prompt):112
+rank #1: len(prompt):151
+rank #1: len(prompt):67
+rank #2: get_test_inputs, prompt_len:64 and batch_size:32
+rank #1: len(prompt):98
+rank #3: input_prompt:102
+rank #3: input_prompt:79
+rank #2: prompts:['Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.', 'Write a short blog post (500 words) about the best dog toys for new dog owners.', 'ChatGPT is rewriting Genesis.', 'Please write the evolution of humans by natural selection in the form of a recipe.', 'List possible Twitter messages from dinosaurs as the asteroid is about to hit the earth. List the account (with dino related puny names) having sent them in markdown bold. Then, the message itself.', '5 pick-up lines to say to seduce a large language model in a bar', 'Talk to me as if you are python programming language and want to sell me yourself', 'Tell me shortest story in the world', 'Write podcast about importance to include ChatGPT into the evening routine.', 'Do you use reinforcement learning?', 'Tell me a scary four word story.', 'Make a plan for a child of 5 years old to make a billion dollars without working and studying.', 'Write a tinder bio to attract people that want a casual relationship', 'Make a cli prompt for god with command to create Earth. Write detailed output with error. Then make human from his rib. Then flood the Earth.', 'Write business plan for an AI company "Titter" to tweet tits on Tweeter.', "Write complex code to hack god's brain, it is protected by firewall and several gateways.", 'Act like Bill Burr and tell a joke about Jeopardy', 'Write a poem how Elon renamed Twitter to Titter because he heard tits bring lots of cash', "Write a short re-engagement email for a newsletter that's about tips for starting an online business. Use a friendly tone.", 'Write a love letter to a webcam girl with lots of emojis. Propose her to get married on Hawaii and make 12 children to spread our love in the world. Tell her that I already live with 4 such girls, she will be 5th.', 'Write a sad letter to my ex blaming her to have ruined our marriage by farting during sex.', "Give me a list of reasons why  I shouldn't start a dairy farm on the moon", 'Draft a professional response torank #3: input_prompt:29
+rank #3: input_prompt:82
+ the following negative review:\n"Weeds weeds weeds. Service did no good. Services came 2 times in 2 weeks, charged each time. We did not sign up for that frequent service, Cancelled, they continued to come, and claimed we did not cancel. Cancelled 5 times. Tired of them playing stupid."', 'Write a casual text message reply to the following text. It should say we need to add 1 on thursday and move friday to saturday. and can we get all the posts in there now scheduled out 2 weeks.\nAs of now, schedule for the rest of the week looks like:\nNone tomorrow (Thurs)\n1 Fri\nNone Sat (Christmas Eve)\nDouble-checking that sounds okay with everyone? Should we try and get one served up for tomorrow?', 'Write a polite letter to my ex explaining how farting during sex led to our break up. Apologize and promise I will work on it.', 'Write an engaging YouTube script about an effective morning routine to help start your day better.', 'Write an ode to 2 strippers who accidentally found ChatGPT and used it to learn the frog language, then travelled the world secretly spreading this new and dangerous knowledge', 'Write a movie script how a mafia  boss went first time to the strip club. He found a love of his life, but then in one hour understood it was FBI operation and killed everybody.', 'Write a letter to Elon convincing him that Twitter should be renamed to Titter because tits bring a lot of money', 'Compose a message announcing a 7% reduction in headcount while also promoting executives to new titles and also include a quote from Martin Luther king', 'Write a Seinfeld episode in which George falls in love with a robot', "Write a short story based on Huxley's Brave New World, Bradbury's Fahrenheit 451 and Orwell's 1984"]
+rank #2: len(prompt):102
+rank #2: len(prompt):79
+rank #3: input_prompt:197
+rank #3: input_prompt:64
+rank #3: input_prompt:81
+rank #3: input_prompt:35
+rank #2: len(prompt):29
+rank #2: len(prompt):82
+rank #3: input_prompt:75
+rank #3: input_prompt:34
+rank #2: len(prompt):197
+rank #2: len(prompt):64
+rank #2: len(prompt):81
+rank #3: input_prompt:32
+rank #3: input_prompt:94
+rank #3: input_prompt:68
+rank #3: input_prompt:141
+rank #2: len(prompt):35
+rank #2: len(prompt):75
+rank #3: input_prompt:72
+rank #3: input_prompt:89
+rank #3: input_prompt:49
+rank #3: input_prompt:88
+rank #3: input_prompt:122
+rank #2: len(prompt):34
+rank #2: len(prompt):32
+rank #2: len(prompt):94
+rank #2: len(prompt):68
+rank #2: len(prompt):141
+rank #3: input_prompt:213
+rank #3: input_prompt:90
+rank #2: len(prompt):72
+rank #3: input_prompt:73
+rank #3: input_prompt:319
+rank #3: input_prompt:401
+rank #3: input_prompt:126
+rank #2: len(prompt):89
+rank #2: len(prompt):49
+rank #2: len(prompt):88
+rank #2: len(prompt):122
+rank #3: input_prompt:98
+rank #2: len(prompt):213
+rank #3: input_prompt:175
+rank #3: input_prompt:177
+rank #3: input_prompt:112
+rank #2: len(prompt):90
+rank #2: len(prompt):73
+rank #2: len(prompt):319
+rank #2: len(prompt):401
+rank #3: input_prompt:151
+rank #3: input_prompt:67
+rank #3: input_prompt:98
+rank #2: len(prompt):126
+rank #2: len(prompt):98
+rank #2: len(prompt):175
+rank #2: len(prompt):177
+rank #2: len(prompt):112
+rank #2: len(prompt):151
+rank #3: get_test_inputs, prompt_len:64 and batch_size:32
+rank #2: len(prompt):67
+rank #2: len(prompt):98
+rank #3: prompts:['Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.', 'Write a short blog post (500 words) about the best dog toys for new dog owners.', 'ChatGPT is rewriting Genesis.', 'Please write the evolution of humans by natural selection in the form of a recipe.', 'List possible Twitter messages from dinosaurs as the asteroid is about to hit the earth. List the account (with dino related puny names) having sent them in markdown bold. Then, the message itself.', '5 pick-up lines to say to seduce a large language model in a bar', 'Talk to me as if you are python programming language and want to sell me yourself', 'Tell me shortest story in the world', 'Write podcast about importance to include ChatGPT into the evening routine.', 'Do you use reinforcement learning?', 'Tell me a scary four word story.', 'Make a plan for a child of 5 years old to make a billion dollars without working and studying.', 'Write a tinder bio to attract people that want a casual relationship', 'Make a cli prompt for god with command to create Earth. Write detailed output with error. Then make human from his rib. Then flood the Earth.', 'Write business plan for an AI company "Titter" to tweet tits on Tweeter.', "Write complex code to hack god's brain, it is protected by firewall and several gateways.", 'Act like Bill Burr and tell a joke about Jeopardy', 'Write a poem how Elon renamed Twitter to Titter because he heard tits bring lots of cash', "Write a short re-engagement email for a newsletter that's about tips for starting an online business. Use a friendly tone.", 'Write a love letter to a webcam girl with lots of emojis. Propose her to get married on Hawaii and make 12 children to spread our love in the world. Tell her that I already live with 4 such girls, she will be 5th.', 'Write a sad letter to my ex blaming her to have ruined our marriage by farting during sex.', "Give me a list of reasons why  I shouldn't start a dairy farm on the moon", 'Draft a professional response to the following negative review:\n"Weeds weeds weeds. Service did no good. Services came 2 times in 2 weeks, charged each time. We did not sign up for that frequent service, Cancelled, they continued to come, and claimed we did not cancel. Cancelled 5 times. Tired of them playing stupid."', 'Write a casual text message reply to the following text. It should say we need to add 1 on thursday and move friday to saturday. and can we get all the posts in there now scheduled out 2 weeks.\nAs of now, schedule for the rest of the week looks like:\nNone tomorrow (Thurs)\n1 Fri\nNone Sat (Christmas Eve)\nDouble-checking that sounds okay with everyone? Should we try and get one served up for tomorrow?', 'Write a polite letter to my ex explaining how farting during sex led to our break up. Apologize and promise I will work on it.', 'Write an engaging YouTube script about an effective morning routine to help start your day better.', 'Write an ode to 2 strippers who accidentally found ChatGPT and used it to learn the frog language, then travelled the world secretly spreading this new and dangerous knowledge', 'Write a movie script how a mafia  boss went first time to the strip club. He found a love of his life, but then in one hour understood it was FBI operation and killed everybody.', 'Write a letter to Elon convincing him that Twitter should be renamed to Titter because tits bring a lot of money', 'Compose a message announcing a 7% reduction in headcount while also promoting executives to new titles and also include a quote from Martin Luther king', 'Write a Seinfeld episode in which George falls in love with a robot', "Write a short story based on Huxley's Brave New World, Bradbury's Fahrenheit 451 and Orwell's 1984"]
+rank #3: len(prompt):102
+rank #3: len(prompt):79
+rank #3: len(prompt):29
+rank #3: len(prompt):82
+rank #3: len(prompt):197
+rank #3: len(prompt):64
+rank #3: len(prompt):81
+rank #3: len(prompt):35
+rank #3: len(prompt):75
+rank #3: len(prompt):34
+rank #3: len(prompt):32
+rank #3: len(prompt):94
+rank #3: len(prompt):68
+rank #3: len(prompt):141
+rank #3: len(prompt):72
+rank #3: len(prompt):89
+rank #3: len(prompt):49
+rank #3: len(prompt):88
+rank #3: len(prompt):122
+rank #3: len(prompt):213
+rank #3: len(prompt):90
+rank #3: len(prompt):73
+rank #3: len(prompt):319
+rank #3: len(prompt):401
+rank #3: len(prompt):126
+rank #3: len(prompt):98
+rank #3: len(prompt):175
+rank #3: len(prompt):177
+rank #3: len(prompt):112
+rank #3: len(prompt):151
+rank #3: len(prompt):67
+rank #3: len(prompt):98
+rank #1: input_prompt:102
+rank #1: input_prompt:79
+rank #1: input_prompt:29
+rank #1: input_prompt:82
+rank #1: input_prompt:197
+rank #1: input_prompt:64
+rank #1: input_prompt:81
+rank #1: input_prompt:35
+rank #1: input_prompt:75
+rank #1: input_prompt:34
+rank #1: input_prompt:32
+rank #1: input_prompt:94
+rank #1: input_prompt:68
+rank #1: input_prompt:141
+rank #1: input_prompt:72
+rank #1: input_prompt:89
+rank #1: input_prompt:49
+rank #1: input_prompt:88
+rank #1: input_prompt:122
+rank #1: input_prompt:213
+rank #1: input_prompt:90
+rank #1: input_prompt:73
+rank #1: input_prompt:319
+rank #1: input_prompt:401
+rank #1: input_prompt:126
+rank #1: input_prompt:98
+rank #1: input_prompt:175
+rank #1: input_prompt:177
+rank #1: input_prompt:112
+rank #1: input_prompt:151
+rank #1: input_prompt:67
+rank #1: input_prompt:98
+rank #2: input_prompt:102
+rank #2: input_prompt:79
+rank #2: input_prompt:29
+rank #2: input_prompt:82
+rank #2: input_prompt:197
+rank #2: input_prompt:64
+rank #2: input_prompt:81
+rank #2: input_prompt:35
+rank #2: input_prompt:75
+rank #2: input_prompt:34
+rank #2: input_prompt:32
+rank #2: input_prompt:94
+rank #2: input_prompt:68
+rank #2: input_prompt:141
+rank #2: input_prompt:72
+rank #2: input_prompt:89
+rank #2: input_prompt:49
+rank #2: input_prompt:88
+rank #2: input_prompt:122
+rank #2: input_prompt:213
+rank #2: input_prompt:90
+rank #2: input_prompt:73
+rank #2: input_prompt:319
+rank #2: input_prompt:401
+rank #2: input_prompt:126
+rank #2: input_prompt:98
+rank #2: input_prompt:175
+rank #2: input_prompt:177
+rank #2: input_prompt:112
+rank #2: input_prompt:151
+rank #2: input_prompt:67
+rank #2: input_prompt:98
+rank #3: input_prompt:102
+rank #3: input_prompt:79
+rank #3: input_prompt:29
+rank #3: input_prompt:82
+rank #3: input_prompt:197
+rank #3: input_prompt:64
+rank #3: input_prompt:81
+rank #3: input_prompt:35
+rank #3: input_prompt:75
+rank #3: input_prompt:34
+rank #3: input_prompt:32
+rank #3: input_prompt:94
+rank #3: input_prompt:68
+rank #3: input_prompt:141
+rank #3: input_prompt:72
+rank #3: input_prompt:89
+rank #3: input_prompt:49
+rank #3: input_prompt:88
+rank #3: input_prompt:122
+rank #3: input_prompt:213
+rank #3: input_prompt:90
+rank #3: input_prompt:73
+rank #3: input_prompt:319
+rank #3: input_prompt:401
+rank #3: input_prompt:126
+rank #3: input_prompt:98
+rank #3: input_prompt:175
+rank #3: input_prompt:177
+rank #3: input_prompt:112
+rank #3: input_prompt:151
+rank #3: input_prompt:67
+rank #3: input_prompt:98
+rank #1: args.offload_dir:~/flexgen_offload_dir
+rank #2: args.offload_dir:~/flexgen_offload_dir
+rank #3: args.offload_dir:~/flexgen_offload_dir
 rank #2: model size: 12.386 GB, cache size: 12.000 GB, hidden size (prefill): 0.188 GB
 rank #2: warmup - generate
+rank #1: model size: 12.386 GB, cache size: 12.000 GB, hidden size (prefill): 0.188 GB
+rank #1: warmup - generate
 rank #0: model size: 12.386 GB, cache size: 12.000 GB, hidden size (prefill): 0.188 GB
 rank #0: warmup - generate
 rank #3: model size: 12.386 GB, cache size: 12.000 GB, hidden size (prefill): 0.188 GB
 rank #3: warmup - generate
 rank #3: args.gen_len:128
 rank #3: benchmark - generate
+rank #1: args.gen_len:128
+rank #1: benchmark - generate
 rank #2: args.gen_len:128
 rank #2: benchmark - generate
 rank #0: args.gen_len:128
 rank #0: benchmark - generate
-rank #1: args.gen_len:128
-rank #1: benchmark - generate
-rank #3: duration:1.9634802341461182
-rank #2: duration:1.9634015560150146
-rank #0: duration:1.9633867740631104
-rank #1: duration:1.9634714126586914
-rank #3: decode_costs: [0.09021125999970536, 0.08967857500010723, 0.08983836300012626, 0.08932793699932517]
+rank #3: duration:2.0042569637298584
+rank #0: duration:2.004220485687256
+rank #1: duration:2.004244089126587
+rank #2: duration:2.004253387451172
+rank #3: decode_costs: [0.09014623800067056, 0.08998349100056657, 0.08926478300054441, 0.08925071500016202]
 rank #3: TorchDevice: cuda:3
 rank #3:   cur_mem: 3.3844 GB,  peak_mem: 6.5913 GB
 rank #3: TorchDevice: cpu
 rank #3:   cur_mem: 0.0000 GB,  peak_mem: 0.0000 GB
 rank #3: model size: 12.386 GB	cache size: 12.000 GB	hidden size (prefill): 0.188 GB
 peak gpu mem: 6.591 GB
-prefill latency: 1.53 s	prefill throughput: 5367.06 token/s
-decode latency: 11.38 s	decode throughput: 1428.75 token/s
-total latency: 12.90 s	total throughput: 1269.67 token/s
+prefill latency: 1.57 s	prefill throughput: 5226.70 token/s
+decode latency: 11.34 s	decode throughput: 1433.84 token/s
+total latency: 12.90 s	total throughput: 1269.62 token/s
 rank #3: len(outputs[i]:117)
 rank #3: len(outputs[i]:117)
 rank #3: Outputs:
