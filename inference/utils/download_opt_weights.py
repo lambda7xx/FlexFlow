@@ -37,26 +37,30 @@ def convert_hf_model(model, dst_folder):
     shutil.copy(os.path.join(dst_folder, "embed_tokens_weight"), os.path.join(dst_folder, "embed_tokens_weight_lm_head"))
 
 # Download and convert big model weights
-model = AutoModelForCausalLM.from_pretrained("facebook/opt-6.7b")
-dst_folder="../weights/opt_6B_weights" if args.use_full_precision else "../weights/opt_6B_weights_half"
+# model = AutoModelForCausalLM.from_pretrained("facebook/opt-6.7b")
+# dst_folder="../weights/opt_6B_weights" if args.use_full_precision else "../weights/opt_6B_weights_half"
+# convert_hf_model(model, dst_folder)
+
+model = AutoModelForCausalLM.from_pretrained("facebook/opt-13b")
+dst_folder="../weights/opt_13B_weights" if args.use_full_precision else "../weights/opt_13B_weights_half"
 convert_hf_model(model, dst_folder)
 
-# Download and convert small model weights
-model = AutoModelForCausalLM.from_pretrained("facebook/opt-125m")
-dst_folder="../weights/opt_125M_weights" if args.use_full_precision else "../weights/opt_125M_weights_half"
-convert_hf_model(model, dst_folder)
+# # Download and convert small model weights
+# model = AutoModelForCausalLM.from_pretrained("facebook/opt-125m")
+# dst_folder="../weights/opt_125M_weights" if args.use_full_precision else "../weights/opt_125M_weights_half"
+# convert_hf_model(model, dst_folder)
 
-# Download tokenizer files
-os.makedirs("../tokenizer", exist_ok=True)
-tokenizer_filepath = '../tokenizer/gpt2-vocab.json'
-url = 'https://raw.githubusercontent.com/facebookresearch/metaseq/main/projects/OPT/assets/gpt2-vocab.json'
-r = requests.get(url)
-open(tokenizer_filepath , 'wb').write(r.content)
-tokenizer_filepath = '../tokenizer/gpt2-merges.txt'
-url = 'https://raw.githubusercontent.com/facebookresearch/metaseq/main/projects/OPT/assets/gpt2-merges.txt'
-r = requests.get(url)
-open(tokenizer_filepath , 'wb').write(r.content)
-tokenizer_filepath = '../tokenizer/added_tokens.json'
-url = 'https://huggingface.co/truongpdd/vietnews-gpt2/raw/main/added_tokens.json'
-r = requests.get(url)
-open(tokenizer_filepath , 'wb').write(r.content)
+# # Download tokenizer files
+# os.makedirs("../tokenizer", exist_ok=True)
+# tokenizer_filepath = '../tokenizer/gpt2-vocab.json'
+# url = 'https://raw.githubusercontent.com/facebookresearch/metaseq/main/projects/OPT/assets/gpt2-vocab.json'
+# r = requests.get(url)
+# open(tokenizer_filepath , 'wb').write(r.content)
+# tokenizer_filepath = '../tokenizer/gpt2-merges.txt'
+# url = 'https://raw.githubusercontent.com/facebookresearch/metaseq/main/projects/OPT/assets/gpt2-merges.txt'
+# r = requests.get(url)
+# open(tokenizer_filepath , 'wb').write(r.content)
+# tokenizer_filepath = '../tokenizer/added_tokens.json'
+# url = 'https://huggingface.co/truongpdd/vietnews-gpt2/raw/main/added_tokens.json'
+# r = requests.get(url)
+# open(tokenizer_filepath , 'wb').write(r.content)
