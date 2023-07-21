@@ -37,6 +37,7 @@
 #include "flexflow/ops/softmax.h"
 #include "flexflow/ops/split.h"
 #include "flexflow/ops/tree_inc_multihead_self_attention.h"
+#include "flexflow/ops/spec_inc_multihead_self_attention.h"
 #include "flexflow/parallel_ops/allreduce.h"
 #include "flexflow/parallel_ops/combine.h"
 #include "flexflow/parallel_ops/fused_parallel_op.h"
@@ -3730,6 +3731,12 @@ bool FFModel::convert_graph_to_operators(
         IncMultiQuerySelfAttention *attn =
             (IncMultiQuerySelfAttention *)node.ptr;
         new_op = new IncMultiQuerySelfAttention(*this, *attn, inputs[0], true);
+        break;
+      }
+      case OP_SPEC_INC_MULTIHEAD_SELF_ATTENTION: {
+        assert(inList.size() == 1);
+        SpecIncMultiHeadSelfAttention * attn = (SpecIncMultiHeadSelfAttention * )node.ptr;
+        new_op = new SpecIncMultiHeadSelfAttention(*this, *attn, inputs[0], true);
         break;
       }
       case OP_TREE_INC_MULTIHEAD_SELF_ATTENTION: {

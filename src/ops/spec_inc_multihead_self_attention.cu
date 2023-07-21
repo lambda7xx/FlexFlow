@@ -323,6 +323,11 @@ void compute_attention_kernel(SpecIncMultiHeadSelfAttentionMeta const *m,
                                            CUBLAS_GEMM_DEFAULT_TENSOR_OP));
       // Fill all elements above diagonal in qk prods with -inf to force
       // causal attention.
+      cudaError_t cudaStatus = cudaGetLastError();
+      if (cudaStatus != cudaSuccess) {
+        fprintf(stderr, "CUDA error: %s\n", cudaGetErrorString(cudaStatus));
+    // 处理错误或进行其他操作
+     }
       assert(num_new_tokens <= total_tokens);
       if (num_new_tokens > 1) {
         size_t parallelism = m->num_heads * num_new_tokens * total_tokens;
