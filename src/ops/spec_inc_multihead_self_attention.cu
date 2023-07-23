@@ -246,6 +246,7 @@ void compute_attention_kernel(SpecIncMultiHeadSelfAttentionMeta const *m,
 #endif
   // int num_requests = bc->num_active_requests();
   int num_tokens = bc->num_active_tokens();
+  std::cout<<"bc->num_active_tokens()"<<bc->num_active_tokens()<<std::endl;
   int tokens_previous_requests = 0;
   int tokens_prev_requests_squares = 0;
   int qkv_block_size =

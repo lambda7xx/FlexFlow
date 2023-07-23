@@ -201,6 +201,7 @@ void FlexFlow::top_level_task(Task const *task,
   // Create SentencePiece tokenizer or OPT tokenizer
   SamplingConfig samplingConfig;
   InferenceManager im(ffconfig, BatchConfig::MAX_NUM_TOKENS);
+  verbose = true; //Note: debug the RequestManager
   RequestManager rm(model_types.llm_model_type,
                     file_paths.tokenizer_file_path,
                     /*verbose*/ verbose,
@@ -229,6 +230,7 @@ void FlexFlow::top_level_task(Task const *task,
 
   // Create SSM models
   int num_ssms = model_types.ssm_model_types.size();
+  std::cout<<"num_ssms: "<<num_ssms<<std::endl;
   std::vector<int> ssm_model_ids;
   std::vector<FFModel> ssm_models;
   FFConfig bm_config = ffconfig;
@@ -290,7 +292,7 @@ void FlexFlow::top_level_task(Task const *task,
   }
 
   InferenceResult tree_ir;
-
+  std::cout<<"rm.get_num_processed_requests(): "<<rm.get_num_processed_requests()<<" and total_num_requests:"<<total_num_requests <<std::endl;
   while (rm.get_num_processed_requests() < total_num_requests) {
     int depth = 0;
     // Beam Search

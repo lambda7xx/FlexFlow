@@ -66,7 +66,7 @@ InferenceManager::InferenceManager(FFConfig const &_config,
     // std::cout << "Registering machine view: " << view << std::endl;
     machine_views.push_back(view);
   }
-  // multiple-device machine views
+  // multiple-device machine views //TODO 或许有bug 
   if (ff_config.tensor_parallelism_degree > 1) {
     for (int i = 0; i < num_devices; i++) {
       if (i + ff_config.tensor_parallelism_degree <= num_devices) {
