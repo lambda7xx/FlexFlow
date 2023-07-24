@@ -1,0 +1,59 @@
+batch_size: 1 args.overlap: True
+Initializing distributed environment at 172.31.4.20:7777, world_size=2, rank=1, local_rank=1.
+batch_size: 1 args.overlap: True
+Initializing distributed environment at 172.31.4.20:7777, world_size=2, rank=0, local_rank=0.
+rank #0: Finished initializing distributed environment
+rank #1: Finished initializing distributed environment
+rank #1: num_prompts:2 and args.num_gpu_batches:1 and args.gpu_batch_size:1 and num_inner_iterations:2
+rank #1: prompt_len in dist_flex_opt:64
+rank #1: get_test_inputs, prompt_len:32 and batch_size:1
+rank #1: prompts:['Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.']
+rank #1: len(prompt):102
+rank #1: input_prompt:102
+rank #1: get_test_inputs, prompt_len:64 and batch_size:1
+rank #1: prompts:['Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.']
+rank #1: len(prompt):102
+rank #1: input_prompt:102
+rank #1: args.offload_dir:~/flexgen_offload_dir
+rank #0: num_prompts:2 and args.num_gpu_batches:1 and args.gpu_batch_size:1 and num_inner_iterations:2
+rank #0: prompt_len in dist_flex_opt:64
+rank #0: get_test_inputs, prompt_len:32 and batch_size:1
+rank #0: prompts:['Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.']
+rank #0: len(prompt):102
+rank #0: input_prompt:102
+rank #0: get_test_inputs, prompt_len:64 and batch_size:1
+rank #0: prompts:['Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.']
+rank #0: len(prompt):102
+rank #0: input_prompt:102
+rank #0: args.offload_dir:~/flexgen_offload_dir
+rank #0: model size: 12.386 GB, cache size: 0.188 GB, hidden size (prefill): 0.003 GB
+rank #0: warmup - generate
+rank #1: model size: 12.386 GB, cache size: 0.188 GB, hidden size (prefill): 0.003 GB
+rank #1: warmup - generate
+rank #1: args.gen_len:128
+rank #1: benchmark - generate
+rank #0: args.gen_len:128
+rank #0: benchmark - generate
+rank #1: duration:0.41147494316101074
+rank #0: duration:0.41141176223754883
+rank #1: decode_costs: [0.0615572480019182, 0.06131373599782819, 0.0612834620042122, 0.06105778800701955]
+/home/lambda/.local/lib/python3.10/site-packages/torch/distributed/distributed_c10d.py:262: UserWarning: torch.distributed.reduce_op is deprecated, please use torch.distributed.ReduceOp instead
+  warnings.warn(
+rank #1: TorchDevice: cuda:1
+rank #1:   cur_mem: 6.3851 GB,  peak_mem: 6.4872 GB
+rank #1: TorchDevice: cpu
+rank #1:   cur_mem: 0.0000 GB,  peak_mem: 0.0000 GB
+rank #1: model size: 12.386 GB	cache size: 0.188 GB	hidden size (prefill): 0.003 GB
+peak gpu mem: 6.487 GB
+prefill latency: 0.12 s	prefill throughput: 1065.01 token/s
+decode latency: 7.77 s	decode throughput: 32.69 token/s
+total latency: 7.89 s	total throughput: 32.45 token/s
+rank #1: len(outputs[i]:117)
+rank #1: len(outputs[i]:117)
+rank #1: Outputs:
+----------------------------------------------------------------------
+0: Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.<s><s><s><s><s>
+----------------------------------------------------------------------
+1: Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.<s><s><s><s><s>
+----------------------------------------------------------------------
+

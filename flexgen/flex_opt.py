@@ -1201,8 +1201,8 @@ def run_flexgen(args):
     prompt_len, gen_len, cut_gen_len = args.prompt_len, args.gen_len, args.cut_gen_len
 
     # Task and policy
-    warmup_inputs = get_test_inputs(32, num_prompts, tokenizer)
-    inputs = get_test_inputs(prompt_len, num_prompts, tokenizer)
+    warmup_inputs = get_test_inputs(32, num_prompts, tokenizer, bs)
+    inputs = get_test_inputs(prompt_len, num_prompts, tokenizer,bs )
 
     gpu = TorchDevice("cuda:0")
     cpu = TorchDevice("cpu")

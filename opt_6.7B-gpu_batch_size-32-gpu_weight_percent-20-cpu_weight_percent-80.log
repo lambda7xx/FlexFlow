@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/opt/conda/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/home/lambda/FlexGen/flexgen/flex_opt.py", line 1342, in <module>
+    run_flexgen(args)
+  File "/home/lambda/FlexGen/flexgen/flex_opt.py", line 1204, in run_flexgen
+    warmup_inputs = get_test_inputs(32, num_prompts, tokenizer)
+TypeError: get_test_inputs() missing 1 required positional argument: 'batch_size'
+batch_size: 32 args.overlap: True
+<run_flexgen>: args.model: facebook/opt-6.7b

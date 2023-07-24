@@ -1,0 +1,104 @@
+batch_size: 2 args.overlap: True
+Initializing distributed environment at 172.31.4.20:7777, world_size=2, rank=1, local_rank=1.
+batch_size: 2 args.overlap: True
+Initializing distributed environment at 172.31.4.20:7777, world_size=2, rank=0, local_rank=0.
+rank #0: Finished initializing distributed environment
+rank #1: Finished initializing distributed environment
+rank #0: num_prompts:4 and args.num_gpu_batches:1 and args.gpu_batch_size:2 and num_inner_iterations:2
+rank #0: prompt_len in dist_flex_opt:64
+rank #0: get_test_inputs, prompt_len:32 and batch_size:2
+rank #1: num_prompts:4 and args.num_gpu_batches:1 and args.gpu_batch_size:2 and num_inner_iterations:2
+rank #1: prompt_len in dist_flex_opt:64
+rank #1: get_test_inputs, prompt_len:32 and batch_size:2
+rank #0: prompts:['Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.', 'Write a short blog post (500 words) about the best dog toys for new dog owners.']
+rank #0: len(prompt):102
+rank #1: prompts:['Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.', 'Write a short blog post (500 words) about the best dog toys for new dog owners.']
+rank #1: len(prompt):102
+rank #1: len(prompt):79
+rank #0: len(prompt):79
+rank #1: input_prompt:102
+rank #1: input_prompt:79
+rank #1: get_test_inputs, prompt_len:64 and batch_size:2
+rank #0: input_prompt:102
+rank #0: input_prompt:79
+rank #0: get_test_inputs, prompt_len:64 and batch_size:2
+rank #0: prompts:['Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.', 'Write a short blog post (500 words) about the best dog toys for new dog owners.']
+rank #0: len(prompt):102
+rank #0: len(prompt):79
+rank #1: prompts:['Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.', 'Write a short blog post (500 words) about the best dog toys for new dog owners.']
+rank #1: len(prompt):102
+rank #1: len(prompt):79
+rank #0: input_prompt:102
+rank #0: input_prompt:79
+rank #1: input_prompt:102
+rank #1: input_prompt:79
+rank #1: [Errno 17] File exists: '/home/lambda/flexgen_offload_dir'
+rank #1: Traceback (most recent call last):
+rank #1:   File "/home/lambda/FlexGen/flexgen/dist_flex_opt.py", line 698, in <module>
+    run_flexgen_dist(args)
+rank #1:   File "/home/lambda/FlexGen/flexgen/dist_flex_opt.py", line 556, in run_flexgen_dist
+    disk = TorchDisk(args.offload_dir, None, args.local_rank)
+rank #1:   File "/home/lambda/FlexGen/flexgen/pytorch_backend.py", line 635, in __init__
+    os.makedirs(self.path)
+rank #1:   File "/opt/conda/lib/python3.10/os.py", line 225, in makedirs
+    mkdir(name, mode)
+rank #1: FileExistsError: [Errno 17] File exists: '/home/lambda/flexgen_offload_dir'
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/opt/conda/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/home/lambda/FlexGen/flexgen/dist_flex_opt.py", line 702, in <module>
+rank #0: args.offload_dir:~/flexgen_offload_dir
+    raise e
+  File "/home/lambda/FlexGen/flexgen/dist_flex_opt.py", line 698, in <module>
+    run_flexgen_dist(args)
+  File "/home/lambda/FlexGen/flexgen/dist_flex_opt.py", line 556, in run_flexgen_dist
+    disk = TorchDisk(args.offload_dir, None, args.local_rank)
+  File "/home/lambda/FlexGen/flexgen/pytorch_backend.py", line 635, in __init__
+    os.makedirs(self.path)
+  File "/opt/conda/lib/python3.10/os.py", line 225, in makedirs
+    mkdir(name, mode)
+FileExistsError: [Errno 17] File exists: '/home/lambda/flexgen_offload_dir'
+Exception ignored in: <function TorchDisk.__del__ at 0x7f2831695cf0>
+Traceback (most recent call last):
+  File "/home/lambda/FlexGen/flexgen/pytorch_backend.py", line 697, in __del__
+AttributeError: 'TorchDisk' object has no attribute 'copy_queue'
+rank #0: [../third_party/gloo/gloo/transport/tcp/pair.cc:598] Connection closed by peer [172.31.4.20]:63687
+rank #0: Traceback (most recent call last):
+rank #0:   File "/home/lambda/FlexGen/flexgen/dist_flex_opt.py", line 698, in <module>
+    run_flexgen_dist(args)
+rank #0:   File "/home/lambda/FlexGen/flexgen/dist_flex_opt.py", line 561, in run_flexgen_dist
+    comm_test(gpu.dev if args.comm_device == "gpu" else cpu.dev)
+rank #0:   File "/home/lambda/FlexGen/flexgen/dist_flex_opt.py", line 536, in comm_test
+    dist.all_reduce(a)
+rank #0:   File "/home/lambda/.local/lib/python3.10/site-packages/torch/distributed/distributed_c10d.py", line 1541, in all_reduce
+    work.wait()
+rank #0: RuntimeError: [../third_party/gloo/gloo/transport/tcp/pair.cc:598] Connection closed by peer [172.31.4.20]:63687
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/opt/conda/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/home/lambda/FlexGen/flexgen/dist_flex_opt.py", line 702, in <module>
+    raise e
+  File "/home/lambda/FlexGen/flexgen/dist_flex_opt.py", line 698, in <module>
+    run_flexgen_dist(args)
+  File "/home/lambda/FlexGen/flexgen/dist_flex_opt.py", line 561, in run_flexgen_dist
+    comm_test(gpu.dev if args.comm_device == "gpu" else cpu.dev)
+  File "/home/lambda/FlexGen/flexgen/dist_flex_opt.py", line 536, in comm_test
+    dist.all_reduce(a)
+  File "/home/lambda/.local/lib/python3.10/site-packages/torch/distributed/distributed_c10d.py", line 1541, in all_reduce
+    work.wait()
+RuntimeError: [../third_party/gloo/gloo/transport/tcp/pair.cc:598] Connection closed by peer [172.31.4.20]:63687
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun detected that one or more processes exited with non-zero status, thus causing
+the job to be terminated. The first process to do so was:
+
+  Process name: [[579,1],1]
+  Exit code:    1
+--------------------------------------------------------------------------

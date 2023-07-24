@@ -1,0 +1,125 @@
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+batch_size: 1 args.overlap: True
+<run_flexgen>: args.model: facebook/opt-6.7b
+get_test_inputs, prompt_len:32 and batch_size:1
+prompts:['Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.']
+len(prompt):102
+input_prompt:102
+get_test_inputs, prompt_len:64 and batch_size:1
+prompts:['Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.']
+len(prompt):102
+input_prompt:102
+model size: 12.386 GB, cache size: 0.094 GB, hidden size (prefill): 0.001 GB
+init weight...
+Load the pre-trained pytorch weights of opt-6.7b from huggingface. The downloading and cpu loading can take dozens of minutes. If it seems to get stuck, you can monitor the progress by checking the memory usage of this process.
+Fetching 2 files:   0%|          | 0/2 [00:00<?, ?it/s]Fetching 2 files: 100%|██████████| 2/2 [00:00<00:00, 1513.64it/s]
+Convert format:   0%|          | 0/2 [00:00<?, ?it/s]
+  0%|          | 0/132 [00:00<?, ?it/s][A
+  4%|▍         | 5/132 [00:00<00:02, 44.57it/s][A
+ 11%|█▏        | 15/132 [00:00<00:01, 58.55it/s][A
+ 16%|█▌        | 21/132 [00:00<00:01, 56.05it/s][A
+ 23%|██▎       | 31/132 [00:00<00:01, 59.75it/s][A
+ 28%|██▊       | 37/132 [00:00<00:01, 58.24it/s][A
+ 36%|███▌      | 47/132 [00:00<00:01, 61.09it/s][A
+ 41%|████      | 54/132 [00:00<00:01, 62.05it/s][A
+ 48%|████▊     | 63/132 [00:01<00:01, 61.07it/s][A
+ 53%|█████▎    | 70/132 [00:01<00:00, 62.01it/s][A
+ 58%|█████▊    | 77/132 [00:01<00:00, 57.64it/s][A
+ 63%|██████▎   | 83/132 [00:01<00:01, 37.66it/s][A
+ 67%|██████▋   | 89/132 [00:01<00:01, 41.23it/s][A
+ 72%|███████▏  | 95/132 [00:01<00:00, 44.40it/s][A
+ 77%|███████▋  | 101/132 [00:01<00:00, 46.96it/s][A
+ 81%|████████  | 107/132 [00:02<00:00, 35.43it/s][A
+ 85%|████████▍ | 112/132 [00:02<00:00, 33.47it/s][A
+ 89%|████████▊ | 117/132 [00:02<00:00, 35.99it/s][A
+ 96%|█████████▌| 127/132 [00:02<00:00, 44.73it/s][A
+                                                 [AConvert format:  50%|█████     | 1/2 [00:30<00:30, 30.36s/it]
+  0%|          | 0/384 [00:00<?, ?it/s][A
+  0%|          | 1/384 [00:00<03:25,  1.86it/s][A
+  4%|▍         | 15/384 [00:00<00:14, 26.31it/s][A
+  5%|▌         | 21/384 [00:00<00:11, 32.68it/s][A
+  8%|▊         | 31/384 [00:00<00:08, 42.93it/s][A
+ 10%|▉         | 37/384 [00:01<00:07, 45.92it/s][A
+ 12%|█▏        | 47/384 [00:01<00:06, 52.48it/s][A
+ 14%|█▍        | 53/384 [00:01<00:06, 53.31it/s][A
+ 16%|█▋        | 63/384 [00:01<00:05, 57.68it/s][A
+ 18%|█▊        | 70/384 [00:01<00:05, 59.47it/s][A
+ 21%|██        | 79/384 [00:01<00:05, 59.65it/s][A
+ 22%|██▏       | 86/384 [00:01<00:04, 61.03it/s][A
+ 25%|██▍       | 95/384 [00:02<00:04, 60.70it/s][A
+ 27%|██▋       | 102/384 [00:02<00:04, 61.74it/s][A
+ 29%|██▉       | 111/384 [00:02<00:04, 61.12it/s][A
+ 31%|███       | 118/384 [00:02<00:04, 62.20it/s][A
+ 33%|███▎      | 127/384 [00:02<00:04, 61.42it/s][A
+ 35%|███▍      | 134/384 [00:02<00:04, 62.45it/s][A
+ 37%|███▋      | 143/384 [00:02<00:03, 61.65it/s][A
+ 39%|███▉      | 150/384 [00:02<00:03, 62.70it/s][A
+ 41%|████▏     | 159/384 [00:03<00:03, 61.64it/s][A
+ 43%|████▎     | 166/384 [00:03<00:03, 62.63it/s][A
+ 46%|████▌     | 175/384 [00:03<00:03, 61.78it/s][A
+ 47%|████▋     | 182/384 [00:03<00:03, 62.71it/s][A
+ 50%|████▉     | 191/384 [00:03<00:03, 61.74it/s][A
+ 52%|█████▏    | 198/384 [00:03<00:02, 62.60it/s][A
+ 54%|█████▍    | 207/384 [00:03<00:02, 61.61it/s][A
+ 56%|█████▌    | 214/384 [00:03<00:02, 62.54it/s][A
+ 58%|█████▊    | 223/384 [00:04<00:02, 61.63it/s][A
+ 60%|█████▉    | 230/384 [00:04<00:02, 62.53it/s][A
+ 62%|██████▏   | 239/384 [00:04<00:02, 61.64it/s][A
+ 64%|██████▍   | 246/384 [00:04<00:02, 62.36it/s][A
+ 66%|██████▋   | 255/384 [00:04<00:02, 61.55it/s][A
+ 68%|██████▊   | 262/384 [00:04<00:01, 62.48it/s][A
+ 71%|███████   | 271/384 [00:04<00:01, 61.57it/s][A
+ 72%|███████▏  | 278/384 [00:04<00:01, 62.49it/s][A
+ 75%|███████▍  | 287/384 [00:05<00:01, 61.66it/s][A
+ 77%|███████▋  | 294/384 [00:05<00:01, 62.58it/s][A
+ 79%|███████▉  | 303/384 [00:05<00:01, 61.75it/s][A
+ 81%|████████  | 310/384 [00:05<00:01, 62.65it/s][A
+ 83%|████████▎ | 319/384 [00:05<00:01, 61.75it/s][A
+ 85%|████████▍ | 326/384 [00:05<00:00, 62.68it/s][A
+ 87%|████████▋ | 335/384 [00:05<00:00, 61.82it/s][A
+ 89%|████████▉ | 342/384 [00:05<00:00, 62.74it/s][A
+ 91%|█████████▏| 351/384 [00:06<00:00, 61.87it/s][A
+ 93%|█████████▎| 358/384 [00:06<00:00, 62.82it/s][A
+ 96%|█████████▌| 367/384 [00:06<00:00, 61.97it/s][A
+ 97%|█████████▋| 374/384 [00:06<00:00, 62.88it/s][A
+100%|█████████▉| 383/384 [00:06<00:00, 61.96it/s][A
+                                                 [AConvert format: 100%|██████████| 2/2 [02:16<00:00, 74.82s/it]Convert format: 100%|██████████| 2/2 [02:16<00:00, 68.15s/it]
+/home/lambda/.local/lib/python3.10/site-packages/torch/distributed/distributed_c10d.py:262: UserWarning: torch.distributed.reduce_op is deprecated, please use torch.distributed.ReduceOp instead
+  warnings.warn(
+warmup - generate
+benchmark - generate
+Outputs:
+----------------------------------------------------------------------
+0: Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.
+
+Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.
+
+Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.
+
+Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.
+
+Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.
+
+Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.
+
+Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.
+
+
+----------------------------------------------------------------------
+
+TorchDevice: cuda:0
+  cur_mem: 0.0000 GB,  peak_mem: 0.8848 GB
+TorchDevice: cpu
+  cur_mem: 12.7859 GB,  peak_mem: 0.0000 GB
+model size: 12.386 GB	cache size: 0.094 GB	hidden size (p): 0.001 GB
+peak gpu mem: 0.885 GB	projected: False
+prefill latency: 2.195 s	prefill throughput: 29.156 token/s
+decode latency: 278.777 s	decode throughput: 0.456 token/s
+total latency: 280.972 s	total throughput: 0.456 token/s

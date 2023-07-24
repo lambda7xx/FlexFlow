@@ -2,7 +2,7 @@
 rm -rf /home/lambda/flexgen_offload_dir
 MY_IPADDR=$(hostname -i)
 all_hosts=$MY_IPADDR
-N_GPUS=4
+N_GPUS=2
 N_CORES_PER_GPU=6
 
 PYTHON_EXEC=$CONDA_PREFIX/bin/python

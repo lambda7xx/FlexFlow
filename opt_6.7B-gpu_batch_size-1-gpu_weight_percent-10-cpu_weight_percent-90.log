@@ -1,0 +1,44 @@
+/home/lambda/.local/lib/python3.10/site-packages/torch/distributed/distributed_c10d.py:262: UserWarning: torch.distributed.reduce_op is deprecated, please use torch.distributed.ReduceOp instead
+  warnings.warn(
+batch_size: 1 args.overlap: True
+<run_flexgen>: args.model: facebook/opt-6.7b
+get_test_inputs, prompt_len:32 and batch_size:1
+prompts:['Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.']
+len(prompt):102
+input_prompt:102
+get_test_inputs, prompt_len:64 and batch_size:1
+prompts:['Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.']
+len(prompt):102
+input_prompt:102
+model size: 12.386 GB, cache size: 0.094 GB, hidden size (prefill): 0.001 GB
+init weight...
+warmup - generate
+benchmark - generate
+Outputs:
+----------------------------------------------------------------------
+0: Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.
+
+Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.
+
+Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.
+
+Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.
+
+Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.
+
+Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.
+
+Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.
+
+
+----------------------------------------------------------------------
+
+TorchDevice: cuda:0
+  cur_mem: 0.0171 GB,  peak_mem: 0.8868 GB
+TorchDevice: cpu
+  cur_mem: 12.7688 GB,  peak_mem: 0.0000 GB
+model size: 12.386 GB	cache size: 0.094 GB	hidden size (p): 0.001 GB
+peak gpu mem: 0.887 GB	projected: False
+prefill latency: 2.192 s	prefill throughput: 29.203 token/s
+decode latency: 278.130 s	decode throughput: 0.457 token/s
+total latency: 280.322 s	total throughput: 0.457 token/s
