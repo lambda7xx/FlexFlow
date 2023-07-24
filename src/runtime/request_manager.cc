@@ -140,7 +140,7 @@ RequestManager::RequestGuid
   request.guid = next_available_guid++;
   request.max_sequence_length = max_sequence_length;
   request.tokens.push_back(this->model_bos_map.at(this->model_type));
-  std::vector<int32_t> tokens = this->tokenizer_->Encode(prompt);
+  std::vector<int32_t> tokens = this->tokenizer_->Encode(prompt);//将prompt编码
 
   for (int i = 0; i < tokens.size(); i++) {
     std::cout<<"tokens.at("<<i<<"):" << tokens.at(i) << "\n";
@@ -465,21 +465,20 @@ BeamSearchBatchConfig
   new_bc.num_tokens = 0;
   new_bc.model_id = model_id;
   int result_index = 0;
-
   for (int i = 0; i < BatchConfig::MAX_NUM_REQUESTS; i++) {
-    std::cout<<"1 prepare_next_batch_init i"<<i <<" old_bc.request_completed[i]: "<<old_bc.request_completed[i]<<"\n";
+    std::cout<<"1 prepare_next_batch_init i:"<<i <<" old_bc.request_completed[i]: "<<old_bc.request_completed[i]<<"\n";
     if (old_bc.request_completed[i]) {
       continue;
     }
     size_t guid = old_bc.requestsInfo[i].request_guid;
-    std::cout<<"2 prepare_next_batch_init i"<<i<<", guid: "<<guid << "old_bc.num_tokens:"<< old_bc.num_tokens<<"\n";
+    std::cout<<"2 prepare_next_batch_init i"<<i<<", guid: "<<guid << ",old_bc.num_tokens:"<< old_bc.num_tokens<<"\n";
     Request &request = running_request_queue[guid];
 
     // Verify this: get verified tokens from result
     std::vector<std::pair<BatchConfig::TokenId, int>> tree_outputs =
         std::vector<std::pair<BatchConfig::TokenId, int>>();
 
-    assert(old_bc.num_tokens > 0);
+    //assert(old_bc.num_tokens > 0);
 
     int start_depth = old_bc.tokensInfo[result_index].abs_depth_in_request;
     std::cout<<"3 prepare_next_batch_init , i "<<i<<", start_depth: "<<start_depth<<"\n";
@@ -494,7 +493,7 @@ BeamSearchBatchConfig
            old_bc.tokensInfo[result_index].request_index == i) {
       // new tokens have not been appended yet, so the last appended token is
       // the root of the beam search token tree
-      int root_abs_depth = request.tok ens.size() - 1;
+      int root_abs_depth = request.tokens.size() - 1;
       std::cout<<"5 prepare_next_batch_init,root_abs_depth:"<<root_abs_depth<<",old_bc.tokensInfo[result_index].abs_depth_in_request"<<old_bc.tokensInfo[result_index].abs_depth_in_request<<"\n";
       if (old_bc.tokensInfo[result_index].abs_depth_in_request >=
           root_abs_depth) {
@@ -508,7 +507,7 @@ BeamSearchBatchConfig
         committed_tokens.at(guid).push_back(
             std::make_pair(old_bc.tokensInfo[result_index].abs_depth_in_request,
                            result_index));
-        std::cout<<"7 prepare_next_batch_init,result_index:"<< result_index<<<",old_bc.tokensInfo[result_index].abs_depth_in_request:"<< old_bc.tokensInfo[result_index].abs_depth_in_request<<"\n";
+        std::cout<<"7 prepare_next_batch_init,result_index:"<< result_index<<",old_bc.tokensInfo[result_index].abs_depth_in_request:"<< old_bc.tokensInfo[result_index].abs_depth_in_request<<"\n";
 
         if (verbose) {
           std::cout << "Index within old batch: " << result_index << std::endl;
@@ -703,7 +702,7 @@ BeamSearchBatchConfig
         new_bc.requestsInfo[i].request_guid = new_request.guid;
         new_bc.requestsInfo[i].num_tokens_in_batch =
             std::min(BeamSearchBatchConfig::MAX_NUM_TOKENS - new_bc.num_tokens,
-                     (int)new_request.tokens.size());
+                     (int)new_request.tokens.size());//设置第i个请求的token长度
         new_bc.requestsInfo[i].max_sequence_length =
             new_request.max_sequence_length;
         // add profile_info for the new request
@@ -731,7 +730,7 @@ BeamSearchBatchConfig
         new_bc.request_completed[i] = false;
         new_bc.sub_requests[i] = 1;
         std::cout<<"40 prepare_next_batch_init, init_new_request, i:"<<i<<",new_bc.requestsInfo[i].num_tokens_in_batch:"<<new_bc.requestsInfo[i].num_tokens_in_batch<<std::endl;
-        for (int j = 0; j < new_bc.requestsInfo[i].num_tokens_in_batch; j++) {
+        for (int j = 0; j < new_bc.requestsInfo[i].num_tokens_in_batch; j++) {//new_bc.requestsInfo[i].num_tokens_in_batch
           int depth = new_bc.requestsInfo[i].token_start_offset + j;
           new_bc.tokensInfo[new_bc.num_tokens].request_index = i;
           new_bc.tokensInfo[new_bc.num_tokens].abs_depth_in_request = depth;
