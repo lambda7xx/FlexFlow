@@ -1,7 +1,7 @@
 /home/lambda/.local/lib/python3.10/site-packages/torch/distributed/distributed_c10d.py:262: UserWarning: torch.distributed.reduce_op is deprecated, please use torch.distributed.ReduceOp instead
   warnings.warn(
 batch_size: 2 args.overlap: True , args.cut_gen_len: 5
-<run_flexgen>: args.model: facebook/opt-6.7b
+<run_flexgen>: args.model: facebook/opt-30b
 get_test_inputs, prompt_len:32 and batch_size:2
 prompts:['Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.', 'Write a short blog post (500 words) about the best dog toys for new dog owners.']
 len(prompt):102
@@ -14,31 +14,31 @@ len(prompt):102
 len(prompt):79
 input_prompt:102
 input_prompt:79
-model size: 12.386 GB, cache size: 0.188 GB, hidden size (prefill): 0.003 GB
+model size: 55.803 GB, cache size: 0.492 GB, hidden size (prefill): 0.005 GB
 init weight...
 warmup - generate
 benchmark - generate
-decode_costs: [2.2070977709990984, 2.1946444929999416, 2.1944126390008023, 2.127826791998814]
+decode_costs: [9.690744515000915, 9.678017948999695, 9.677230823999707, 9.565310063000652]
 Outputs:
 ----------------------------------------------------------------------
 0: Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.
 
-Write a detailed
+The food cho
 ----------------------------------------------------------------------
 
 Outputs:
 ----------------------------------------------------------------------
 1: Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.
 
-Write a detailed
+The food cho
 ----------------------------------------------------------------------
 
 TorchDevice: cuda:0
-  cur_mem: 0.0000 GB,  peak_mem: 0.9822 GB
+  cur_mem: 0.0312 GB,  peak_mem: 1.9747 GB
 TorchDevice: cpu
-  cur_mem: 12.7859 GB,  peak_mem: 0.0000 GB
-model size: 12.386 GB	cache size: 0.188 GB	hidden size (p): 0.003 GB
-peak gpu mem: 0.982 GB	projected: True
-prefill latency: 2.196 s	prefill throughput: 58.287 token/s
-decode latency: 274.542 s	decode throughput: 0.925 token/s
-total latency: 276.738 s	total throughput: 0.925 token/s
+  cur_mem: 56.4719 GB,  peak_mem: 0.0000 GB
+model size: 55.803 GB	cache size: 0.492 GB	hidden size (p): 0.005 GB
+peak gpu mem: 1.975 GB	projected: True
+prefill latency: 9.681 s	prefill throughput: 13.221 token/s
+decode latency: 1222.028 s	decode throughput: 0.208 token/s
+total latency: 1231.709 s	total throughput: 0.208 token/s

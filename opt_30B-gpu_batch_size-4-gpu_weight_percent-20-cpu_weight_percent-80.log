@@ -1,0 +1,66 @@
+/home/lambda/.local/lib/python3.10/site-packages/torch/distributed/distributed_c10d.py:262: UserWarning: torch.distributed.reduce_op is deprecated, please use torch.distributed.ReduceOp instead
+  warnings.warn(
+batch_size: 4 args.overlap: True , args.cut_gen_len: 5
+<run_flexgen>: args.model: facebook/opt-30b
+get_test_inputs, prompt_len:32 and batch_size:4
+prompts:['Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.', 'Write a short blog post (500 words) about the best dog toys for new dog owners.', 'ChatGPT is rewriting Genesis.', 'Please write the evolution of humans by natural selection in the form of a recipe.']
+len(prompt):102
+len(prompt):79
+len(prompt):29
+len(prompt):82
+input_prompt:102
+input_prompt:79
+input_prompt:29
+input_prompt:82
+get_test_inputs, prompt_len:64 and batch_size:4
+prompts:['Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.', 'Write a short blog post (500 words) about the best dog toys for new dog owners.', 'ChatGPT is rewriting Genesis.', 'Please write the evolution of humans by natural selection in the form of a recipe.']
+len(prompt):102
+len(prompt):79
+len(prompt):29
+len(prompt):82
+input_prompt:102
+input_prompt:79
+input_prompt:29
+input_prompt:82
+model size: 55.803 GB, cache size: 0.984 GB, hidden size (prefill): 0.010 GB
+init weight...
+warmup - generate
+benchmark - generate
+decode_costs: [8.903950672000065, 8.891639721998217, 8.890858765000303, 8.778953872000784]
+Outputs:
+----------------------------------------------------------------------
+0: Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.
+
+The food cho
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+1: Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.
+
+The food cho
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+2: Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.
+
+The food cho
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+3: Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.
+
+The food cho
+----------------------------------------------------------------------
+
+TorchDevice: cuda:0
+  cur_mem: 4.6250 GB,  peak_mem: 7.0701 GB
+TorchDevice: cpu
+  cur_mem: 51.8782 GB,  peak_mem: 0.0000 GB
+model size: 55.803 GB	cache size: 0.984 GB	hidden size (p): 0.010 GB
+peak gpu mem: 7.070 GB	projected: True
+prefill latency: 8.894 s	prefill throughput: 28.784 token/s
+decode latency: 1122.159 s	decode throughput: 0.453 token/s
+total latency: 1131.053 s	total throughput: 0.453 token/s
