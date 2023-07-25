@@ -747,11 +747,11 @@ Write a detailed product description for a food chopper tool that lets you chop 
 ----------------------------------------------------------------------
 
 TorchDevice: cuda:0
-  cur_mem: 1.0171 GB,  peak_mem: 4.9911 GB
+  cur_mem: 6.7857 GB,  peak_mem: 10.0987 GB
 TorchDevice: cpu
-  cur_mem: 11.7688 GB,  peak_mem: 0.0000 GB
+  cur_mem: 6.0003 GB,  peak_mem: 0.0000 GB
 model size: 12.386 GB	cache size: 3.000 GB	hidden size (p): 0.047 GB
-peak gpu mem: 4.991 GB	projected: False
-prefill latency: 2.027 s	prefill throughput: 1010.281 token/s
-decode latency: 256.499 s	decode throughput: 15.844 token/s
-total latency: 258.526 s	total throughput: 15.844 token/s
+peak gpu mem: 10.099 GB	projected: False
+prefill latency: 1.330 s	prefill throughput: 1540.425 token/s
+decode latency: 131.540 s	decode throughput: 30.895 token/s
+total latency: 132.870 s	total throughput: 30.827 token/s

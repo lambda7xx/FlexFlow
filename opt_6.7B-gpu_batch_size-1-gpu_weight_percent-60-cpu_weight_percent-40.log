@@ -1,11 +1,3 @@
-huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
-To disable this warning, you can either:
-	- Avoid using `tokenizers` before the fork if possible
-	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
-huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
-To disable this warning, you can either:
-	- Avoid using `tokenizers` before the fork if possible
-	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
 /home/lambda/.local/lib/python3.10/site-packages/torch/distributed/distributed_c10d.py:262: UserWarning: torch.distributed.reduce_op is deprecated, please use torch.distributed.ReduceOp instead
   warnings.warn(
 batch_size: 1 args.overlap: True
@@ -42,11 +34,11 @@ Write a detailed product description for a food chopper tool that lets you chop 
 ----------------------------------------------------------------------
 
 TorchDevice: cuda:0
-  cur_mem: 1.0171 GB,  peak_mem: 1.8868 GB
+  cur_mem: 6.7857 GB,  peak_mem: 7.0741 GB
 TorchDevice: cpu
-  cur_mem: 11.7688 GB,  peak_mem: 0.0000 GB
+  cur_mem: 6.0003 GB,  peak_mem: 0.0000 GB
 model size: 12.386 GB	cache size: 0.094 GB	hidden size (p): 0.001 GB
-peak gpu mem: 1.887 GB	projected: False
-prefill latency: 2.020 s	prefill throughput: 31.680 token/s
-decode latency: 256.392 s	decode throughput: 0.495 token/s
-total latency: 258.412 s	total throughput: 0.495 token/s
+peak gpu mem: 7.074 GB	projected: False
+prefill latency: 1.036 s	prefill throughput: 61.770 token/s
+decode latency: 131.329 s	decode throughput: 0.967 token/s
+total latency: 132.365 s	total throughput: 0.967 token/s

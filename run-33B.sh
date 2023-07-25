@@ -1,4 +1,4 @@
-gpu_batch_sizes=(1 2 4 8 16 32)
+# gpu_batch_sizes=(1 2 4 8 16 32)
 # gpu_weight_percent=0
 # cpu_weight_percent=100 
 
