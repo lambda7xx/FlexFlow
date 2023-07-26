@@ -1,12 +1,48 @@
 Traceback (most recent call last):
-  File "/opt/conda/lib/python3.10/runpy.py", line 187, in _run_module_as_main
-    mod_name, mod_spec, code = _get_module_details(mod_name, _Error)
-  File "/opt/conda/lib/python3.10/runpy.py", line 157, in _get_module_details
-    code = loader.get_code(mod_name)
-  File "<frozen importlib._bootstrap_external>", line 1017, in get_code
-  File "<frozen importlib._bootstrap_external>", line 947, in source_to_code
-  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
-  File "/home/lambda/FlexGen/flexgen/flex_opt.py", line 1300
-    parser.add_argument("--cut_gen_len", type=int, default=5
-                                                           ^
-SyntaxError: invalid syntax. Perhaps you forgot a comma?
+  File "/opt/conda/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/opt/conda/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/home/lambda/FlexGen/flexgen/flex_opt.py", line 1341, in <module>
+    run_flexgen(args)
+  File "/home/lambda/FlexGen/flexgen/flex_opt.py", line 1234, in run_flexgen
+    model = OptLM(opt_config, env, args.path, policy)
+  File "/home/lambda/FlexGen/flexgen/flex_opt.py", line 638, in __init__
+    self.init_all_weights()
+  File "/home/lambda/FlexGen/flexgen/flex_opt.py", line 801, in init_all_weights
+    self.init_weight(j)
+  File "/home/lambda/FlexGen/flexgen/flex_opt.py", line 652, in init_weight
+    self.layers[j].init_weight(self.weight_home[j], expanded_path)
+  File "/home/lambda/FlexGen/flexgen/flex_opt.py", line 495, in init_weight
+    weights = init_weight_list(weight_specs, self.policy, self.env)
+  File "/home/lambda/FlexGen/flexgen/flex_opt.py", line 113, in init_weight_list
+    weight = home.allocate(shape, dtype, pin_memory=pin_memory)
+  File "/home/lambda/FlexGen/flexgen/pytorch_backend.py", line 190, in allocate
+    data = torch.empty(shape, dtype=dtype, pin_memory=pin_memory, device=self.dev)
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 392.00 MiB (GPU 0; 14.75 GiB total capacity; 14.48 GiB already allocated; 8.81 MiB free; 14.48 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+Exception ignored in: <module 'threading' from '/opt/conda/lib/python3.10/threading.py'>
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.10/threading.py", line 1567, in _shutdown
+    lock.acquire()
+KeyboardInterrupt: 
+batch_size: 1 args.overlap: True , args.cut_gen_len: 5
+<run_flexgen>: args.model: facebook/opt-30b
+get_test_inputs, prompt_len:32 and batch_size:1
+prompts:['Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.']
+len(prompt):102
+input_prompt:102
+get_test_inputs, prompt_len:64 and batch_size:1
+prompts:['Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.']
+len(prompt):102
+input_prompt:102
+model size: 55.803 GB, cache size: 0.246 GB, hidden size (prefill): 0.003 GB
+init weight...
+Exception ignored in: <function OptLM.__del__ at 0x7fbe3ebcad40>
+Traceback (most recent call last):
+  File "/home/lambda/FlexGen/flexgen/flex_opt.py", line 1150, in __del__
+    self.delete_all_weights()
+  File "/home/lambda/FlexGen/flexgen/flex_opt.py", line 805, in delete_all_weights
+    self.delete_weight(j, 0)
+  File "/home/lambda/FlexGen/flexgen/flex_opt.py", line 671, in delete_weight
+    for x in self.weight_home[j].pop():
+TypeError: 'NoneType' object is not iterable
