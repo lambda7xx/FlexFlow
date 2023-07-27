@@ -1,0 +1,18 @@
+[0 - 7f0ef947f000]    0.243574 {3}{Mapper}: Enabled Control Replication Optimizations.
+[0 - 7f0ef947f000]    0.243618 {3}{Mapper}: Enabled Control Replication Optimizations.
+workSpaceSize (1024 MB)
+OPT Config:
+vocab_size: 50272
+word_embed_proj_dim: 5120
+hidden_size: 5120
+num_attention_heads: 40
+max_position_embeddings: 2048
+layer_norm_elementwise_affine: true
+dropout: 0.1
+ffn_dim: 20480
+num_hidden_layers: 40
+max_beam_width: 1
+batchSize: 8
+sentence_len: 100
+max_beam_depth: 4
+------start compile ----------

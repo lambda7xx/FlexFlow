@@ -1,0 +1,10 @@
+Jun 29 07:08:14 ip-172-31-4-20 sudo[37349]:     root : TTY=pts/1 ; PWD=/home/ubuntu ; USER=test ; ENV=pem_path=/home/ubuntu/specinfer-project.pem ; COMMAND=/bin/bash -c bash
+Jun 29 07:08:41 ip-172-31-4-20 sudo[37532]:     root : TTY=pts/1 ; PWD=/home/ubuntu ; USER=test ; ENV=pem_path=/home/ubuntu/specinfer-project.pem ; COMMAND=/bin/bash -c bash
+Jun 29 07:09:13 ip-172-31-4-20 sudo[37829]:     root : TTY=pts/1 ; PWD=/home/ubuntu ; USER=test ; ENV=pem_path=/home/ubuntu/specinfer-project.pem ; COMMAND=/bin/bash -c bash
+Jun 29 08:25:06 ip-172-31-4-20 sudo[42952]:   lambda : TTY=pts/4 ; PWD=/home/lambda/inference/build ; USER=root ; COMMAND=/usr/bin/apt update
+Jun 29 08:25:23 ip-172-31-4-20 sudo[43616]:   lambda : TTY=pts/4 ; PWD=/home/lambda/inference/build ; USER=root ; COMMAND=/usr/bin/apt install cmake
+Jun 29 08:25:38 ip-172-31-4-20 sudo[43710]:   lambda : TTY=pts/4 ; PWD=/home/lambda/inference/build ; USER=root ; COMMAND=/usr/local/bin/pip3 install cmake==3.21
+Jun 29 08:38:29 ip-172-31-4-20 sudo[60469]:   lambda : TTY=pts/4 ; PWD=/home/lambda/inference/build ; USER=root ; COMMAND=/usr/bin/apt install python3
+Jun 29 08:38:54 ip-172-31-4-20 sudo[60613]:   lambda : TTY=pts/4 ; PWD=/home/lambda/inference/build ; USER=root ; COMMAND=/usr/bin/apt install python-is-python3
+Jul 20 13:48:08 ip-172-31-4-20 kernel: spec_infer[3970]: segfault at 7f2230c0dd90 ip 00007f307bcf5ad1 sp 00007f1a741dd280 error 4 in libflexflow.so.1[7f307b9da000+8ec000]
+Jul 21 03:37:45 ip-172-31-4-20 kernel: NVRM: Xid (PCI:0000:00:1b): 31, pid=13427, name=spec_infer, Ch 00000008, intr 00000000. MMU Fault: ENGINE GRAPHICS GPCCLIENT_T1_0 faulted @ 0x7f62_19054000. Fault is of type FAULT_PDE ACCESS_TYPE_VIRT_READ

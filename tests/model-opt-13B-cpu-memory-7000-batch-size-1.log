@@ -1,0 +1,5 @@
+[0 - 7f9d7c05c000]    0.243022 {3}{Mapper}: Enabled Control Replication Optimizations.
+[0 - 7f9d7c05c000]    0.243071 {3}{Mapper}: Enabled Control Replication Optimizations.
+workSpaceSize (1024 MB)
+Error opening JSON file.
+spec_infer: /home/lambda/SpecInfer-0727/inference/models/opt.h:71: FlexFlow::OPT::Config::Config(std::string): Assertion `false' failed.
