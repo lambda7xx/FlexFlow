@@ -1,5 +1,5 @@
 
-bs=1
+bs=2
 offload_memory=6000
 model=opt-6B
 #opt-6B
