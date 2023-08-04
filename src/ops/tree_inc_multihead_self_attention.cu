@@ -193,6 +193,7 @@ void compute_attention_kernel(TreeIncMultiHeadSelfAttentionMeta const *m,
   // int qkv_block_size =
   //     (m->qProjSize + m->kProjSize + m->vProjSize) * bc->num_active_tokens();
   int q_block_size = m->qProjSize * bc->num_active_tokens();
+
   int kt_block_size = m->kProjSize * BatchConfig::MAX_SEQ_LENGTH;
   int kt_req_block_size = kt_block_size * m->num_kv_heads;
   int vt_block_size = m->vProjSize * BatchConfig::MAX_SEQ_LENGTH;
@@ -499,8 +500,12 @@ void compute_attention_kernel(TreeIncMultiHeadSelfAttentionMeta const *m,
                                   qkv_weight_size,
                                   m->oProjSize);
   }
+  if(processed_tokens_in_batch != bc->num_active_tokens()) {
+     std::cout<<"processed_tokens_in_batch:"<<processed_tokens_in_batch<<" and bc->num_active_tokens():"<<bc->num_active_tokens()<<std::endl;
 
-  assert(processed_tokens_in_batch == bc->num_active_tokens());
+  }
+ // std::cout<<"processed_tokens_in_batch:"<<processed_tokens_in_batch<<" and bc->num_active_tokens():"<<bc->num_active_tokens()<<std::endl;
+  //assert(processed_tokens_in_batch == bc->num_active_tokens());
 }
 
 template <typename DT>

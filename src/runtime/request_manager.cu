@@ -38,6 +38,7 @@ void RequestManager::load_tokens_task(
     printf("Warning: too many tokens in prompt, only load up to %d tokens\n",
            BatchConfig::MAX_NUM_TOKENS);
     printf("Got: %d tokens\n", batch_config->num_tokens);
+    return ;
   }
   // assert(batch_config->num_tokens <= BatchConfig::MAX_NUM_TOKENS);
 
@@ -48,6 +49,7 @@ void RequestManager::load_tokens_task(
       regions[0], task->regions[0], FID_DATA, ctx, runtime);
   Domain domain = runtime->get_index_space_domain(
       ctx, task->regions[0].region.get_index_space());
+  std::cout<<"batch_config->num_tokens:"<<batch_config->num_tokens<<" and domain.get_volume():"<<domain.get_volume()<<std::endl;
   assert(batch_config->num_tokens <= domain.get_volume());
   cudaStream_t stream;
   checkCUDA(get_legion_stream(&stream));

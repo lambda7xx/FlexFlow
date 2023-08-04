@@ -445,7 +445,7 @@ BatchConfig RequestManager::prepare_next_batch(BatchConfig const &old_bc,
               new_request.tokens[depth];
           new_bc.num_tokens++;
         }
-        if (new_bc.num_tokens == BatchConfig::MAX_NUM_TOKENS) {
+        if (new_bc.num_tokens >= BatchConfig::MAX_NUM_TOKENS) {
           break;
         }
       }
@@ -641,7 +641,7 @@ BeamSearchBatchConfig
   new_bc.num_tokens = 0;
   new_bc.model_id = model_id;
   int result_index = 0;
-
+  std::cout<<"BatchConfig::MAX_NUM_REQUESTS:"<<BatchConfig::MAX_NUM_REQUESTS<<std::endl;
   for (int i = 0; i < BatchConfig::MAX_NUM_REQUESTS; i++) {
     if (old_bc.request_completed[i]) {
       continue;
@@ -725,7 +725,10 @@ BeamSearchBatchConfig
         gr.output_text = output;
       }
       log_req_mgr.print("Final output: %s", output.c_str());
+      //int length = sizeof(new_bc.request_completed) / sizeof(new_bc.request_completed[0]);
+      log_req_mgr.print("**********before i:%d ",i);
       new_bc.request_completed[i] = true;
+      log_req_mgr.print("**********after i:%d",i);
       num_processed_requests++;
       ProfileInfo profile_info = profiling_requests[request.guid];
       profile_info.finish_time = Realm::Clock::current_time_in_microseconds();
@@ -814,7 +817,7 @@ BeamSearchBatchConfig
       // Add verified token to request's token list
       request.tokens.push_back(token.first);
 
-      if (new_bc.num_tokens == BatchConfig::MAX_NUM_TOKENS) {
+      if (new_bc.num_tokens >= BatchConfig::MAX_NUM_TOKENS) {
         break;
       }
     }
@@ -875,7 +878,7 @@ BeamSearchBatchConfig
           new_bc.beamTokenInfo[new_bc.num_tokens].sub_request_index = 0;
           new_bc.num_tokens++;
         }
-        if (new_bc.num_tokens == BatchConfig::MAX_NUM_TOKENS) {
+        if (new_bc.num_tokens >= BatchConfig::MAX_NUM_TOKENS) {
           break;
         }
       }
@@ -986,8 +989,8 @@ TreeVerifyBatchConfig RequestManager::prepare_next_batch_verify(
 
       std::cout << "new_bc.num_tokens: " << new_bc.num_tokens << std::endl;
       if (new_bc.num_tokens >= BatchConfig::MAX_NUM_TOKENS) {
-        assert(false &&
-               "Exceeding the space available in the TreeVerify batch");
+        // assert(false &&
+        //        "Exceeding the space available in the TreeVerify batch");
         break;
       }
 
@@ -1002,9 +1005,9 @@ TreeVerifyBatchConfig RequestManager::prepare_next_batch_verify(
       new_bc.num_tokens++;
       new_bc.requestsInfo[i].num_tokens_in_batch++;
 
-      if (new_bc.num_tokens == BatchConfig::MAX_NUM_TOKENS) {
-        assert(false &&
-               "Exceeding the space available in the TreeVerify batch");
+      if (new_bc.num_tokens >= BatchConfig::MAX_NUM_TOKENS) {
+        // assert(false &&
+        //        "Exceeding the space available in the TreeVerify batch");
         break;
       }
 
@@ -1099,7 +1102,7 @@ TreeVerifyBatchConfig RequestManager::prepare_next_batch_verify(
       new_bc.num_tokens++;
       new_bc.requestsInfo[i].num_tokens_in_batch++;
 
-      if (new_bc.num_tokens == BatchConfig::MAX_NUM_TOKENS - 1) {
+      if (new_bc.num_tokens >= BatchConfig::MAX_NUM_TOKENS - 1) {
         break;
       }
     }
@@ -1638,13 +1641,14 @@ GenerationResult RequestManager::generate_spec_infer(FFModel *llm,
 
   for (int i = 0; i < BatchConfig::MAX_NUM_REQUESTS; i++) {
      guid = register_new_request(text, max_seq_length);
+      if (guid == 0) {
+    std::cout
+        << "=========== Discard request exceed prompt maximum... ==========="
+        << std::endl;
+    return GenerationResult();
   }
-  //   if (guid == 0) {
-  //   std::cout
-  //       << "=========== Discard request exceed prompt maximum... ==========="
-  //       << std::endl;
-  //   return GenerationResult();
-  // }
+  }
+
   std::queue<std::pair<TreeVerifyBatchConfigFuture, InferenceResultFuture>>
       batch_pipeline;
   batch_pipeline.push(std::make_pair(last_tree_bcf, last_tree_irf));

@@ -1,0 +1,18 @@
+-- Logs begin at Tue 2023-06-27 05:46:29 UTC. --
+Aug 04 10:49:04 ip-172-31-4-20 systemd-logind[1132]: Removed session 13.
+Aug 04 10:49:07 ip-172-31-4-20 sshd[52882]: Accepted publickey for lambda from 58.247.22.240 port 41165 ssh2: RSA SHA256:xTtPdshCieEgfIwcYTn/WPwwqKvMdcloNBCZ2jWGhLg
+Aug 04 10:49:07 ip-172-31-4-20 sshd[52882]: pam_unix(sshd:session): session opened for user lambda by (uid=0)
+Aug 04 10:49:07 ip-172-31-4-20 systemd-logind[1132]: New session 14 of user lambda.
+Aug 04 10:49:07 ip-172-31-4-20 systemd[1]: Started Session 14 of user lambda.
+Aug 04 10:58:18 ip-172-31-4-20 sudo[55111]:   lambda : TTY=pts/4 ; PWD=/home/lambda/SpecInfer-0727 ; USER=root ; COMMAND=/usr/bin/dmesg
+Aug 04 10:58:18 ip-172-31-4-20 sudo[55111]: pam_unix(sudo:session): session opened for user root by (uid=0)
+Aug 04 10:58:18 ip-172-31-4-20 sudo[55111]: pam_unix(sudo:session): session closed for user root
+Aug 04 10:58:33 ip-172-31-4-20 sudo[55202]:   lambda : TTY=pts/4 ; PWD=/home/lambda/SpecInfer-0727 ; USER=root ; COMMAND=/usr/bin/journalctl -f
+Aug 04 10:58:33 ip-172-31-4-20 sudo[55202]: pam_unix(sudo:session): session opened for user root by (uid=0)
+Aug 04 11:17:01 ip-172-31-4-20 CRON[58504]: pam_unix(cron:session): session opened for user root by (uid=0)
+Aug 04 11:17:01 ip-172-31-4-20 CRON[58505]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Aug 04 11:17:01 ip-172-31-4-20 CRON[58504]: pam_unix(cron:session): session closed for user root
+Aug 04 11:26:25 ip-172-31-4-20 sshd[64648]: error: kex_exchange_identification: Connection closed by remote host
+Aug 04 12:03:26 ip-172-31-4-20 kernel: NVRM: GPU at PCI:0000:00:1b: GPU-2100837c-8c9e-981e-a691-21ba1f0b99dc
+Aug 04 12:03:27 ip-172-31-4-20 kernel: NVRM: GPU Board Serial Number: 1564520018452
+Aug 04 12:03:27 ip-172-31-4-20 kernel: NVRM: Xid (PCI:0000:00:1b): 43, pid=69341, name=spec_infer, Ch 00000008

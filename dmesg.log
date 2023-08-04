@@ -1,0 +1,3 @@
+[ 6437.300616] spec_infer[32508]: segfault at 7f49925c6590 ip 00007f59653e0794 sp 00007f4b710a8020 error 4 in libflexflow.so.1[7f59650c0000+8fd000]
+[ 7665.150346] spec_infer[39804]: segfault at 7f2e8d9372ec ip 00007f3e31a6adb1 sp 00007f303d0a7fe0 error 6 in libflexflow.so.1[7f3e3174c000+8fb000]
+[ 8193.592290] spec_infer[46378]: segfault at 7f907a5c67a0 ip 00007f9f43607794 sp 00007f91590a8030 error 4 in libflexflow.so.1[7f9f432e7000+8fd000]
