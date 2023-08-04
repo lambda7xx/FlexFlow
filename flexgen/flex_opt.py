@@ -1296,7 +1296,7 @@ def add_parser_arguments(parser):
     parser.add_argument("--offload-dir", type=str, default="~/flexgen_offload_dir",
         help="The directory to offload tensors. ")
     parser.add_argument("--prompt_len", type=int, default=64)
-    parser.add_argument("--gen_len", type=int, default=128)
+    parser.add_argument("--gen_len", type=int, default=256)
     parser.add_argument("--cut_gen_len", type=int, default=5,help="Cut generation length for fast debugging.")
     parser.add_argument("--debug-mode", type=str,
         choices=["fewer_batch", "breakdown"])

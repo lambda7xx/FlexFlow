@@ -1,0 +1,69 @@
+batch_size: 1 args.overlap: True , args.cut_gen_len: 5
+<run_flexgen>: args.model: facebook/opt-6.7b
+Downloading (…)okenizer_config.json:   0%|          | 0.00/685 [00:00<?, ?B/s]Downloading (…)okenizer_config.json: 100%|██████████| 685/685 [00:00<00:00, 5.66MB/s]
+Downloading (…)lve/main/config.json:   0%|          | 0.00/651 [00:00<?, ?B/s]Downloading (…)lve/main/config.json: 100%|██████████| 651/651 [00:00<00:00, 6.14MB/s]
+Downloading (…)olve/main/vocab.json:   0%|          | 0.00/899k [00:00<?, ?B/s]Downloading (…)olve/main/vocab.json: 100%|██████████| 899k/899k [00:00<00:00, 44.6MB/s]
+Downloading (…)olve/main/merges.txt:   0%|          | 0.00/456k [00:00<?, ?B/s]Downloading (…)olve/main/merges.txt: 100%|██████████| 456k/456k [00:00<00:00, 77.4MB/s]
+Downloading (…)cial_tokens_map.json:   0%|          | 0.00/221 [00:00<?, ?B/s]Downloading (…)cial_tokens_map.json: 100%|██████████| 221/221 [00:00<00:00, 2.12MB/s]
+get_test_inputs, prompt_len:32 and batch_size:1
+prompts:['Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.']
+len(prompt):102
+input_prompt:102
+get_test_inputs, prompt_len:64 and batch_size:1
+prompts:['Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.']
+len(prompt):102
+input_prompt:102
+model size: 12.386 GB, cache size: 0.156 GB, hidden size (prefill): 0.002 GB
+init weight...
+Load the pre-trained pytorch weights of opt-6.7b from huggingface. The downloading and cpu loading can take dozens of minutes. If it seems to get stuck, you can monitor the progress by checking the memory usage of this process.
+Fetching 2 files:   0%|          | 0/2 [00:00<?, ?it/s]Fetching 2 files: 100%|██████████| 2/2 [00:00<00:00, 1111.96it/s]
+Convert format:   0%|          | 0/2 [00:00<?, ?it/s]
+  0%|          | 0/132 [00:00<?, ?it/s][A
+  4%|▍         | 5/132 [00:00<00:02, 44.84it/s][A
+ 11%|█▏        | 15/132 [00:00<00:01, 58.70it/s][A
+ 16%|█▌        | 21/132 [00:00<00:01, 57.33it/s][A
+ 23%|██▎       | 31/132 [00:00<00:01, 61.16it/s][A
+ 29%|██▉       | 38/132 [00:00<00:01, 61.33it/s][A
+ 36%|███▌      | 47/132 [00:00<00:01, 60.59it/s][A
+ 41%|████      | 54/132 [00:00<00:01, 61.55it/s][A
+ 48%|████▊     | 63/132 [00:01<00:01, 60.67it/s][A
+ 53%|█████▎    | 70/132 [00:01<00:01, 61.53it/s][A
+ 60%|█████▉    | 79/132 [00:01<00:00, 60.66it/s][A
+ 65%|██████▌   | 86/132 [00:01<00:00, 61.63it/s][A
+ 72%|███████▏  | 95/132 [00:01<00:00, 60.72it/s][A
+ 77%|███████▋  | 102/132 [00:01<00:00, 61.58it/s][A
+ 84%|████████▍ | 111/132 [00:01<00:00, 60.70it/s][A
+ 89%|████████▉ | 118/132 [00:01<00:00, 61.55it/s][A
+ 96%|█████████▌| 127/132 [00:02<00:00, 60.68it/s][A
+                                                 [AConvert format:  50%|█████     | 1/2 [00:29<00:29, 29.66s/it]Convert format:  50%|█████     | 1/2 [01:06<01:06, 66.87s/it]
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/opt/conda/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/home/lambda/FlexGen/flexgen/flex_opt.py", line 1341, in <module>
+    run_flexgen(args)
+  File "/home/lambda/FlexGen/flexgen/flex_opt.py", line 1234, in run_flexgen
+    model = OptLM(opt_config, env, args.path, policy)
+  File "/home/lambda/FlexGen/flexgen/flex_opt.py", line 638, in __init__
+    self.init_all_weights()
+  File "/home/lambda/FlexGen/flexgen/flex_opt.py", line 801, in init_all_weights
+    self.init_weight(j)
+  File "/home/lambda/FlexGen/flexgen/flex_opt.py", line 650, in init_weight
+    download_opt_weights(self.config.name, self.path)
+  File "/home/lambda/FlexGen/flexgen/opt_config.py", line 243, in download_opt_weights
+    state = torch.load(bin_file)
+  File "/home/lambda/.local/lib/python3.10/site-packages/torch/serialization.py", line 789, in load
+    return _load(opened_zipfile, map_location, pickle_module, **pickle_load_args)
+  File "/home/lambda/.local/lib/python3.10/site-packages/torch/serialization.py", line 1131, in _load
+    result = unpickler.load()
+  File "/home/lambda/.local/lib/python3.10/site-packages/torch/serialization.py", line 1101, in persistent_load
+    load_tensor(dtype, nbytes, key, _maybe_decode_ascii(location))
+  File "/home/lambda/.local/lib/python3.10/site-packages/torch/serialization.py", line 1079, in load_tensor
+    storage = zip_file.get_storage_from_record(name, numel, torch.UntypedStorage).storage().untyped()
+KeyboardInterrupt
+Exception ignored in: <module 'threading' from '/opt/conda/lib/python3.10/threading.py'>
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.10/threading.py", line 1567, in _shutdown
+    lock.acquire()
+KeyboardInterrupt: 

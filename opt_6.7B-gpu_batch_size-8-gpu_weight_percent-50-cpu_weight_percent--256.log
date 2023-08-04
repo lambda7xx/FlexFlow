@@ -1,0 +1,110 @@
+/home/lambda/.local/lib/python3.10/site-packages/torch/distributed/distributed_c10d.py:262: UserWarning: torch.distributed.reduce_op is deprecated, please use torch.distributed.ReduceOp instead
+  warnings.warn(
+batch_size: 8 args.overlap: True , args.cut_gen_len: 5
+<run_flexgen>: args.model: facebook/opt-6.7b
+get_test_inputs, prompt_len:32 and batch_size:8
+prompts:['Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.', 'Write a short blog post (500 words) about the best dog toys for new dog owners.', 'ChatGPT is rewriting Genesis.', 'Please write the evolution of humans by natural selection in the form of a recipe.', 'List possible Twitter messages from dinosaurs as the asteroid is about to hit the earth. List the account (with dino related puny names) having sent them in markdown bold. Then, the message itself.', '5 pick-up lines to say to seduce a large language model in a bar', 'Talk to me as if you are python programming language and want to sell me yourself', 'Tell me shortest story in the world']
+len(prompt):102
+len(prompt):79
+len(prompt):29
+len(prompt):82
+len(prompt):197
+len(prompt):64
+len(prompt):81
+len(prompt):35
+input_prompt:102
+input_prompt:79
+input_prompt:29
+input_prompt:82
+input_prompt:197
+input_prompt:64
+input_prompt:81
+input_prompt:35
+get_test_inputs, prompt_len:64 and batch_size:8
+prompts:['Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.', 'Write a short blog post (500 words) about the best dog toys for new dog owners.', 'ChatGPT is rewriting Genesis.', 'Please write the evolution of humans by natural selection in the form of a recipe.', 'List possible Twitter messages from dinosaurs as the asteroid is about to hit the earth. List the account (with dino related puny names) having sent them in markdown bold. Then, the message itself.', '5 pick-up lines to say to seduce a large language model in a bar', 'Talk to me as if you are python programming language and want to sell me yourself', 'Tell me shortest story in the world']
+len(prompt):102
+len(prompt):79
+len(prompt):29
+len(prompt):82
+len(prompt):197
+len(prompt):64
+len(prompt):81
+len(prompt):35
+input_prompt:102
+input_prompt:79
+input_prompt:29
+input_prompt:82
+input_prompt:197
+input_prompt:64
+input_prompt:81
+input_prompt:35
+model size: 12.386 GB, cache size: 1.250 GB, hidden size (prefill): 0.020 GB
+init weight...
+warmup - generate
+benchmark - generate
+decode_costs: [1.1128006320004715, 1.100492917000338, 1.1001497759998529, 1.0362562200007233]
+Outputs:
+----------------------------------------------------------------------
+0: Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.
+
+Write a detailed
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+1: Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.
+
+Write a detailed
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+2: Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.
+
+Write a detailed
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+3: Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.
+
+Write a detailed
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+4: Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.
+
+Write a detailed
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+5: Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.
+
+Write a detailed
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+6: Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.
+
+Write a detailed
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+7: Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.
+
+Write a detailed
+----------------------------------------------------------------------
+
+TorchDevice: cuda:0
+  cur_mem: 6.4009 GB,  peak_mem: 8.1086 GB
+TorchDevice: cpu
+  cur_mem: 6.3850 GB,  peak_mem: 0.0000 GB
+model size: 12.386 GB	cache size: 1.250 GB	hidden size (p): 0.020 GB
+peak gpu mem: 8.109 GB	projected: True
+prefill latency: 1.104 s	prefill throughput: 463.652 token/s
+decode latency: 272.469 s	decode throughput: 7.487 token/s
+total latency: 273.573 s	total throughput: 7.486 token/s
