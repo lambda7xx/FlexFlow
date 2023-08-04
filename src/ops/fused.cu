@@ -32,6 +32,7 @@
 #include "flexflow/ops/kernels/pool_2d_kernels.h"
 #include "flexflow/ops/kernels/reshape_kernels.h"
 #include "flexflow/ops/kernels/rms_norm_kernels.h"
+#include "flexflow/ops/kernels/softmax_kernels.h"
 #include "flexflow/ops/kernels/transpose_kernels.h"
 #include "flexflow/ops/layer_norm.h"
 #include "flexflow/ops/spec_inc_multihead_self_attention.h"
@@ -44,8 +45,10 @@ namespace FlexFlow {
 using Legion::Context;
 using Legion::coord_t;
 using Legion::Domain;
+using Legion::Future;
 using Legion::LogicalPartition;
 using Legion::LogicalRegion;
+using Legion::Memory;
 using Legion::PhysicalRegion;
 using Legion::Runtime;
 using Legion::Task;
@@ -416,6 +419,26 @@ __host__ void FusedOp::forward_task(Task const *task,
             my_input_accessor[0].domain.get_volume());
         break;
       }
+      case OP_SOFTMAX: {
+        assert(fused->op_num_inputs[op] == 1);
+        assert(fused->op_num_weights[op] == 0);
+        assert(fused->op_num_outputs[op] == 1);
+        assert(my_input_accessor[0].domain.get_volume() ==
+               my_output_accessor[0].domain.get_volume());
+        SoftmaxMeta *m = (SoftmaxMeta *)metas->meta[op];
+        if (m->input_type == DT_HALF) {
+          Kernels::Softmax::forward_kernel_wrapper(
+              m,
+              my_input_accessor[0].get_half_ptr(),
+              my_output_accessor[0].get_half_ptr());
+        } else if (m->input_type == DT_FLOAT) {
+          Kernels::Softmax::forward_kernel_wrapper(
+              m,
+              my_input_accessor[0].get_float_ptr(),
+              my_output_accessor[0].get_float_ptr());
+        }
+        break;
+      }
       case OP_RESHAPE: {
         assert(fused->op_num_inputs[op] == 1);
         assert(fused->op_num_weights[op] == 0);
@@ -472,7 +495,13 @@ __host__ void
   // const FusedOp* fused = (FusedOp*) task->args;
   FusedOpMeta const *metas = *((FusedOpMeta **)task->local_args);
   FusedOp const *fused = metas->fused_op;
-  BatchConfig const *bc = (BatchConfig *)task->args;
+  // BatchConfig const *bc = (BatchConfig *)task->args;
+  BatchConfig const *bc = BatchConfig::from_future(task->futures[0]);
+  // Return if no active tokens
+  if (bc->num_tokens == 0) {
+    return;
+  }
+
   assert(metas->numOperators == fused->numOperators);
   assert(regions.size() == task->regions.size());
   assert((int)regions.size() ==
@@ -813,8 +842,10 @@ __host__ void
         assert(fused->op_num_outputs[op] == 1);
         TreeIncMultiHeadSelfAttentionMeta *m =
             (TreeIncMultiHeadSelfAttentionMeta *)metas->meta[op];
-        TreeVerifyBatchConfig const *tree_bc =
-            (TreeVerifyBatchConfig *)task->args;
+        // TreeVerifyBatchConfig const *tree_bc =
+        //     (TreeVerifyBatchConfig *)task->args;
+        TreeVerifyBatchConfig const &tree_bc =
+            Future(task->futures[0]).get_result<TreeVerifyBatchConfig>();
         assert(fused->op_num_weights[op] == (1 + (int)(*m->bias)));
         GenericTensorAccessorR biases;
         if (*m->bias) {
@@ -823,7 +854,7 @@ __host__ void
         }
         TreeIncMultiHeadSelfAttention::inference_kernel_wrapper(
             m,
-            tree_bc,
+            &tree_bc,
             task->index_point.point_data[0],
             my_input_accessor[0],
             my_weight_accessor[0],
@@ -836,8 +867,10 @@ __host__ void
         assert(fused->op_num_outputs[op] == 1);
         SpecIncMultiHeadSelfAttentionMeta const *m =
             (SpecIncMultiHeadSelfAttentionMeta *)metas->meta[op];
-        BeamSearchBatchConfig const *beam_bc =
-            (BeamSearchBatchConfig *)task->args;
+        // BeamSearchBatchConfig const *beam_bc =
+        //     (BeamSearchBatchConfig *)task->args;
+        BeamSearchBatchConfig const &beam_bc =
+            Future(task->futures[0]).get_result<BeamSearchBatchConfig>();
         assert(fused->op_num_weights[op] == (1 + (int)(*m->bias)));
         GenericTensorAccessorR biases;
         if (*m->bias) {
@@ -846,7 +879,7 @@ __host__ void
         }
         SpecIncMultiHeadSelfAttention::inference_kernel_wrapper(
             m,
-            beam_bc,
+            &beam_bc,
             task->index_point.point_data[0],
             my_input_accessor[0],
             my_weight_accessor[0],
@@ -868,12 +901,32 @@ __host__ void
             m, my_input_accessor[0], my_output_accessor[0], gamma, beta);
         break;
       }
+      case OP_SOFTMAX: {
+        assert(fused->op_num_inputs[op] == 1);
+        assert(fused->op_num_weights[op] == 0);
+        assert(fused->op_num_outputs[op] == 1);
+        assert(my_input_accessor[0].domain.get_volume() ==
+               my_output_accessor[0].domain.get_volume());
+        SoftmaxMeta *m = (SoftmaxMeta *)metas->meta[op];
+        if (m->input_type == DT_HALF) {
+          Kernels::Softmax::forward_kernel_wrapper(
+              m,
+              my_input_accessor[0].get_half_ptr(),
+              my_output_accessor[0].get_half_ptr());
+        } else if (m->input_type == DT_FLOAT) {
+          Kernels::Softmax::forward_kernel_wrapper(
+              m,
+              my_input_accessor[0].get_float_ptr(),
+              my_output_accessor[0].get_float_ptr());
+        }
+        break;
+      }
       case OP_ALLREDUCE: {
         assert(fused->op_num_inputs[op] == 1);
         assert(fused->op_num_outputs[op] == 1);
         AllReduceMeta const *m = (AllReduceMeta *)metas->meta[op];
-        Kernels::AllReduce::forward_kernel_wrapper(
-            m, my_input_accessor[0], my_output_accessor[0]);
+        Kernels::AllReduce::inference_kernel_wrapper(
+            m, bc, my_input_accessor[0], my_output_accessor[0]);
         break;
       }
       default: {

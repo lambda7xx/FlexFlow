@@ -14,6 +14,7 @@
  */
 
 #include "flexflow/inference.h"
+#include "models/falcon.h"
 #include "models/llama.h"
 #include "models/opt.h"
 #include <filesystem>
@@ -43,10 +44,7 @@ void parse_input_args(char **argv,
                       FilePaths &paths,
                       ModelTypes &model_types,
                       bool &use_full_precision,
-                      bool &verbose,
-                      int &data_parallelism_degree,
-                      int &tensor_parallelism_degree,
-                      int &pipeline_parallelism_degree) {
+                      bool &verbose) {
   for (int i = 1; i < argc; i++) {
     // llm model type
     if (!strcmp(argv[i], "-llm-model")) {
@@ -57,8 +55,12 @@ void parse_input_args(char **argv,
                      [](unsigned char c) { return std::tolower(c); });
       if (model_type_str == "llama") {
         model_types.llm_model_type = ModelType::LLAMA;
+      } else if (model_type_str == "llama2") {
+        model_types.llm_model_type = ModelType::LLAMA2;
       } else if (model_type_str == "opt") {
         model_types.llm_model_type = ModelType::OPT;
+      } else if (model_type_str == "falcon") {
+        model_types.llm_model_type = ModelType::FALCON;
       } else {
         model_types.llm_model_type = ModelType::UNKNOWN;
       }
@@ -83,8 +85,12 @@ void parse_input_args(char **argv,
                      [](unsigned char c) { return std::tolower(c); });
       if (model_type_str == "llama") {
         model_types.ssm_model_types.push_back(ModelType::LLAMA);
+      } else if (model_type_str == "llama2") {
+        model_types.ssm_model_types.push_back(ModelType::LLAMA2);
       } else if (model_type_str == "opt") {
         model_types.ssm_model_types.push_back(ModelType::OPT);
+      } else if (model_type_str == "falcon") {
+        model_types.ssm_model_types.push_back(ModelType::FALCON);
       } else {
         model_types.ssm_model_types.push_back(ModelType::UNKNOWN);
       }
@@ -117,21 +123,6 @@ void parse_input_args(char **argv,
       paths.output_file_path = std::string(argv[++i]);
       continue;
     }
-    // data parallelism degree
-    if (!strcmp(argv[i], "-data-parallelism-degree")) {
-      data_parallelism_degree = std::stoi(argv[++i]);
-      continue;
-    }
-    // tensor parallelism degree
-    if (!strcmp(argv[i], "-tensor-parallelism-degree")) {
-      tensor_parallelism_degree = std::stoi(argv[++i]);
-      continue;
-    }
-    // pipeline parallelism degree
-    if (!strcmp(argv[i], "-pipeline-parallelism-degree")) {
-      pipeline_parallelism_degree = std::stoi(argv[++i]);
-      continue;
-    }
     if (!strcmp(argv[i], "--use-full-precision")) {
       use_full_precision = true;
       continue;
@@ -160,20 +151,10 @@ void FlexFlow::top_level_task(Task const *task,
   InputArgs const &command_args = HighLevelRuntime::get_input_args();
   char **argv = command_args.argv;
   int argc = command_args.argc;
-  parse_input_args(argv,
-                   argc,
-                   file_paths,
-                   model_types,
-                   use_full_precision,
-                   verbose,
-                   data_parallelism_degree,
-                   tensor_parallelism_degree,
-                   pipeline_parallelism_degree);
-  ffconfig.data_parallelism_degree = data_parallelism_degree;
-  ffconfig.tensor_parallelism_degree = tensor_parallelism_degree;
-  ffconfig.pipeline_parallelism_degree = pipeline_parallelism_degree;
-  assert(data_parallelism_degree * tensor_parallelism_degree *
-             pipeline_parallelism_degree ==
+  parse_input_args(
+      argv, argc, file_paths, model_types, use_full_precision, verbose);
+  assert(ffconfig.data_parallelism_degree * ffconfig.tensor_parallelism_degree *
+             ffconfig.pipeline_parallelism_degree ==
          ffconfig.numNodes * ffconfig.workersPerNode);
 
   if (file_paths.ssm_weight_file_paths.size() == 0) {
@@ -200,17 +181,22 @@ void FlexFlow::top_level_task(Task const *task,
 
   // Create SentencePiece tokenizer or OPT tokenizer
   SamplingConfig samplingConfig;
-  InferenceManager im(ffconfig, BatchConfig::MAX_NUM_TOKENS);
-  RequestManager rm(model_types.llm_model_type,
-                    file_paths.tokenizer_file_path,
-                    /*verbose*/ verbose,
-                    file_paths.output_file_path);
+  InferenceManager *im = InferenceManager::get_inference_manager();
+  RequestManager *rm = RequestManager::get_request_manager();
+  rm->register_tokenizer(model_types.llm_model_type,
+                         file_paths.tokenizer_file_path);
+  rm->register_output_filepath(file_paths.output_file_path);
+  // InferenceManager im(ffconfig, BatchConfig::MAX_NUM_TOKENS);
+  // RequestManager rm(model_types.llm_model_type,
+  //                   file_paths.tokenizer_file_path,
+  //                   /*verbose*/ verbose,
+  //                   file_paths.output_file_path);
 
   // Create LLM model
   FFModel tree_model(ffconfig, ffconfig.cpu_offload);
-  if (model_types.llm_model_type == ModelType::LLAMA) {
+  if (model_types.llm_model_type == ModelType::LLAMA ||
+      model_types.llm_model_type == ModelType::LLAMA2) {
     LLAMA::create_llama_model(tree_model,
-                              im,
                               file_paths.llm_config_file_path,
                               file_paths.llm_weight_file_path,
                               TREE_VERIFY_MODE,
@@ -218,11 +204,16 @@ void FlexFlow::top_level_task(Task const *task,
                               use_full_precision);
   } else if (model_types.llm_model_type == ModelType::OPT) {
     OPT::create_opt_model(tree_model,
-                          im,
                           file_paths.llm_config_file_path,
                           file_paths.llm_weight_file_path,
                           TREE_VERIFY_MODE,
                           use_full_precision);
+  } else if (model_types.llm_model_type == ModelType::FALCON) {
+    FALCON::create_falcon_model(tree_model,
+                                file_paths.llm_config_file_path,
+                                file_paths.llm_weight_file_path,
+                                TREE_VERIFY_MODE,
+                                use_full_precision);
   } else {
     assert(false && "Invalid LLM model type passed (or no type was passed).");
   }
@@ -241,9 +232,9 @@ void FlexFlow::top_level_task(Task const *task,
 
   for (int ssm_id = 0; ssm_id < num_ssms; ssm_id++) {
     FFModel &beam_model = ssm_models[ssm_id];
-    if (model_types.ssm_model_types[ssm_id] == ModelType::LLAMA) {
+    if (model_types.ssm_model_types[ssm_id] == ModelType::LLAMA ||
+        model_types.ssm_model_types[ssm_id] == ModelType::LLAMA2) {
       LLAMA::create_llama_model(beam_model,
-                                im,
                                 file_paths.ssm_config_file_paths[ssm_id],
                                 file_paths.ssm_weight_file_paths[ssm_id],
                                 BEAM_SEARCH_MODE,
@@ -251,17 +242,21 @@ void FlexFlow::top_level_task(Task const *task,
                                 use_full_precision);
     } else if (model_types.ssm_model_types[ssm_id] == ModelType::OPT) {
       OPT::create_opt_model(beam_model,
-                            im,
                             file_paths.ssm_config_file_paths[ssm_id],
                             file_paths.ssm_weight_file_paths[ssm_id],
                             BEAM_SEARCH_MODE,
                             use_full_precision);
+    } else if (model_types.ssm_model_types[ssm_id] == ModelType::FALCON) {
+      FALCON::create_falcon_model(beam_model,
+                                  file_paths.ssm_config_file_paths[ssm_id],
+                                  file_paths.ssm_weight_file_paths[ssm_id],
+                                  BEAM_SEARCH_MODE,
+                                  use_full_precision);
     } else {
       assert(false && "Invalid SSM model type passed.");
     }
 
-    int beam_model_id = rm.register_new_model(&beam_model);
-    ssm_model_ids.push_back(beam_model_id);
+    rm->register_ssm_model(&beam_model);
   }
 
   // Register requests from prompt file
@@ -278,11 +273,9 @@ void FlexFlow::top_level_task(Task const *task,
       std::string text = prompt.get<std::string>();
       printf("Prompt[%d]: %s\n", total_num_requests, text.c_str());
       total_num_requests++;
-      rm.register_new_request(text, 128 /*max_sequence_length*/);
+      tree_model.generate(text, 128 /*max_sequence_length*/);
     }
   }
-
-  im.spec_inference_loop(&tree_model, rm, total_num_requests, ssm_model_ids);
 
   // Execution fence
   {

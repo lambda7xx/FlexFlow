@@ -4,7 +4,7 @@ offload_memory=6000
 model=opt-6B
 #opt-6B
 ../build/inference/spec_infer/spec_infer -ll:gpu 1 -ll:fsize 14000 \
--ll:zsize 30000  -llm-model opt \
+-ll:zsize 40000  -llm-model opt \
 -llm-weight ../inference/weights/opt_6B_weights_half -llm-config ../inference/models/configs/opt_6B.json \
 -ssm-model opt -ssm-weight ../inference/weights/opt_125M_weights_half/ \
 -ssm-config ../inference/models/configs/opt_125M.json \

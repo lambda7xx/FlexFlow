@@ -1,0 +1,1000 @@
+  145  kill -9 7493
+  146  python3 compress_opt_weights.py > opt.log 2>&1 &
+  147  ps -aux | grep compress
+  148  code opt.log 
+  149  ps -aux | grep compress
+  150  cd ..
+  151  cd tests
+  152  ls
+  153  code cpu_offload_quantization.sh
+  154  ls
+  155  bash cpu_offload_quantization.sh  > offload_quantization.log 2>&1 &
+  156  code offload_quantization.log 
+  157  ps -aux | grep cpu_offload
+  158  kill -9 9620
+  159  ps -aux | grep cpu_offload
+  160  clear
+  161  ps -aux | grep cpu_offload
+  162  kill -9 9914
+  163  cd benchmark/
+  164  bash bench_6.7b_1x4.sh
+  165  cd flexgen/
+  166  ls
+  167  bash bench_6.7b_1x4.sh  > opt.log 2>&1 &
+  168  code opt.log 
+  169  pip3 list | grep attr
+  170  pip3 install --upgrade attr
+  171  python3
+  172  sudo mv /home/lambda/.local/lib/python3.8/site-packages/attr.py /home/lambda/.local/lib/python3.8/site-packages/attr_old.py
+  173  python3
+  174  pip install --upgrade attr
+  175  pip3 install --upgrade attr
+  176  python3
+  177  conda
+  178  python3
+  179  which python
+  180  which python3
+  181  code run.sh
+  182  echo "bash  bench_6.7b_1x4.sh > opt.log 2>&1 & " > run.sh
+  183  cat run.sh 
+  184  bash run.sh 
+  185  conda create --name myenv python=3.8
+  186  conda install conda=23.5.0
+  187  conda create --name myenv python=3.8
+  188  conda activate myenv
+  189  bash 
+  190  conda activate myenv
+  191  ls
+  192  cd benchmark/flexgen/
+  193  ls
+  194  bash run.sh 
+  195  ps -aux | grep run
+  196  ps -aux | grep run.sh
+  197  bash run.sh 
+  198  exit
+  199  ls
+  200  cd utils
+  201  ls
+  202  cd inference/
+  203  ls
+  204  cd spec_infer/
+  205  ls
+  206  cd ..
+  207  cd utils/
+  208  l
+  209  code download_opt_weights.py 
+  210  python3 download_opt_weights.py 
+  211  tmux a
+  212  tmux 
+  213  exit
+  214  conda deactivate
+  215  ls
+  216  cd inference/utils/
+  217  ls
+  218  python3 download_opt_weights.py  > opt.log 2>&1 &
+  219  code opt.log 
+  220  cd ..
+  221  ls
+  222  cd tests
+  223  ls
+  224  cd ..
+  225  cd tests
+  226  ls
+  227  code inference_tests.sh 
+  228  code evaluation_opt_offload.h
+  229  code evaluation_opt_offload.sh
+  230  conda deactivate
+  231  ls
+  232  cd tests
+  233  ls
+  234  chmod +x  evaluation_opt_offload.sh 
+  235  ls
+  236  bash evaluation_opt_offload.sh 
+  237  clear
+  238  bash evaluation_opt_offload.sh 
+  239  clear
+  240  bash evaluation_opt_offload.sh 
+  241  free -m
+  242  nvidia-smi
+  243  clear
+  244  bash evaluation_opt_offload.sh 
+  245  free -h
+  246  git branch
+  247  git log
+  248  bash evaluation_opt_offload.sh 
+  249  cd 
+  250  cd FlexGen/
+  251  bash run.sh  > 13B.log 2>&1 &
+  252  code 13B.log 
+  253  ls
+  254  pip3 install numpy
+  255  code 13B.log 
+  256  bash run.sh  > 13B.log 2>&1 &
+  257  pip3 install torch==1.13
+  258  pip install -e .
+  259  bash run.sh  > 13B.log 2>&1 &
+  260  bash run.sh 
+  261  ps -aux | grep run.sh
+  262  ps -aux
+  263  htop
+  264  top
+  265  bash run.sh 
+  266  ls
+  267  bash run.sh 
+  268  bash run.sh  &
+  269  ps -aux | grep run.sh
+  270  ps -aux | grep flex
+  271  git branch
+  272  git remote -v
+  273  git push upstream inference-opt-13B
+  274  bash bench_6.7b_1x4.sh 
+  275  ps -aux | grep bench
+  276  bash bench_6.7b_1x4.sh 
+  277  rm -rf *.log 
+  278  ls
+  279  rm -rf *.log 
+  280  bash bench_6.7b_1x4.sh 
+  281  bash bench_6.7b_1x4.sh \
+  282  bash bench_6.7b_1x4.sh 
+  283  rm -rf *.log 
+  284  bash bench_6.7b_1x4.sh &
+  285  ls
+  286  cd
+  287  ls
+  288  pwd
+  289  ls
+  290  rm -rf flexgen_offload_dir/
+  291  cd FlexGen/benchmark/
+  292  ls
+  293  cd flexgen/
+  294  ls
+  295  cd ..
+  296  ls
+  297  cd ..
+  298  ls
+  299  git add .
+  300  git commit -m "add opt 6.7b 4gpu "
+  301  ps -aux | grep bench
+  302  bash bench_6.7b_1x4.sh &
+  303  bash bench_6.7b_1x4.sh 
+  304  LS
+  305  ls
+  306  rm -rf *.log 
+  307  bash bench_6.7b_1x4.sh 
+  308  ps -aux | grep bench
+  309  bash bench_6.7b_1x4.sh 
+  310  ls
+  311  make -j 32
+  312  bash no_offload.sh 
+  313  code run.sh
+  314  bash run.sh 
+  315  cd 
+  316  ls
+  317  cd FlexGen/
+  318  cd benchmark/
+  319  ls
+  320  cd flexgen/
+  321  bash bench_6.7b_1x4.sh 
+  322  ps -au 
+  323  ps -aux
+  324  kill -9 21173
+  325  ps -aux
+  326  top
+  327  bash bench_6.7b_1x4.sh 
+  328  conda activate myenv
+  329  ps  -aux | grep bash
+  330  bash bench_6.7b_1x4.sh 
+  331  ls
+  332  rm -rf *.log 
+  333  pgrep -fl python | awk '!/dist_flex_opt\.py/{print $1}' | xargs sudo kill
+  334  bash bench_6.7b_1x4.sh 
+  335  cp bench_6.7b_1x4.sh  bench_13b_1x4.sh
+  336  bash  bench_6.7b_1x4.sh  bench_13b_1x4.sh
+  337  ps -aux | grep bench
+  338  bash bench_13b_1x4.sh 
+  339  bash bench_6.7b_1x4.sh 
+  340  cd flexgen
+  341  ls
+  342  cd ..
+  343  cd benchmark/
+  344  ls
+  345  cd flexgen/
+  346  ls
+  347  code gpus_4-opt_13B-gpu_batch_size-1-gpu_weight_percent-100-cpu_weight_percent-0.log
+  348  cd ..
+  349  cd benchmark/flexgen/
+  350  ls
+  351  cd ..
+  352  git add .
+  353  git commit -m "add flexgen opt 13 b "
+  354  git remote -v
+  355  git push upstream flexgen
+  356  tmux a
+  357  ../config/config.linux 
+  358  ls
+  359  make -j 32 > make.log 2>&1 &
+  360  code make.log 
+  361  cd build/
+  362  tmux 
+  363  cd in
+  364  cd inference/
+  365  ls
+  366  cd  spec_infer/
+  367  ls
+  368  cd ..
+  369  cd models/
+  370  ls
+  371  cd ..
+  372  cd tests
+  373  ls
+  374  code run-13B.sh
+  375  cd ../inference/
+  376  ls
+  377  cd models/
+  378  ls
+  379  cd ..
+  380  cd weights/
+  381  ls
+  382  cd ..
+  383  cd prompt/
+  384  ;s
+  385  ls
+  386  cd
+  387  ls
+  388  rm -rf flexgen_offload_dir/
+  389  cd benchmark/
+  390  ls
+  391  cd flexgen/
+  392  ls
+  393  bash bench_6.7b_1x4.sh 
+  394  ps -aux | grep bench
+  395  kill -9 12652
+  396  ps -aux | grep bench
+  397  ps -aux | grep python
+  398  top
+  399  bash bench_6.7b_1x4.sh 
+  400  ps -aux | grep python
+  401  ps -aux | grep bench
+  402  cd ../tests
+  403  ls
+  404  bash run-13B.sh 
+  405  bash run-13B.sh  > 13b.log 2>&1 
+  406  ls
+  407  cd inference/
+  408  ls
+  409  cd models/
+  410  ls
+  411  cd configs/
+  412  ls
+  413  ls
+  414  cd build/
+  415  ls
+  416  make -j 32
+  417  tmux 
+  418  cd
+  419  ls
+  420  cd SpecInfer-0720/inference/
+  421  cd weights/
+  422  ls
+  423  du -h
+  424  rm -rf opt_13B_weights_half/
+  425  owd
+  426  pwd
+  427  du -h
+  428  rm -rf  opt_6B_weights
+  429  du -h
+  430  rm -rf llama_7B_weights
+  431  du -h
+  432  make -j 32
+  433  ls
+  434  git checkout cpu_offload
+  435  git log
+  436  git rset --hard 53c56
+  437  git reset --hard 53c56
+  438  ../config/config.linux 
+  439  make -j 32
+  440  git checkout inference
+  441  cd ..
+  442  git status
+  443  git log
+  444  git pull origin inference
+  445  ls
+  446  git tatus
+  447  git status
+  448  cd legion
+  449  cd dpes
+  450  ls
+  451  cd deps
+  452  ls
+  453  cd legion/
+  454  ls
+  455  git log
+  456  git remote -v
+  457  ggit branch 
+  458  cd 
+  459  ;s
+  460  ls
+  461  git clone --recursive -b inference https://github.com/flexflow/FlexFlow.git SpecInfer-0720
+  462  cd SpecInfer-0720/
+  463  cd deps
+  464  ls
+  465  cd legion/
+  466  gut log
+  467  git log
+  468  cd ..
+  469  ls
+  470  cd nccl
+  471  git log
+  472  cd ..
+  473  git log
+  474  ls
+  475  mkdir  build
+  476  cd build/
+  477  ../config/config.linux 
+  478  make -j 32
+  479  ls
+  480  cd ..
+  481  cd ../SpecInfer
+  482  ls
+  483  cd inference/
+  484  ls
+  485  cd weights/
+  486  ls
+  487  cd ..
+  488  cp -r weights/ /home/lambda/SpecInfer-0720/inference
+  489  cd weights/
+  490  du -h
+  491  cp -r opt_13B_weights_half/ /home/lambda/SpecInfer-0720/inference/weights
+  492  cd 
+  493  df -h
+  494  ls
+  495  rm -rf .cache
+  496  df -h
+  497  ls
+  498  cd SpecInfer
+  499  ls
+  500  cd inference/weights/
+  501  cp -r opt_13B_weights_half/ /home/lambda/SpecInfer-0720/inference/weights
+  502  ls
+  503  rm -rf opt_6B_weights
+  504  LS
+  505  ls
+  506  rm -rf llama_7B_weights
+  507  df -h
+  508  cd 
+  509  l
+  510  ls
+  511  cd inference/
+  512  du -h
+  513  cd
+  514  cd Flex
+  515  cd FlexFlow/
+  516  du -h
+  517  cd 
+  518  ls
+  519  cd opt_weights/
+  520  du -h
+  521  ls
+  522  cd 
+  523  cd flexgen_offload_dir/
+  524  ls
+  525  du -h
+  526  cd 
+  527  cd opt_weights/
+  528  ls
+  529  rm -rf
+  530  ls
+  531  du h
+  532  cd
+  533  df -h
+  534  ls
+  535  du -h opt_weights/
+  536  rm -rf opt_weights/
+  537  df -h
+  538  ks
+  539  ls
+  540  rm -rf torque/
+  541  du -h
+  542  du -h | grep G
+  543  bash evalute_opt_4GPU.sh 
+  544  cd inference/
+  545  ls
+  546  cd utils/
+  547  ls
+  548  code download_opt_weights.py 
+  549  cd ..
+  550  mkdir tokenizer
+  551  cd  tokenizer/
+  552  wget https://raw.githubusercontent.com/facebookresearch/metaseq/main/projects/OPT/assets/gpt2-vocab.json
+  553  wget https://raw.githubusercontent.com/facebookresearch/metaseq/main/projects/OPT/assets/gpt2-merges.txt
+  554  wget https://huggingface.co/truongpdd/vietnews-gpt2/raw/main/added_tokens.json
+  555  cd ..
+  556  tmux a
+  557  cd build/
+  558  make -j 32
+  559  ls
+  560  cd inference/
+  561  ls
+  562  cd output/
+  563  ls
+  564  cp spec_inference_opt_half_13B_tp4.txt  spec_inference_opt_half_13B_tp4-pp1-bath-size-1.txt
+  565  ls
+  566  cd src
+  567  ls
+  568  cd ..
+  569  cd tests
+  570  ls
+  571  cd ..
+  572  ls
+  573  cd inference/
+  574  ls
+  575  mkdir prompt
+  576  ls
+  577  wget https://specinfer.s3.us-east-2.amazonaws.com/prompts/chatgpt.json
+  578  ls
+  579  cd prompt/
+  580  ls
+  581  wget https://specinfer.s3.us-east-2.amazonaws.com/prompts/chatgpt.json
+  582  ls
+  583  cd ..
+  584  mkdir output
+  585  ls
+  586  cd ..
+  587  cd SpecInfer-0720/
+  588  cd tests
+  589  ls
+  590  code evalute_opt_4GPU.sh
+  591  code inference_tests.sh 
+  592  tmux 
+  593  python3 ../inference/utils/download_opt_weights.py
+  594  ls
+  595  python3 ../inference/utils/download_opt_weights.py
+  596  bash evalute_opt_4GPU.sh 
+  597  cd inference/
+  598  ls
+  599  cd weights/
+  600  ls
+  601  cd ..
+  602  ls
+  603  cd tests
+  604  ls
+  605  tmux 
+  606  ls
+  607  bash evalute_opt_4GPU.sh 
+  608  cd ..
+  609  git add .
+  610  git commit -m "debug the batch size "
+  611  git checkout -b inference-flexgen
+  612  cd build/
+  613  l
+  614  ls
+  615  make -j 32
+  616  ls
+  617  cd inference/
+  618  ls
+  619  cd weights/
+  620  ls
+  621  rm -rf *
+  622  cd ..
+  623  cd  tests
+  624  ls
+  625  code inference_tests.sh 
+  626  tmux 
+  627  ls
+  628  cd src
+  629  ls
+  630  cd ..
+  631  git remote -v
+  632  git branch
+  633  git status
+  634  git add .
+  635  git commit -m "add some code "4
+  636  git remote add upstream https://github.com/lambda7xx/FlexFlow.git
+  637  git push upstream inference-flexgen
+  638  cd .ssh
+  639  ls
+  640  code authorized_keys 
+  641  nvidia-smi
+  642  code /home/lambda/SpecInfer-0720/tests/spec_infer_13b_half_tp4-pp-1-batch-size-1.log
+  643  cd build/
+  644  ls
+  645  make -j 32
+  646  cd ../tests/
+  647  ls
+  648  bash evalute_opt_4GPU.sh 
+  649  git branch
+  650  git remote -v
+  651  git pull upstream inference-flexgen
+  652  git add .
+  653  git commit -m "fix the error"
+  654  git push upstream inference -flexgen
+  655  git push upstream inference-flexgen
+  656  ls
+  657  git checkout -b inference-new
+  658  git log
+  659  git reset --hard 4434a
+  660  ls
+  661  git status
+  662  git add .
+  663  git commit -m "add some code"
+  664  git checkout -b inference_batch_beam
+  665  ls
+  666  cd src
+  667  ls
+  668  cd ops
+  669  ls
+  670  cloc .
+  671  ls
+  672  cd kernels/
+  673  ls
+  674  cloc .
+  675  cd ...
+  676  cd ..
+  677  ls
+  678  cd ..
+  679  cd build/
+  680  make -j 32
+  681  ls
+  682  cd src
+  683  ls
+  684  cloc .
+  685  ls
+  686  cd parallel_ops/
+  687  cloc .
+  688  cd ..
+  689  cd rn
+  690  cd runtime/
+  691  ls
+  692  cloc .
+  693  ls
+  694  code model.c
+  695  code model.cc
+  696  ls
+  697  code model.cu 
+  698  code memory_allocator.cc 
+  699  code memory_optimization.cc 
+  700  code operator.cc 
+  701  code model.cpp 
+  702  code machine_view.cc 
+  703  code /home/lambda/SpecInfer-0720/tests/spec_infer_13b_half_tp4-pp-1-batch-size-1.log
+  704  ls
+  705  cd ../tests/
+  706  code evalute_opt_4GPU.sh 
+  707  bash evalute_opt_4GPU.sh 
+  708  cd 
+  709  ls
+  710  git clone https://github.com/tpoisonooo/how-to-optimize-gemm.git
+  711  code how-to-optimize-gemm/
+  712  git add .
+  713  git commit -m "add opt 6.7 b"
+  714  git remote -v
+  715  git branch
+  716  git push upstream flexgen
+  717  ps -aux
+  718  tmux 
+  719  bash run.sh 
+  720  ps -aux | grep run
+  721  git add .
+  722  git commit -m "add opt6.7b"
+  723  git remote -v
+  724  git branch
+  725  git push upstream flexgen
+  726  ls
+  727  code run-33B.sh 
+  728  bash run-33B.sh 
+  729  exit
+  730  bash run-33B.sh 
+  731  exit
+  732  ls
+  733  cd FlexGen/
+  734  ls
+  735  vim opt_30B-gpu_batch_size-1-gpu_weight_percent-0-cpu_weight_percent-100.log 
+  736  ls
+  737  cd 
+  738  du -h
+  739  df -h
+  740  ls
+  741  cd SpecInfer
+  742  du -h
+  743  ls
+  744  cd inference/
+  745  ls
+  746  cd weights/
+  747  ls
+  748  rm -rf *
+  749  cd 
+  750  df -h
+  751  cd SpecInfer-0720/
+  752  LS
+  753  ls
+  754  cd src
+  755  cd ..
+  756  cd inference/
+  757  ls
+  758  cd weights/
+  759  du -h
+  760  ls
+  761  rm -rf *
+  762  cd 
+  763  ls
+  764  du -h
+  765  df -h
+  766  du -h | grep G
+  767  cd .cache
+  768  ls
+  769  cd huggingface/
+  770  ls
+  771  cd hub/
+  772  ls
+  773  du -h
+  774  ls
+  775  cd models--facebook--opt-
+  776  cd models--facebook--opt-30b/
+  777  du -h
+  778  cd ..
+  779  ;s
+  780  du -h
+  781  cd 
+  782  cd FlexGen/
+  783  ps -aux  grep run
+  784  ps -aux | grep run
+  785  kill -9 15790
+  786  ls
+  787  ps -aux | grep run
+  788  ps -aux | grep flex
+  789  kill -9 15795
+  790  ps -aux | grep flex
+  791  bash run-33B.sh &
+  792  ps -aux | grep flex
+  793  vim opt_30B-gpu_batch_size-1-gpu_weight_percent-0-cpu_weight_percent-100.log 
+  794  bash run.sh 
+  795  bash run-33B.sh 
+  796  cd flexgen_offload_dir/
+  797  cd 
+  798  ls
+  799  cd FlexGen/
+  800  ls
+  801  bash run-33B.sh 
+  802  ls
+  803  df -h
+  804  ps -aux | grep run.sh
+  805  ps -aux | grep run
+  806  ps -aux | grep flexgen
+  807  ls
+  808  code run.sh 
+  809  tmux 
+  810  df -h
+  811  free =m
+  812  free -m
+  813  git add .
+  814  git commit -m "add some opt-30B model "
+  815  git push remote -v
+  816  git remote -v
+  817  git push upstream flexgen
+  818  free -m
+  819  bash run-33B.sh 
+  820  ps -aux
+  821  nvidia-smi
+  822  bash run-33B.sh 
+  823  git add .
+  824  git commit -m "add opt 33B"
+  825  git push upstream flexgen
+  826  tmux ls
+  827  tmux a
+  828  mkdir build
+  829  cd build/
+  830  ../config/config.linux 
+  831  make -j 32
+  832  cd ..
+  833  ls
+  834  cd inference/
+  835  ls
+  836  cd weights/
+  837  ls
+  838  rm -rf *
+  839  cd 
+  840  cd  SpecInfer-0727/build/
+  841  make -j 32
+  842  cd ../build/
+  843  ls
+  844  cd inference/
+  845  ls
+  846  cd spec_infer/
+  847  cd ..
+  848  ls
+  849  cd
+  850  cd SpecInfer-0727
+  851  cd in
+  852  cd inference/
+  853  ls
+  854  cd models
+  855  cd configs/
+  856  ls
+  857  tmux 
+  858  ls
+  859  cd 
+  860  cd flexgen_offload_dir/
+  861  du -h
+  862  cd 
+  863  cd FlexGen/
+  864  du -h
+  865  cd 
+  866  cd .cache
+  867  ls
+  868  cd huggingface/
+  869  df -h
+  870  ls
+  871  cd hub/
+  872  ls
+  873  rm -rf models--facebook--opt-30b/
+  874  df -h
+  875  cd 
+  876  df -h
+  877  du -h | grep GA
+  878  du -h | grep G
+  879  ls
+  880  rm -rf opt_weights/
+  881  du -h | grep G
+  882  df -h
+  883  cd SpecInfer-0727
+  884  git log
+  885  ls
+  886  cd src
+  887  ls
+  888  cd ..
+  889  cd inference/
+  890  ls
+  891  mkdir prompt 
+  892  mkdir output
+  893  cd prompt/
+  894  ls
+  895  wget https://specinfer.s3.us-east-2.amazonaws.com/prompts/chatgpt.json
+  896  ls
+  897  cd ,,
+  898  cd ..
+  899  cd  tests/
+  900  ls
+  901  code offload_1GPU.sh
+  902  cd ../inference/weights/
+  903  ls
+  904  cd ..
+  905  ls
+  906  cd models/
+  907  ls
+  908  cd configs/
+  909  ls
+  910  pwd
+  911  cd ..
+  912  cd prompt/
+  913  ls
+  914  cd ..
+  915  cd tests
+  916  tmux 
+  917  cd SpecInfer-0727/
+  918  LS
+  919  ls
+  920  cd inference/utils/
+  921  ls
+  922  python3 download_opt_weights.py --use-full-precision 
+  923  python3 download_opt_weights.py 
+  924  cd ..
+  925  cd weights/
+  926  ls
+  927  cd ..
+  928  cd inference/utils/
+  929  ls
+  930  code download_opt_weights.py 
+  931  python3 download_opt_weights.py 
+  932  cd ../weights/
+  933  l
+  934  ls
+  935  cd ../build/
+  936  make -j 32
+  937  cd
+  938  git clone https://github.com/SymbioticLab/Oobleck.git
+  939  cd Oobleck/
+  940  LS
+  941  ls
+  942  cd oobleck/
+  943  cloc .
+  944  ls
+  945  cd ..
+  946  ls
+  947  cd tests
+  948  ls
+  949  cloc .
+  950  cd ..
+  951  ls
+  952  conda env create -f environment.yml
+  953  conda activate oobleck
+  954  pip install .
+  955  pip3 install .
+  956  ls
+  957  cd oobleck
+  958  ls
+  959  cd csrc
+  960  ls
+  961  git submodule init
+  962  git submodule update
+  963  cd ,,
+  964  cd ..
+  965  pip3 install .
+  966  ls
+  967  cd
+  968  git clone https://github.com/ztxz16/fastllm.git
+  969  cd fastllm/
+  970  l
+  971  cd rc
+  972  cloc .
+  973  ls
+  974  cd src
+  975  ls
+  976  cloc .
+  977  ls
+  978  cd models
+  979  ls
+  980  code llama.cpp 
+  981  cd ..
+  982  ls
+  983  cd ..
+  984  ls
+  985  cd example/
+  986  ls
+  987  cd benchmark/
+  988  ls
+  989  cd prompts/
+  990  ls
+  991  cd ..
+  992  ls
+  993  cd include/
+  994  ls
+  995  cloc .
+  996  cd ..
+  997  cd src
+  998  ls
+  999  cloc .
+ 1000  cd ..
+ 1001  ls
+ 1002  cd third_party/
+ 1003  ls
+ 1004  cd ..
+ 1005  mkdir build
+ 1006  cd build/
+ 1007  make .. --DUSE_CUDA=ON
+ 1008  cmake .. -DUSE_CUDA=ON # 如果不使用GPU编译，那么使用 cmake .. -DUSE_CUDA=OFF
+ 1009  make -j 32
+ 1010  ls
+ 1011  make
+ 1012  rm -rf *
+ 1013  cmake ..
+ 1014  make 
+ 1015  cd tests
+ 1016  ls
+ 1017  code evalute_incr_4GPU.sh
+ 1018  tmux 
+ 1019  git status
+ 1020  git add .
+ 1021  git commit -m "add comment"
+ 1022  git remote -v
+ 1023  git branch
+ 1024  git checkout -b inference-0727
+ 1025  git remote add upstream https://github.com/lambda7xx/FlexFlow.git
+ 1026  git push upstream inference-0727
+ 1027  cd
+ 1028  ls
+ 1029  cd FlexGen/
+ 1030  git status
+ 1031  git log
+ 1032  git remote -v
+ 1033  cd 
+ 1034  ls
+ 1035  cd fastllm/
+ 1036  ls
+ 1037  git remote -v
+ 1038  cd
+ 1039  ls
+ 1040  cd inference/
+ 1041  ls
+ 1042  cloc .
+ 1043  ls
+ 1044  cd test
+ 1045  ls
+ 1046  lss
+ 1047  cd tests
+ 1048  ls
+ 1049  cd ..
+ 1050  cd inference/
+ 1051  ls
+ 1052  cd spec_infer/
+ 1053  ls
+ 1054  cd
+ 1055  ls
+ 1056  cd cd 
+ 1057  cd 
+ 1058  #!/bin/bash
+ 1059  set -e
+ 1060  # Create conda environments and install dependencies
+ 1061  for name in "astra" "orca" "prefix_astra" "prefix_orca"; do     echo "Installing $name"
+ 1062      conda create -n $name python=3.9 -y;     conda activate $name
+ 1063      pip install torch==2.0.0;     pip install -r requirements.txt;     pip install git+https://github.com/huggingface/transformers@15641892985b1d77acc74c9065c332cd7c3f7d7f
+ 1064      cd $name;     echo "Installing $name";     pip install -e .
+ 1065      cd ..; done
+ 1066  ls
+ 1067  cd orca
+ 1068  ls
+ 1069  cloc .
+ 1070  cd ..
+ 1071  cd astra/
+ 1072  cloc .
+ 1073  cd ..
+ 1074  ls
+ 1075  cd prefix_astra/
+ 1076  ls
+ 1077  cloc .
+ 1078  ls
+ 1079  cd playground/
+ 1080  ls
+ 1081  cd ..
+ 1082  cd cacheflow/
+ 1083  ls
+ 1084  code sampling_params.py 
+ 1085  cd ..
+ 1086  ls
+ 1087  cd prefix_orca/
+ 1088  ls
+ 1089  cloc .
+ 1090  ls
+ 1091  cd cacheflow/
+ 1092  ls
+ 1093  cloc .
+ 1094  cd ..
+ 1095  git remote add upstream https://github.com/lambda7xx/vllm.git
+ 1096  git branch
+ 1097  git checkout -b astra-sosp23
+ 1098  git push upstream astra-sosp23
+ 1099  git clone https://github.com/lambda7xx/vllm.git
+ 1100  cd vllm/
+ 1101  ls
+ 1102  cloc .
+ 1103  ls
+ 1104  cd vllm
+ 1105  sls
+ 1106  ls
+ 1107  cloc .
+ 1108  cd ..
+ 1109  ls
+ 1110  cd csrc
+ 1111  ls
+ 1112  cloc .
+ 1113  cd ..
+ 1114  ls
+ 1115  cd benchmarks/
+ 1116  ls
+ 1117  cloc .
+ 1118  cd ..
+ 1119  ls
+ 1120  cd tests
+ 1121  ls
+ 1122* 
+ 1123  ls
+ 1124  cd ..
+ 1125  ls
+ 1126  rm -rf vllm/
+ 1127  cd astra/
+ 1128  ls
+ 1129  cd benchmark/
+ 1130  ls
+ 1131  cd ..
+ 1132  cd tests
+ 1133  ls
+ 1134  cd kernels/
+ 1135  ls
+ 1136  code attention.py 
+ 1137  cloc .
+ 1138  cd ..
+ 1139  ls
+ 1140* tmu
+ 1141  bash -i setup.sh 
+ 1142  bash offload_1GPU_7B.sh 
+ 1143  history
+ 1144  history > his.log 2>&1

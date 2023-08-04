@@ -64,7 +64,8 @@ TreeIncMultiHeadSelfAttentionMeta::TreeIncMultiHeadSelfAttentionMeta(
     GenericTensorAccessorR const &weight,
     MemoryAllocator &gpu_mem_allocator,
     int num_samples,
-    int _num_heads)
+    int _num_q_heads,
+    int _num_kv_heads)
     : IncMultiHeadSelfAttentionMeta(handler,
                                     TREE_VERIFY_MODE,
                                     attn,
@@ -84,8 +85,10 @@ TreeIncMultiHeadSelfAttentionMeta::TreeIncMultiHeadSelfAttentionMeta(
                                     weight,
                                     gpu_mem_allocator,
                                     num_samples,
-                                    attn->num_heads,
-                                    _num_heads,
+                                    attn->num_q_heads,
+                                    attn->num_kv_heads,
+                                    _num_q_heads,
+                                    _num_kv_heads,
                                     attn->quantization_type,
                                     attn->offload),
       num_active_tokens(0) {

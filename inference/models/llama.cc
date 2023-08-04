@@ -20,7 +20,6 @@ namespace FlexFlow {
 using namespace Legion;
 
 void LLAMA::create_llama_model(FFModel &ff,
-                               InferenceManager &im,
                                std::string const &model_config_file_path,
                                std::string const &weight_file_path,
                                InferenceMode mode,
@@ -176,7 +175,8 @@ void LLAMA::create_llama_model(FFModel &ff,
   Tensor output;
   if (mode == BEAM_SEARCH_MODE) {
     Tensor softmax = ff.softmax(dense, -1);
-    output = ff.beam_top_k(softmax, llama_config.max_beam_width, false);
+    // output = ff.beam_top_k(softmax, llama_config.max_beam_width, false);
+    output = ff.argmax(softmax, /*beam_Search*/ true);
   } else {
     // Tensor softmax = ff.softmax(dense, -1);
     if (samplingConfig.do_sample) {
@@ -184,23 +184,28 @@ void LLAMA::create_llama_model(FFModel &ff,
       Tensor softmax = ff.softmax(dense, -1);
       output = ff.sampling(softmax, samplingConfig.topp);
     } else {
-      output = ff.arg_top_k(dense, /*k=*/1, false);
+      // output = ff.arg_top_k(dense, /*k=*/1, false);
+      output = ff.argmax(dense, /*beam_Search*/ false);
     }
   }
 
+  InferenceManager *im = InferenceManager::get_inference_manager();
   // Compile the model
   std::cout << "------start compile ----------" << std::endl;
-  im.compile_model_and_allocate_buffer(&ff);
+  int tensor_partition_num = ff.config.tensor_parallelism_degree;
+  im->compile_model_and_allocate_buffer(&ff);
   FileDataLoader fileloader("",
                             weight_file_path,
                             llama_config.n_heads,
+                            llama_config.n_heads,
                             llama_config.dim,
-                            llama_config.dim / llama_config.n_heads);
+                            llama_config.dim / llama_config.n_heads,
+                            tensor_partition_num);
   fileloader.load_weights(&ff, weights_layers, use_full_precision);
   std::cout << "------load weight finished----------" << std::endl;
 
   // init operators
-  im.init_operators_inference(&ff);
+  im->init_operators_inference(&ff);
 }
 
 }; // namespace FlexFlow

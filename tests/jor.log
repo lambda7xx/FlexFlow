@@ -1,0 +1,1439 @@
+[0;1;39mHint: You are currently not seeing messages from other users and the system.[0m
+[0;1;39m      Users in groups 'adm', 'systemd-journal' can see all messages.[0m
+[0;1;39m      Pass -q to turn off this notice.[0m
+-- Logs begin at Thu 2023-06-29 08:07:06 UTC, end at Fri 2023-08-04 01:53:08 UTC. --
+Jun 29 08:07:06 ip-172-31-4-20 systemd[39800]: Reached target Paths.
+Jun 29 08:07:06 ip-172-31-4-20 systemd[39800]: Reached target Timers.
+Jun 29 08:07:06 ip-172-31-4-20 systemd[39800]: Starting D-Bus User Message Bus Socket.
+Jun 29 08:07:06 ip-172-31-4-20 systemd[39800]: Listening on GnuPG network certificate management daemon.
+Jun 29 08:07:06 ip-172-31-4-20 systemd[39800]: Listening on GnuPG cryptographic agent and passphrase cache (access for web browsers).
+Jun 29 08:07:06 ip-172-31-4-20 systemd[39800]: Listening on GnuPG cryptographic agent and passphrase cache (restricted).
+Jun 29 08:07:06 ip-172-31-4-20 systemd[39800]: Listening on GnuPG cryptographic agent (ssh-agent emulation).
+Jun 29 08:07:06 ip-172-31-4-20 systemd[39800]: Listening on GnuPG cryptographic agent and passphrase cache.
+Jun 29 08:07:06 ip-172-31-4-20 systemd[39800]: Listening on debconf communication socket.
+Jun 29 08:07:06 ip-172-31-4-20 systemd[39800]: Listening on REST API socket for snapd user session agent.
+Jun 29 08:07:06 ip-172-31-4-20 systemd[39800]: Listening on D-Bus User Message Bus Socket.
+Jun 29 08:07:06 ip-172-31-4-20 systemd[39800]: Reached target Sockets.
+Jun 29 08:07:06 ip-172-31-4-20 systemd[39800]: Reached target Basic System.
+Jun 29 08:07:06 ip-172-31-4-20 systemd[39800]: Reached target Main User Target.
+Jun 29 08:07:06 ip-172-31-4-20 systemd[39800]: Startup finished in 33ms.
+Jun 29 08:14:08 ip-172-31-4-20 sshd[40281]: Received disconnect from 58.247.22.240 port 49565:11: disconnected by user
+Jun 29 08:14:08 ip-172-31-4-20 sshd[40281]: Disconnected from user lambda 58.247.22.240 port 49565
+Jun 29 08:28:56 ip-172-31-4-20 sshd[49945]: Received disconnect from 58.247.22.240 port 17055:11: disconnected by user
+Jun 29 08:28:56 ip-172-31-4-20 sshd[49945]: Disconnected from user lambda 58.247.22.240 port 17055
+Jun 29 08:29:27 ip-172-31-4-20 sshd[50363]: Received disconnect from 58.247.22.240 port 40847:11: disconnected by user
+Jun 29 08:29:27 ip-172-31-4-20 sshd[50363]: Disconnected from user lambda 58.247.22.240 port 40847
+Jun 29 08:32:36 ip-172-31-4-20 vsce-sign[53280]: Package file size:  628280
+Jun 29 08:32:36 ip-172-31-4-20 vsce-sign[53280]: Signature archive file size:  9880
+Jun 29 08:32:36 ip-172-31-4-20 vsce-sign[53280]: Manifest file size:  2076
+Jun 29 08:32:36 ip-172-31-4-20 vsce-sign[53280]: Signature file size:  11975
+Jun 29 08:32:36 ip-172-31-4-20 vsce-sign[53280]: ManifestPackageIntegrityPolicy succeeded.
+Jun 29 08:32:36 ip-172-31-4-20 vsce-sign[53280]: SignatureIntegrityPolicy for primary signature succeeded.
+Jun 29 08:32:37 ip-172-31-4-20 vsce-sign[53280]: SignatureValidityPolicy for primary signature succeeded.
+Jun 29 08:32:37 ip-172-31-4-20 vsce-sign[53280]: SignatureIntegrityPolicy for timestamp signature succeeded.
+Jun 29 08:32:37 ip-172-31-4-20 vsce-sign[53280]: SignatureValidityPolicy for timestamp signature succeeded.
+Jun 29 08:32:37 ip-172-31-4-20 vsce-sign[53280]: X.509 certificate chain validation will use the fallback certificate bundle for timestamping.
+Jun 29 08:32:37 ip-172-31-4-20 vsce-sign[53280]: SignatureTrustPolicy for timestamp signature succeeded.
+Jun 29 08:32:37 ip-172-31-4-20 vsce-sign[53280]: X.509 certificate chain validation will use the fallback certificate bundle for code signing.
+Jun 29 08:32:37 ip-172-31-4-20 vsce-sign[53280]: SignatureTrustPolicy for primary signature succeeded.
+Jun 29 08:32:37 ip-172-31-4-20 vsce-sign[53280]: Primary signature type:  repository primary signature
+Jun 29 08:32:37 ip-172-31-4-20 vsce-sign[53280]: Primary signature status:  OK
+Jun 29 08:32:37 ip-172-31-4-20 vsce-sign[53280]: Timestamp signature status:  OK
+Jun 29 08:32:37 ip-172-31-4-20 vsce-sign[53280]: Exit code:  Success
+Jun 29 08:32:44 ip-172-31-4-20 vsce-sign[53442]: Package file size:  15054375
+Jun 29 08:32:44 ip-172-31-4-20 vsce-sign[53442]: Signature archive file size:  126621
+Jun 29 08:32:44 ip-172-31-4-20 vsce-sign[53442]: Manifest file size:  533106
+Jun 29 08:32:44 ip-172-31-4-20 vsce-sign[53442]: Signature file size:  12018
+Jun 29 08:32:44 ip-172-31-4-20 vsce-sign[53442]: ManifestPackageIntegrityPolicy succeeded.
+Jun 29 08:32:44 ip-172-31-4-20 vsce-sign[53442]: SignatureIntegrityPolicy for primary signature succeeded.
+Jun 29 08:32:44 ip-172-31-4-20 vsce-sign[53442]: SignatureValidityPolicy for primary signature succeeded.
+Jun 29 08:32:44 ip-172-31-4-20 vsce-sign[53442]: SignatureIntegrityPolicy for timestamp signature succeeded.
+Jun 29 08:32:44 ip-172-31-4-20 vsce-sign[53442]: SignatureValidityPolicy for timestamp signature succeeded.
+Jun 29 08:32:44 ip-172-31-4-20 vsce-sign[53442]: X.509 certificate chain validation will use the fallback certificate bundle for timestamping.
+Jun 29 08:32:45 ip-172-31-4-20 vsce-sign[53442]: SignatureTrustPolicy for timestamp signature succeeded.
+Jun 29 08:32:45 ip-172-31-4-20 vsce-sign[53442]: X.509 certificate chain validation will use the fallback certificate bundle for code signing.
+Jun 29 08:32:45 ip-172-31-4-20 vsce-sign[53442]: SignatureTrustPolicy for primary signature succeeded.
+Jun 29 08:32:45 ip-172-31-4-20 vsce-sign[53442]: Primary signature type:  repository primary signature
+Jun 29 08:32:45 ip-172-31-4-20 vsce-sign[53442]: Primary signature status:  OK
+Jun 29 08:32:45 ip-172-31-4-20 vsce-sign[53442]: Timestamp signature status:  OK
+Jun 29 08:32:45 ip-172-31-4-20 vsce-sign[53442]: Exit code:  Success
+Jun 29 08:32:47 ip-172-31-4-20 vsce-sign[53496]: Package file size:  13884740
+Jun 29 08:32:47 ip-172-31-4-20 vsce-sign[53496]: Signature archive file size:  294361
+Jun 29 08:32:47 ip-172-31-4-20 vsce-sign[53496]: Manifest file size:  1122926
+Jun 29 08:32:47 ip-172-31-4-20 vsce-sign[53496]: Signature file size:  11977
+Jun 29 08:32:47 ip-172-31-4-20 vsce-sign[53496]: ManifestPackageIntegrityPolicy succeeded.
+Jun 29 08:32:47 ip-172-31-4-20 vsce-sign[53496]: SignatureIntegrityPolicy for primary signature succeeded.
+Jun 29 08:32:47 ip-172-31-4-20 vsce-sign[53496]: SignatureValidityPolicy for primary signature succeeded.
+Jun 29 08:32:47 ip-172-31-4-20 vsce-sign[53496]: SignatureIntegrityPolicy for timestamp signature succeeded.
+Jun 29 08:32:47 ip-172-31-4-20 vsce-sign[53496]: SignatureValidityPolicy for timestamp signature succeeded.
+Jun 29 08:32:47 ip-172-31-4-20 vsce-sign[53496]: X.509 certificate chain validation will use the fallback certificate bundle for timestamping.
+Jun 29 08:32:47 ip-172-31-4-20 vsce-sign[53496]: SignatureTrustPolicy for timestamp signature succeeded.
+Jun 29 08:32:47 ip-172-31-4-20 vsce-sign[53496]: X.509 certificate chain validation will use the fallback certificate bundle for code signing.
+Jun 29 08:32:47 ip-172-31-4-20 vsce-sign[53496]: SignatureTrustPolicy for primary signature succeeded.
+Jun 29 08:32:47 ip-172-31-4-20 vsce-sign[53496]: Primary signature type:  repository primary signature
+Jun 29 08:32:47 ip-172-31-4-20 vsce-sign[53496]: Primary signature status:  OK
+Jun 29 08:32:47 ip-172-31-4-20 vsce-sign[53496]: Timestamp signature status:  OK
+Jun 29 08:32:47 ip-172-31-4-20 vsce-sign[53496]: Exit code:  Success
+Jun 29 09:00:44 ip-172-31-4-20 sshd[66236]: Received disconnect from 58.247.22.240 port 18770:11: disconnected by user
+Jun 29 09:00:44 ip-172-31-4-20 sshd[66236]: Disconnected from user lambda 58.247.22.240 port 18770
+Jun 29 10:08:13 ip-172-31-4-20 systemd[39800]: run-user-1000.mount: Succeeded.
+Jun 29 11:19:40 ip-172-31-4-20 sshd[70856]: Received disconnect from 58.247.22.240 port 49527:11: disconnected by user
+Jun 29 11:19:40 ip-172-31-4-20 sshd[70856]: Disconnected from user lambda 58.247.22.240 port 49527
+Jun 29 11:28:50 ip-172-31-4-20 sshd[78528]: Received disconnect from 58.247.22.240 port 35047:11: disconnected by user
+Jun 29 11:28:50 ip-172-31-4-20 sshd[78528]: Disconnected from user lambda 58.247.22.240 port 35047
+Jun 29 11:44:29 ip-172-31-4-20 sshd[87739]: Received disconnect from 58.247.22.240 port 4298:11: disconnected by user
+Jun 29 11:44:29 ip-172-31-4-20 sshd[87739]: Disconnected from user lambda 58.247.22.240 port 4298
+Jun 29 11:49:32 ip-172-31-4-20 sshd[88044]: Received disconnect from 58.247.22.240 port 36630:11: disconnected by user
+Jun 29 11:49:32 ip-172-31-4-20 sshd[88044]: Disconnected from user lambda 58.247.22.240 port 36630
+Jun 29 11:49:41 ip-172-31-4-20 sshd[88178]: Received disconnect from 58.247.22.240 port 10955:11: disconnected by user
+Jun 29 11:49:41 ip-172-31-4-20 sshd[88178]: Disconnected from user lambda 58.247.22.240 port 10955
+Jun 29 12:48:52 ip-172-31-4-20 sshd[96908]: Received disconnect from 58.247.22.240 port 19957:11: disconnected by user
+Jun 29 12:48:52 ip-172-31-4-20 sshd[96908]: Disconnected from user lambda 58.247.22.240 port 19957
+Jun 29 13:16:35 ip-172-31-4-20 sshd[104729]: Received disconnect from 58.247.22.240 port 29189:11: disconnected by user
+Jun 29 13:16:35 ip-172-31-4-20 sshd[104729]: Disconnected from user lambda 58.247.22.240 port 29189
+Jun 29 13:58:58 ip-172-31-4-20 sshd[108674]: Received disconnect from 58.247.22.240 port 43735:11: disconnected by user
+Jun 29 13:58:58 ip-172-31-4-20 sshd[108674]: Disconnected from user lambda 58.247.22.240 port 43735
+Jun 29 16:31:42 ip-172-31-4-20 systemd[39800]: run-rpc_pipefs.mount: Succeeded.
+Jun 29 16:31:42 ip-172-31-4-20 systemd[39800]: Stopped target Main User Target.
+Jun 29 16:31:42 ip-172-31-4-20 systemd[39800]: Stopped target Basic System.
+Jun 29 16:31:42 ip-172-31-4-20 systemd[39800]: Stopped target Paths.
+Jun 29 16:31:42 ip-172-31-4-20 systemd[39800]: Stopped target Sockets.
+Jun 29 16:31:42 ip-172-31-4-20 systemd[39800]: Stopped target Timers.
+Jun 29 16:31:42 ip-172-31-4-20 systemd[39800]: dbus.socket: Succeeded.
+Jun 29 16:31:42 ip-172-31-4-20 systemd[39800]: Closed D-Bus User Message Bus Socket.
+Jun 29 16:31:42 ip-172-31-4-20 systemd[39800]: dirmngr.socket: Succeeded.
+Jun 29 16:31:42 ip-172-31-4-20 systemd[39800]: Closed GnuPG network certificate management daemon.
+Jun 29 16:31:42 ip-172-31-4-20 systemd[39800]: gpg-agent-browser.socket: Succeeded.
+Jun 29 16:31:42 ip-172-31-4-20 systemd[39800]: Closed GnuPG cryptographic agent and passphrase cache (access for web browsers).
+Jun 29 16:31:42 ip-172-31-4-20 systemd[39800]: gpg-agent-extra.socket: Succeeded.
+Jun 29 16:31:42 ip-172-31-4-20 systemd[39800]: Closed GnuPG cryptographic agent and passphrase cache (restricted).
+Jun 29 16:31:42 ip-172-31-4-20 systemd[39800]: gpg-agent-ssh.socket: Succeeded.
+Jun 29 16:31:42 ip-172-31-4-20 systemd[39800]: Closed GnuPG cryptographic agent (ssh-agent emulation).
+Jun 29 16:31:42 ip-172-31-4-20 systemd[39800]: gpg-agent.socket: Succeeded.
+Jun 29 16:31:42 ip-172-31-4-20 systemd[39800]: Closed GnuPG cryptographic agent and passphrase cache.
+Jun 29 16:31:42 ip-172-31-4-20 systemd[39800]: pk-debconf-helper.socket: Succeeded.
+Jun 29 16:31:42 ip-172-31-4-20 systemd[39800]: Closed debconf communication socket.
+Jun 29 16:31:42 ip-172-31-4-20 systemd[39800]: snapd.session-agent.socket: Succeeded.
+Jun 29 16:31:42 ip-172-31-4-20 systemd[39800]: Closed REST API socket for snapd user session agent.
+Jun 29 16:31:42 ip-172-31-4-20 systemd[39800]: Reached target Shutdown.
+Jun 29 16:31:42 ip-172-31-4-20 systemd[39800]: systemd-exit.service: Succeeded.
+Jun 29 16:31:42 ip-172-31-4-20 systemd[39800]: Finished Exit the Session.
+Jun 29 16:31:42 ip-172-31-4-20 systemd[39800]: Reached target Exit the Session.
+Jun 29 16:31:42 ip-172-31-4-20 systemd[39801]: pam_unix(systemd-user:session): session closed for user lambda
+-- Reboot --
+Jun 30 02:57:49 ip-172-31-4-20 systemd[3296]: Reached target Paths.
+Jun 30 02:57:49 ip-172-31-4-20 systemd[3296]: Reached target Timers.
+Jun 30 02:57:49 ip-172-31-4-20 systemd[3296]: Starting D-Bus User Message Bus Socket.
+Jun 30 02:57:49 ip-172-31-4-20 systemd[3296]: Listening on GnuPG network certificate management daemon.
+Jun 30 02:57:49 ip-172-31-4-20 systemd[3296]: Listening on GnuPG cryptographic agent and passphrase cache (access for web browsers).
+Jun 30 02:57:49 ip-172-31-4-20 systemd[3296]: Listening on GnuPG cryptographic agent and passphrase cache (restricted).
+Jun 30 02:57:49 ip-172-31-4-20 systemd[3296]: Listening on GnuPG cryptographic agent (ssh-agent emulation).
+Jun 30 02:57:49 ip-172-31-4-20 systemd[3296]: Listening on GnuPG cryptographic agent and passphrase cache.
+Jun 30 02:57:49 ip-172-31-4-20 systemd[3296]: Listening on debconf communication socket.
+Jun 30 02:57:49 ip-172-31-4-20 systemd[3296]: Listening on REST API socket for snapd user session agent.
+Jun 30 02:57:49 ip-172-31-4-20 systemd[3296]: Listening on D-Bus User Message Bus Socket.
+Jun 30 02:57:49 ip-172-31-4-20 systemd[3296]: Reached target Sockets.
+Jun 30 02:57:49 ip-172-31-4-20 systemd[3296]: Reached target Basic System.
+Jun 30 02:57:49 ip-172-31-4-20 systemd[3296]: Reached target Main User Target.
+Jun 30 02:57:49 ip-172-31-4-20 systemd[3296]: Startup finished in 58ms.
+Jun 30 02:57:51 ip-172-31-4-20 sshd[3396]: Received disconnect from 58.247.22.240 port 22768:11: disconnected by user
+Jun 30 02:57:51 ip-172-31-4-20 sshd[3396]: Disconnected from user lambda 58.247.22.240 port 22768
+Jun 30 03:13:05 ip-172-31-4-20 sshd[4076]: Received disconnect from 58.247.22.240 port 8609:11: disconnected by user
+Jun 30 03:13:05 ip-172-31-4-20 sshd[4076]: Disconnected from user lambda 58.247.22.240 port 8609
+Jun 30 03:29:51 ip-172-31-4-20 sshd[5035]: Received disconnect from 58.247.22.240 port 15779:11: disconnected by user
+Jun 30 03:29:51 ip-172-31-4-20 sshd[5035]: Disconnected from user lambda 58.247.22.240 port 15779
+Jun 30 05:35:54 ip-172-31-4-20 sshd[5594]: Received disconnect from 58.247.22.240 port 5619:11: disconnected by user
+Jun 30 05:35:54 ip-172-31-4-20 sshd[5594]: Disconnected from user lambda 58.247.22.240 port 5619
+Jun 30 05:39:15 ip-172-31-4-20 sshd[6511]: Received disconnect from 58.247.22.240 port 9555:11: disconnected by user
+Jun 30 05:39:15 ip-172-31-4-20 sshd[6511]: Disconnected from user lambda 58.247.22.240 port 9555
+Jun 30 05:45:18 ip-172-31-4-20 sshd[8036]: Received disconnect from 58.247.22.240 port 10286:11: disconnected by user
+Jun 30 05:45:18 ip-172-31-4-20 sshd[8036]: Disconnected from user lambda 58.247.22.240 port 10286
+Jun 30 05:58:04 ip-172-31-4-20 sshd[8370]: Received disconnect from 58.247.22.240 port 13355:11: disconnected by user
+Jun 30 05:58:04 ip-172-31-4-20 sshd[8370]: Disconnected from user lambda 58.247.22.240 port 13355
+Jun 30 06:13:42 ip-172-31-4-20 sshd[10399]: Received disconnect from 58.247.22.240 port 60242:11: disconnected by user
+Jun 30 06:13:42 ip-172-31-4-20 sshd[10399]: Disconnected from user lambda 58.247.22.240 port 60242
+Jun 30 06:15:39 ip-172-31-4-20 sshd[10531]: Received disconnect from 58.247.22.240 port 26826:11: disconnected by user
+Jun 30 06:15:39 ip-172-31-4-20 sshd[10531]: Disconnected from user lambda 58.247.22.240 port 26826
+Jun 30 06:45:09 ip-172-31-4-20 sshd[16906]: Received disconnect from 58.247.22.240 port 22349:11: disconnected by user
+Jun 30 06:45:09 ip-172-31-4-20 sshd[16906]: Disconnected from user lambda 58.247.22.240 port 22349
+Jun 30 07:41:49 ip-172-31-4-20 sshd[17042]: Received disconnect from 58.247.22.240 port 42098:11: disconnected by user
+Jun 30 07:41:49 ip-172-31-4-20 sshd[17042]: Disconnected from user lambda 58.247.22.240 port 42098
+Jun 30 07:41:49 ip-172-31-4-20 sshd[10662]: Received disconnect from 58.247.22.240 port 26873:11: disconnected by user
+Jun 30 07:41:49 ip-172-31-4-20 sshd[10662]: Disconnected from user lambda 58.247.22.240 port 26873
+Jun 30 13:17:31 ip-172-31-4-20 systemd[3296]: run-rpc_pipefs.mount: Succeeded.
+Jun 30 13:17:32 ip-172-31-4-20 systemd[3296]: Stopped target Main User Target.
+Jun 30 13:17:32 ip-172-31-4-20 systemd[3296]: Stopped target Basic System.
+Jun 30 13:17:32 ip-172-31-4-20 systemd[3296]: Stopped target Paths.
+Jun 30 13:17:32 ip-172-31-4-20 systemd[3296]: Stopped target Sockets.
+Jun 30 13:17:32 ip-172-31-4-20 systemd[3296]: Stopped target Timers.
+Jun 30 13:17:32 ip-172-31-4-20 systemd[3296]: dbus.socket: Succeeded.
+Jun 30 13:17:32 ip-172-31-4-20 systemd[3296]: Closed D-Bus User Message Bus Socket.
+Jun 30 13:17:32 ip-172-31-4-20 systemd[3296]: dirmngr.socket: Succeeded.
+Jun 30 13:17:32 ip-172-31-4-20 systemd[3296]: Closed GnuPG network certificate management daemon.
+Jun 30 13:17:32 ip-172-31-4-20 systemd[3296]: gpg-agent-browser.socket: Succeeded.
+Jun 30 13:17:32 ip-172-31-4-20 systemd[3296]: Closed GnuPG cryptographic agent and passphrase cache (access for web browsers).
+Jun 30 13:17:32 ip-172-31-4-20 systemd[3296]: gpg-agent-extra.socket: Succeeded.
+Jun 30 13:17:32 ip-172-31-4-20 systemd[3296]: Closed GnuPG cryptographic agent and passphrase cache (restricted).
+Jun 30 13:17:32 ip-172-31-4-20 systemd[3296]: gpg-agent-ssh.socket: Succeeded.
+Jun 30 13:17:32 ip-172-31-4-20 systemd[3296]: Closed GnuPG cryptographic agent (ssh-agent emulation).
+Jun 30 13:17:32 ip-172-31-4-20 systemd[3296]: gpg-agent.socket: Succeeded.
+Jun 30 13:17:32 ip-172-31-4-20 systemd[3296]: Closed GnuPG cryptographic agent and passphrase cache.
+Jun 30 13:17:32 ip-172-31-4-20 systemd[3296]: pk-debconf-helper.socket: Succeeded.
+Jun 30 13:17:32 ip-172-31-4-20 systemd[3296]: Closed debconf communication socket.
+Jun 30 13:17:32 ip-172-31-4-20 systemd[3296]: snapd.session-agent.socket: Succeeded.
+Jun 30 13:17:32 ip-172-31-4-20 systemd[3296]: Closed REST API socket for snapd user session agent.
+Jun 30 13:17:32 ip-172-31-4-20 systemd[3296]: Reached target Shutdown.
+Jun 30 13:17:32 ip-172-31-4-20 systemd[3296]: systemd-exit.service: Succeeded.
+Jun 30 13:17:32 ip-172-31-4-20 systemd[3296]: Finished Exit the Session.
+Jun 30 13:17:32 ip-172-31-4-20 systemd[3296]: Reached target Exit the Session.
+Jun 30 13:17:32 ip-172-31-4-20 systemd[3297]: pam_unix(systemd-user:session): session closed for user lambda
+-- Reboot --
+Jul 05 01:19:23 ip-172-31-4-20 systemd[70053]: Reached target Paths.
+Jul 05 01:19:23 ip-172-31-4-20 systemd[70053]: Reached target Timers.
+Jul 05 01:19:23 ip-172-31-4-20 systemd[70053]: Starting D-Bus User Message Bus Socket.
+Jul 05 01:19:23 ip-172-31-4-20 systemd[70053]: Listening on GnuPG network certificate management daemon.
+Jul 05 01:19:23 ip-172-31-4-20 systemd[70053]: Listening on GnuPG cryptographic agent and passphrase cache (access for web browsers).
+Jul 05 01:19:23 ip-172-31-4-20 systemd[70053]: Listening on GnuPG cryptographic agent and passphrase cache (restricted).
+Jul 05 01:19:23 ip-172-31-4-20 systemd[70053]: Listening on GnuPG cryptographic agent (ssh-agent emulation).
+Jul 05 01:19:23 ip-172-31-4-20 systemd[70053]: Listening on GnuPG cryptographic agent and passphrase cache.
+Jul 05 01:19:23 ip-172-31-4-20 systemd[70053]: Listening on debconf communication socket.
+Jul 05 01:19:23 ip-172-31-4-20 systemd[70053]: Listening on REST API socket for snapd user session agent.
+Jul 05 01:19:23 ip-172-31-4-20 systemd[70053]: Listening on D-Bus User Message Bus Socket.
+Jul 05 01:19:23 ip-172-31-4-20 systemd[70053]: Reached target Sockets.
+Jul 05 01:19:23 ip-172-31-4-20 systemd[70053]: Reached target Basic System.
+Jul 05 01:19:23 ip-172-31-4-20 systemd[70053]: Reached target Main User Target.
+Jul 05 01:19:23 ip-172-31-4-20 systemd[70053]: Startup finished in 35ms.
+Jul 05 01:19:25 ip-172-31-4-20 sshd[70154]: Received disconnect from 58.247.22.240 port 23108:11: disconnected by user
+Jul 05 01:19:25 ip-172-31-4-20 sshd[70154]: Disconnected from user lambda 58.247.22.240 port 23108
+Jul 05 01:19:47 ip-172-31-4-20 sshd[70901]: Received disconnect from 58.247.22.240 port 48492:11: disconnected by user
+Jul 05 01:19:47 ip-172-31-4-20 sshd[70901]: Disconnected from user lambda 58.247.22.240 port 48492
+Jul 05 02:39:27 ip-172-31-4-20 sshd[86465]: Received disconnect from 58.247.22.240 port 36765:11: disconnected by user
+Jul 05 02:39:27 ip-172-31-4-20 sshd[86465]: Disconnected from user lambda 58.247.22.240 port 36765
+Jul 05 02:39:41 ip-172-31-4-20 sshd[86675]: Received disconnect from 58.247.22.240 port 53758:11: disconnected by user
+Jul 05 02:39:41 ip-172-31-4-20 sshd[86675]: Disconnected from user lambda 58.247.22.240 port 53758
+Jul 05 03:05:39 ip-172-31-4-20 systemd[70053]: run-rpc_pipefs.mount: Succeeded.
+Jul 05 03:05:39 ip-172-31-4-20 systemd[70053]: Stopped target Main User Target.
+Jul 05 03:05:39 ip-172-31-4-20 systemd[70053]: Stopped target Basic System.
+Jul 05 03:05:39 ip-172-31-4-20 systemd[70053]: Stopped target Paths.
+Jul 05 03:05:39 ip-172-31-4-20 systemd[70053]: Stopped target Sockets.
+Jul 05 03:05:39 ip-172-31-4-20 systemd[70053]: Stopped target Timers.
+Jul 05 03:05:39 ip-172-31-4-20 systemd[70053]: dbus.socket: Succeeded.
+Jul 05 03:05:39 ip-172-31-4-20 systemd[70053]: Closed D-Bus User Message Bus Socket.
+Jul 05 03:05:39 ip-172-31-4-20 systemd[70053]: dirmngr.socket: Succeeded.
+Jul 05 03:05:39 ip-172-31-4-20 systemd[70053]: Closed GnuPG network certificate management daemon.
+Jul 05 03:05:39 ip-172-31-4-20 systemd[70053]: gpg-agent-browser.socket: Succeeded.
+Jul 05 03:05:39 ip-172-31-4-20 systemd[70053]: Closed GnuPG cryptographic agent and passphrase cache (access for web browsers).
+Jul 05 03:05:39 ip-172-31-4-20 systemd[70053]: gpg-agent-extra.socket: Succeeded.
+Jul 05 03:05:39 ip-172-31-4-20 systemd[70053]: Closed GnuPG cryptographic agent and passphrase cache (restricted).
+Jul 05 03:05:39 ip-172-31-4-20 systemd[70053]: gpg-agent-ssh.socket: Succeeded.
+Jul 05 03:05:39 ip-172-31-4-20 systemd[70053]: Closed GnuPG cryptographic agent (ssh-agent emulation).
+Jul 05 03:05:39 ip-172-31-4-20 systemd[70053]: gpg-agent.socket: Succeeded.
+Jul 05 03:05:39 ip-172-31-4-20 systemd[70053]: Closed GnuPG cryptographic agent and passphrase cache.
+Jul 05 03:05:39 ip-172-31-4-20 systemd[70053]: pk-debconf-helper.socket: Succeeded.
+Jul 05 03:05:39 ip-172-31-4-20 systemd[70053]: Closed debconf communication socket.
+Jul 05 03:05:39 ip-172-31-4-20 systemd[70053]: snapd.session-agent.socket: Succeeded.
+Jul 05 03:05:39 ip-172-31-4-20 systemd[70053]: Closed REST API socket for snapd user session agent.
+Jul 05 03:05:39 ip-172-31-4-20 systemd[70053]: Reached target Shutdown.
+Jul 05 03:05:39 ip-172-31-4-20 systemd[70053]: systemd-exit.service: Succeeded.
+Jul 05 03:05:39 ip-172-31-4-20 systemd[70053]: Finished Exit the Session.
+Jul 05 03:05:39 ip-172-31-4-20 systemd[70053]: Reached target Exit the Session.
+Jul 05 03:05:39 ip-172-31-4-20 systemd[70054]: pam_unix(systemd-user:session): session closed for user lambda
+-- Reboot --
+Jul 06 12:09:01 ip-172-31-4-20 systemd[2598]: Reached target Paths.
+Jul 06 12:09:01 ip-172-31-4-20 systemd[2598]: Reached target Timers.
+Jul 06 12:09:01 ip-172-31-4-20 systemd[2598]: Starting D-Bus User Message Bus Socket.
+Jul 06 12:09:01 ip-172-31-4-20 systemd[2598]: Listening on GnuPG network certificate management daemon.
+Jul 06 12:09:01 ip-172-31-4-20 systemd[2598]: Listening on GnuPG cryptographic agent and passphrase cache (access for web browsers).
+Jul 06 12:09:01 ip-172-31-4-20 systemd[2598]: Listening on GnuPG cryptographic agent and passphrase cache (restricted).
+Jul 06 12:09:01 ip-172-31-4-20 systemd[2598]: Listening on GnuPG cryptographic agent (ssh-agent emulation).
+Jul 06 12:09:01 ip-172-31-4-20 systemd[2598]: Listening on GnuPG cryptographic agent and passphrase cache.
+Jul 06 12:09:01 ip-172-31-4-20 systemd[2598]: Listening on debconf communication socket.
+Jul 06 12:09:01 ip-172-31-4-20 systemd[2598]: Listening on REST API socket for snapd user session agent.
+Jul 06 12:09:01 ip-172-31-4-20 systemd[2598]: Listening on D-Bus User Message Bus Socket.
+Jul 06 12:09:01 ip-172-31-4-20 systemd[2598]: Reached target Sockets.
+Jul 06 12:09:01 ip-172-31-4-20 systemd[2598]: Reached target Basic System.
+Jul 06 12:09:01 ip-172-31-4-20 systemd[2598]: Reached target Main User Target.
+Jul 06 12:09:01 ip-172-31-4-20 systemd[2598]: Startup finished in 60ms.
+Jul 06 12:09:03 ip-172-31-4-20 sshd[2701]: Received disconnect from 58.247.22.240 port 27898:11: disconnected by user
+Jul 06 12:09:03 ip-172-31-4-20 sshd[2701]: Disconnected from user lambda 58.247.22.240 port 27898
+Jul 06 12:09:15 ip-172-31-4-20 vsce-sign[3139]: Package file size:  15595304
+Jul 06 12:09:15 ip-172-31-4-20 vsce-sign[3139]: Signature archive file size:  294973
+Jul 06 12:09:15 ip-172-31-4-20 vsce-sign[3139]: Manifest file size:  1124574
+Jul 06 12:09:15 ip-172-31-4-20 vsce-sign[3139]: Signature file size:  11975
+Jul 06 12:09:15 ip-172-31-4-20 vsce-sign[3139]: ManifestPackageIntegrityPolicy succeeded.
+Jul 06 12:09:15 ip-172-31-4-20 vsce-sign[3139]: SignatureIntegrityPolicy for primary signature succeeded.
+Jul 06 12:09:15 ip-172-31-4-20 vsce-sign[3139]: SignatureValidityPolicy for primary signature succeeded.
+Jul 06 12:09:15 ip-172-31-4-20 vsce-sign[3139]: SignatureIntegrityPolicy for timestamp signature succeeded.
+Jul 06 12:09:15 ip-172-31-4-20 vsce-sign[3139]: SignatureValidityPolicy for timestamp signature succeeded.
+Jul 06 12:09:15 ip-172-31-4-20 vsce-sign[3139]: X.509 certificate chain validation will use the fallback certificate bundle for timestamping.
+Jul 06 12:09:15 ip-172-31-4-20 vsce-sign[3139]: SignatureTrustPolicy for timestamp signature succeeded.
+Jul 06 12:09:15 ip-172-31-4-20 vsce-sign[3139]: X.509 certificate chain validation will use the fallback certificate bundle for code signing.
+Jul 06 12:09:16 ip-172-31-4-20 vsce-sign[3139]: SignatureTrustPolicy for primary signature succeeded.
+Jul 06 12:09:16 ip-172-31-4-20 vsce-sign[3139]: Primary signature type:  repository primary signature
+Jul 06 12:09:16 ip-172-31-4-20 vsce-sign[3139]: Primary signature status:  OK
+Jul 06 12:09:16 ip-172-31-4-20 vsce-sign[3139]: Timestamp signature status:  OK
+Jul 06 12:09:16 ip-172-31-4-20 vsce-sign[3139]: Exit code:  Success
+Jul 06 13:21:24 ip-172-31-4-20 sshd[13646]: Received disconnect from 58.247.22.240 port 20040:11: disconnected by user
+Jul 06 13:21:24 ip-172-31-4-20 sshd[13646]: Disconnected from user lambda 58.247.22.240 port 20040
+Jul 06 13:52:55 ip-172-31-4-20 sshd[18224]: Received disconnect from 58.247.22.240 port 63171:11: disconnected by user
+Jul 06 13:52:55 ip-172-31-4-20 sshd[18224]: Disconnected from user lambda 58.247.22.240 port 63171
+Jul 06 14:10:05 ip-172-31-4-20 sshd[23044]: Received disconnect from 58.247.22.240 port 45314:11: disconnected by user
+Jul 06 14:10:05 ip-172-31-4-20 sshd[23044]: Disconnected from user lambda 58.247.22.240 port 45314
+Jul 06 14:50:31 ip-172-31-4-20 sshd[27116]: Received disconnect from 58.247.22.240 port 18086:11: disconnected by user
+Jul 06 14:50:31 ip-172-31-4-20 sshd[27116]: Disconnected from user lambda 58.247.22.240 port 18086
+Jul 06 14:50:31 ip-172-31-4-20 sshd[27060]: Received disconnect from 58.247.22.240 port 18098:11: disconnected by user
+Jul 06 14:50:31 ip-172-31-4-20 sshd[27060]: Disconnected from user lambda 58.247.22.240 port 18098
+Jul 06 14:50:35 ip-172-31-4-20 sshd[27273]: Received disconnect from 58.247.22.240 port 23531:11: disconnected by user
+Jul 06 14:50:35 ip-172-31-4-20 sshd[27273]: Disconnected from user lambda 58.247.22.240 port 23531
+Jul 06 14:50:45 ip-172-31-4-20 sshd[27481]: Received disconnect from 58.247.22.240 port 60060:11: disconnected by user
+Jul 06 14:50:45 ip-172-31-4-20 sshd[27481]: Disconnected from user lambda 58.247.22.240 port 60060
+Jul 06 14:58:12 ip-172-31-4-20 sshd[28510]: Received disconnect from 58.247.22.240 port 65076:11: disconnected by user
+Jul 06 14:58:12 ip-172-31-4-20 sshd[28510]: Disconnected from user lambda 58.247.22.240 port 65076
+Jul 06 15:03:13 ip-172-31-4-20 sshd[29443]: Received disconnect from 58.247.22.240 port 2219:11: disconnected by user
+Jul 06 15:03:13 ip-172-31-4-20 sshd[29443]: Disconnected from user lambda 58.247.22.240 port 2219
+Jul 06 15:03:13 ip-172-31-4-20 sshd[29481]: Received disconnect from 58.247.22.240 port 2221:11: disconnected by user
+Jul 06 15:03:13 ip-172-31-4-20 sshd[29481]: Disconnected from user lambda 58.247.22.240 port 2221
+Jul 06 15:06:10 ip-172-31-4-20 sshd[29693]: Received disconnect from 58.247.22.240 port 36083:11: disconnected by user
+Jul 06 15:06:10 ip-172-31-4-20 sshd[29693]: Disconnected from user lambda 58.247.22.240 port 36083
+Jul 06 15:23:58 ip-172-31-4-20 sshd[31015]: Received disconnect from 58.247.22.240 port 54553:11: disconnected by user
+Jul 06 15:23:58 ip-172-31-4-20 sshd[31015]: Disconnected from user lambda 58.247.22.240 port 54553
+Jul 06 15:24:07 ip-172-31-4-20 sshd[31146]: Received disconnect from 58.247.22.240 port 47693:11: disconnected by user
+Jul 06 15:24:07 ip-172-31-4-20 sshd[31146]: Disconnected from user lambda 58.247.22.240 port 47693
+Jul 06 15:24:52 ip-172-31-4-20 sshd[31634]: Received disconnect from 58.247.22.240 port 57004:11: disconnected by user
+Jul 06 15:24:52 ip-172-31-4-20 sshd[31634]: Disconnected from user lambda 58.247.22.240 port 57004
+Jul 06 15:26:11 ip-172-31-4-20 sshd[29834]: Received disconnect from 58.247.22.240 port 55000:11: disconnected by user
+Jul 06 15:26:11 ip-172-31-4-20 sshd[29834]: Disconnected from user lambda 58.247.22.240 port 55000
+Jul 06 15:26:11 ip-172-31-4-20 sshd[27613]: Received disconnect from 58.247.22.240 port 31483:11: disconnected by user
+Jul 06 15:26:11 ip-172-31-4-20 sshd[27613]: Disconnected from user lambda 58.247.22.240 port 31483
+Jul 06 15:26:11 ip-172-31-4-20 sshd[31765]: Received disconnect from 58.247.22.240 port 40758:11: disconnected by user
+Jul 06 15:26:11 ip-172-31-4-20 sshd[31765]: Disconnected from user lambda 58.247.22.240 port 40758
+Jul 06 15:27:23 ip-172-31-4-20 systemd[2598]: run-rpc_pipefs.mount: Succeeded.
+Jul 06 15:27:23 ip-172-31-4-20 systemd[2598]: run-user-1000.mount: Succeeded.
+Jul 06 15:27:30 ip-172-31-4-20 systemd[2598]: Stopped target Main User Target.
+Jul 06 15:27:30 ip-172-31-4-20 systemd[2598]: Stopped target Basic System.
+Jul 06 15:27:30 ip-172-31-4-20 systemd[2598]: Stopped target Paths.
+Jul 06 15:27:30 ip-172-31-4-20 systemd[2598]: Stopped target Sockets.
+Jul 06 15:27:30 ip-172-31-4-20 systemd[2598]: Stopped target Timers.
+Jul 06 15:27:30 ip-172-31-4-20 systemd[2598]: dbus.socket: Succeeded.
+Jul 06 15:27:30 ip-172-31-4-20 systemd[2598]: Closed D-Bus User Message Bus Socket.
+Jul 06 15:27:30 ip-172-31-4-20 systemd[2598]: dirmngr.socket: Succeeded.
+Jul 06 15:27:30 ip-172-31-4-20 systemd[2598]: Closed GnuPG network certificate management daemon.
+Jul 06 15:27:30 ip-172-31-4-20 systemd[2598]: gpg-agent-browser.socket: Succeeded.
+Jul 06 15:27:30 ip-172-31-4-20 systemd[2598]: Closed GnuPG cryptographic agent and passphrase cache (access for web browsers).
+Jul 06 15:27:30 ip-172-31-4-20 systemd[2598]: gpg-agent-extra.socket: Succeeded.
+Jul 06 15:27:30 ip-172-31-4-20 systemd[2598]: Closed GnuPG cryptographic agent and passphrase cache (restricted).
+Jul 06 15:27:30 ip-172-31-4-20 systemd[2598]: gpg-agent-ssh.socket: Succeeded.
+Jul 06 15:27:30 ip-172-31-4-20 systemd[2598]: Closed GnuPG cryptographic agent (ssh-agent emulation).
+Jul 06 15:27:30 ip-172-31-4-20 systemd[2598]: gpg-agent.socket: Succeeded.
+Jul 06 15:27:30 ip-172-31-4-20 systemd[2598]: Closed GnuPG cryptographic agent and passphrase cache.
+Jul 06 15:27:30 ip-172-31-4-20 systemd[2598]: pk-debconf-helper.socket: Succeeded.
+Jul 06 15:27:30 ip-172-31-4-20 systemd[2598]: Closed debconf communication socket.
+Jul 06 15:27:30 ip-172-31-4-20 systemd[2598]: snapd.session-agent.socket: Succeeded.
+Jul 06 15:27:30 ip-172-31-4-20 systemd[2598]: Closed REST API socket for snapd user session agent.
+Jul 06 15:27:30 ip-172-31-4-20 systemd[2598]: Reached target Shutdown.
+Jul 06 15:27:30 ip-172-31-4-20 systemd[2598]: systemd-exit.service: Succeeded.
+Jul 06 15:27:30 ip-172-31-4-20 systemd[2598]: Finished Exit the Session.
+Jul 06 15:27:30 ip-172-31-4-20 systemd[2598]: Reached target Exit the Session.
+-- Reboot --
+Jul 07 02:29:54 ip-172-31-4-20 systemd[111191]: Reached target Paths.
+Jul 07 02:29:54 ip-172-31-4-20 systemd[111191]: Reached target Timers.
+Jul 07 02:29:54 ip-172-31-4-20 systemd[111191]: Starting D-Bus User Message Bus Socket.
+Jul 07 02:29:54 ip-172-31-4-20 systemd[111191]: Listening on GnuPG network certificate management daemon.
+Jul 07 02:29:54 ip-172-31-4-20 systemd[111191]: Listening on GnuPG cryptographic agent and passphrase cache (access for web browsers).
+Jul 07 02:29:54 ip-172-31-4-20 systemd[111191]: Listening on GnuPG cryptographic agent and passphrase cache (restricted).
+Jul 07 02:29:54 ip-172-31-4-20 systemd[111191]: Listening on GnuPG cryptographic agent (ssh-agent emulation).
+Jul 07 02:29:54 ip-172-31-4-20 systemd[111191]: Listening on GnuPG cryptographic agent and passphrase cache.
+Jul 07 02:29:54 ip-172-31-4-20 systemd[111191]: Listening on debconf communication socket.
+Jul 07 02:29:54 ip-172-31-4-20 systemd[111191]: Listening on REST API socket for snapd user session agent.
+Jul 07 02:29:54 ip-172-31-4-20 systemd[111191]: Listening on D-Bus User Message Bus Socket.
+Jul 07 02:29:54 ip-172-31-4-20 systemd[111191]: Reached target Sockets.
+Jul 07 02:29:54 ip-172-31-4-20 systemd[111191]: Reached target Basic System.
+Jul 07 02:29:54 ip-172-31-4-20 systemd[111191]: Reached target Main User Target.
+Jul 07 02:29:54 ip-172-31-4-20 systemd[111191]: Startup finished in 36ms.
+Jul 07 02:29:56 ip-172-31-4-20 sshd[111292]: Received disconnect from 58.247.22.240 port 34259:11: disconnected by user
+Jul 07 02:29:56 ip-172-31-4-20 sshd[111292]: Disconnected from user lambda 58.247.22.240 port 34259
+Jul 07 02:31:22 ip-172-31-4-20 sshd[111837]: Received disconnect from 58.247.22.240 port 18395:11: disconnected by user
+Jul 07 02:31:22 ip-172-31-4-20 sshd[111837]: Disconnected from user lambda 58.247.22.240 port 18395
+Jul 07 03:14:31 ip-172-31-4-20 sshd[123894]: Received disconnect from 58.247.22.240 port 38980:11: disconnected by user
+Jul 07 03:14:31 ip-172-31-4-20 sshd[123894]: Disconnected from user lambda 58.247.22.240 port 38980
+Jul 07 04:09:20 ip-172-31-4-20 systemd[111191]: run-user-1002.mount: Succeeded.
+Jul 07 05:20:26 ip-172-31-4-20 sshd[127400]: Received disconnect from 58.247.22.240 port 22167:11: disconnected by user
+Jul 07 05:20:26 ip-172-31-4-20 sshd[127400]: Disconnected from user lambda 58.247.22.240 port 22167
+Jul 07 06:24:11 ip-172-31-4-20 systemd[111191]: run-user-1000.mount: Succeeded.
+Jul 07 08:42:59 ip-172-31-4-20 sshd[134606]: Received disconnect from 58.247.22.240 port 47090:11: disconnected by user
+Jul 07 08:42:59 ip-172-31-4-20 sshd[134606]: Disconnected from user lambda 58.247.22.240 port 47090
+Jul 07 08:52:08 ip-172-31-4-20 systemd[111191]: run-rpc_pipefs.mount: Succeeded.
+Jul 07 08:52:12 ip-172-31-4-20 systemd[111191]: Stopped target Main User Target.
+Jul 07 08:52:12 ip-172-31-4-20 systemd[111191]: Stopped target Basic System.
+Jul 07 08:52:12 ip-172-31-4-20 systemd[111191]: Stopped target Paths.
+Jul 07 08:52:12 ip-172-31-4-20 systemd[111191]: Stopped target Sockets.
+Jul 07 08:52:12 ip-172-31-4-20 systemd[111191]: Stopped target Timers.
+Jul 07 08:52:12 ip-172-31-4-20 systemd[111191]: dbus.socket: Succeeded.
+Jul 07 08:52:12 ip-172-31-4-20 systemd[111191]: Closed D-Bus User Message Bus Socket.
+Jul 07 08:52:12 ip-172-31-4-20 systemd[111191]: dirmngr.socket: Succeeded.
+Jul 07 08:52:12 ip-172-31-4-20 systemd[111191]: Closed GnuPG network certificate management daemon.
+Jul 07 08:52:12 ip-172-31-4-20 systemd[111191]: gpg-agent-browser.socket: Succeeded.
+Jul 07 08:52:12 ip-172-31-4-20 systemd[111191]: Closed GnuPG cryptographic agent and passphrase cache (access for web browsers).
+Jul 07 08:52:12 ip-172-31-4-20 systemd[111191]: gpg-agent-extra.socket: Succeeded.
+Jul 07 08:52:12 ip-172-31-4-20 systemd[111191]: Closed GnuPG cryptographic agent and passphrase cache (restricted).
+Jul 07 08:52:12 ip-172-31-4-20 systemd[111191]: gpg-agent-ssh.socket: Succeeded.
+Jul 07 08:52:12 ip-172-31-4-20 systemd[111191]: Closed GnuPG cryptographic agent (ssh-agent emulation).
+Jul 07 08:52:12 ip-172-31-4-20 systemd[111191]: gpg-agent.socket: Succeeded.
+Jul 07 08:52:12 ip-172-31-4-20 systemd[111191]: Closed GnuPG cryptographic agent and passphrase cache.
+Jul 07 08:52:12 ip-172-31-4-20 systemd[111191]: pk-debconf-helper.socket: Succeeded.
+Jul 07 08:52:12 ip-172-31-4-20 systemd[111191]: Closed debconf communication socket.
+Jul 07 08:52:12 ip-172-31-4-20 systemd[111191]: snapd.session-agent.socket: Succeeded.
+Jul 07 08:52:12 ip-172-31-4-20 systemd[111191]: Closed REST API socket for snapd user session agent.
+Jul 07 08:52:12 ip-172-31-4-20 systemd[111191]: Reached target Shutdown.
+Jul 07 08:52:12 ip-172-31-4-20 systemd[111191]: systemd-exit.service: Succeeded.
+Jul 07 08:52:12 ip-172-31-4-20 systemd[111191]: Finished Exit the Session.
+Jul 07 08:52:12 ip-172-31-4-20 systemd[111191]: Reached target Exit the Session.
+-- Reboot --
+Jul 07 09:06:26 ip-172-31-4-20 systemd[1866]: Reached target Paths.
+Jul 07 09:06:26 ip-172-31-4-20 systemd[1866]: Reached target Timers.
+Jul 07 09:06:26 ip-172-31-4-20 systemd[1866]: Starting D-Bus User Message Bus Socket.
+Jul 07 09:06:26 ip-172-31-4-20 systemd[1866]: Listening on GnuPG network certificate management daemon.
+Jul 07 09:06:26 ip-172-31-4-20 systemd[1866]: Listening on GnuPG cryptographic agent and passphrase cache (access for web browsers).
+Jul 07 09:06:26 ip-172-31-4-20 systemd[1866]: Listening on GnuPG cryptographic agent and passphrase cache (restricted).
+Jul 07 09:06:26 ip-172-31-4-20 systemd[1866]: Listening on GnuPG cryptographic agent (ssh-agent emulation).
+Jul 07 09:06:26 ip-172-31-4-20 systemd[1866]: Listening on GnuPG cryptographic agent and passphrase cache.
+Jul 07 09:06:26 ip-172-31-4-20 systemd[1866]: Listening on debconf communication socket.
+Jul 07 09:06:26 ip-172-31-4-20 systemd[1866]: Listening on REST API socket for snapd user session agent.
+Jul 07 09:06:26 ip-172-31-4-20 systemd[1866]: Listening on D-Bus User Message Bus Socket.
+Jul 07 09:06:26 ip-172-31-4-20 systemd[1866]: Reached target Sockets.
+Jul 07 09:06:26 ip-172-31-4-20 systemd[1866]: Reached target Basic System.
+Jul 07 09:06:26 ip-172-31-4-20 systemd[1866]: Reached target Main User Target.
+Jul 07 09:06:26 ip-172-31-4-20 systemd[1866]: Startup finished in 65ms.
+Jul 07 09:06:28 ip-172-31-4-20 sshd[1965]: Received disconnect from 58.247.22.240 port 40539:11: disconnected by user
+Jul 07 09:06:28 ip-172-31-4-20 sshd[1965]: Disconnected from user lambda 58.247.22.240 port 40539
+Jul 07 09:09:06 ip-172-31-4-20 systemd[1866]: run-rpc_pipefs.mount: Succeeded.
+Jul 07 09:09:06 ip-172-31-4-20 systemd[1866]: Stopped target Main User Target.
+Jul 07 09:09:06 ip-172-31-4-20 systemd[1866]: Stopped target Basic System.
+Jul 07 09:09:06 ip-172-31-4-20 systemd[1866]: Stopped target Paths.
+Jul 07 09:09:06 ip-172-31-4-20 systemd[1866]: Stopped target Sockets.
+Jul 07 09:09:06 ip-172-31-4-20 systemd[1866]: Stopped target Timers.
+Jul 07 09:09:06 ip-172-31-4-20 systemd[1866]: dbus.socket: Succeeded.
+Jul 07 09:09:06 ip-172-31-4-20 systemd[1866]: Closed D-Bus User Message Bus Socket.
+Jul 07 09:09:06 ip-172-31-4-20 systemd[1866]: dirmngr.socket: Succeeded.
+Jul 07 09:09:06 ip-172-31-4-20 systemd[1866]: Closed GnuPG network certificate management daemon.
+Jul 07 09:09:06 ip-172-31-4-20 systemd[1866]: gpg-agent-browser.socket: Succeeded.
+Jul 07 09:09:06 ip-172-31-4-20 systemd[1866]: Closed GnuPG cryptographic agent and passphrase cache (access for web browsers).
+Jul 07 09:09:06 ip-172-31-4-20 systemd[1866]: gpg-agent-extra.socket: Succeeded.
+Jul 07 09:09:06 ip-172-31-4-20 systemd[1866]: Closed GnuPG cryptographic agent and passphrase cache (restricted).
+Jul 07 09:09:06 ip-172-31-4-20 systemd[1866]: gpg-agent-ssh.socket: Succeeded.
+Jul 07 09:09:06 ip-172-31-4-20 systemd[1866]: Closed GnuPG cryptographic agent (ssh-agent emulation).
+Jul 07 09:09:06 ip-172-31-4-20 systemd[1866]: gpg-agent.socket: Succeeded.
+Jul 07 09:09:06 ip-172-31-4-20 systemd[1866]: Closed GnuPG cryptographic agent and passphrase cache.
+Jul 07 09:09:06 ip-172-31-4-20 systemd[1866]: pk-debconf-helper.socket: Succeeded.
+Jul 07 09:09:06 ip-172-31-4-20 systemd[1866]: Closed debconf communication socket.
+Jul 07 09:09:06 ip-172-31-4-20 systemd[1866]: snapd.session-agent.socket: Succeeded.
+Jul 07 09:09:06 ip-172-31-4-20 systemd[1866]: Closed REST API socket for snapd user session agent.
+Jul 07 09:09:06 ip-172-31-4-20 systemd[1866]: Reached target Shutdown.
+Jul 07 09:09:06 ip-172-31-4-20 systemd[1866]: systemd-exit.service: Succeeded.
+Jul 07 09:09:06 ip-172-31-4-20 systemd[1866]: Finished Exit the Session.
+Jul 07 09:09:06 ip-172-31-4-20 systemd[1866]: Reached target Exit the Session.
+Jul 07 09:09:06 ip-172-31-4-20 systemd[1867]: pam_unix(systemd-user:session): session closed for user lambda
+-- Reboot --
+Jul 07 09:52:22 ip-172-31-4-20 systemd[1910]: Reached target Paths.
+Jul 07 09:52:22 ip-172-31-4-20 systemd[1910]: Reached target Timers.
+Jul 07 09:52:22 ip-172-31-4-20 systemd[1910]: Starting D-Bus User Message Bus Socket.
+Jul 07 09:52:22 ip-172-31-4-20 systemd[1910]: Listening on GnuPG network certificate management daemon.
+Jul 07 09:52:22 ip-172-31-4-20 systemd[1910]: Listening on GnuPG cryptographic agent and passphrase cache (access for web browsers).
+Jul 07 09:52:22 ip-172-31-4-20 systemd[1910]: Listening on GnuPG cryptographic agent and passphrase cache (restricted).
+Jul 07 09:52:22 ip-172-31-4-20 systemd[1910]: Listening on GnuPG cryptographic agent (ssh-agent emulation).
+Jul 07 09:52:22 ip-172-31-4-20 systemd[1910]: Listening on GnuPG cryptographic agent and passphrase cache.
+Jul 07 09:52:22 ip-172-31-4-20 systemd[1910]: Listening on debconf communication socket.
+Jul 07 09:52:22 ip-172-31-4-20 systemd[1910]: Listening on REST API socket for snapd user session agent.
+Jul 07 09:52:22 ip-172-31-4-20 systemd[1910]: Listening on D-Bus User Message Bus Socket.
+Jul 07 09:52:22 ip-172-31-4-20 systemd[1910]: Reached target Sockets.
+Jul 07 09:52:22 ip-172-31-4-20 systemd[1910]: Reached target Basic System.
+Jul 07 09:52:22 ip-172-31-4-20 systemd[1910]: Reached target Main User Target.
+Jul 07 09:52:22 ip-172-31-4-20 systemd[1910]: Startup finished in 64ms.
+Jul 07 09:52:24 ip-172-31-4-20 sshd[2030]: Received disconnect from 58.247.22.240 port 10089:11: disconnected by user
+Jul 07 09:52:24 ip-172-31-4-20 sshd[2030]: Disconnected from user lambda 58.247.22.240 port 10089
+Jul 07 09:54:24 ip-172-31-4-20 systemd[1910]: run-rpc_pipefs.mount: Succeeded.
+Jul 07 09:54:24 ip-172-31-4-20 systemd[1910]: Stopped target Main User Target.
+Jul 07 09:54:24 ip-172-31-4-20 systemd[1910]: Stopped target Basic System.
+Jul 07 09:54:24 ip-172-31-4-20 systemd[1910]: Stopped target Paths.
+Jul 07 09:54:24 ip-172-31-4-20 systemd[1910]: Stopped target Sockets.
+Jul 07 09:54:24 ip-172-31-4-20 systemd[1910]: Stopped target Timers.
+Jul 07 09:54:24 ip-172-31-4-20 systemd[1910]: dbus.socket: Succeeded.
+Jul 07 09:54:24 ip-172-31-4-20 systemd[1910]: Closed D-Bus User Message Bus Socket.
+Jul 07 09:54:24 ip-172-31-4-20 systemd[1910]: dirmngr.socket: Succeeded.
+Jul 07 09:54:24 ip-172-31-4-20 systemd[1910]: Closed GnuPG network certificate management daemon.
+Jul 07 09:54:24 ip-172-31-4-20 systemd[1910]: gpg-agent-browser.socket: Succeeded.
+Jul 07 09:54:24 ip-172-31-4-20 systemd[1910]: Closed GnuPG cryptographic agent and passphrase cache (access for web browsers).
+Jul 07 09:54:24 ip-172-31-4-20 systemd[1910]: gpg-agent-extra.socket: Succeeded.
+Jul 07 09:54:24 ip-172-31-4-20 systemd[1910]: Closed GnuPG cryptographic agent and passphrase cache (restricted).
+Jul 07 09:54:24 ip-172-31-4-20 systemd[1910]: gpg-agent-ssh.socket: Succeeded.
+Jul 07 09:54:24 ip-172-31-4-20 systemd[1910]: Closed GnuPG cryptographic agent (ssh-agent emulation).
+Jul 07 09:54:24 ip-172-31-4-20 systemd[1910]: gpg-agent.socket: Succeeded.
+Jul 07 09:54:24 ip-172-31-4-20 systemd[1910]: Closed GnuPG cryptographic agent and passphrase cache.
+Jul 07 09:54:24 ip-172-31-4-20 systemd[1910]: pk-debconf-helper.socket: Succeeded.
+Jul 07 09:54:24 ip-172-31-4-20 systemd[1910]: Closed debconf communication socket.
+Jul 07 09:54:24 ip-172-31-4-20 systemd[1910]: snapd.session-agent.socket: Succeeded.
+Jul 07 09:54:24 ip-172-31-4-20 systemd[1910]: Closed REST API socket for snapd user session agent.
+Jul 07 09:54:24 ip-172-31-4-20 systemd[1910]: Reached target Shutdown.
+Jul 07 09:54:24 ip-172-31-4-20 systemd[1910]: systemd-exit.service: Succeeded.
+Jul 07 09:54:24 ip-172-31-4-20 systemd[1910]: Finished Exit the Session.
+Jul 07 09:54:24 ip-172-31-4-20 systemd[1910]: Reached target Exit the Session.
+-- Reboot --
+Jul 09 11:45:22 ip-172-31-4-20 systemd[3762]: Reached target Paths.
+Jul 09 11:45:22 ip-172-31-4-20 systemd[3762]: Reached target Timers.
+Jul 09 11:45:22 ip-172-31-4-20 systemd[3762]: Starting D-Bus User Message Bus Socket.
+Jul 09 11:45:22 ip-172-31-4-20 systemd[3762]: Listening on GnuPG network certificate management daemon.
+Jul 09 11:45:22 ip-172-31-4-20 systemd[3762]: Listening on GnuPG cryptographic agent and passphrase cache (access for web browsers).
+Jul 09 11:45:22 ip-172-31-4-20 systemd[3762]: Listening on GnuPG cryptographic agent and passphrase cache (restricted).
+Jul 09 11:45:22 ip-172-31-4-20 systemd[3762]: Listening on GnuPG cryptographic agent (ssh-agent emulation).
+Jul 09 11:45:22 ip-172-31-4-20 systemd[3762]: Listening on GnuPG cryptographic agent and passphrase cache.
+Jul 09 11:45:22 ip-172-31-4-20 systemd[3762]: Listening on debconf communication socket.
+Jul 09 11:45:22 ip-172-31-4-20 systemd[3762]: Listening on REST API socket for snapd user session agent.
+Jul 09 11:45:22 ip-172-31-4-20 systemd[3762]: Listening on D-Bus User Message Bus Socket.
+Jul 09 11:45:22 ip-172-31-4-20 systemd[3762]: Reached target Sockets.
+Jul 09 11:45:22 ip-172-31-4-20 systemd[3762]: Reached target Basic System.
+Jul 09 11:45:22 ip-172-31-4-20 systemd[3762]: Reached target Main User Target.
+Jul 09 11:45:22 ip-172-31-4-20 systemd[3762]: Startup finished in 60ms.
+Jul 09 11:45:24 ip-172-31-4-20 sshd[3867]: Received disconnect from 58.247.22.240 port 17691:11: disconnected by user
+Jul 09 11:45:24 ip-172-31-4-20 sshd[3867]: Disconnected from user lambda 58.247.22.240 port 17691
+Jul 09 12:20:33 ip-172-31-4-20 sshd[16209]: Received disconnect from 58.247.22.240 port 12414:11: disconnected by user
+Jul 09 12:20:33 ip-172-31-4-20 sshd[16209]: Disconnected from user lambda 58.247.22.240 port 12414
+Jul 09 12:23:23 ip-172-31-4-20 sshd[16664]: Received disconnect from 58.247.22.240 port 20618:11: disconnected by user
+Jul 09 12:23:23 ip-172-31-4-20 sshd[16664]: Disconnected from user lambda 58.247.22.240 port 20618
+Jul 09 12:34:45 ip-172-31-4-20 sshd[25476]: Received disconnect from 58.247.22.240 port 26781:11: disconnected by user
+Jul 09 12:34:45 ip-172-31-4-20 sshd[25476]: Disconnected from user lambda 58.247.22.240 port 26781
+Jul 09 12:56:50 ip-172-31-4-20 sshd[31210]: Received disconnect from 58.247.22.240 port 53308:11: disconnected by user
+Jul 09 12:56:50 ip-172-31-4-20 sshd[31210]: Disconnected from user lambda 58.247.22.240 port 53308
+Jul 09 13:08:07 ip-172-31-4-20 sshd[38762]: Received disconnect from 58.247.22.240 port 14422:11: disconnected by user
+Jul 09 13:08:07 ip-172-31-4-20 sshd[38762]: Disconnected from user lambda 58.247.22.240 port 14422
+Jul 09 13:21:02 ip-172-31-4-20 systemd[3762]: run-rpc_pipefs.mount: Succeeded.
+Jul 09 13:21:03 ip-172-31-4-20 systemd[3762]: Stopped target Main User Target.
+Jul 09 13:21:03 ip-172-31-4-20 systemd[3762]: Stopped target Basic System.
+Jul 09 13:21:03 ip-172-31-4-20 systemd[3762]: Stopped target Paths.
+Jul 09 13:21:03 ip-172-31-4-20 systemd[3762]: Stopped target Sockets.
+Jul 09 13:21:03 ip-172-31-4-20 systemd[3762]: Stopped target Timers.
+Jul 09 13:21:03 ip-172-31-4-20 systemd[3762]: dbus.socket: Succeeded.
+Jul 09 13:21:03 ip-172-31-4-20 systemd[3762]: Closed D-Bus User Message Bus Socket.
+Jul 09 13:21:03 ip-172-31-4-20 systemd[3762]: dirmngr.socket: Succeeded.
+Jul 09 13:21:03 ip-172-31-4-20 systemd[3762]: Closed GnuPG network certificate management daemon.
+Jul 09 13:21:03 ip-172-31-4-20 systemd[3762]: gpg-agent-browser.socket: Succeeded.
+Jul 09 13:21:03 ip-172-31-4-20 systemd[3762]: Closed GnuPG cryptographic agent and passphrase cache (access for web browsers).
+Jul 09 13:21:03 ip-172-31-4-20 systemd[3762]: gpg-agent-extra.socket: Succeeded.
+Jul 09 13:21:03 ip-172-31-4-20 systemd[3762]: Closed GnuPG cryptographic agent and passphrase cache (restricted).
+Jul 09 13:21:03 ip-172-31-4-20 systemd[3762]: gpg-agent-ssh.socket: Succeeded.
+Jul 09 13:21:03 ip-172-31-4-20 systemd[3762]: Closed GnuPG cryptographic agent (ssh-agent emulation).
+Jul 09 13:21:03 ip-172-31-4-20 systemd[3762]: gpg-agent.socket: Succeeded.
+Jul 09 13:21:03 ip-172-31-4-20 systemd[3762]: Closed GnuPG cryptographic agent and passphrase cache.
+Jul 09 13:21:03 ip-172-31-4-20 systemd[3762]: pk-debconf-helper.socket: Succeeded.
+Jul 09 13:21:03 ip-172-31-4-20 systemd[3762]: Closed debconf communication socket.
+Jul 09 13:21:03 ip-172-31-4-20 systemd[3762]: snapd.session-agent.socket: Succeeded.
+Jul 09 13:21:03 ip-172-31-4-20 systemd[3762]: Closed REST API socket for snapd user session agent.
+Jul 09 13:21:03 ip-172-31-4-20 systemd[3762]: Reached target Shutdown.
+Jul 09 13:21:03 ip-172-31-4-20 systemd[3762]: systemd-exit.service: Succeeded.
+Jul 09 13:21:03 ip-172-31-4-20 systemd[3762]: Finished Exit the Session.
+Jul 09 13:21:03 ip-172-31-4-20 systemd[3762]: Reached target Exit the Session.
+Jul 09 13:21:03 ip-172-31-4-20 systemd[3763]: pam_unix(systemd-user:session): session closed for user lambda
+-- Reboot --
+Jul 10 14:18:45 ip-172-31-4-20 systemd[1956]: Reached target Paths.
+Jul 10 14:18:45 ip-172-31-4-20 systemd[1956]: Reached target Timers.
+Jul 10 14:18:45 ip-172-31-4-20 systemd[1956]: Starting D-Bus User Message Bus Socket.
+Jul 10 14:18:45 ip-172-31-4-20 systemd[1956]: Listening on GnuPG network certificate management daemon.
+Jul 10 14:18:45 ip-172-31-4-20 systemd[1956]: Listening on GnuPG cryptographic agent and passphrase cache (access for web browsers).
+Jul 10 14:18:45 ip-172-31-4-20 systemd[1956]: Listening on GnuPG cryptographic agent and passphrase cache (restricted).
+Jul 10 14:18:45 ip-172-31-4-20 systemd[1956]: Listening on GnuPG cryptographic agent (ssh-agent emulation).
+Jul 10 14:18:45 ip-172-31-4-20 systemd[1956]: Listening on GnuPG cryptographic agent and passphrase cache.
+Jul 10 14:18:45 ip-172-31-4-20 systemd[1956]: Listening on debconf communication socket.
+Jul 10 14:18:45 ip-172-31-4-20 systemd[1956]: Listening on REST API socket for snapd user session agent.
+Jul 10 14:18:45 ip-172-31-4-20 systemd[1956]: Listening on D-Bus User Message Bus Socket.
+Jul 10 14:18:45 ip-172-31-4-20 systemd[1956]: Reached target Sockets.
+Jul 10 14:18:45 ip-172-31-4-20 systemd[1956]: Reached target Basic System.
+Jul 10 14:18:45 ip-172-31-4-20 systemd[1956]: Reached target Main User Target.
+Jul 10 14:18:45 ip-172-31-4-20 systemd[1956]: Startup finished in 58ms.
+Jul 10 14:18:48 ip-172-31-4-20 sshd[2597]: Received disconnect from 58.247.22.240 port 16435:11: disconnected by user
+Jul 10 14:18:48 ip-172-31-4-20 sshd[2597]: Disconnected from user lambda 58.247.22.240 port 16435
+Jul 10 14:26:57 ip-172-31-4-20 systemd[1956]: run-rpc_pipefs.mount: Succeeded.
+Jul 10 14:26:58 ip-172-31-4-20 systemd[1956]: Stopped target Main User Target.
+Jul 10 14:26:58 ip-172-31-4-20 systemd[1956]: Stopped target Basic System.
+Jul 10 14:26:58 ip-172-31-4-20 systemd[1956]: Stopped target Paths.
+Jul 10 14:26:58 ip-172-31-4-20 systemd[1956]: Stopped target Sockets.
+Jul 10 14:26:58 ip-172-31-4-20 systemd[1956]: Stopped target Timers.
+Jul 10 14:26:58 ip-172-31-4-20 systemd[1956]: dbus.socket: Succeeded.
+Jul 10 14:26:58 ip-172-31-4-20 systemd[1956]: Closed D-Bus User Message Bus Socket.
+Jul 10 14:26:58 ip-172-31-4-20 systemd[1956]: dirmngr.socket: Succeeded.
+Jul 10 14:26:58 ip-172-31-4-20 systemd[1956]: Closed GnuPG network certificate management daemon.
+Jul 10 14:26:58 ip-172-31-4-20 systemd[1956]: gpg-agent-browser.socket: Succeeded.
+Jul 10 14:26:58 ip-172-31-4-20 systemd[1956]: Closed GnuPG cryptographic agent and passphrase cache (access for web browsers).
+Jul 10 14:26:58 ip-172-31-4-20 systemd[1956]: gpg-agent-extra.socket: Succeeded.
+Jul 10 14:26:58 ip-172-31-4-20 systemd[1956]: Closed GnuPG cryptographic agent and passphrase cache (restricted).
+Jul 10 14:26:58 ip-172-31-4-20 systemd[1956]: gpg-agent-ssh.socket: Succeeded.
+Jul 10 14:26:58 ip-172-31-4-20 systemd[1956]: Closed GnuPG cryptographic agent (ssh-agent emulation).
+Jul 10 14:26:58 ip-172-31-4-20 systemd[1956]: gpg-agent.socket: Succeeded.
+Jul 10 14:26:58 ip-172-31-4-20 systemd[1956]: Closed GnuPG cryptographic agent and passphrase cache.
+Jul 10 14:26:58 ip-172-31-4-20 systemd[1956]: pk-debconf-helper.socket: Succeeded.
+Jul 10 14:26:58 ip-172-31-4-20 systemd[1956]: Closed debconf communication socket.
+Jul 10 14:26:58 ip-172-31-4-20 systemd[1956]: snapd.session-agent.socket: Succeeded.
+Jul 10 14:26:58 ip-172-31-4-20 systemd[1956]: Closed REST API socket for snapd user session agent.
+Jul 10 14:26:58 ip-172-31-4-20 systemd[1956]: Reached target Shutdown.
+Jul 10 14:26:58 ip-172-31-4-20 systemd[1956]: systemd-exit.service: Succeeded.
+Jul 10 14:26:58 ip-172-31-4-20 systemd[1956]: Finished Exit the Session.
+Jul 10 14:26:58 ip-172-31-4-20 systemd[1956]: Reached target Exit the Session.
+Jul 10 14:26:58 ip-172-31-4-20 systemd[1957]: pam_unix(systemd-user:session): session closed for user lambda
+-- Reboot --
+Jul 14 09:53:42 ip-172-31-4-20 systemd[10771]: Reached target Paths.
+Jul 14 09:53:42 ip-172-31-4-20 systemd[10771]: Reached target Timers.
+Jul 14 09:53:42 ip-172-31-4-20 systemd[10771]: Starting D-Bus User Message Bus Socket.
+Jul 14 09:53:42 ip-172-31-4-20 systemd[10771]: Listening on GnuPG network certificate management daemon.
+Jul 14 09:53:42 ip-172-31-4-20 systemd[10771]: Listening on GnuPG cryptographic agent and passphrase cache (access for web browsers).
+Jul 14 09:53:42 ip-172-31-4-20 systemd[10771]: Listening on GnuPG cryptographic agent and passphrase cache (restricted).
+Jul 14 09:53:42 ip-172-31-4-20 systemd[10771]: Listening on GnuPG cryptographic agent (ssh-agent emulation).
+Jul 14 09:53:42 ip-172-31-4-20 systemd[10771]: Listening on GnuPG cryptographic agent and passphrase cache.
+Jul 14 09:53:42 ip-172-31-4-20 systemd[10771]: Listening on debconf communication socket.
+Jul 14 09:53:42 ip-172-31-4-20 systemd[10771]: Listening on REST API socket for snapd user session agent.
+Jul 14 09:53:42 ip-172-31-4-20 systemd[10771]: Listening on D-Bus User Message Bus Socket.
+Jul 14 09:53:42 ip-172-31-4-20 systemd[10771]: Reached target Sockets.
+Jul 14 09:53:42 ip-172-31-4-20 systemd[10771]: Reached target Basic System.
+Jul 14 09:53:42 ip-172-31-4-20 systemd[10771]: Reached target Main User Target.
+Jul 14 09:53:42 ip-172-31-4-20 systemd[10771]: Startup finished in 38ms.
+Jul 14 09:53:44 ip-172-31-4-20 sshd[10876]: Received disconnect from 58.247.22.240 port 56145:11: disconnected by user
+Jul 14 09:53:44 ip-172-31-4-20 sshd[10876]: Disconnected from user lambda 58.247.22.240 port 56145
+Jul 14 09:53:58 ip-172-31-4-20 vsce-sign[11257]: Package file size:  15593663
+Jul 14 09:53:58 ip-172-31-4-20 vsce-sign[11257]: Signature archive file size:  294972
+Jul 14 09:53:58 ip-172-31-4-20 vsce-sign[11257]: Manifest file size:  1124574
+Jul 14 09:53:58 ip-172-31-4-20 vsce-sign[11257]: Signature file size:  11975
+Jul 14 09:53:58 ip-172-31-4-20 vsce-sign[11257]: ManifestPackageIntegrityPolicy succeeded.
+Jul 14 09:53:58 ip-172-31-4-20 vsce-sign[11257]: SignatureIntegrityPolicy for primary signature succeeded.
+Jul 14 09:53:58 ip-172-31-4-20 vsce-sign[11257]: SignatureValidityPolicy for primary signature succeeded.
+Jul 14 09:53:58 ip-172-31-4-20 vsce-sign[11257]: SignatureIntegrityPolicy for timestamp signature succeeded.
+Jul 14 09:53:58 ip-172-31-4-20 vsce-sign[11257]: SignatureValidityPolicy for timestamp signature succeeded.
+Jul 14 09:53:58 ip-172-31-4-20 vsce-sign[11257]: X.509 certificate chain validation will use the fallback certificate bundle for timestamping.
+Jul 14 09:53:58 ip-172-31-4-20 vsce-sign[11257]: SignatureTrustPolicy for timestamp signature succeeded.
+Jul 14 09:53:58 ip-172-31-4-20 vsce-sign[11257]: X.509 certificate chain validation will use the fallback certificate bundle for code signing.
+Jul 14 09:53:59 ip-172-31-4-20 vsce-sign[11257]: SignatureTrustPolicy for primary signature succeeded.
+Jul 14 09:53:59 ip-172-31-4-20 vsce-sign[11257]: Primary signature type:  repository primary signature
+Jul 14 09:53:59 ip-172-31-4-20 vsce-sign[11257]: Primary signature status:  OK
+Jul 14 09:53:59 ip-172-31-4-20 vsce-sign[11257]: Timestamp signature status:  OK
+Jul 14 09:53:59 ip-172-31-4-20 vsce-sign[11257]: Exit code:  Success
+Jul 14 09:57:11 ip-172-31-4-20 sshd[11380]: Received disconnect from 58.247.22.240 port 11061:11: disconnected by user
+Jul 14 09:57:11 ip-172-31-4-20 sshd[11380]: Disconnected from user lambda 58.247.22.240 port 11061
+Jul 14 10:09:23 ip-172-31-4-20 sshd[12185]: Received disconnect from 58.247.22.240 port 41152:11: disconnected by user
+Jul 14 10:09:23 ip-172-31-4-20 sshd[12185]: Disconnected from user lambda 58.247.22.240 port 41152
+Jul 14 10:27:53 ip-172-31-4-20 systemd[10771]: run-rpc_pipefs.mount: Succeeded.
+Jul 14 10:27:54 ip-172-31-4-20 systemd[10771]: Stopped target Main User Target.
+Jul 14 10:27:54 ip-172-31-4-20 systemd[10771]: Stopped target Basic System.
+Jul 14 10:27:54 ip-172-31-4-20 systemd[10771]: Stopped target Paths.
+Jul 14 10:27:54 ip-172-31-4-20 systemd[10771]: Stopped target Sockets.
+Jul 14 10:27:54 ip-172-31-4-20 systemd[10771]: Stopped target Timers.
+Jul 14 10:27:54 ip-172-31-4-20 systemd[10771]: dbus.socket: Succeeded.
+Jul 14 10:27:54 ip-172-31-4-20 systemd[10771]: Closed D-Bus User Message Bus Socket.
+Jul 14 10:27:54 ip-172-31-4-20 systemd[10771]: dirmngr.socket: Succeeded.
+Jul 14 10:27:54 ip-172-31-4-20 systemd[10771]: Closed GnuPG network certificate management daemon.
+Jul 14 10:27:54 ip-172-31-4-20 systemd[10771]: gpg-agent-browser.socket: Succeeded.
+Jul 14 10:27:54 ip-172-31-4-20 systemd[10771]: Closed GnuPG cryptographic agent and passphrase cache (access for web browsers).
+Jul 14 10:27:54 ip-172-31-4-20 systemd[10771]: gpg-agent-extra.socket: Succeeded.
+Jul 14 10:27:54 ip-172-31-4-20 systemd[10771]: Closed GnuPG cryptographic agent and passphrase cache (restricted).
+Jul 14 10:27:54 ip-172-31-4-20 systemd[10771]: gpg-agent-ssh.socket: Succeeded.
+Jul 14 10:27:54 ip-172-31-4-20 systemd[10771]: Closed GnuPG cryptographic agent (ssh-agent emulation).
+Jul 14 10:27:54 ip-172-31-4-20 systemd[10771]: gpg-agent.socket: Succeeded.
+Jul 14 10:27:54 ip-172-31-4-20 systemd[10771]: Closed GnuPG cryptographic agent and passphrase cache.
+Jul 14 10:27:54 ip-172-31-4-20 systemd[10771]: pk-debconf-helper.socket: Succeeded.
+Jul 14 10:27:54 ip-172-31-4-20 systemd[10771]: Closed debconf communication socket.
+Jul 14 10:27:54 ip-172-31-4-20 systemd[10771]: snapd.session-agent.socket: Succeeded.
+Jul 14 10:27:54 ip-172-31-4-20 systemd[10771]: Closed REST API socket for snapd user session agent.
+Jul 14 10:27:54 ip-172-31-4-20 systemd[10771]: Reached target Shutdown.
+Jul 14 10:27:54 ip-172-31-4-20 systemd[10771]: systemd-exit.service: Succeeded.
+Jul 14 10:27:54 ip-172-31-4-20 systemd[10771]: Finished Exit the Session.
+Jul 14 10:27:54 ip-172-31-4-20 systemd[10771]: Reached target Exit the Session.
+Jul 14 10:27:54 ip-172-31-4-20 systemd[10772]: pam_unix(systemd-user:session): session closed for user lambda
+-- Reboot --
+Jul 20 10:26:37 ip-172-31-4-20 systemd[2031]: Reached target Paths.
+Jul 20 10:26:37 ip-172-31-4-20 systemd[2031]: Reached target Timers.
+Jul 20 10:26:37 ip-172-31-4-20 systemd[2031]: Starting D-Bus User Message Bus Socket.
+Jul 20 10:26:37 ip-172-31-4-20 systemd[2031]: Listening on GnuPG network certificate management daemon.
+Jul 20 10:26:37 ip-172-31-4-20 systemd[2031]: Listening on GnuPG cryptographic agent and passphrase cache (access for web browsers).
+Jul 20 10:26:37 ip-172-31-4-20 systemd[2031]: Listening on GnuPG cryptographic agent and passphrase cache (restricted).
+Jul 20 10:26:37 ip-172-31-4-20 systemd[2031]: Listening on GnuPG cryptographic agent (ssh-agent emulation).
+Jul 20 10:26:37 ip-172-31-4-20 systemd[2031]: Listening on GnuPG cryptographic agent and passphrase cache.
+Jul 20 10:26:37 ip-172-31-4-20 systemd[2031]: Listening on debconf communication socket.
+Jul 20 10:26:37 ip-172-31-4-20 systemd[2031]: Listening on REST API socket for snapd user session agent.
+Jul 20 10:26:37 ip-172-31-4-20 systemd[2031]: Listening on D-Bus User Message Bus Socket.
+Jul 20 10:26:37 ip-172-31-4-20 systemd[2031]: Reached target Sockets.
+Jul 20 10:26:37 ip-172-31-4-20 systemd[2031]: Reached target Basic System.
+Jul 20 10:26:37 ip-172-31-4-20 systemd[2031]: Reached target Main User Target.
+Jul 20 10:26:37 ip-172-31-4-20 systemd[2031]: Startup finished in 56ms.
+Jul 20 10:26:39 ip-172-31-4-20 sshd[2141]: Received disconnect from 58.247.22.240 port 42505:11: disconnected by user
+Jul 20 10:26:39 ip-172-31-4-20 sshd[2141]: Disconnected from user lambda 58.247.22.240 port 42505
+Jul 20 10:26:51 ip-172-31-4-20 vsce-sign[3200]: Package file size:  15604179
+Jul 20 10:26:51 ip-172-31-4-20 vsce-sign[3200]: Signature archive file size:  294966
+Jul 20 10:26:51 ip-172-31-4-20 vsce-sign[3200]: Manifest file size:  1124574
+Jul 20 10:26:51 ip-172-31-4-20 vsce-sign[3200]: Signature file size:  11975
+Jul 20 10:26:51 ip-172-31-4-20 vsce-sign[3200]: ManifestPackageIntegrityPolicy succeeded.
+Jul 20 10:26:51 ip-172-31-4-20 vsce-sign[3200]: SignatureIntegrityPolicy for primary signature succeeded.
+Jul 20 10:26:51 ip-172-31-4-20 vsce-sign[3200]: SignatureValidityPolicy for primary signature succeeded.
+Jul 20 10:26:51 ip-172-31-4-20 vsce-sign[3200]: SignatureIntegrityPolicy for timestamp signature succeeded.
+Jul 20 10:26:51 ip-172-31-4-20 vsce-sign[3200]: SignatureValidityPolicy for timestamp signature succeeded.
+Jul 20 10:26:51 ip-172-31-4-20 vsce-sign[3200]: X.509 certificate chain validation will use the fallback certificate bundle for timestamping.
+Jul 20 10:26:52 ip-172-31-4-20 vsce-sign[3200]: SignatureTrustPolicy for timestamp signature succeeded.
+Jul 20 10:26:52 ip-172-31-4-20 vsce-sign[3200]: X.509 certificate chain validation will use the fallback certificate bundle for code signing.
+Jul 20 10:26:52 ip-172-31-4-20 vsce-sign[3200]: SignatureTrustPolicy for primary signature succeeded.
+Jul 20 10:26:52 ip-172-31-4-20 vsce-sign[3200]: Primary signature type:  repository primary signature
+Jul 20 10:26:52 ip-172-31-4-20 vsce-sign[3200]: Primary signature status:  OK
+Jul 20 10:26:52 ip-172-31-4-20 vsce-sign[3200]: Timestamp signature status:  OK
+Jul 20 10:26:52 ip-172-31-4-20 vsce-sign[3200]: Exit code:  Success
+Jul 20 10:56:39 ip-172-31-4-20 sshd[36081]: Received disconnect from 58.247.22.240 port 63584:11: disconnected by user
+Jul 20 10:56:39 ip-172-31-4-20 sshd[36081]: Disconnected from user lambda 58.247.22.240 port 63584
+Jul 20 10:59:20 ip-172-31-4-20 sshd[36641]: Received disconnect from 58.247.22.240 port 44651:11: disconnected by user
+Jul 20 10:59:20 ip-172-31-4-20 sshd[36641]: Disconnected from user lambda 58.247.22.240 port 44651
+Jul 20 11:43:34 ip-172-31-4-20 systemd[2031]: run-rpc_pipefs.mount: Succeeded.
+Jul 20 11:43:34 ip-172-31-4-20 systemd[2031]: Stopped target Main User Target.
+Jul 20 11:43:34 ip-172-31-4-20 systemd[2031]: Stopped target Basic System.
+Jul 20 11:43:34 ip-172-31-4-20 systemd[2031]: Stopped target Paths.
+Jul 20 11:43:34 ip-172-31-4-20 systemd[2031]: Stopped target Sockets.
+Jul 20 11:43:34 ip-172-31-4-20 systemd[2031]: Stopped target Timers.
+Jul 20 11:43:34 ip-172-31-4-20 systemd[2031]: dbus.socket: Succeeded.
+Jul 20 11:43:34 ip-172-31-4-20 systemd[2031]: Closed D-Bus User Message Bus Socket.
+Jul 20 11:43:34 ip-172-31-4-20 systemd[2031]: dirmngr.socket: Succeeded.
+Jul 20 11:43:34 ip-172-31-4-20 systemd[2031]: Closed GnuPG network certificate management daemon.
+Jul 20 11:43:34 ip-172-31-4-20 systemd[2031]: gpg-agent-browser.socket: Succeeded.
+Jul 20 11:43:34 ip-172-31-4-20 systemd[2031]: Closed GnuPG cryptographic agent and passphrase cache (access for web browsers).
+Jul 20 11:43:34 ip-172-31-4-20 systemd[2031]: gpg-agent-extra.socket: Succeeded.
+Jul 20 11:43:34 ip-172-31-4-20 systemd[2031]: Closed GnuPG cryptographic agent and passphrase cache (restricted).
+Jul 20 11:43:34 ip-172-31-4-20 systemd[2031]: gpg-agent-ssh.socket: Succeeded.
+Jul 20 11:43:34 ip-172-31-4-20 systemd[2031]: Closed GnuPG cryptographic agent (ssh-agent emulation).
+Jul 20 11:43:34 ip-172-31-4-20 systemd[2031]: gpg-agent.socket: Succeeded.
+Jul 20 11:43:34 ip-172-31-4-20 systemd[2031]: Closed GnuPG cryptographic agent and passphrase cache.
+Jul 20 11:43:34 ip-172-31-4-20 systemd[2031]: pk-debconf-helper.socket: Succeeded.
+Jul 20 11:43:34 ip-172-31-4-20 systemd[2031]: Closed debconf communication socket.
+Jul 20 11:43:34 ip-172-31-4-20 systemd[2031]: snapd.session-agent.socket: Succeeded.
+Jul 20 11:43:34 ip-172-31-4-20 systemd[2031]: Closed REST API socket for snapd user session agent.
+Jul 20 11:43:34 ip-172-31-4-20 systemd[2031]: Reached target Shutdown.
+Jul 20 11:43:34 ip-172-31-4-20 systemd[2031]: systemd-exit.service: Succeeded.
+Jul 20 11:43:34 ip-172-31-4-20 systemd[2031]: Finished Exit the Session.
+Jul 20 11:43:34 ip-172-31-4-20 systemd[2031]: Reached target Exit the Session.
+-- Reboot --
+Jul 20 13:33:09 ip-172-31-4-20 systemd[1894]: Reached target Paths.
+Jul 20 13:33:09 ip-172-31-4-20 systemd[1894]: Reached target Timers.
+Jul 20 13:33:09 ip-172-31-4-20 systemd[1894]: Starting D-Bus User Message Bus Socket.
+Jul 20 13:33:09 ip-172-31-4-20 systemd[1894]: Listening on GnuPG network certificate management daemon.
+Jul 20 13:33:09 ip-172-31-4-20 systemd[1894]: Listening on GnuPG cryptographic agent and passphrase cache (access for web browsers).
+Jul 20 13:33:09 ip-172-31-4-20 systemd[1894]: Listening on GnuPG cryptographic agent and passphrase cache (restricted).
+Jul 20 13:33:09 ip-172-31-4-20 systemd[1894]: Listening on GnuPG cryptographic agent (ssh-agent emulation).
+Jul 20 13:33:09 ip-172-31-4-20 systemd[1894]: Listening on GnuPG cryptographic agent and passphrase cache.
+Jul 20 13:33:09 ip-172-31-4-20 systemd[1894]: Listening on debconf communication socket.
+Jul 20 13:33:09 ip-172-31-4-20 systemd[1894]: Listening on REST API socket for snapd user session agent.
+Jul 20 13:33:09 ip-172-31-4-20 systemd[1894]: Listening on D-Bus User Message Bus Socket.
+Jul 20 13:33:09 ip-172-31-4-20 systemd[1894]: Reached target Sockets.
+Jul 20 13:33:09 ip-172-31-4-20 systemd[1894]: Reached target Basic System.
+Jul 20 13:33:09 ip-172-31-4-20 systemd[1894]: Reached target Main User Target.
+Jul 20 13:33:09 ip-172-31-4-20 systemd[1894]: Startup finished in 64ms.
+Jul 20 13:33:11 ip-172-31-4-20 sshd[1993]: Received disconnect from 58.247.22.240 port 15054:11: disconnected by user
+Jul 20 13:33:11 ip-172-31-4-20 sshd[1993]: Disconnected from user lambda 58.247.22.240 port 15054
+Jul 20 13:52:03 ip-172-31-4-20 sshd[5032]: Received disconnect from 58.247.22.240 port 33641:11: disconnected by user
+Jul 20 13:52:03 ip-172-31-4-20 sshd[5032]: Disconnected from user lambda 58.247.22.240 port 33641
+Jul 20 14:20:01 ip-172-31-4-20 systemd[1894]: run-rpc_pipefs.mount: Succeeded.
+Jul 20 14:20:01 ip-172-31-4-20 systemd[1894]: Stopped target Main User Target.
+Jul 20 14:20:01 ip-172-31-4-20 systemd[1894]: Stopped target Basic System.
+Jul 20 14:20:01 ip-172-31-4-20 systemd[1894]: Stopped target Paths.
+Jul 20 14:20:01 ip-172-31-4-20 systemd[1894]: Stopped target Sockets.
+Jul 20 14:20:01 ip-172-31-4-20 systemd[1894]: Stopped target Timers.
+Jul 20 14:20:01 ip-172-31-4-20 systemd[1894]: dbus.socket: Succeeded.
+Jul 20 14:20:01 ip-172-31-4-20 systemd[1894]: Closed D-Bus User Message Bus Socket.
+Jul 20 14:20:01 ip-172-31-4-20 systemd[1894]: dirmngr.socket: Succeeded.
+Jul 20 14:20:01 ip-172-31-4-20 systemd[1894]: Closed GnuPG network certificate management daemon.
+Jul 20 14:20:01 ip-172-31-4-20 systemd[1894]: gpg-agent-browser.socket: Succeeded.
+Jul 20 14:20:01 ip-172-31-4-20 systemd[1894]: Closed GnuPG cryptographic agent and passphrase cache (access for web browsers).
+Jul 20 14:20:01 ip-172-31-4-20 systemd[1894]: gpg-agent-extra.socket: Succeeded.
+Jul 20 14:20:01 ip-172-31-4-20 systemd[1894]: Closed GnuPG cryptographic agent and passphrase cache (restricted).
+Jul 20 14:20:01 ip-172-31-4-20 systemd[1894]: gpg-agent-ssh.socket: Succeeded.
+Jul 20 14:20:01 ip-172-31-4-20 systemd[1894]: Closed GnuPG cryptographic agent (ssh-agent emulation).
+Jul 20 14:20:01 ip-172-31-4-20 systemd[1894]: gpg-agent.socket: Succeeded.
+Jul 20 14:20:01 ip-172-31-4-20 systemd[1894]: Closed GnuPG cryptographic agent and passphrase cache.
+Jul 20 14:20:01 ip-172-31-4-20 systemd[1894]: pk-debconf-helper.socket: Succeeded.
+Jul 20 14:20:01 ip-172-31-4-20 systemd[1894]: Closed debconf communication socket.
+Jul 20 14:20:01 ip-172-31-4-20 systemd[1894]: snapd.session-agent.socket: Succeeded.
+Jul 20 14:20:01 ip-172-31-4-20 systemd[1894]: Closed REST API socket for snapd user session agent.
+Jul 20 14:20:01 ip-172-31-4-20 systemd[1894]: Reached target Shutdown.
+Jul 20 14:20:01 ip-172-31-4-20 systemd[1894]: systemd-exit.service: Succeeded.
+Jul 20 14:20:01 ip-172-31-4-20 systemd[1894]: Finished Exit the Session.
+Jul 20 14:20:01 ip-172-31-4-20 systemd[1894]: Reached target Exit the Session.
+-- Reboot --
+Jul 21 02:00:43 ip-172-31-4-20 systemd[1998]: Reached target Paths.
+Jul 21 02:00:43 ip-172-31-4-20 systemd[1998]: Reached target Timers.
+Jul 21 02:00:43 ip-172-31-4-20 systemd[1998]: Starting D-Bus User Message Bus Socket.
+Jul 21 02:00:43 ip-172-31-4-20 systemd[1998]: Listening on GnuPG network certificate management daemon.
+Jul 21 02:00:43 ip-172-31-4-20 systemd[1998]: Listening on GnuPG cryptographic agent and passphrase cache (access for web browsers).
+Jul 21 02:00:43 ip-172-31-4-20 systemd[1998]: Listening on GnuPG cryptographic agent and passphrase cache (restricted).
+Jul 21 02:00:43 ip-172-31-4-20 systemd[1998]: Listening on GnuPG cryptographic agent (ssh-agent emulation).
+Jul 21 02:00:43 ip-172-31-4-20 systemd[1998]: Listening on GnuPG cryptographic agent and passphrase cache.
+Jul 21 02:00:43 ip-172-31-4-20 systemd[1998]: Listening on debconf communication socket.
+Jul 21 02:00:43 ip-172-31-4-20 systemd[1998]: Listening on REST API socket for snapd user session agent.
+Jul 21 02:00:43 ip-172-31-4-20 systemd[1998]: Listening on D-Bus User Message Bus Socket.
+Jul 21 02:00:43 ip-172-31-4-20 systemd[1998]: Reached target Sockets.
+Jul 21 02:00:43 ip-172-31-4-20 systemd[1998]: Reached target Basic System.
+Jul 21 02:00:43 ip-172-31-4-20 systemd[1998]: Reached target Main User Target.
+Jul 21 02:00:43 ip-172-31-4-20 systemd[1998]: Startup finished in 64ms.
+Jul 21 02:00:45 ip-172-31-4-20 sshd[2097]: Received disconnect from 58.247.22.240 port 47192:11: disconnected by user
+Jul 21 02:00:45 ip-172-31-4-20 sshd[2097]: Disconnected from user lambda 58.247.22.240 port 47192
+Jul 21 03:46:16 ip-172-31-4-20 systemd[1998]: run-rpc_pipefs.mount: Succeeded.
+Jul 21 03:46:16 ip-172-31-4-20 systemd[1998]: Stopped target Main User Target.
+Jul 21 03:46:16 ip-172-31-4-20 systemd[1998]: Stopped target Basic System.
+Jul 21 03:46:16 ip-172-31-4-20 systemd[1998]: Stopped target Paths.
+Jul 21 03:46:16 ip-172-31-4-20 systemd[1998]: Stopped target Sockets.
+Jul 21 03:46:16 ip-172-31-4-20 systemd[1998]: Stopped target Timers.
+Jul 21 03:46:16 ip-172-31-4-20 systemd[1998]: dbus.socket: Succeeded.
+Jul 21 03:46:16 ip-172-31-4-20 systemd[1998]: Closed D-Bus User Message Bus Socket.
+Jul 21 03:46:16 ip-172-31-4-20 systemd[1998]: dirmngr.socket: Succeeded.
+Jul 21 03:46:16 ip-172-31-4-20 systemd[1998]: Closed GnuPG network certificate management daemon.
+Jul 21 03:46:16 ip-172-31-4-20 systemd[1998]: gpg-agent-browser.socket: Succeeded.
+Jul 21 03:46:16 ip-172-31-4-20 systemd[1998]: Closed GnuPG cryptographic agent and passphrase cache (access for web browsers).
+Jul 21 03:46:16 ip-172-31-4-20 systemd[1998]: gpg-agent-extra.socket: Succeeded.
+Jul 21 03:46:16 ip-172-31-4-20 systemd[1998]: Closed GnuPG cryptographic agent and passphrase cache (restricted).
+Jul 21 03:46:16 ip-172-31-4-20 systemd[1998]: gpg-agent-ssh.socket: Succeeded.
+Jul 21 03:46:16 ip-172-31-4-20 systemd[1998]: Closed GnuPG cryptographic agent (ssh-agent emulation).
+Jul 21 03:46:16 ip-172-31-4-20 systemd[1998]: gpg-agent.socket: Succeeded.
+Jul 21 03:46:16 ip-172-31-4-20 systemd[1998]: Closed GnuPG cryptographic agent and passphrase cache.
+Jul 21 03:46:16 ip-172-31-4-20 systemd[1998]: pk-debconf-helper.socket: Succeeded.
+Jul 21 03:46:16 ip-172-31-4-20 systemd[1998]: Closed debconf communication socket.
+Jul 21 03:46:16 ip-172-31-4-20 systemd[1998]: snapd.session-agent.socket: Succeeded.
+Jul 21 03:46:16 ip-172-31-4-20 systemd[1998]: Closed REST API socket for snapd user session agent.
+Jul 21 03:46:16 ip-172-31-4-20 systemd[1998]: Reached target Shutdown.
+Jul 21 03:46:16 ip-172-31-4-20 systemd[1998]: systemd-exit.service: Succeeded.
+Jul 21 03:46:16 ip-172-31-4-20 systemd[1998]: Finished Exit the Session.
+Jul 21 03:46:16 ip-172-31-4-20 systemd[1998]: Reached target Exit the Session.
+Jul 21 03:46:16 ip-172-31-4-20 systemd[1999]: pam_unix(systemd-user:session): session closed for user lambda
+-- Reboot --
+Jul 21 12:46:30 ip-172-31-4-20 systemd[2612]: Reached target Paths.
+Jul 21 12:46:30 ip-172-31-4-20 systemd[2612]: Reached target Timers.
+Jul 21 12:46:30 ip-172-31-4-20 systemd[2612]: Starting D-Bus User Message Bus Socket.
+Jul 21 12:46:30 ip-172-31-4-20 systemd[2612]: Listening on GnuPG network certificate management daemon.
+Jul 21 12:46:30 ip-172-31-4-20 systemd[2612]: Listening on GnuPG cryptographic agent and passphrase cache (access for web browsers).
+Jul 21 12:46:30 ip-172-31-4-20 systemd[2612]: Listening on GnuPG cryptographic agent and passphrase cache (restricted).
+Jul 21 12:46:30 ip-172-31-4-20 systemd[2612]: Listening on GnuPG cryptographic agent (ssh-agent emulation).
+Jul 21 12:46:30 ip-172-31-4-20 systemd[2612]: Listening on GnuPG cryptographic agent and passphrase cache.
+Jul 21 12:46:30 ip-172-31-4-20 systemd[2612]: Listening on debconf communication socket.
+Jul 21 12:46:30 ip-172-31-4-20 systemd[2612]: Listening on REST API socket for snapd user session agent.
+Jul 21 12:46:30 ip-172-31-4-20 systemd[2612]: Listening on D-Bus User Message Bus Socket.
+Jul 21 12:46:30 ip-172-31-4-20 systemd[2612]: Reached target Sockets.
+Jul 21 12:46:30 ip-172-31-4-20 systemd[2612]: Reached target Basic System.
+Jul 21 12:46:30 ip-172-31-4-20 systemd[2612]: Reached target Main User Target.
+Jul 21 12:46:30 ip-172-31-4-20 systemd[2612]: Startup finished in 58ms.
+Jul 21 12:46:32 ip-172-31-4-20 sshd[2717]: Received disconnect from 58.247.22.240 port 55338:11: disconnected by user
+Jul 21 12:46:32 ip-172-31-4-20 sshd[2717]: Disconnected from user lambda 58.247.22.240 port 55338
+Jul 21 12:50:44 ip-172-31-4-20 systemd[2612]: run-rpc_pipefs.mount: Succeeded.
+Jul 21 12:50:45 ip-172-31-4-20 systemd[2612]: Stopped target Main User Target.
+Jul 21 12:50:45 ip-172-31-4-20 systemd[2612]: Stopped target Basic System.
+Jul 21 12:50:45 ip-172-31-4-20 systemd[2612]: Stopped target Paths.
+Jul 21 12:50:45 ip-172-31-4-20 systemd[2612]: Stopped target Sockets.
+Jul 21 12:50:45 ip-172-31-4-20 systemd[2612]: Stopped target Timers.
+Jul 21 12:50:45 ip-172-31-4-20 systemd[2612]: dbus.socket: Succeeded.
+Jul 21 12:50:45 ip-172-31-4-20 systemd[2612]: Closed D-Bus User Message Bus Socket.
+Jul 21 12:50:45 ip-172-31-4-20 systemd[2612]: dirmngr.socket: Succeeded.
+Jul 21 12:50:45 ip-172-31-4-20 systemd[2612]: Closed GnuPG network certificate management daemon.
+Jul 21 12:50:45 ip-172-31-4-20 systemd[2612]: gpg-agent-browser.socket: Succeeded.
+Jul 21 12:50:45 ip-172-31-4-20 systemd[2612]: Closed GnuPG cryptographic agent and passphrase cache (access for web browsers).
+Jul 21 12:50:45 ip-172-31-4-20 systemd[2612]: gpg-agent-extra.socket: Succeeded.
+Jul 21 12:50:45 ip-172-31-4-20 systemd[2612]: Closed GnuPG cryptographic agent and passphrase cache (restricted).
+Jul 21 12:50:45 ip-172-31-4-20 systemd[2612]: gpg-agent-ssh.socket: Succeeded.
+Jul 21 12:50:45 ip-172-31-4-20 systemd[2612]: Closed GnuPG cryptographic agent (ssh-agent emulation).
+Jul 21 12:50:45 ip-172-31-4-20 systemd[2612]: gpg-agent.socket: Succeeded.
+Jul 21 12:50:45 ip-172-31-4-20 systemd[2612]: Closed GnuPG cryptographic agent and passphrase cache.
+Jul 21 12:50:45 ip-172-31-4-20 systemd[2612]: pk-debconf-helper.socket: Succeeded.
+Jul 21 12:50:45 ip-172-31-4-20 systemd[2612]: Closed debconf communication socket.
+Jul 21 12:50:45 ip-172-31-4-20 systemd[2612]: snapd.session-agent.socket: Succeeded.
+Jul 21 12:50:45 ip-172-31-4-20 systemd[2612]: Closed REST API socket for snapd user session agent.
+Jul 21 12:50:45 ip-172-31-4-20 systemd[2612]: Reached target Shutdown.
+Jul 21 12:50:45 ip-172-31-4-20 systemd[2612]: systemd-exit.service: Succeeded.
+Jul 21 12:50:45 ip-172-31-4-20 systemd[2612]: Finished Exit the Session.
+Jul 21 12:50:45 ip-172-31-4-20 systemd[2612]: Reached target Exit the Session.
+Jul 21 12:50:45 ip-172-31-4-20 systemd[2613]: pam_unix(systemd-user:session): session closed for user lambda
+-- Reboot --
+Jul 22 13:54:50 ip-172-31-4-20 systemd[2565]: Reached target Paths.
+Jul 22 13:54:50 ip-172-31-4-20 systemd[2565]: Reached target Timers.
+Jul 22 13:54:50 ip-172-31-4-20 systemd[2565]: Starting D-Bus User Message Bus Socket.
+Jul 22 13:54:50 ip-172-31-4-20 systemd[2565]: Listening on GnuPG network certificate management daemon.
+Jul 22 13:54:50 ip-172-31-4-20 systemd[2565]: Listening on GnuPG cryptographic agent and passphrase cache (access for web browsers).
+Jul 22 13:54:50 ip-172-31-4-20 systemd[2565]: Listening on GnuPG cryptographic agent and passphrase cache (restricted).
+Jul 22 13:54:50 ip-172-31-4-20 systemd[2565]: Listening on GnuPG cryptographic agent (ssh-agent emulation).
+Jul 22 13:54:50 ip-172-31-4-20 systemd[2565]: Listening on GnuPG cryptographic agent and passphrase cache.
+Jul 22 13:54:50 ip-172-31-4-20 systemd[2565]: Listening on debconf communication socket.
+Jul 22 13:54:50 ip-172-31-4-20 systemd[2565]: Listening on REST API socket for snapd user session agent.
+Jul 22 13:54:50 ip-172-31-4-20 systemd[2565]: Listening on D-Bus User Message Bus Socket.
+Jul 22 13:54:50 ip-172-31-4-20 systemd[2565]: Reached target Sockets.
+Jul 22 13:54:50 ip-172-31-4-20 systemd[2565]: Reached target Basic System.
+Jul 22 13:54:50 ip-172-31-4-20 systemd[2565]: Reached target Main User Target.
+Jul 22 13:54:50 ip-172-31-4-20 systemd[2565]: Startup finished in 57ms.
+Jul 22 13:54:52 ip-172-31-4-20 sshd[2670]: Received disconnect from 58.247.22.240 port 63128:11: disconnected by user
+Jul 22 13:54:52 ip-172-31-4-20 sshd[2670]: Disconnected from user lambda 58.247.22.240 port 63128
+Jul 22 14:06:39 ip-172-31-4-20 systemd[2565]: run-rpc_pipefs.mount: Succeeded.
+Jul 22 14:06:40 ip-172-31-4-20 systemd[2565]: Stopped target Main User Target.
+Jul 22 14:06:40 ip-172-31-4-20 systemd[2565]: Stopped target Basic System.
+Jul 22 14:06:40 ip-172-31-4-20 systemd[2565]: Stopped target Paths.
+Jul 22 14:06:40 ip-172-31-4-20 systemd[2565]: Stopped target Sockets.
+Jul 22 14:06:40 ip-172-31-4-20 systemd[2565]: Stopped target Timers.
+Jul 22 14:06:40 ip-172-31-4-20 systemd[2565]: dbus.socket: Succeeded.
+Jul 22 14:06:40 ip-172-31-4-20 systemd[2565]: Closed D-Bus User Message Bus Socket.
+Jul 22 14:06:40 ip-172-31-4-20 systemd[2565]: dirmngr.socket: Succeeded.
+Jul 22 14:06:40 ip-172-31-4-20 systemd[2565]: Closed GnuPG network certificate management daemon.
+Jul 22 14:06:40 ip-172-31-4-20 systemd[2565]: gpg-agent-browser.socket: Succeeded.
+Jul 22 14:06:40 ip-172-31-4-20 systemd[2565]: Closed GnuPG cryptographic agent and passphrase cache (access for web browsers).
+Jul 22 14:06:40 ip-172-31-4-20 systemd[2565]: gpg-agent-extra.socket: Succeeded.
+Jul 22 14:06:40 ip-172-31-4-20 systemd[2565]: Closed GnuPG cryptographic agent and passphrase cache (restricted).
+Jul 22 14:06:40 ip-172-31-4-20 systemd[2565]: gpg-agent-ssh.socket: Succeeded.
+Jul 22 14:06:40 ip-172-31-4-20 systemd[2565]: Closed GnuPG cryptographic agent (ssh-agent emulation).
+Jul 22 14:06:40 ip-172-31-4-20 systemd[2565]: gpg-agent.socket: Succeeded.
+Jul 22 14:06:40 ip-172-31-4-20 systemd[2565]: Closed GnuPG cryptographic agent and passphrase cache.
+Jul 22 14:06:40 ip-172-31-4-20 systemd[2565]: pk-debconf-helper.socket: Succeeded.
+Jul 22 14:06:40 ip-172-31-4-20 systemd[2565]: Closed debconf communication socket.
+Jul 22 14:06:40 ip-172-31-4-20 systemd[2565]: snapd.session-agent.socket: Succeeded.
+Jul 22 14:06:40 ip-172-31-4-20 systemd[2565]: Closed REST API socket for snapd user session agent.
+Jul 22 14:06:40 ip-172-31-4-20 systemd[2565]: Reached target Shutdown.
+Jul 22 14:06:40 ip-172-31-4-20 systemd[2565]: systemd-exit.service: Succeeded.
+Jul 22 14:06:40 ip-172-31-4-20 systemd[2565]: Finished Exit the Session.
+Jul 22 14:06:40 ip-172-31-4-20 systemd[2565]: Reached target Exit the Session.
+Jul 22 14:06:40 ip-172-31-4-20 systemd[2566]: pam_unix(systemd-user:session): session closed for user lambda
+-- Reboot --
+Jul 22 23:51:57 ip-172-31-4-20 systemd[1641]: Reached target Paths.
+Jul 22 23:51:57 ip-172-31-4-20 systemd[1641]: Reached target Timers.
+Jul 22 23:51:57 ip-172-31-4-20 systemd[1641]: Starting D-Bus User Message Bus Socket.
+Jul 22 23:51:57 ip-172-31-4-20 systemd[1641]: Listening on GnuPG network certificate management daemon.
+Jul 22 23:51:57 ip-172-31-4-20 systemd[1641]: Listening on GnuPG cryptographic agent and passphrase cache (access for web browsers).
+Jul 22 23:51:57 ip-172-31-4-20 systemd[1641]: Listening on GnuPG cryptographic agent and passphrase cache (restricted).
+Jul 22 23:51:57 ip-172-31-4-20 systemd[1641]: Listening on GnuPG cryptographic agent (ssh-agent emulation).
+Jul 22 23:51:57 ip-172-31-4-20 systemd[1641]: Listening on GnuPG cryptographic agent and passphrase cache.
+Jul 22 23:51:57 ip-172-31-4-20 systemd[1641]: Listening on debconf communication socket.
+Jul 22 23:51:57 ip-172-31-4-20 systemd[1641]: Listening on REST API socket for snapd user session agent.
+Jul 22 23:51:57 ip-172-31-4-20 systemd[1641]: Listening on D-Bus User Message Bus Socket.
+Jul 22 23:51:57 ip-172-31-4-20 systemd[1641]: Reached target Sockets.
+Jul 22 23:51:57 ip-172-31-4-20 systemd[1641]: Reached target Basic System.
+Jul 22 23:51:57 ip-172-31-4-20 systemd[1641]: Reached target Main User Target.
+Jul 22 23:51:57 ip-172-31-4-20 systemd[1641]: Startup finished in 58ms.
+Jul 22 23:51:58 ip-172-31-4-20 systemd[1641]: tmp-syscheck\x2dmountpoint\x2d449358627.mount: Succeeded.
+Jul 22 23:53:32 ip-172-31-4-20 systemd[1641]: run-rpc_pipefs.mount: Succeeded.
+Jul 22 23:53:33 ip-172-31-4-20 systemd[1641]: Stopped target Main User Target.
+Jul 22 23:53:33 ip-172-31-4-20 systemd[1641]: Stopped target Basic System.
+Jul 22 23:53:33 ip-172-31-4-20 systemd[1641]: Stopped target Paths.
+Jul 22 23:53:33 ip-172-31-4-20 systemd[1641]: Stopped target Sockets.
+Jul 22 23:53:33 ip-172-31-4-20 systemd[1641]: Stopped target Timers.
+Jul 22 23:53:33 ip-172-31-4-20 systemd[1641]: dbus.socket: Succeeded.
+Jul 22 23:53:33 ip-172-31-4-20 systemd[1641]: Closed D-Bus User Message Bus Socket.
+Jul 22 23:53:33 ip-172-31-4-20 systemd[1641]: dirmngr.socket: Succeeded.
+Jul 22 23:53:33 ip-172-31-4-20 systemd[1641]: Closed GnuPG network certificate management daemon.
+Jul 22 23:53:33 ip-172-31-4-20 systemd[1641]: gpg-agent-browser.socket: Succeeded.
+Jul 22 23:53:33 ip-172-31-4-20 systemd[1641]: Closed GnuPG cryptographic agent and passphrase cache (access for web browsers).
+Jul 22 23:53:33 ip-172-31-4-20 systemd[1641]: gpg-agent-extra.socket: Succeeded.
+Jul 22 23:53:33 ip-172-31-4-20 systemd[1641]: Closed GnuPG cryptographic agent and passphrase cache (restricted).
+Jul 22 23:53:33 ip-172-31-4-20 systemd[1641]: gpg-agent-ssh.socket: Succeeded.
+Jul 22 23:53:33 ip-172-31-4-20 systemd[1641]: Closed GnuPG cryptographic agent (ssh-agent emulation).
+Jul 22 23:53:33 ip-172-31-4-20 systemd[1641]: gpg-agent.socket: Succeeded.
+Jul 22 23:53:33 ip-172-31-4-20 systemd[1641]: Closed GnuPG cryptographic agent and passphrase cache.
+Jul 22 23:53:33 ip-172-31-4-20 systemd[1641]: pk-debconf-helper.socket: Succeeded.
+Jul 22 23:53:33 ip-172-31-4-20 systemd[1641]: Closed debconf communication socket.
+Jul 22 23:53:33 ip-172-31-4-20 systemd[1641]: snapd.session-agent.socket: Succeeded.
+Jul 22 23:53:33 ip-172-31-4-20 systemd[1641]: Closed REST API socket for snapd user session agent.
+Jul 22 23:53:33 ip-172-31-4-20 systemd[1641]: Reached target Shutdown.
+Jul 22 23:53:33 ip-172-31-4-20 systemd[1641]: systemd-exit.service: Succeeded.
+Jul 22 23:53:33 ip-172-31-4-20 systemd[1641]: Finished Exit the Session.
+Jul 22 23:53:33 ip-172-31-4-20 systemd[1641]: Reached target Exit the Session.
+-- Reboot --
+Jul 24 07:19:12 ip-172-31-4-20 systemd[3755]: Reached target Paths.
+Jul 24 07:19:12 ip-172-31-4-20 systemd[3755]: Reached target Timers.
+Jul 24 07:19:12 ip-172-31-4-20 systemd[3755]: Starting D-Bus User Message Bus Socket.
+Jul 24 07:19:12 ip-172-31-4-20 systemd[3755]: Listening on GnuPG network certificate management daemon.
+Jul 24 07:19:12 ip-172-31-4-20 systemd[3755]: Listening on GnuPG cryptographic agent and passphrase cache (access for web browsers).
+Jul 24 07:19:12 ip-172-31-4-20 systemd[3755]: Listening on GnuPG cryptographic agent and passphrase cache (restricted).
+Jul 24 07:19:12 ip-172-31-4-20 systemd[3755]: Listening on GnuPG cryptographic agent (ssh-agent emulation).
+Jul 24 07:19:12 ip-172-31-4-20 systemd[3755]: Listening on GnuPG cryptographic agent and passphrase cache.
+Jul 24 07:19:12 ip-172-31-4-20 systemd[3755]: Listening on debconf communication socket.
+Jul 24 07:19:12 ip-172-31-4-20 systemd[3755]: Listening on REST API socket for snapd user session agent.
+Jul 24 07:19:12 ip-172-31-4-20 systemd[3755]: Listening on D-Bus User Message Bus Socket.
+Jul 24 07:19:12 ip-172-31-4-20 systemd[3755]: Reached target Sockets.
+Jul 24 07:19:12 ip-172-31-4-20 systemd[3755]: Reached target Basic System.
+Jul 24 07:19:12 ip-172-31-4-20 systemd[3755]: Reached target Main User Target.
+Jul 24 07:19:12 ip-172-31-4-20 systemd[3755]: Startup finished in 65ms.
+Jul 24 07:19:15 ip-172-31-4-20 sshd[3903]: Received disconnect from 58.247.22.240 port 33596:11: disconnected by user
+Jul 24 07:19:15 ip-172-31-4-20 sshd[3903]: Disconnected from user lambda 58.247.22.240 port 33596
+Jul 24 07:20:58 ip-172-31-4-20 sshd[8358]: Received disconnect from 58.247.22.240 port 59650:11: disconnected by user
+Jul 24 07:20:58 ip-172-31-4-20 sshd[8358]: Disconnected from user lambda 58.247.22.240 port 59650
+Jul 24 07:29:01 ip-172-31-4-20 sshd[11462]: Received disconnect from 58.247.22.240 port 39602:11: disconnected by user
+Jul 24 07:29:01 ip-172-31-4-20 sshd[11462]: Disconnected from user lambda 58.247.22.240 port 39602
+Jul 24 07:29:14 ip-172-31-4-20 sshd[11635]: Received disconnect from 58.247.22.240 port 21946:11: disconnected by user
+Jul 24 07:29:14 ip-172-31-4-20 sshd[11635]: Disconnected from user lambda 58.247.22.240 port 21946
+Jul 24 07:29:34 ip-172-31-4-20 sshd[11765]: Received disconnect from 58.247.22.240 port 23681:11: disconnected by user
+Jul 24 07:29:34 ip-172-31-4-20 sshd[11765]: Disconnected from user lambda 58.247.22.240 port 23681
+Jul 24 08:29:03 ip-172-31-4-20 sshd[16607]: Received disconnect from 58.247.22.240 port 38272:11: disconnected by user
+Jul 24 08:29:03 ip-172-31-4-20 sshd[16607]: Disconnected from user lambda 58.247.22.240 port 38272
+Jul 24 08:29:03 ip-172-31-4-20 sshd[16646]: Received disconnect from 58.247.22.240 port 38274:11: disconnected by user
+Jul 24 08:29:03 ip-172-31-4-20 sshd[16646]: Disconnected from user lambda 58.247.22.240 port 38274
+Jul 24 09:11:42 ip-172-31-4-20 systemd[3755]: run-rpc_pipefs.mount: Succeeded.
+Jul 24 09:11:43 ip-172-31-4-20 systemd[3755]: Stopped target Main User Target.
+Jul 24 09:11:43 ip-172-31-4-20 systemd[3755]: Stopped target Basic System.
+Jul 24 09:11:43 ip-172-31-4-20 systemd[3755]: Stopped target Paths.
+Jul 24 09:11:43 ip-172-31-4-20 systemd[3755]: Stopped target Sockets.
+Jul 24 09:11:43 ip-172-31-4-20 systemd[3755]: Stopped target Timers.
+Jul 24 09:11:43 ip-172-31-4-20 systemd[3755]: dbus.socket: Succeeded.
+Jul 24 09:11:43 ip-172-31-4-20 systemd[3755]: Closed D-Bus User Message Bus Socket.
+Jul 24 09:11:43 ip-172-31-4-20 systemd[3755]: dirmngr.socket: Succeeded.
+Jul 24 09:11:43 ip-172-31-4-20 systemd[3755]: Closed GnuPG network certificate management daemon.
+Jul 24 09:11:43 ip-172-31-4-20 systemd[3755]: gpg-agent-browser.socket: Succeeded.
+Jul 24 09:11:43 ip-172-31-4-20 systemd[3755]: Closed GnuPG cryptographic agent and passphrase cache (access for web browsers).
+Jul 24 09:11:43 ip-172-31-4-20 systemd[3755]: gpg-agent-extra.socket: Succeeded.
+Jul 24 09:11:43 ip-172-31-4-20 systemd[3755]: Closed GnuPG cryptographic agent and passphrase cache (restricted).
+Jul 24 09:11:43 ip-172-31-4-20 systemd[3755]: gpg-agent-ssh.socket: Succeeded.
+Jul 24 09:11:43 ip-172-31-4-20 systemd[3755]: Closed GnuPG cryptographic agent (ssh-agent emulation).
+Jul 24 09:11:43 ip-172-31-4-20 systemd[3755]: gpg-agent.socket: Succeeded.
+Jul 24 09:11:43 ip-172-31-4-20 systemd[3755]: Closed GnuPG cryptographic agent and passphrase cache.
+Jul 24 09:11:43 ip-172-31-4-20 systemd[3755]: pk-debconf-helper.socket: Succeeded.
+Jul 24 09:11:43 ip-172-31-4-20 systemd[3755]: Closed debconf communication socket.
+Jul 24 09:11:43 ip-172-31-4-20 systemd[3755]: snapd.session-agent.socket: Succeeded.
+Jul 24 09:11:43 ip-172-31-4-20 systemd[3755]: Closed REST API socket for snapd user session agent.
+Jul 24 09:11:43 ip-172-31-4-20 systemd[3755]: Reached target Shutdown.
+Jul 24 09:11:43 ip-172-31-4-20 systemd[3755]: systemd-exit.service: Succeeded.
+Jul 24 09:11:43 ip-172-31-4-20 systemd[3755]: Finished Exit the Session.
+Jul 24 09:11:43 ip-172-31-4-20 systemd[3755]: Reached target Exit the Session.
+-- Reboot --
+Jul 24 11:21:27 ip-172-31-4-20 systemd[1874]: Reached target Paths.
+Jul 24 11:21:27 ip-172-31-4-20 systemd[1874]: Reached target Timers.
+Jul 24 11:21:27 ip-172-31-4-20 systemd[1874]: Starting D-Bus User Message Bus Socket.
+Jul 24 11:21:27 ip-172-31-4-20 systemd[1874]: Listening on GnuPG network certificate management daemon.
+Jul 24 11:21:27 ip-172-31-4-20 systemd[1874]: Listening on GnuPG cryptographic agent and passphrase cache (access for web browsers).
+Jul 24 11:21:27 ip-172-31-4-20 systemd[1874]: Listening on GnuPG cryptographic agent and passphrase cache (restricted).
+Jul 24 11:21:27 ip-172-31-4-20 systemd[1874]: Listening on GnuPG cryptographic agent (ssh-agent emulation).
+Jul 24 11:21:27 ip-172-31-4-20 systemd[1874]: Listening on GnuPG cryptographic agent and passphrase cache.
+Jul 24 11:21:27 ip-172-31-4-20 systemd[1874]: Listening on debconf communication socket.
+Jul 24 11:21:27 ip-172-31-4-20 systemd[1874]: Listening on REST API socket for snapd user session agent.
+Jul 24 11:21:27 ip-172-31-4-20 systemd[1874]: Listening on D-Bus User Message Bus Socket.
+Jul 24 11:21:27 ip-172-31-4-20 systemd[1874]: Reached target Sockets.
+Jul 24 11:21:27 ip-172-31-4-20 systemd[1874]: Reached target Basic System.
+Jul 24 11:21:27 ip-172-31-4-20 systemd[1874]: Reached target Main User Target.
+Jul 24 11:21:27 ip-172-31-4-20 systemd[1874]: Startup finished in 65ms.
+Jul 24 11:21:29 ip-172-31-4-20 sshd[1973]: Received disconnect from 58.247.22.240 port 43671:11: disconnected by user
+Jul 24 11:21:29 ip-172-31-4-20 sshd[1973]: Disconnected from user lambda 58.247.22.240 port 43671
+Jul 24 12:03:17 ip-172-31-4-20 sshd[17021]: Received disconnect from 58.247.22.240 port 35368:11: disconnected by user
+Jul 24 12:03:17 ip-172-31-4-20 sshd[17021]: Disconnected from user lambda 58.247.22.240 port 35368
+Jul 24 12:42:42 ip-172-31-4-20 systemd[1874]: run-rpc_pipefs.mount: Succeeded.
+Jul 24 12:42:49 ip-172-31-4-20 systemd[1874]: Stopped target Main User Target.
+Jul 24 12:42:49 ip-172-31-4-20 systemd[1874]: Stopped target Basic System.
+Jul 24 12:42:49 ip-172-31-4-20 systemd[1874]: Stopped target Paths.
+Jul 24 12:42:49 ip-172-31-4-20 systemd[1874]: Stopped target Sockets.
+Jul 24 12:42:49 ip-172-31-4-20 systemd[1874]: Stopped target Timers.
+Jul 24 12:42:49 ip-172-31-4-20 systemd[1874]: dbus.socket: Succeeded.
+Jul 24 12:42:49 ip-172-31-4-20 systemd[1874]: Closed D-Bus User Message Bus Socket.
+Jul 24 12:42:49 ip-172-31-4-20 systemd[1874]: dirmngr.socket: Succeeded.
+Jul 24 12:42:49 ip-172-31-4-20 systemd[1874]: Closed GnuPG network certificate management daemon.
+Jul 24 12:42:49 ip-172-31-4-20 systemd[1874]: gpg-agent-browser.socket: Succeeded.
+Jul 24 12:42:49 ip-172-31-4-20 systemd[1874]: Closed GnuPG cryptographic agent and passphrase cache (access for web browsers).
+Jul 24 12:42:49 ip-172-31-4-20 systemd[1874]: gpg-agent-extra.socket: Succeeded.
+Jul 24 12:42:49 ip-172-31-4-20 systemd[1874]: Closed GnuPG cryptographic agent and passphrase cache (restricted).
+Jul 24 12:42:49 ip-172-31-4-20 systemd[1874]: gpg-agent-ssh.socket: Succeeded.
+Jul 24 12:42:49 ip-172-31-4-20 systemd[1874]: Closed GnuPG cryptographic agent (ssh-agent emulation).
+Jul 24 12:42:49 ip-172-31-4-20 systemd[1874]: gpg-agent.socket: Succeeded.
+Jul 24 12:42:49 ip-172-31-4-20 systemd[1874]: Closed GnuPG cryptographic agent and passphrase cache.
+Jul 24 12:42:49 ip-172-31-4-20 systemd[1874]: pk-debconf-helper.socket: Succeeded.
+Jul 24 12:42:49 ip-172-31-4-20 systemd[1874]: Closed debconf communication socket.
+Jul 24 12:42:49 ip-172-31-4-20 systemd[1874]: snapd.session-agent.socket: Succeeded.
+Jul 24 12:42:49 ip-172-31-4-20 systemd[1874]: Closed REST API socket for snapd user session agent.
+Jul 24 12:42:49 ip-172-31-4-20 systemd[1874]: Reached target Shutdown.
+Jul 24 12:42:49 ip-172-31-4-20 systemd[1874]: systemd-exit.service: Succeeded.
+Jul 24 12:42:49 ip-172-31-4-20 systemd[1874]: Finished Exit the Session.
+Jul 24 12:42:49 ip-172-31-4-20 systemd[1874]: Reached target Exit the Session.
+-- Reboot --
+Jul 24 13:18:30 ip-172-31-4-20 systemd[1879]: Reached target Paths.
+Jul 24 13:18:30 ip-172-31-4-20 systemd[1879]: Reached target Timers.
+Jul 24 13:18:30 ip-172-31-4-20 systemd[1879]: Starting D-Bus User Message Bus Socket.
+Jul 24 13:18:30 ip-172-31-4-20 systemd[1879]: Listening on GnuPG network certificate management daemon.
+Jul 24 13:18:30 ip-172-31-4-20 systemd[1879]: Listening on GnuPG cryptographic agent and passphrase cache (access for web browsers).
+Jul 24 13:18:30 ip-172-31-4-20 systemd[1879]: Listening on GnuPG cryptographic agent and passphrase cache (restricted).
+Jul 24 13:18:30 ip-172-31-4-20 systemd[1879]: Listening on GnuPG cryptographic agent (ssh-agent emulation).
+Jul 24 13:18:30 ip-172-31-4-20 systemd[1879]: Listening on GnuPG cryptographic agent and passphrase cache.
+Jul 24 13:18:30 ip-172-31-4-20 systemd[1879]: Listening on debconf communication socket.
+Jul 24 13:18:30 ip-172-31-4-20 systemd[1879]: Listening on REST API socket for snapd user session agent.
+Jul 24 13:18:30 ip-172-31-4-20 systemd[1879]: Listening on D-Bus User Message Bus Socket.
+Jul 24 13:18:30 ip-172-31-4-20 systemd[1879]: Reached target Sockets.
+Jul 24 13:18:30 ip-172-31-4-20 systemd[1879]: Reached target Basic System.
+Jul 24 13:18:30 ip-172-31-4-20 systemd[1879]: Reached target Main User Target.
+Jul 24 13:18:30 ip-172-31-4-20 systemd[1879]: Startup finished in 65ms.
+Jul 24 13:18:32 ip-172-31-4-20 sshd[1985]: Received disconnect from 58.247.22.240 port 22834:11: disconnected by user
+Jul 24 13:18:32 ip-172-31-4-20 sshd[1985]: Disconnected from user lambda 58.247.22.240 port 22834
+Jul 24 13:46:25 ip-172-31-4-20 sshd[6162]: Received disconnect from 58.247.22.240 port 50750:11: disconnected by user
+Jul 24 13:46:25 ip-172-31-4-20 sshd[6162]: Disconnected from user lambda 58.247.22.240 port 50750
+Jul 24 14:04:10 ip-172-31-4-20 sshd[8580]: Received disconnect from 58.247.22.240 port 56665:11: disconnected by user
+Jul 24 14:04:10 ip-172-31-4-20 sshd[8580]: Disconnected from user lambda 58.247.22.240 port 56665
+Jul 24 14:27:59 ip-172-31-4-20 systemd[1879]: run-rpc_pipefs.mount: Succeeded.
+Jul 24 14:28:03 ip-172-31-4-20 systemd[1879]: Stopped target Main User Target.
+Jul 24 14:28:03 ip-172-31-4-20 systemd[1879]: Stopped target Basic System.
+Jul 24 14:28:03 ip-172-31-4-20 systemd[1879]: Stopped target Paths.
+Jul 24 14:28:03 ip-172-31-4-20 systemd[1879]: Stopped target Sockets.
+Jul 24 14:28:03 ip-172-31-4-20 systemd[1879]: Stopped target Timers.
+Jul 24 14:28:03 ip-172-31-4-20 systemd[1879]: dbus.socket: Succeeded.
+Jul 24 14:28:03 ip-172-31-4-20 systemd[1879]: Closed D-Bus User Message Bus Socket.
+Jul 24 14:28:03 ip-172-31-4-20 systemd[1879]: dirmngr.socket: Succeeded.
+Jul 24 14:28:03 ip-172-31-4-20 systemd[1879]: Closed GnuPG network certificate management daemon.
+Jul 24 14:28:03 ip-172-31-4-20 systemd[1879]: gpg-agent-browser.socket: Succeeded.
+Jul 24 14:28:03 ip-172-31-4-20 systemd[1879]: Closed GnuPG cryptographic agent and passphrase cache (access for web browsers).
+Jul 24 14:28:03 ip-172-31-4-20 systemd[1879]: gpg-agent-extra.socket: Succeeded.
+Jul 24 14:28:03 ip-172-31-4-20 systemd[1879]: Closed GnuPG cryptographic agent and passphrase cache (restricted).
+Jul 24 14:28:03 ip-172-31-4-20 systemd[1879]: gpg-agent-ssh.socket: Succeeded.
+Jul 24 14:28:03 ip-172-31-4-20 systemd[1879]: Closed GnuPG cryptographic agent (ssh-agent emulation).
+Jul 24 14:28:03 ip-172-31-4-20 systemd[1879]: gpg-agent.socket: Succeeded.
+Jul 24 14:28:03 ip-172-31-4-20 systemd[1879]: Closed GnuPG cryptographic agent and passphrase cache.
+Jul 24 14:28:03 ip-172-31-4-20 systemd[1879]: pk-debconf-helper.socket: Succeeded.
+Jul 24 14:28:03 ip-172-31-4-20 systemd[1879]: Closed debconf communication socket.
+Jul 24 14:28:03 ip-172-31-4-20 systemd[1879]: snapd.session-agent.socket: Succeeded.
+Jul 24 14:28:03 ip-172-31-4-20 systemd[1879]: Closed REST API socket for snapd user session agent.
+Jul 24 14:28:03 ip-172-31-4-20 systemd[1879]: Reached target Shutdown.
+Jul 24 14:28:03 ip-172-31-4-20 systemd[1879]: systemd-exit.service: Succeeded.
+Jul 24 14:28:03 ip-172-31-4-20 systemd[1879]: Finished Exit the Session.
+Jul 24 14:28:03 ip-172-31-4-20 systemd[1879]: Reached target Exit the Session.
+-- Reboot --
+Jul 25 05:50:32 ip-172-31-4-20 systemd[1907]: Reached target Paths.
+Jul 25 05:50:32 ip-172-31-4-20 systemd[1907]: Reached target Timers.
+Jul 25 05:50:32 ip-172-31-4-20 systemd[1907]: Starting D-Bus User Message Bus Socket.
+Jul 25 05:50:32 ip-172-31-4-20 systemd[1907]: Listening on GnuPG network certificate management daemon.
+Jul 25 05:50:32 ip-172-31-4-20 systemd[1907]: Listening on GnuPG cryptographic agent and passphrase cache (access for web browsers).
+Jul 25 05:50:32 ip-172-31-4-20 systemd[1907]: Listening on GnuPG cryptographic agent and passphrase cache (restricted).
+Jul 25 05:50:32 ip-172-31-4-20 systemd[1907]: Listening on GnuPG cryptographic agent (ssh-agent emulation).
+Jul 25 05:50:32 ip-172-31-4-20 systemd[1907]: Listening on GnuPG cryptographic agent and passphrase cache.
+Jul 25 05:50:32 ip-172-31-4-20 systemd[1907]: Listening on debconf communication socket.
+Jul 25 05:50:32 ip-172-31-4-20 systemd[1907]: Listening on REST API socket for snapd user session agent.
+Jul 25 05:50:32 ip-172-31-4-20 systemd[1907]: Listening on D-Bus User Message Bus Socket.
+Jul 25 05:50:32 ip-172-31-4-20 systemd[1907]: Reached target Sockets.
+Jul 25 05:50:32 ip-172-31-4-20 systemd[1907]: Reached target Basic System.
+Jul 25 05:50:32 ip-172-31-4-20 systemd[1907]: Reached target Main User Target.
+Jul 25 05:50:32 ip-172-31-4-20 systemd[1907]: Startup finished in 66ms.
+Jul 25 05:50:34 ip-172-31-4-20 sshd[2006]: Received disconnect from 58.247.22.240 port 33506:11: disconnected by user
+Jul 25 05:50:34 ip-172-31-4-20 sshd[2006]: Disconnected from user lambda 58.247.22.240 port 33506
+Jul 25 05:52:28 ip-172-31-4-20 sshd[2254]: Received disconnect from 58.247.22.240 port 11934:11: disconnected by user
+Jul 25 05:52:28 ip-172-31-4-20 sshd[2254]: Disconnected from user lambda 58.247.22.240 port 11934
+Jul 25 06:39:16 ip-172-31-4-20 sshd[5485]: Received disconnect from 58.247.22.240 port 18650:11: disconnected by user
+Jul 25 06:39:16 ip-172-31-4-20 sshd[5485]: Disconnected from user lambda 58.247.22.240 port 18650
+Jul 25 08:13:03 ip-172-31-4-20 sshd[10521]: Received disconnect from 58.247.22.240 port 38100:11: disconnected by user
+Jul 25 08:13:03 ip-172-31-4-20 sshd[10521]: Disconnected from user lambda 58.247.22.240 port 38100
+Jul 25 08:20:33 ip-172-31-4-20 sshd[13507]: Received disconnect from 58.247.22.240 port 38077:11: disconnected by user
+Jul 25 08:20:33 ip-172-31-4-20 sshd[13507]: Disconnected from user lambda 58.247.22.240 port 38077
+Jul 25 08:42:48 ip-172-31-4-20 sshd[16483]: Received disconnect from 58.247.22.240 port 59482:11: disconnected by user
+Jul 25 08:42:48 ip-172-31-4-20 sshd[16483]: Disconnected from user lambda 58.247.22.240 port 59482
+Jul 25 08:49:32 ip-172-31-4-20 sshd[24149]: Received disconnect from 58.247.22.240 port 52799:11: disconnected by user
+Jul 25 08:49:32 ip-172-31-4-20 sshd[24149]: Disconnected from user lambda 58.247.22.240 port 52799
+Jul 25 08:50:41 ip-172-31-4-20 sshd[23684]: Received disconnect from 58.247.22.240 port 31596:11: disconnected by user
+Jul 25 08:50:41 ip-172-31-4-20 sshd[23684]: Disconnected from user lambda 58.247.22.240 port 31596
+Jul 25 10:06:33 ip-172-31-4-20 systemd[1907]: run-rpc_pipefs.mount: Succeeded.
+Jul 25 10:06:33 ip-172-31-4-20 systemd[1907]: Stopped target Main User Target.
+Jul 25 10:06:33 ip-172-31-4-20 systemd[1907]: Stopped target Basic System.
+Jul 25 10:06:33 ip-172-31-4-20 systemd[1907]: Stopped target Paths.
+Jul 25 10:06:33 ip-172-31-4-20 systemd[1907]: Stopped target Sockets.
+Jul 25 10:06:33 ip-172-31-4-20 systemd[1907]: Stopped target Timers.
+Jul 25 10:06:33 ip-172-31-4-20 systemd[1907]: dbus.socket: Succeeded.
+Jul 25 10:06:33 ip-172-31-4-20 systemd[1907]: Closed D-Bus User Message Bus Socket.
+Jul 25 10:06:33 ip-172-31-4-20 systemd[1907]: dirmngr.socket: Succeeded.
+Jul 25 10:06:33 ip-172-31-4-20 systemd[1907]: Closed GnuPG network certificate management daemon.
+Jul 25 10:06:33 ip-172-31-4-20 systemd[1907]: gpg-agent-browser.socket: Succeeded.
+Jul 25 10:06:33 ip-172-31-4-20 systemd[1907]: Closed GnuPG cryptographic agent and passphrase cache (access for web browsers).
+Jul 25 10:06:33 ip-172-31-4-20 systemd[1907]: gpg-agent-extra.socket: Succeeded.
+Jul 25 10:06:33 ip-172-31-4-20 systemd[1907]: Closed GnuPG cryptographic agent and passphrase cache (restricted).
+Jul 25 10:06:33 ip-172-31-4-20 systemd[1907]: gpg-agent-ssh.socket: Succeeded.
+Jul 25 10:06:33 ip-172-31-4-20 systemd[1907]: Closed GnuPG cryptographic agent (ssh-agent emulation).
+Jul 25 10:06:33 ip-172-31-4-20 systemd[1907]: gpg-agent.socket: Succeeded.
+Jul 25 10:06:33 ip-172-31-4-20 systemd[1907]: Closed GnuPG cryptographic agent and passphrase cache.
+Jul 25 10:06:33 ip-172-31-4-20 systemd[1907]: pk-debconf-helper.socket: Succeeded.
+Jul 25 10:06:33 ip-172-31-4-20 systemd[1907]: Closed debconf communication socket.
+Jul 25 10:06:33 ip-172-31-4-20 systemd[1907]: snapd.session-agent.socket: Succeeded.
+Jul 25 10:06:33 ip-172-31-4-20 systemd[1907]: Closed REST API socket for snapd user session agent.
+Jul 25 10:06:33 ip-172-31-4-20 systemd[1907]: Reached target Shutdown.
+Jul 25 10:06:33 ip-172-31-4-20 systemd[1907]: systemd-exit.service: Succeeded.
+Jul 25 10:06:33 ip-172-31-4-20 systemd[1907]: Finished Exit the Session.
+Jul 25 10:06:33 ip-172-31-4-20 systemd[1907]: Reached target Exit the Session.
+Jul 25 10:06:33 ip-172-31-4-20 systemd[1908]: pam_unix(systemd-user:session): session closed for user lambda
+-- Reboot --
+Jul 26 04:42:31 ip-172-31-4-20 systemd[46479]: Reached target Paths.
+Jul 26 04:42:31 ip-172-31-4-20 systemd[46479]: Reached target Timers.
+Jul 26 04:42:31 ip-172-31-4-20 systemd[46479]: Starting D-Bus User Message Bus Socket.
+Jul 26 04:42:31 ip-172-31-4-20 systemd[46479]: Listening on GnuPG network certificate management daemon.
+Jul 26 04:42:31 ip-172-31-4-20 systemd[46479]: Listening on GnuPG cryptographic agent and passphrase cache (access for web browsers).
+Jul 26 04:42:31 ip-172-31-4-20 systemd[46479]: Listening on GnuPG cryptographic agent and passphrase cache (restricted).
+Jul 26 04:42:31 ip-172-31-4-20 systemd[46479]: Listening on GnuPG cryptographic agent (ssh-agent emulation).
+Jul 26 04:42:31 ip-172-31-4-20 systemd[46479]: Listening on GnuPG cryptographic agent and passphrase cache.
+Jul 26 04:42:31 ip-172-31-4-20 systemd[46479]: Listening on debconf communication socket.
+Jul 26 04:42:31 ip-172-31-4-20 systemd[46479]: Listening on REST API socket for snapd user session agent.
+Jul 26 04:42:31 ip-172-31-4-20 systemd[46479]: Listening on D-Bus User Message Bus Socket.
+Jul 26 04:42:31 ip-172-31-4-20 systemd[46479]: Reached target Sockets.
+Jul 26 04:42:31 ip-172-31-4-20 systemd[46479]: Reached target Basic System.
+Jul 26 04:42:31 ip-172-31-4-20 systemd[46479]: Reached target Main User Target.
+Jul 26 04:42:31 ip-172-31-4-20 systemd[46479]: Startup finished in 41ms.
+Jul 26 04:42:33 ip-172-31-4-20 sshd[46579]: Received disconnect from 58.247.22.240 port 28953:11: disconnected by user
+Jul 26 04:42:33 ip-172-31-4-20 sshd[46579]: Disconnected from user lambda 58.247.22.240 port 28953
+Jul 26 04:43:52 ip-172-31-4-20 sshd[46833]: Received disconnect from 58.247.22.240 port 36050:11: disconnected by user
+Jul 26 04:43:52 ip-172-31-4-20 sshd[46833]: Disconnected from user lambda 58.247.22.240 port 36050
+Jul 26 05:32:08 ip-172-31-4-20 systemd[46479]: run-user-1002.mount: Succeeded.
+Jul 26 06:04:35 ip-172-31-4-20 sshd[48138]: Received disconnect from 58.247.22.240 port 60806:11: disconnected by user
+Jul 26 06:04:35 ip-172-31-4-20 sshd[48138]: Disconnected from user lambda 58.247.22.240 port 60806
+Jul 26 06:36:50 ip-172-31-4-20 systemd[46479]: run-rpc_pipefs.mount: Succeeded.
+Jul 26 06:36:51 ip-172-31-4-20 systemd[46479]: Stopped target Main User Target.
+Jul 26 06:36:51 ip-172-31-4-20 systemd[46479]: Stopped target Basic System.
+Jul 26 06:36:51 ip-172-31-4-20 systemd[46479]: Stopped target Paths.
+Jul 26 06:36:51 ip-172-31-4-20 systemd[46479]: Stopped target Sockets.
+Jul 26 06:36:51 ip-172-31-4-20 systemd[46479]: Stopped target Timers.
+Jul 26 06:36:51 ip-172-31-4-20 systemd[46479]: dbus.socket: Succeeded.
+Jul 26 06:36:51 ip-172-31-4-20 systemd[46479]: Closed D-Bus User Message Bus Socket.
+Jul 26 06:36:51 ip-172-31-4-20 systemd[46479]: dirmngr.socket: Succeeded.
+Jul 26 06:36:51 ip-172-31-4-20 systemd[46479]: Closed GnuPG network certificate management daemon.
+Jul 26 06:36:51 ip-172-31-4-20 systemd[46479]: gpg-agent-browser.socket: Succeeded.
+Jul 26 06:36:51 ip-172-31-4-20 systemd[46479]: Closed GnuPG cryptographic agent and passphrase cache (access for web browsers).
+Jul 26 06:36:51 ip-172-31-4-20 systemd[46479]: gpg-agent-extra.socket: Succeeded.
+Jul 26 06:36:51 ip-172-31-4-20 systemd[46479]: Closed GnuPG cryptographic agent and passphrase cache (restricted).
+Jul 26 06:36:51 ip-172-31-4-20 systemd[46479]: gpg-agent-ssh.socket: Succeeded.
+Jul 26 06:36:51 ip-172-31-4-20 systemd[46479]: Closed GnuPG cryptographic agent (ssh-agent emulation).
+Jul 26 06:36:51 ip-172-31-4-20 systemd[46479]: gpg-agent.socket: Succeeded.
+Jul 26 06:36:51 ip-172-31-4-20 systemd[46479]: Closed GnuPG cryptographic agent and passphrase cache.
+Jul 26 06:36:51 ip-172-31-4-20 systemd[46479]: pk-debconf-helper.socket: Succeeded.
+Jul 26 06:36:51 ip-172-31-4-20 systemd[46479]: Closed debconf communication socket.
+Jul 26 06:36:51 ip-172-31-4-20 systemd[46479]: snapd.session-agent.socket: Succeeded.
+Jul 26 06:36:51 ip-172-31-4-20 systemd[46479]: Closed REST API socket for snapd user session agent.
+Jul 26 06:36:51 ip-172-31-4-20 systemd[46479]: Reached target Shutdown.
+Jul 26 06:36:51 ip-172-31-4-20 systemd[46479]: systemd-exit.service: Succeeded.
+Jul 26 06:36:51 ip-172-31-4-20 systemd[46479]: Finished Exit the Session.
+Jul 26 06:36:51 ip-172-31-4-20 systemd[46479]: Reached target Exit the Session.
+Jul 26 06:36:51 ip-172-31-4-20 systemd[46480]: pam_unix(systemd-user:session): session closed for user lambda
+-- Reboot --
+Jul 27 12:34:56 ip-172-31-4-20 systemd[2576]: Reached target Paths.
+Jul 27 12:34:56 ip-172-31-4-20 systemd[2576]: Reached target Timers.
+Jul 27 12:34:56 ip-172-31-4-20 systemd[2576]: Starting D-Bus User Message Bus Socket.
+Jul 27 12:34:56 ip-172-31-4-20 systemd[2576]: Listening on GnuPG network certificate management daemon.
+Jul 27 12:34:56 ip-172-31-4-20 systemd[2576]: Listening on GnuPG cryptographic agent and passphrase cache (access for web browsers).
+Jul 27 12:34:56 ip-172-31-4-20 systemd[2576]: Listening on GnuPG cryptographic agent and passphrase cache (restricted).
+Jul 27 12:34:56 ip-172-31-4-20 systemd[2576]: Listening on GnuPG cryptographic agent (ssh-agent emulation).
+Jul 27 12:34:56 ip-172-31-4-20 systemd[2576]: Listening on GnuPG cryptographic agent and passphrase cache.
+Jul 27 12:34:56 ip-172-31-4-20 systemd[2576]: Listening on debconf communication socket.
+Jul 27 12:34:56 ip-172-31-4-20 systemd[2576]: Listening on REST API socket for snapd user session agent.
+Jul 27 12:34:56 ip-172-31-4-20 systemd[2576]: Listening on D-Bus User Message Bus Socket.
+Jul 27 12:34:56 ip-172-31-4-20 systemd[2576]: Reached target Sockets.
+Jul 27 12:34:56 ip-172-31-4-20 systemd[2576]: Reached target Basic System.
+Jul 27 12:34:56 ip-172-31-4-20 systemd[2576]: Reached target Main User Target.
+Jul 27 12:34:56 ip-172-31-4-20 systemd[2576]: Startup finished in 68ms.
+Jul 27 12:34:58 ip-172-31-4-20 sshd[2679]: Received disconnect from 58.247.22.240 port 63928:11: disconnected by user
+Jul 27 12:34:58 ip-172-31-4-20 sshd[2679]: Disconnected from user lambda 58.247.22.240 port 63928
+Jul 27 12:35:15 ip-172-31-4-20 vsce-sign[3032]: Package file size:  16858200
+Jul 27 12:35:15 ip-172-31-4-20 vsce-sign[3032]: Signature archive file size:  285196
+Jul 27 12:35:15 ip-172-31-4-20 vsce-sign[3032]: Manifest file size:  1083040
+Jul 27 12:35:15 ip-172-31-4-20 vsce-sign[3032]: Signature file size:  11977
+Jul 27 12:35:15 ip-172-31-4-20 vsce-sign[3032]: ManifestPackageIntegrityPolicy succeeded.
+Jul 27 12:35:15 ip-172-31-4-20 vsce-sign[3032]: SignatureIntegrityPolicy for primary signature succeeded.
+Jul 27 12:35:15 ip-172-31-4-20 vsce-sign[3032]: SignatureValidityPolicy for primary signature succeeded.
+Jul 27 12:35:15 ip-172-31-4-20 vsce-sign[3032]: SignatureIntegrityPolicy for timestamp signature succeeded.
+Jul 27 12:35:15 ip-172-31-4-20 vsce-sign[3032]: SignatureValidityPolicy for timestamp signature succeeded.
+Jul 27 12:35:15 ip-172-31-4-20 vsce-sign[3032]: X.509 certificate chain validation will use the fallback certificate bundle for timestamping.
+Jul 27 12:35:15 ip-172-31-4-20 vsce-sign[3032]: SignatureTrustPolicy for timestamp signature succeeded.
+Jul 27 12:35:15 ip-172-31-4-20 vsce-sign[3032]: X.509 certificate chain validation will use the fallback certificate bundle for code signing.
+Jul 27 12:35:15 ip-172-31-4-20 vsce-sign[3032]: SignatureTrustPolicy for primary signature succeeded.
+Jul 27 12:35:15 ip-172-31-4-20 vsce-sign[3032]: Primary signature type:  repository primary signature
+Jul 27 12:35:15 ip-172-31-4-20 vsce-sign[3032]: Primary signature status:  OK
+Jul 27 12:35:15 ip-172-31-4-20 vsce-sign[3032]: Timestamp signature status:  OK
+Jul 27 12:35:15 ip-172-31-4-20 vsce-sign[3032]: Exit code:  Success
+Jul 27 12:37:20 ip-172-31-4-20 sshd[4739]: Received disconnect from 58.247.22.240 port 65192:11: disconnected by user
+Jul 27 12:37:20 ip-172-31-4-20 sshd[4739]: Disconnected from user lambda 58.247.22.240 port 65192
+Jul 27 12:52:02 ip-172-31-4-20 sshd[15788]: Received disconnect from 58.247.22.240 port 43460:11: disconnected by user
+Jul 27 12:52:02 ip-172-31-4-20 sshd[15788]: Disconnected from user lambda 58.247.22.240 port 43460
+Jul 27 12:52:08 ip-172-31-4-20 sshd[15995]: Received disconnect from 58.247.22.240 port 12810:11: disconnected by user
+Jul 27 12:52:08 ip-172-31-4-20 sshd[15995]: Disconnected from user lambda 58.247.22.240 port 12810
+Jul 27 12:53:48 ip-172-31-4-20 sshd[16758]: Received disconnect from 58.247.22.240 port 56101:11: disconnected by user
+Jul 27 12:53:48 ip-172-31-4-20 sshd[16758]: Disconnected from user lambda 58.247.22.240 port 56101
+Jul 27 12:59:43 ip-172-31-4-20 sshd[17740]: Received disconnect from 58.247.22.240 port 13543:11: disconnected by user
+Jul 27 12:59:43 ip-172-31-4-20 sshd[17740]: Disconnected from user lambda 58.247.22.240 port 13543
+Jul 27 13:55:08 ip-172-31-4-20 sshd[36998]: Received disconnect from 58.247.22.240 port 41952:11: disconnected by user
+Jul 27 13:55:08 ip-172-31-4-20 sshd[36998]: Disconnected from user lambda 58.247.22.240 port 41952
+Jul 27 14:22:23 ip-172-31-4-20 systemd[2576]: run-rpc_pipefs.mount: Succeeded.
+Jul 27 14:22:24 ip-172-31-4-20 systemd[2576]: Stopped target Main User Target.
+Jul 27 14:22:24 ip-172-31-4-20 systemd[2576]: Stopped target Basic System.
+Jul 27 14:22:24 ip-172-31-4-20 systemd[2576]: Stopped target Paths.
+Jul 27 14:22:24 ip-172-31-4-20 systemd[2576]: Stopped target Sockets.
+Jul 27 14:22:24 ip-172-31-4-20 systemd[2576]: Stopped target Timers.
+Jul 27 14:22:24 ip-172-31-4-20 systemd[2576]: dbus.socket: Succeeded.
+Jul 27 14:22:24 ip-172-31-4-20 systemd[2576]: Closed D-Bus User Message Bus Socket.
+Jul 27 14:22:24 ip-172-31-4-20 systemd[2576]: dirmngr.socket: Succeeded.
+Jul 27 14:22:24 ip-172-31-4-20 systemd[2576]: Closed GnuPG network certificate management daemon.
+Jul 27 14:22:24 ip-172-31-4-20 systemd[2576]: gpg-agent-browser.socket: Succeeded.
+Jul 27 14:22:24 ip-172-31-4-20 systemd[2576]: Closed GnuPG cryptographic agent and passphrase cache (access for web browsers).
+Jul 27 14:22:24 ip-172-31-4-20 systemd[2576]: gpg-agent-extra.socket: Succeeded.
+Jul 27 14:22:24 ip-172-31-4-20 systemd[2576]: Closed GnuPG cryptographic agent and passphrase cache (restricted).
+Jul 27 14:22:24 ip-172-31-4-20 systemd[2576]: gpg-agent-ssh.socket: Succeeded.
+Jul 27 14:22:24 ip-172-31-4-20 systemd[2576]: Closed GnuPG cryptographic agent (ssh-agent emulation).
+Jul 27 14:22:24 ip-172-31-4-20 systemd[2576]: gpg-agent.socket: Succeeded.
+Jul 27 14:22:24 ip-172-31-4-20 systemd[2576]: Closed GnuPG cryptographic agent and passphrase cache.
+Jul 27 14:22:24 ip-172-31-4-20 systemd[2576]: pk-debconf-helper.socket: Succeeded.
+Jul 27 14:22:24 ip-172-31-4-20 systemd[2576]: Closed debconf communication socket.
+Jul 27 14:22:24 ip-172-31-4-20 systemd[2576]: snapd.session-agent.socket: Succeeded.
+Jul 27 14:22:24 ip-172-31-4-20 systemd[2576]: Closed REST API socket for snapd user session agent.
+Jul 27 14:22:24 ip-172-31-4-20 systemd[2576]: Reached target Shutdown.
+Jul 27 14:22:24 ip-172-31-4-20 systemd[2576]: systemd-exit.service: Succeeded.
+Jul 27 14:22:24 ip-172-31-4-20 systemd[2576]: Finished Exit the Session.
+Jul 27 14:22:24 ip-172-31-4-20 systemd[2576]: Reached target Exit the Session.
+Jul 27 14:22:24 ip-172-31-4-20 systemd[2577]: pam_unix(systemd-user:session): session closed for user lambda
+-- Reboot --
+Jul 28 02:44:46 ip-172-31-4-20 systemd[1983]: Reached target Paths.
+Jul 28 02:44:46 ip-172-31-4-20 systemd[1983]: Reached target Timers.
+Jul 28 02:44:46 ip-172-31-4-20 systemd[1983]: Starting D-Bus User Message Bus Socket.
+Jul 28 02:44:46 ip-172-31-4-20 systemd[1983]: Listening on GnuPG network certificate management daemon.
+Jul 28 02:44:46 ip-172-31-4-20 systemd[1983]: Listening on GnuPG cryptographic agent and passphrase cache (access for web browsers).
+Jul 28 02:44:46 ip-172-31-4-20 systemd[1983]: Listening on GnuPG cryptographic agent and passphrase cache (restricted).
+Jul 28 02:44:46 ip-172-31-4-20 systemd[1983]: Listening on GnuPG cryptographic agent (ssh-agent emulation).
+Jul 28 02:44:46 ip-172-31-4-20 systemd[1983]: Listening on GnuPG cryptographic agent and passphrase cache.
+Jul 28 02:44:46 ip-172-31-4-20 systemd[1983]: Listening on debconf communication socket.
+Jul 28 02:44:46 ip-172-31-4-20 systemd[1983]: Listening on REST API socket for snapd user session agent.
+Jul 28 02:44:46 ip-172-31-4-20 systemd[1983]: Listening on D-Bus User Message Bus Socket.
+Jul 28 02:44:46 ip-172-31-4-20 systemd[1983]: Reached target Sockets.
+Jul 28 02:44:46 ip-172-31-4-20 systemd[1983]: Reached target Basic System.
+Jul 28 02:44:46 ip-172-31-4-20 systemd[1983]: Reached target Main User Target.
+Jul 28 02:44:46 ip-172-31-4-20 systemd[1983]: Startup finished in 61ms.
+Jul 28 02:44:48 ip-172-31-4-20 sshd[2082]: Received disconnect from 58.247.22.240 port 36296:11: disconnected by user
+Jul 28 02:44:48 ip-172-31-4-20 sshd[2082]: Disconnected from user lambda 58.247.22.240 port 36296
+Jul 28 04:14:05 ip-172-31-4-20 systemd[1983]: run-rpc_pipefs.mount: Succeeded.
+Jul 28 04:14:05 ip-172-31-4-20 systemd[1983]: Stopped target Main User Target.
+Jul 28 04:14:05 ip-172-31-4-20 systemd[1983]: Stopped target Basic System.
+Jul 28 04:14:05 ip-172-31-4-20 systemd[1983]: Stopped target Paths.
+Jul 28 04:14:05 ip-172-31-4-20 systemd[1983]: Stopped target Sockets.
+Jul 28 04:14:05 ip-172-31-4-20 systemd[1983]: Stopped target Timers.
+Jul 28 04:14:05 ip-172-31-4-20 systemd[1983]: dbus.socket: Succeeded.
+Jul 28 04:14:05 ip-172-31-4-20 systemd[1983]: Closed D-Bus User Message Bus Socket.
+Jul 28 04:14:05 ip-172-31-4-20 systemd[1983]: dirmngr.socket: Succeeded.
+Jul 28 04:14:05 ip-172-31-4-20 systemd[1983]: Closed GnuPG network certificate management daemon.
+Jul 28 04:14:05 ip-172-31-4-20 systemd[1983]: gpg-agent-browser.socket: Succeeded.
+Jul 28 04:14:05 ip-172-31-4-20 systemd[1983]: Closed GnuPG cryptographic agent and passphrase cache (access for web browsers).
+Jul 28 04:14:05 ip-172-31-4-20 systemd[1983]: gpg-agent-extra.socket: Succeeded.
+Jul 28 04:14:05 ip-172-31-4-20 systemd[1983]: Closed GnuPG cryptographic agent and passphrase cache (restricted).
+Jul 28 04:14:05 ip-172-31-4-20 systemd[1983]: gpg-agent-ssh.socket: Succeeded.
+Jul 28 04:14:05 ip-172-31-4-20 systemd[1983]: Closed GnuPG cryptographic agent (ssh-agent emulation).
+Jul 28 04:14:05 ip-172-31-4-20 systemd[1983]: gpg-agent.socket: Succeeded.
+Jul 28 04:14:05 ip-172-31-4-20 systemd[1983]: Closed GnuPG cryptographic agent and passphrase cache.
+Jul 28 04:14:05 ip-172-31-4-20 systemd[1983]: pk-debconf-helper.socket: Succeeded.
+Jul 28 04:14:05 ip-172-31-4-20 systemd[1983]: Closed debconf communication socket.
+Jul 28 04:14:05 ip-172-31-4-20 systemd[1983]: snapd.session-agent.socket: Succeeded.
+Jul 28 04:14:05 ip-172-31-4-20 systemd[1983]: Closed REST API socket for snapd user session agent.
+Jul 28 04:14:05 ip-172-31-4-20 systemd[1983]: Reached target Shutdown.
+Jul 28 04:14:05 ip-172-31-4-20 systemd[1983]: systemd-exit.service: Succeeded.
+Jul 28 04:14:05 ip-172-31-4-20 systemd[1983]: Finished Exit the Session.
+Jul 28 04:14:05 ip-172-31-4-20 systemd[1983]: Reached target Exit the Session.
+Jul 28 04:14:05 ip-172-31-4-20 systemd[1984]: pam_unix(systemd-user:session): session closed for user lambda
+-- Reboot --
+Aug 02 00:45:50 ip-172-31-4-20 systemd[1923]: Reached target Paths.
+Aug 02 00:45:50 ip-172-31-4-20 systemd[1923]: Reached target Timers.
+Aug 02 00:45:50 ip-172-31-4-20 systemd[1923]: Starting D-Bus User Message Bus Socket.
+Aug 02 00:45:50 ip-172-31-4-20 systemd[1923]: Listening on GnuPG network certificate management daemon.
+Aug 02 00:45:50 ip-172-31-4-20 systemd[1923]: Listening on GnuPG cryptographic agent and passphrase cache (access for web browsers).
+Aug 02 00:45:50 ip-172-31-4-20 systemd[1923]: Listening on GnuPG cryptographic agent and passphrase cache (restricted).
+Aug 02 00:45:50 ip-172-31-4-20 systemd[1923]: Listening on GnuPG cryptographic agent (ssh-agent emulation).
+Aug 02 00:45:50 ip-172-31-4-20 systemd[1923]: Listening on GnuPG cryptographic agent and passphrase cache.
+Aug 02 00:45:50 ip-172-31-4-20 systemd[1923]: Listening on debconf communication socket.
+Aug 02 00:45:50 ip-172-31-4-20 systemd[1923]: Listening on REST API socket for snapd user session agent.
+Aug 02 00:45:50 ip-172-31-4-20 systemd[1923]: Listening on D-Bus User Message Bus Socket.
+Aug 02 00:45:50 ip-172-31-4-20 systemd[1923]: Reached target Sockets.
+Aug 02 00:45:50 ip-172-31-4-20 systemd[1923]: Reached target Basic System.
+Aug 02 00:45:50 ip-172-31-4-20 systemd[1923]: Reached target Main User Target.
+Aug 02 00:45:50 ip-172-31-4-20 systemd[1923]: Startup finished in 59ms.
+Aug 02 00:45:52 ip-172-31-4-20 sshd[2044]: Received disconnect from 58.247.22.240 port 59735:11: disconnected by user
+Aug 02 00:45:52 ip-172-31-4-20 sshd[2044]: Disconnected from user lambda 58.247.22.240 port 59735
+Aug 02 00:51:19 ip-172-31-4-20 systemd[1923]: run-rpc_pipefs.mount: Succeeded.
+Aug 02 00:51:19 ip-172-31-4-20 systemd[1923]: Stopped target Main User Target.
+Aug 02 00:51:19 ip-172-31-4-20 systemd[1923]: Stopped target Basic System.
+Aug 02 00:51:19 ip-172-31-4-20 systemd[1923]: Stopped target Paths.
+Aug 02 00:51:19 ip-172-31-4-20 systemd[1923]: Stopped target Sockets.
+Aug 02 00:51:19 ip-172-31-4-20 systemd[1923]: Stopped target Timers.
+Aug 02 00:51:19 ip-172-31-4-20 systemd[1923]: dbus.socket: Succeeded.
+Aug 02 00:51:19 ip-172-31-4-20 systemd[1923]: Closed D-Bus User Message Bus Socket.
+Aug 02 00:51:19 ip-172-31-4-20 systemd[1923]: dirmngr.socket: Succeeded.
+Aug 02 00:51:19 ip-172-31-4-20 systemd[1923]: Closed GnuPG network certificate management daemon.
+Aug 02 00:51:19 ip-172-31-4-20 systemd[1923]: gpg-agent-browser.socket: Succeeded.
+Aug 02 00:51:19 ip-172-31-4-20 systemd[1923]: Closed GnuPG cryptographic agent and passphrase cache (access for web browsers).
+Aug 02 00:51:19 ip-172-31-4-20 systemd[1923]: gpg-agent-extra.socket: Succeeded.
+Aug 02 00:51:19 ip-172-31-4-20 systemd[1923]: Closed GnuPG cryptographic agent and passphrase cache (restricted).
+Aug 02 00:51:19 ip-172-31-4-20 systemd[1923]: gpg-agent-ssh.socket: Succeeded.
+Aug 02 00:51:19 ip-172-31-4-20 systemd[1923]: Closed GnuPG cryptographic agent (ssh-agent emulation).
+Aug 02 00:51:19 ip-172-31-4-20 systemd[1923]: gpg-agent.socket: Succeeded.
+Aug 02 00:51:19 ip-172-31-4-20 systemd[1923]: Closed GnuPG cryptographic agent and passphrase cache.
+Aug 02 00:51:19 ip-172-31-4-20 systemd[1923]: pk-debconf-helper.socket: Succeeded.
+Aug 02 00:51:19 ip-172-31-4-20 systemd[1923]: Closed debconf communication socket.
+Aug 02 00:51:19 ip-172-31-4-20 systemd[1923]: snapd.session-agent.socket: Succeeded.
+Aug 02 00:51:19 ip-172-31-4-20 systemd[1923]: Closed REST API socket for snapd user session agent.
+Aug 02 00:51:19 ip-172-31-4-20 systemd[1923]: Reached target Shutdown.
+Aug 02 00:51:19 ip-172-31-4-20 systemd[1923]: systemd-exit.service: Succeeded.
+Aug 02 00:51:19 ip-172-31-4-20 systemd[1923]: Finished Exit the Session.
+Aug 02 00:51:19 ip-172-31-4-20 systemd[1923]: Reached target Exit the Session.
+-- Reboot --
+Aug 02 10:49:07 ip-172-31-4-20 systemd[1960]: Reached target Paths.
+Aug 02 10:49:07 ip-172-31-4-20 systemd[1960]: Reached target Timers.
+Aug 02 10:49:07 ip-172-31-4-20 systemd[1960]: Starting D-Bus User Message Bus Socket.
+Aug 02 10:49:07 ip-172-31-4-20 systemd[1960]: Listening on GnuPG network certificate management daemon.
+Aug 02 10:49:07 ip-172-31-4-20 systemd[1960]: Listening on GnuPG cryptographic agent and passphrase cache (access for web browsers).
+Aug 02 10:49:07 ip-172-31-4-20 systemd[1960]: Listening on GnuPG cryptographic agent and passphrase cache (restricted).
+Aug 02 10:49:07 ip-172-31-4-20 systemd[1960]: Listening on GnuPG cryptographic agent (ssh-agent emulation).
+Aug 02 10:49:07 ip-172-31-4-20 systemd[1960]: Listening on GnuPG cryptographic agent and passphrase cache.
+Aug 02 10:49:07 ip-172-31-4-20 systemd[1960]: Listening on debconf communication socket.
+Aug 02 10:49:07 ip-172-31-4-20 systemd[1960]: Listening on REST API socket for snapd user session agent.
+Aug 02 10:49:07 ip-172-31-4-20 systemd[1960]: Listening on D-Bus User Message Bus Socket.
+Aug 02 10:49:07 ip-172-31-4-20 systemd[1960]: Reached target Sockets.
+Aug 02 10:49:07 ip-172-31-4-20 systemd[1960]: Reached target Basic System.
+Aug 02 10:49:07 ip-172-31-4-20 systemd[1960]: Reached target Main User Target.
+Aug 02 10:49:07 ip-172-31-4-20 systemd[1960]: Startup finished in 62ms.
+Aug 02 10:49:09 ip-172-31-4-20 sshd[2061]: Received disconnect from 58.247.22.240 port 29341:11: disconnected by user
+Aug 02 10:49:09 ip-172-31-4-20 sshd[2061]: Disconnected from user lambda 58.247.22.240 port 29341
+Aug 02 10:51:22 ip-172-31-4-20 sshd[3695]: Received disconnect from 58.247.22.240 port 7372:11: disconnected by user
+Aug 02 10:51:22 ip-172-31-4-20 sshd[3695]: Disconnected from user lambda 58.247.22.240 port 7372
+Aug 02 10:51:31 ip-172-31-4-20 sshd[3901]: Received disconnect from 58.247.22.240 port 7123:11: disconnected by user
+Aug 02 10:51:31 ip-172-31-4-20 sshd[3901]: Disconnected from user lambda 58.247.22.240 port 7123
+Aug 02 11:26:08 ip-172-31-4-20 systemd[1960]: run-rpc_pipefs.mount: Succeeded.
+Aug 02 11:26:09 ip-172-31-4-20 systemd[1960]: Stopped target Main User Target.
+Aug 02 11:26:09 ip-172-31-4-20 systemd[1960]: Stopped target Basic System.
+Aug 02 11:26:09 ip-172-31-4-20 systemd[1960]: Stopped target Paths.
+Aug 02 11:26:09 ip-172-31-4-20 systemd[1960]: Stopped target Sockets.
+Aug 02 11:26:09 ip-172-31-4-20 systemd[1960]: Stopped target Timers.
+Aug 02 11:26:09 ip-172-31-4-20 systemd[1960]: dbus.socket: Succeeded.
+Aug 02 11:26:09 ip-172-31-4-20 systemd[1960]: Closed D-Bus User Message Bus Socket.
+Aug 02 11:26:09 ip-172-31-4-20 systemd[1960]: dirmngr.socket: Succeeded.
+Aug 02 11:26:09 ip-172-31-4-20 systemd[1960]: Closed GnuPG network certificate management daemon.
+Aug 02 11:26:09 ip-172-31-4-20 systemd[1960]: gpg-agent-browser.socket: Succeeded.
+Aug 02 11:26:09 ip-172-31-4-20 systemd[1960]: Closed GnuPG cryptographic agent and passphrase cache (access for web browsers).
+Aug 02 11:26:09 ip-172-31-4-20 systemd[1960]: gpg-agent-extra.socket: Succeeded.
+Aug 02 11:26:09 ip-172-31-4-20 systemd[1960]: Closed GnuPG cryptographic agent and passphrase cache (restricted).
+Aug 02 11:26:09 ip-172-31-4-20 systemd[1960]: gpg-agent-ssh.socket: Succeeded.
+Aug 02 11:26:09 ip-172-31-4-20 systemd[1960]: Closed GnuPG cryptographic agent (ssh-agent emulation).
+Aug 02 11:26:09 ip-172-31-4-20 systemd[1960]: gpg-agent.socket: Succeeded.
+Aug 02 11:26:09 ip-172-31-4-20 systemd[1960]: Closed GnuPG cryptographic agent and passphrase cache.
+Aug 02 11:26:09 ip-172-31-4-20 systemd[1960]: pk-debconf-helper.socket: Succeeded.
+Aug 02 11:26:09 ip-172-31-4-20 systemd[1960]: Closed debconf communication socket.
+Aug 02 11:26:09 ip-172-31-4-20 systemd[1960]: snapd.session-agent.socket: Succeeded.
+Aug 02 11:26:09 ip-172-31-4-20 systemd[1960]: Closed REST API socket for snapd user session agent.
+Aug 02 11:26:09 ip-172-31-4-20 systemd[1960]: Reached target Shutdown.
+Aug 02 11:26:09 ip-172-31-4-20 systemd[1960]: systemd-exit.service: Succeeded.
+Aug 02 11:26:09 ip-172-31-4-20 systemd[1960]: Finished Exit the Session.
+Aug 02 11:26:09 ip-172-31-4-20 systemd[1960]: Reached target Exit the Session.
+-- Reboot --
+Aug 04 01:52:53 ip-172-31-4-20 systemd[2675]: Reached target Paths.
+Aug 04 01:52:53 ip-172-31-4-20 systemd[2675]: Reached target Timers.
+Aug 04 01:52:53 ip-172-31-4-20 systemd[2675]: Starting D-Bus User Message Bus Socket.
+Aug 04 01:52:53 ip-172-31-4-20 systemd[2675]: Listening on GnuPG network certificate management daemon.
+Aug 04 01:52:53 ip-172-31-4-20 systemd[2675]: Listening on GnuPG cryptographic agent and passphrase cache (access for web browsers).
+Aug 04 01:52:53 ip-172-31-4-20 systemd[2675]: Listening on GnuPG cryptographic agent and passphrase cache (restricted).
+Aug 04 01:52:53 ip-172-31-4-20 systemd[2675]: Listening on GnuPG cryptographic agent (ssh-agent emulation).
+Aug 04 01:52:53 ip-172-31-4-20 systemd[2675]: Listening on GnuPG cryptographic agent and passphrase cache.
+Aug 04 01:52:53 ip-172-31-4-20 systemd[2675]: Listening on debconf communication socket.
+Aug 04 01:52:53 ip-172-31-4-20 systemd[2675]: Listening on REST API socket for snapd user session agent.
+Aug 04 01:52:53 ip-172-31-4-20 systemd[2675]: Listening on D-Bus User Message Bus Socket.
+Aug 04 01:52:53 ip-172-31-4-20 systemd[2675]: Reached target Sockets.
+Aug 04 01:52:53 ip-172-31-4-20 systemd[2675]: Reached target Basic System.
+Aug 04 01:52:53 ip-172-31-4-20 systemd[2675]: Reached target Main User Target.
+Aug 04 01:52:53 ip-172-31-4-20 systemd[2675]: Startup finished in 57ms.
+Aug 04 01:52:55 ip-172-31-4-20 sshd[2778]: Received disconnect from 58.247.22.240 port 59009:11: disconnected by user
+Aug 04 01:52:55 ip-172-31-4-20 sshd[2778]: Disconnected from user lambda 58.247.22.240 port 59009
+Aug 04 01:53:07 ip-172-31-4-20 vsce-sign[3218]: Package file size:  17046709
+Aug 04 01:53:07 ip-172-31-4-20 vsce-sign[3218]: Signature archive file size:  287326
+Aug 04 01:53:07 ip-172-31-4-20 vsce-sign[3218]: Manifest file size:  1090643
+Aug 04 01:53:07 ip-172-31-4-20 vsce-sign[3218]: Signature file size:  12023
+Aug 04 01:53:07 ip-172-31-4-20 vsce-sign[3218]: ManifestPackageIntegrityPolicy succeeded.
+Aug 04 01:53:07 ip-172-31-4-20 vsce-sign[3218]: SignatureIntegrityPolicy for primary signature succeeded.
+Aug 04 01:53:08 ip-172-31-4-20 vsce-sign[3218]: SignatureValidityPolicy for primary signature succeeded.
+Aug 04 01:53:08 ip-172-31-4-20 vsce-sign[3218]: SignatureIntegrityPolicy for timestamp signature succeeded.
+Aug 04 01:53:08 ip-172-31-4-20 vsce-sign[3218]: SignatureValidityPolicy for timestamp signature succeeded.
+Aug 04 01:53:08 ip-172-31-4-20 vsce-sign[3218]: X.509 certificate chain validation will use the fallback certificate bundle for timestamping.
+Aug 04 01:53:08 ip-172-31-4-20 vsce-sign[3218]: SignatureTrustPolicy for timestamp signature succeeded.
+Aug 04 01:53:08 ip-172-31-4-20 vsce-sign[3218]: X.509 certificate chain validation will use the fallback certificate bundle for code signing.
+Aug 04 01:53:08 ip-172-31-4-20 vsce-sign[3218]: SignatureTrustPolicy for primary signature succeeded.
+Aug 04 01:53:08 ip-172-31-4-20 vsce-sign[3218]: Primary signature type:  repository primary signature
+Aug 04 01:53:08 ip-172-31-4-20 vsce-sign[3218]: Primary signature status:  OK
+Aug 04 01:53:08 ip-172-31-4-20 vsce-sign[3218]: Timestamp signature status:  OK
+Aug 04 01:53:08 ip-172-31-4-20 vsce-sign[3218]: Exit code:  Success

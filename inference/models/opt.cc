@@ -20,7 +20,6 @@ namespace FlexFlow {
 using namespace Legion;
 
 void OPT::create_opt_model(FFModel &ff,
-                           InferenceManager &im,
                            std::string const &model_config_file_path,
                            std::string const &weight_file_path,
                            InferenceMode mode,
@@ -120,7 +119,7 @@ void OPT::create_opt_model(FFModel &ff,
             NULL,
             false,
             /*scaling query*/ true,
-            /*sacling factor*/
+            /*scaling factor*/
             pow((opt_config.hidden_size / opt_config.num_attention_heads),
                 -0.5),
             /*qk_prod_scaling*/ false);
@@ -141,7 +140,7 @@ void OPT::create_opt_model(FFModel &ff,
             NULL,
             false,
             /*scaling query*/ true,
-            /*sacling factor*/
+            /*scaling factor*/
             pow((opt_config.hidden_size / opt_config.num_attention_heads),
                 -0.5),
             /*qk_prod_scaling*/ false);
@@ -162,7 +161,7 @@ void OPT::create_opt_model(FFModel &ff,
             NULL,
             false,
             /*scaling query*/ true,
-            /*sacling factor*/
+            /*scaling factor*/
             pow((opt_config.hidden_size / opt_config.num_attention_heads),
                 -0.5),
             /*qk_prod_scaling*/ false);
@@ -215,23 +214,29 @@ void OPT::create_opt_model(FFModel &ff,
   Tensor output;
   if (mode == BEAM_SEARCH_MODE) {
     Tensor softmax = ff.softmax(lm_head, -1);
-    output = ff.beam_top_k(softmax, opt_config.max_beam_width, false);
+    // output = ff.beam_top_k(softmax, opt_config.max_beam_width, false);
+    output = ff.argmax(softmax, /*beam_Search*/ true);
   } else {
-    output = ff.arg_top_k(lm_head, /*k=*/1, false);
+    // output = ff.arg_top_k(lm_head, /*k=*/1, false);
+    output = ff.argmax(lm_head, /*beam_Search*/ false);
   }
 
   //------------------- compile the model --------------------------------
   std::cout << "------start compile ----------" << std::endl;
-  im.compile_model_and_allocate_buffer(&ff);
+  int tensor_partition_num = ff.config.tensor_parallelism_degree;
+  InferenceManager *im = InferenceManager::get_inference_manager();
+  im->compile_model_and_allocate_buffer(&ff);
   FileDataLoader fileloader("",
                             weight_file_path,
                             opt_config.num_attention_heads,
+                            opt_config.num_attention_heads,
                             opt_config.hidden_size,
                             opt_config.hidden_size /
-                                opt_config.num_attention_heads);
+                                opt_config.num_attention_heads,
+                            tensor_partition_num);
   fileloader.load_weights(&ff, weights_layers, use_full_precision);
   std::cout << "------finished loading weights----------" << std::endl;
-  im.init_operators_inference(&ff);
+  im->init_operators_inference(&ff);
 }
 
 }; // namespace FlexFlow

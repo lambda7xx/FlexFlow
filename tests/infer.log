@@ -1,0 +1,435 @@
+inference_tests.sh:    rm -rf ../inference/prompt ../inference/weights ../inference/tokenizer ../inference/output
+inference_tests.sh:python3 ../inference/utils/download_llama_weights.py
+inference_tests.sh:python3 ../inference/utils/download_llama_weights.py --use-full-precision
+inference_tests.sh:python3 ../inference/utils/download_opt_weights.py
+inference_tests.sh:python3 ../inference/utils/download_opt_weights.py --use-full-precision
+inference_tests.sh:mkdir -p ../inference/prompt
+inference_tests.sh:echo '["Give three tips for staying healthy."]' > ../inference/prompt/test.json
+inference_tests.sh:mkdir -p ../inference/output
+inference_tests.sh:############################ Speculative inference tests ######################################
+inference_tests.sh:../build/inference/spec_infer/spec_infer -ll:gpu 4 -ll:fsize 14000 -ll:zsize 30000 --use-full-precision -llm-model llama -llm-weight ../inference/weights/llama_7B_weights/ -llm-config ../inference/models/configs/llama_7B.json -ssm-model llama -ssm-weight ../inference/weights/llama_160M_weights/ -ssm-config ../inference/models/configs/llama_160M.json -tokenizer ../inference/tokenizer/tokenizer.model -prompt ../inference/prompt/test.json -output-file ../inference/output/spec_inference_llama.txt -pipeline-parallelism-degree 4
+inference_tests.sh:../build/inference/spec_infer/spec_infer -ll:gpu 4 -ll:fsize 14000 -ll:zsize 30000 -llm-model llama -llm-weight ../inference/weights/llama_7B_weights_half/ -llm-config ../inference/models/configs/llama_7B.json -ssm-model llama -ssm-weight ../inference/weights/llama_160M_weights_half/ -ssm-config ../inference/models/configs/llama_160M.json -tokenizer ../inference/tokenizer/tokenizer.model -prompt ../inference/prompt/test.json -output-file ../inference/output/spec_inference_llama_half.txt -pipeline-parallelism-degree 4
+inference_tests.sh:../build/inference/spec_infer/spec_infer -ll:gpu 4 -ll:fsize 14000 -ll:zsize 30000 --use-full-precision -llm-model opt -llm-weight ../inference/weights/opt_6B_weights/ -llm-config ../inference/models/configs/opt_6B.json -ssm-model opt -ssm-weight ../inference/weights/opt_125M_weights/ -ssm-config ../inference/models/configs/opt_125M.json -tokenizer ../inference/tokenizer/ -prompt ../inference/prompt/test.json -output-file ../inference/output/spec_inference_opt.txt -pipeline-parallelism-degree 4
+inference_tests.sh:../build/inference/spec_infer/spec_infer -ll:gpu 4 -ll:fsize 14000 -ll:zsize 30000 -llm-model opt -llm-weight ../inference/weights/opt_6B_weights_half/ -llm-config ../inference/models/configs/opt_6B.json -ssm-model opt -ssm-weight ../inference/weights/opt_125M_weights_half/ -ssm-config ../inference/models/configs/opt_125M.json -tokenizer ../inference/tokenizer/ -prompt ../inference/prompt/test.json -output-file ../inference/output/spec_inference_opt_half.txt -pipeline-parallelism-degree 4
+inference_tests.sh:    ../build/inference/spec_infer/spec_infer -ll:gpu 4 -ll:fsize 14000 -ll:zsize 30000 --use-full-precision -llm-model llama -llm-weight ../inference/weights/llama_7B_weights/ -llm-config ../inference/models/configs/llama_7B.json -ssm-model llama -ssm-weight ../inference/weights/llama_160M_weights/ -ssm-config ../inference/models/configs/llama_160M.json -tokenizer ../inference/tokenizer/tokenizer.model -prompt ../inference/prompt/test.json -output-file ../inference/output/spec_inference_llama_tp.txt -pipeline-parallelism-degree 2 -tensor-parallelism-degree 2
+inference_tests.sh:    ../build/inference/spec_infer/spec_infer -ll:gpu 4 -ll:fsize 14000 -ll:zsize 30000 -llm-model llama -llm-weight ../inference/weights/llama_7B_weights_half/ -llm-config ../inference/models/configs/llama_7B.json -ssm-model llama -ssm-weight ../inference/weights/llama_160M_weights_half/ -ssm-config ../inference/models/configs/llama_160M.json -tokenizer ../inference/tokenizer/tokenizer.model -prompt ../inference/prompt/test.json -output-file ../inference/output/spec_inference_llama_half_tp.txt -pipeline-parallelism-degree 2 -tensor-parallelism-degree 2
+inference_tests.sh:    ../build/inference/spec_infer/spec_infer -ll:gpu 4 -ll:fsize 14000 -ll:zsize 30000 --use-full-precision -llm-model opt -llm-weight ../inference/weights/opt_6B_weights/ -llm-config ../inference/models/configs/opt_6B.json -ssm-model opt -ssm-weight ../inference/weights/opt_125M_weights/ -ssm-config ../inference/models/configs/opt_125M.json -tokenizer ../inference/tokenizer/ -prompt ../inference/prompt/test.json -output-file ../inference/output/spec_inference_opt_tp.txt -pipeline-parallelism-degree 2 -tensor-parallelism-degree 2
+inference_tests.sh:    ../build/inference/spec_infer/spec_infer -ll:gpu 4 -ll:fsize 14000 -ll:zsize 30000 -llm-model opt -llm-weight ../inference/weights/opt_6B_weights_half/ -llm-config ../inference/models/configs/opt_6B.json -ssm-model opt -ssm-weight ../inference/weights/opt_125M_weights_half/ -ssm-config ../inference/models/configs/opt_125M.json -tokenizer ../inference/tokenizer/ -prompt ../inference/prompt/test.json -output-file ../inference/output/spec_inference_opt_half_tp.txt -pipeline-parallelism-degree 2 -tensor-parallelism-degree 2
+inference_tests.sh:../build/inference/incr_decoding/incr_decoding -ll:gpu 4 -ll:fsize 14000 -ll:zsize 30000 --use-full-precision -llm-model llama -llm-weight ../inference/weights/llama_160M_weights/ -llm-config ../inference/models/configs/llama_160M.json -tokenizer ../inference/tokenizer/tokenizer.model -prompt ../inference/prompt/test.json -output-file ../inference/output/incr_decoding_llama_160M.txt -pipeline-parallelism-degree 4
+inference_tests.sh:../build/inference/incr_decoding/incr_decoding -ll:gpu 4 -ll:fsize 14000 -ll:zsize 30000 -llm-model llama -llm-weight ../inference/weights/llama_160M_weights_half/ -llm-config ../inference/models/configs/llama_160M.json -tokenizer ../inference/tokenizer/tokenizer.model -prompt ../inference/prompt/test.json -output-file ../inference/output/incr_decoding_llama_160M_half.txt -pipeline-parallelism-degree 4
+inference_tests.sh:../build/inference/incr_decoding/incr_decoding -ll:gpu 4 -ll:fsize 14000 -ll:zsize 30000 --use-full-precision -llm-model llama -llm-weight ../inference/weights/llama_7B_weights/ -llm-config ../inference/models/configs/llama_7B.json -tokenizer ../inference/tokenizer/tokenizer.model -prompt ../inference/prompt/test.json -output-file ../inference/output/incr_decoding_llama_7B.txt -pipeline-parallelism-degree 4
+inference_tests.sh:../build/inference/incr_decoding/incr_decoding -ll:gpu 4 -ll:fsize 14000 -ll:zsize 30000 -llm-model llama -llm-weight ../inference/weights/llama_7B_weights_half/ -llm-config ../inference/models/configs/llama_7B.json -tokenizer ../inference/tokenizer/tokenizer.model -prompt ../inference/prompt/test.json -output-file ../inference/output/incr_decoding_llama_7B_half.txt -pipeline-parallelism-degree 4
+inference_tests.sh:../build/inference/incr_decoding/incr_decoding -ll:gpu 4 -ll:fsize 14000 -ll:zsize 30000 --use-full-precision -llm-model opt -llm-weight ../inference/weights/opt_125M_weights/ -llm-config ../inference/models/configs/opt_125M.json -tokenizer ../inference/tokenizer/ -prompt ../inference/prompt/test.json -output-file ../inference/output/incr_decoding_opt_125M.txt -pipeline-parallelism-degree 4
+inference_tests.sh:../build/inference/incr_decoding/incr_decoding -ll:gpu 4 -ll:fsize 14000 -ll:zsize 30000 -llm-model opt -llm-weight ../inference/weights/opt_125M_weights_half/ -llm-config ../inference/models/configs/opt_125M.json -tokenizer ../inference/tokenizer/ -prompt ../inference/prompt/test.json -output-file ../inference/output/incr_decoding_opt_125M_half.txt -pipeline-parallelism-degree 4
+inference_tests.sh:../build/inference/incr_decoding/incr_decoding -ll:gpu 4 -ll:fsize 14000 -ll:zsize 30000 --use-full-precision -llm-model opt -llm-weight ../inference/weights/opt_6B_weights/ -llm-config ../inference/models/configs/opt_6B.json -tokenizer ../inference/tokenizer/ -prompt ../inference/prompt/test.json -output-file ../inference/output/incr_decoding_opt_6B.txt -pipeline-parallelism-degree 4
+inference_tests.sh:../build/inference/incr_decoding/incr_decoding -ll:gpu 4 -ll:fsize 14000 -ll:zsize 30000 -llm-model opt -llm-weight ../inference/weights/opt_6B_weights_half/ -llm-config ../inference/models/configs/opt_6B.json -tokenizer ../inference/tokenizer/ -prompt ../inference/prompt/test.json -output-file ../inference/output/incr_decoding_opt_6B_half.txt -pipeline-parallelism-degree 4
+inference_tests.sh:    ../build/inference/incr_decoding/incr_decoding -ll:gpu 4 -ll:fsize 14000 -ll:zsize 30000 --use-full-precision -llm-model llama -llm-weight ../inference/weights/llama_160M_weights/ -llm-config ../inference/models/configs/llama_160M.json -tokenizer ../inference/tokenizer/tokenizer.model -prompt ../inference/prompt/test.json -output-file ../inference/output/incr_decoding_llama_160M_tp.txt -pipeline-parallelism-degree 2 -tensor-parallelism-degree 2
+inference_tests.sh:    ../build/inference/incr_decoding/incr_decoding -ll:gpu 4 -ll:fsize 14000 -ll:zsize 30000 --use-full-precision -llm-model llama -llm-weight ../inference/weights/llama_160M_weights/ -llm-config ../inference/models/configs/llama_160M.json -tokenizer ../inference/tokenizer/tokenizer.model -prompt ../inference/prompt/test.json -output-file ../inference/output/incr_decoding_llama_160M_tp4.txt -pipeline-parallelism-degree 1 -tensor-parallelism-degree 4
+inference_tests.sh:    ../build/inference/incr_decoding/incr_decoding -ll:gpu 4 -ll:fsize 14000 -ll:zsize 30000 -llm-model llama -llm-weight ../inference/weights/llama_160M_weights_half/ -llm-config ../inference/models/configs/llama_160M.json -tokenizer ../inference/tokenizer/tokenizer.model -prompt ../inference/prompt/test.json -output-file ../inference/output/incr_decoding_llama_160M_half_tp.txt -pipeline-parallelism-degree 2 -tensor-parallelism-degree 2
+inference_tests.sh:    ../build/inference/incr_decoding/incr_decoding -ll:gpu 4 -ll:fsize 14000 -ll:zsize 30000 -llm-model llama -llm-weight ../inference/weights/llama_160M_weights_half/ -llm-config ../inference/models/configs/llama_160M.json -tokenizer ../inference/tokenizer/tokenizer.model -prompt ../inference/prompt/test.json -output-file ../inference/output/incr_decoding_llama_160M_half_tp4.txt -pipeline-parallelism-degree 1 -tensor-parallelism-degree 4
+inference_tests.sh:    ../build/inference/incr_decoding/incr_decoding -ll:gpu 4 -ll:fsize 14000 -ll:zsize 30000 --use-full-precision -llm-model llama -llm-weight ../inference/weights/llama_7B_weights/ -llm-config ../inference/models/configs/llama_7B.json -tokenizer ../inference/tokenizer/tokenizer.model -prompt ../inference/prompt/test.json -output-file ../inference/output/incr_decoding_llama_7B_tp.txt -pipeline-parallelism-degree 2 -tensor-parallelism-degree 2
+inference_tests.sh:    ../build/inference/incr_decoding/incr_decoding -ll:gpu 4 -ll:fsize 14000 -ll:zsize 30000 -llm-model llama -llm-weight ../inference/weights/llama_7B_weights_half/ -llm-config ../inference/models/configs/llama_7B.json -tokenizer ../inference/tokenizer/tokenizer.model -prompt ../inference/prompt/test.json -output-file ../inference/output/incr_decoding_llama_7B_half_tp.txt -pipeline-parallelism-degree 2 -tensor-parallelism-degree 2
+inference_tests.sh:    ../build/inference/incr_decoding/incr_decoding -ll:gpu 4 -ll:fsize 14000 -ll:zsize 30000 --use-full-precision -llm-model opt -llm-weight ../inference/weights/opt_125M_weights/ -llm-config ../inference/models/configs/opt_125M.json -tokenizer ../inference/tokenizer/ -prompt ../inference/prompt/test.json -output-file ../inference/output/incr_decoding_opt_125M_tp.txt -pipeline-parallelism-degree 2 -tensor-parallelism-degree 2
+inference_tests.sh:    ../build/inference/incr_decoding/incr_decoding -ll:gpu 4 -ll:fsize 14000 -ll:zsize 30000 --use-full-precision -llm-model opt -llm-weight ../inference/weights/opt_125M_weights/ -llm-config ../inference/models/configs/opt_125M.json -tokenizer ../inference/tokenizer/ -prompt ../inference/prompt/test.json -output-file ../inference/output/incr_decoding_opt_125M_tp4.txt -pipeline-parallelism-degree 1 -tensor-parallelism-degree 4
+inference_tests.sh:    ../build/inference/incr_decoding/incr_decoding -ll:gpu 4 -ll:fsize 14000 -ll:zsize 30000 -llm-model opt -llm-weight ../inference/weights/opt_125M_weights_half/ -llm-config ../inference/models/configs/opt_125M.json -tokenizer ../inference/tokenizer/ -prompt ../inference/prompt/test.json -output-file ../inference/output/incr_decoding_opt_125M_half_tp.txt -pipeline-parallelism-degree 2 -tensor-parallelism-degree 2
+inference_tests.sh:    ../build/inference/incr_decoding/incr_decoding -ll:gpu 4 -ll:fsize 14000 -ll:zsize 30000 -llm-model opt -llm-weight ../inference/weights/opt_125M_weights_half/ -llm-config ../inference/models/configs/opt_125M.json -tokenizer ../inference/tokenizer/ -prompt ../inference/prompt/test.json -output-file ../inference/output/incr_decoding_opt_125M_half_tp.txt -pipeline-parallelism-degree 1 -tensor-parallelism-degree 4
+inference_tests.sh:    ../build/inference/incr_decoding/incr_decoding -ll:gpu 4 -ll:fsize 14000 -ll:zsize 30000 --use-full-precision -llm-model opt -llm-weight ../inference/weights/opt_6B_weights/ -llm-config ../inference/models/configs/opt_6B.json -tokenizer ../inference/tokenizer/ -prompt ../inference/prompt/test.json -output-file ../inference/output/incr_decoding_opt_6B_tp.txt -pipeline-parallelism-degree 2 -tensor-parallelism-degree 2
+inference_tests.sh:    ../build/inference/incr_decoding/incr_decoding -ll:gpu 4 -ll:fsize 14000 -ll:zsize 30000 -llm-model opt -llm-weight ../inference/weights/opt_6B_weights_half/ -llm-config ../inference/models/configs/opt_6B.json -tokenizer ../inference/tokenizer/ -prompt ../inference/prompt/test.json -output-file ../inference/output/incr_decoding_opt_6B_half_tp.txt -pipeline-parallelism-degree 2 -tensor-parallelism-degree 2
+inference_tests.sh:function compare_speed_spec_infer_incr_decoding {
+inference_tests.sh:function compare_decoding_steps_spec_infer_incr_decoding {
+inference_tests.sh:############ Alignment between speculative inference and incremental decoding #################
+inference_tests.sh:diff <(tail -n +3 "../inference/output/incr_decoding_llama_7B.txt") <(tail -n +3 "../inference/output/spec_inference_llama.txt")
+inference_tests.sh:diff <(tail -n +3 "../inference/output/incr_decoding_opt_6B.txt")   <(tail -n +3 "../inference/output/spec_inference_opt.txt")
+inference_tests.sh:check_partial_token_match "../inference/output/incr_decoding_llama_7B_half.txt" "../inference/output/spec_inference_llama_half.txt"
+inference_tests.sh:check_partial_token_match "../inference/output/incr_decoding_opt_6B_half.txt" "../inference/output/spec_inference_opt_half.txt"
+inference_tests.sh:# Speed test: speculative inference should be at very least 1.5x faster than incremental decoding
+inference_tests.sh:#compare_speed_spec_infer_incr_decoding "../inference/output/incr_decoding_llama_7B.txt" "../inference/output/spec_inference_llama.txt"
+inference_tests.sh:#compare_speed_spec_infer_incr_decoding "../inference/output/incr_decoding_opt_6B.txt" "../inference/output/spec_inference_opt.txt"
+inference_tests.sh:compare_decoding_steps_spec_infer_incr_decoding "../inference/output/incr_decoding_llama_7B.txt" "../inference/output/spec_inference_llama.txt"
+inference_tests.sh:compare_decoding_steps_spec_infer_incr_decoding "../inference/output/incr_decoding_opt_6B.txt" "../inference/output/spec_inference_opt.txt"
+inference_tests.sh:#compare_speed_spec_infer_incr_decoding "../inference/output/incr_decoding_llama_7B_half.txt" "../inference/output/spec_inference_llama_half.txt"
+inference_tests.sh:#compare_speed_spec_infer_incr_decoding "../inference/output/incr_decoding_opt_6B_half.txt" "../inference/output/spec_inference_opt_half.txt"
+inference_tests.sh:compare_decoding_steps_spec_infer_incr_decoding "../inference/output/incr_decoding_llama_7B_half.txt" "../inference/output/spec_inference_llama_half.txt"
+inference_tests.sh:compare_decoding_steps_spec_infer_incr_decoding "../inference/output/incr_decoding_opt_6B_half.txt" "../inference/output/spec_inference_opt_half.txt"
+inference_tests.sh:    diff <(tail -n +3 "../inference/output/spec_inference_llama_tp.txt") <(tail -n +3 "../inference/output/spec_inference_llama.txt")
+inference_tests.sh:    diff <(tail -n +3 "../inference/output/spec_inference_opt_tp.txt")  <(tail -n +3 "../inference/output/spec_inference_opt.txt")
+inference_tests.sh:    check_partial_token_match "../inference/output/spec_inference_llama_half_tp.txt" "../inference/output/spec_inference_llama_half.txt"
+inference_tests.sh:    check_partial_token_match "../inference/output/spec_inference_opt_half_tp.txt" "../inference/output/spec_inference_opt_half.txt"
+inference_tests.sh:    diff <(tail -n +3 "../inference/output/incr_decoding_llama_160M_tp.txt") <(tail -n +3 "../inference/output/incr_decoding_llama_160M.txt")
+inference_tests.sh:    check_partial_token_match "../inference/output/incr_decoding_llama_160M_half_tp.txt" "../inference/output/incr_decoding_llama_160M_half.txt"
+inference_tests.sh:    diff <(tail -n +3 "../inference/output/incr_decoding_llama_7B_tp.txt") <(tail -n +3 "../inference/output/incr_decoding_llama_7B.txt")
+inference_tests.sh:    check_partial_token_match "../inference/output/incr_decoding_llama_7B_half_tp.txt" "../inference/output/incr_decoding_llama_7B_half.txt"
+inference_tests.sh:    diff <(tail -n +3 "../inference/output/incr_decoding_opt_125M_tp.txt") <(tail -n +3 "../inference/output/incr_decoding_opt_125M.txt")
+inference_tests.sh:    check_partial_token_match "../inference/output/incr_decoding_opt_125M_half_tp.txt" "../inference/output/incr_decoding_opt_125M_half.txt"
+inference_tests.sh:    diff <(tail -n +3 "../inference/output/incr_decoding_opt_6B_tp.txt") <(tail -n +3 "../inference/output/incr_decoding_opt_6B.txt")
+inference_tests.sh:    check_partial_token_match "../inference/output/incr_decoding_opt_6B_half_tp.txt" "../inference/output/incr_decoding_opt_6B_half.txt"
+inference_tests.sh:python3 ./inference/huggingface_inference.py --model-name "JackFram/llama-160m" --tokenizer-model-name "JackFram/llama-160m" --use-full-precision --prompt-file "../../inference/prompt/test.json" --output-file "../../inference/output/huggingface_llama_160M.txt" --gpu
+inference_tests.sh:python3 ./inference/huggingface_inference.py --model-name "JackFram/llama-160m" --tokenizer-model-name "JackFram/llama-160m" --prompt-file "../../inference/prompt/test.json" --output-file "../../inference/output/huggingface_llama_160M_half.txt" --gpu
+inference_tests.sh:python3 ./inference/huggingface_inference.py --model-name "decapoda-research/llama-7b-hf" --tokenizer-model-name "JackFram/llama-160m" --use-full-precision --prompt-file "../../inference/prompt/test.json" --output-file "../../inference/output/huggingface_llama_7B.txt"
+inference_tests.sh:python3 ./inference/huggingface_inference.py --model-name "decapoda-research/llama-7b-hf" --tokenizer-model-name "JackFram/llama-160m" --prompt-file "../../inference/prompt/test.json" --output-file "../../inference/output/huggingface_llama_7B_half.txt" --gpu
+inference_tests.sh:python3 ./inference/huggingface_inference.py --model-name "facebook/opt-125m" --tokenizer-model-name "facebook/opt-125m" --use-full-precision --prompt-file "../../inference/prompt/test.json" --output-file "../../inference/output/huggingface_opt_125M.txt" --gpu --max-length 128
+inference_tests.sh:python3 ./inference/huggingface_inference.py --model-name "facebook/opt-125m" --tokenizer-model-name "facebook/opt-125m" --prompt-file "../../inference/prompt/test.json" --output-file "../../inference/output/huggingface_opt_125M_half.txt" --gpu --max-length 128
+inference_tests.sh:#python3 ./inference/huggingface_inference.py --model-name "facebook/opt-6.7b" --tokenizer-model-name "facebook/opt-6.7b" --use-full-precision --prompt-file "../../inference/prompt/test.json" --output-file "../../inference/output/huggingface_opt_6B.txt" --max-length 127
+inference_tests.sh:#python3 ./inference/huggingface_inference.py --model-name "facebook/opt-6.7b" --tokenizer-model-name "facebook/opt-6.7b" --prompt-file "../../inference/prompt/test.json" --output-file "../../inference/output/huggingface_opt_6B_half.txt" --gpu --max-length 127
+inference_tests.sh:diff <(tail -n +2 "../inference/output/huggingface_llama_160M.txt") <(tail -n +5 "../inference/output/incr_decoding_llama_160M.txt")
+inference_tests.sh:diff <(tail -n +2 "../inference/output/huggingface_llama_160M_half.txt" | tr -s '[:space:]' '\n' | head -n 20) <(tail -n +5 "../inference/output/incr_decoding_llama_160M_half.txt" | tr -s '[:space:]' '\n' | head -n 20)
+inference_tests.sh:diff <(tail -n +2 "../inference/output/huggingface_llama_7B.txt") <(tail -n +5 "../inference/output/incr_decoding_llama_7B.txt")
+inference_tests.sh:diff <(tail -n +2 "../inference/output/huggingface_llama_7B_half.txt" | tr -s '[:space:]' '\n' | head -n 20) <(tail -n +5 "../inference/output/incr_decoding_llama_7B_half.txt" | tr -s '[:space:]' '\n' | head -n 20)
+inference_tests.sh:diff <(tail -n +2 "../inference/output/huggingface_opt_125M.txt") <(tail -n +5 "../inference/output/incr_decoding_opt_125M.txt")
+inference_tests.sh:diff <(tail -n +2 "../inference/output/huggingface_opt_125M_half.txt" | tr -s '[:space:]' '\n' | head -n 20) <(tail -n +5 "../inference/output/incr_decoding_opt_125M_half.txt" | tr -s '[:space:]' '\n' | head -n 20)
+inference_tests.sh:#diff <(tail -n +2 "../inference/output/huggingface_opt_6B.txt") <(tail -n +5 "../inference/output/incr_decoding_opt_6B.txt")
+inference_tests.sh:#diff <(tail -n +2 "../inference/output/huggingface_opt_6B_half.txt") <(tail -n +5 "../inference/output/incr_decoding_opt_6B_half.txt")
+incr_6b_bs2.log:Loading attention filename: ../inference/weights/opt_6B_weights_half//layers_31_attention_wo_weight
+incr_6b_bs2.log:Loading attention filename: ../inference/weights/opt_6B_weights_half//layers_30_attention_wo_weight
+incr_6b_bs2.log:Loading attention filename: ../inference/weights/opt_6B_weights_half//layers_29_attention_wo_weight
+incr_6b_bs2.log:Loading attention filename: ../inference/weights/opt_6B_weights_half//layers_26_attention_wo_weight
+incr_6b_bs2.log:Loading attention filename: ../inference/weights/opt_6B_weights_half//layers_25_attention_wo_weight
+incr_6b_bs2.log:Loading attention filename: ../inference/weights/opt_6B_weights_half//layers_11_attention_wo_weight
+incr_6b_bs2.log:Loading attention filename: ../inference/weights/opt_6B_weights_half//layers_10_attention_wo_weight
+incr_6b_bs2.log:Loading attention filename: ../inference/weights/opt_6B_weights_half//layers_8_attention_wo_weight
+incr_6b_bs2.log:Loading attention filename: ../inference/weights/opt_6B_weights_half//layers_3_attention_wo_weight
+incr_6b_bs2.log:Loading attention filename: ../inference/weights/opt_6B_weights_half//layers_16_attention_wo_weight
+incr_6b_bs2.log:Loading attention filename: ../inference/weights/opt_6B_weights_half//layers_6_attention_wo_weight
+incr_6b_bs2.log:Loading attention filename: ../inference/weights/opt_6B_weights_half//layers_0_attention_wo_weight
+incr_6b_bs2.log:Loading attention filename: ../inference/weights/opt_6B_weights_half//layers_15_attention_wo_weight
+incr_6b_bs2.log:Loading attention filename: ../inference/weights/opt_6B_weights_half//layers_27_attention_wo_weight
+incr_6b_bs2.log:Loading attention filename: ../inference/weights/opt_6B_weights_half//layers_2_attention_wo_weight
+incr_6b_bs2.log:Loading attention filename: ../inference/weights/opt_6B_weights_half//layers_14_attention_wo_weight
+incr_6b_bs2.log:Loading attention filename: ../inference/weights/opt_6B_weights_half//layers_4_attention_wo_weight
+incr_6b_bs2.log:Loading attention filename: ../inference/weights/opt_6B_weights_half//layers_9_attention_wo_weight
+incr_6b_bs2.log:Loading attention filename: ../inference/weights/opt_6B_weights_half//layers_17_attention_wo_weight
+incr_6b_bs2.log:Loading attention filename: ../inference/weights/opt_6B_weights_half//layers_28_attention_wo_weight
+incr_6b_bs2.log:Loading attention filename: ../inference/weights/opt_6B_weights_half//layers_7_attention_wo_weight
+incr_6b_bs2.log:Loading attention filename: ../inference/weights/opt_6B_weights_half//layers_22_attention_wo_weight
+incr_6b_bs2.log:Loading attention filename: ../inference/weights/opt_6B_weights_half//layers_1_attention_wo_weight
+incr_6b_bs2.log:Loading attention filename: ../inference/weights/opt_6B_weights_half//layers_12_attention_wo_weight
+incr_6b_bs2.log:Loading attention filename: ../inference/weights/opt_6B_weights_half//layers_18_attention_wo_weight
+incr_6b_bs2.log:Loading attention filename: ../inference/weights/opt_6B_weights_half//layers_13_attention_wo_weight
+incr_6b_bs2.log:Loading attention filename: ../inference/weights/opt_6B_weights_half//layers_20_attention_wo_weight
+incr_6b_bs2.log:Loading attention filename: ../inference/weights/opt_6B_weights_half//layers_5_attention_wo_weight
+incr_6b_bs2.log:Loading attention filename: ../inference/weights/opt_6B_weights_half//layers_24_attention_wo_weight
+incr_6b_bs2.log:Loading attention filename: ../inference/weights/opt_6B_weights_half//layers_21_attention_wo_weight
+incr_6b_bs2.log:Loading attention filename: ../inference/weights/opt_6B_weights_half//layers_19_attention_wo_weight
+incr_6b_bs2.log:Loading attention filename: ../inference/weights/opt_6B_weights_half//layers_23_attention_wo_weight
+incr_6b_bs2.log:----------inference finished--------------
+model-opt-6B-cpu-memory-6000-batch-size-2.log:Loading attention filename: ../inference/weights/opt_6B_weights_half/layers_31_attention_wo_weight
+model-opt-6B-cpu-memory-6000-batch-size-2.log:Loading attention filename: ../inference/weights/opt_6B_weights_half/layers_30_attention_wo_weight
+model-opt-6B-cpu-memory-6000-batch-size-2.log:Loading attention filename: ../inference/weights/opt_6B_weights_half/layers_29_attention_wo_weight
+model-opt-6B-cpu-memory-6000-batch-size-2.log:Loading attention filename: ../inference/weights/opt_6B_weights_half/layers_26_attention_wo_weight
+model-opt-6B-cpu-memory-6000-batch-size-2.log:Loading attention filename: ../inference/weights/opt_6B_weights_half/layers_25_attention_wo_weight
+model-opt-6B-cpu-memory-6000-batch-size-2.log:Loading attention filename: ../inference/weights/opt_6B_weights_half/layers_11_attention_wo_weight
+model-opt-6B-cpu-memory-6000-batch-size-2.log:Loading attention filename: ../inference/weights/opt_6B_weights_half/layers_10_attention_wo_weight
+model-opt-6B-cpu-memory-6000-batch-size-2.log:Loading attention filename: ../inference/weights/opt_6B_weights_half/layers_8_attention_wo_weight
+model-opt-6B-cpu-memory-6000-batch-size-2.log:Loading attention filename: ../inference/weights/opt_6B_weights_half/layers_3_attention_wo_weight
+model-opt-6B-cpu-memory-6000-batch-size-2.log:Loading attention filename: ../inference/weights/opt_6B_weights_half/layers_16_attention_wo_weight
+model-opt-6B-cpu-memory-6000-batch-size-2.log:Loading attention filename: ../inference/weights/opt_6B_weights_half/layers_6_attention_wo_weight
+model-opt-6B-cpu-memory-6000-batch-size-2.log:Loading attention filename: ../inference/weights/opt_6B_weights_half/layers_0_attention_wo_weight
+model-opt-6B-cpu-memory-6000-batch-size-2.log:Loading attention filename: ../inference/weights/opt_6B_weights_half/layers_15_attention_wo_weight
+model-opt-6B-cpu-memory-6000-batch-size-2.log:Loading attention filename: ../inference/weights/opt_6B_weights_half/layers_27_attention_wo_weight
+model-opt-6B-cpu-memory-6000-batch-size-2.log:Loading attention filename: ../inference/weights/opt_6B_weights_half/layers_2_attention_wo_weight
+model-opt-6B-cpu-memory-6000-batch-size-2.log:Loading attention filename: ../inference/weights/opt_6B_weights_half/layers_14_attention_wo_weight
+model-opt-6B-cpu-memory-6000-batch-size-2.log:Loading attention filename: ../inference/weights/opt_6B_weights_half/layers_4_attention_wo_weight
+model-opt-6B-cpu-memory-6000-batch-size-2.log:Loading attention filename: ../inference/weights/opt_6B_weights_half/layers_9_attention_wo_weight
+model-opt-6B-cpu-memory-6000-batch-size-2.log:Loading attention filename: ../inference/weights/opt_6B_weights_half/layers_17_attention_wo_weight
+model-opt-6B-cpu-memory-6000-batch-size-2.log:Loading attention filename: ../inference/weights/opt_6B_weights_half/layers_28_attention_wo_weight
+model-opt-6B-cpu-memory-6000-batch-size-2.log:Loading attention filename: ../inference/weights/opt_6B_weights_half/layers_7_attention_wo_weight
+model-opt-6B-cpu-memory-6000-batch-size-2.log:Loading attention filename: ../inference/weights/opt_6B_weights_half/layers_22_attention_wo_weight
+model-opt-6B-cpu-memory-6000-batch-size-2.log:Loading attention filename: ../inference/weights/opt_6B_weights_half/layers_1_attention_wo_weight
+model-opt-6B-cpu-memory-6000-batch-size-2.log:Loading attention filename: ../inference/weights/opt_6B_weights_half/layers_12_attention_wo_weight
+model-opt-6B-cpu-memory-6000-batch-size-2.log:Loading attention filename: ../inference/weights/opt_6B_weights_half/layers_18_attention_wo_weight
+model-opt-6B-cpu-memory-6000-batch-size-2.log:Loading attention filename: ../inference/weights/opt_6B_weights_half/layers_13_attention_wo_weight
+model-opt-6B-cpu-memory-6000-batch-size-2.log:Loading attention filename: ../inference/weights/opt_6B_weights_half/layers_20_attention_wo_weight
+model-opt-6B-cpu-memory-6000-batch-size-2.log:Loading attention filename: ../inference/weights/opt_6B_weights_half/layers_5_attention_wo_weight
+model-opt-6B-cpu-memory-6000-batch-size-2.log:Loading attention filename: ../inference/weights/opt_6B_weights_half/layers_24_attention_wo_weight
+model-opt-6B-cpu-memory-6000-batch-size-2.log:Loading attention filename: ../inference/weights/opt_6B_weights_half/layers_21_attention_wo_weight
+model-opt-6B-cpu-memory-6000-batch-size-2.log:Loading attention filename: ../inference/weights/opt_6B_weights_half/layers_19_attention_wo_weight
+model-opt-6B-cpu-memory-6000-batch-size-2.log:Loading attention filename: ../inference/weights/opt_6B_weights_half/layers_23_attention_wo_weight
+model-opt-6B-cpu-memory-6000-batch-size-1.log:Loading attention filename: ../inference/weights/opt_6B_weights_half/layers_31_attention_wo_weight
+model-opt-6B-cpu-memory-6000-batch-size-1.log:Loading attention filename: ../inference/weights/opt_6B_weights_half/layers_30_attention_wo_weight
+model-opt-6B-cpu-memory-6000-batch-size-1.log:Loading attention filename: ../inference/weights/opt_6B_weights_half/layers_29_attention_wo_weight
+model-opt-6B-cpu-memory-6000-batch-size-1.log:Loading attention filename: ../inference/weights/opt_6B_weights_half/layers_26_attention_wo_weight
+model-opt-6B-cpu-memory-6000-batch-size-1.log:Loading attention filename: ../inference/weights/opt_6B_weights_half/layers_25_attention_wo_weight
+model-opt-6B-cpu-memory-6000-batch-size-1.log:Loading attention filename: ../inference/weights/opt_6B_weights_half/layers_11_attention_wo_weight
+model-opt-6B-cpu-memory-6000-batch-size-1.log:Loading attention filename: ../inference/weights/opt_6B_weights_half/layers_10_attention_wo_weight
+model-opt-6B-cpu-memory-6000-batch-size-1.log:Loading attention filename: ../inference/weights/opt_6B_weights_half/layers_8_attention_wo_weight
+model-opt-6B-cpu-memory-6000-batch-size-1.log:Loading attention filename: ../inference/weights/opt_6B_weights_half/layers_3_attention_wo_weight
+model-opt-6B-cpu-memory-6000-batch-size-1.log:Loading attention filename: ../inference/weights/opt_6B_weights_half/layers_16_attention_wo_weight
+model-opt-6B-cpu-memory-6000-batch-size-1.log:Loading attention filename: ../inference/weights/opt_6B_weights_half/layers_6_attention_wo_weight
+model-opt-6B-cpu-memory-6000-batch-size-1.log:Loading attention filename: ../inference/weights/opt_6B_weights_half/layers_0_attention_wo_weight
+model-opt-6B-cpu-memory-6000-batch-size-1.log:Loading attention filename: ../inference/weights/opt_6B_weights_half/layers_15_attention_wo_weight
+model-opt-6B-cpu-memory-6000-batch-size-1.log:Loading attention filename: ../inference/weights/opt_6B_weights_half/layers_27_attention_wo_weight
+model-opt-6B-cpu-memory-6000-batch-size-1.log:Loading attention filename: ../inference/weights/opt_6B_weights_half/layers_2_attention_wo_weight
+model-opt-6B-cpu-memory-6000-batch-size-1.log:Loading attention filename: ../inference/weights/opt_6B_weights_half/layers_14_attention_wo_weight
+model-opt-6B-cpu-memory-6000-batch-size-1.log:Loading attention filename: ../inference/weights/opt_6B_weights_half/layers_4_attention_wo_weight
+model-opt-6B-cpu-memory-6000-batch-size-1.log:Loading attention filename: ../inference/weights/opt_6B_weights_half/layers_9_attention_wo_weight
+model-opt-6B-cpu-memory-6000-batch-size-1.log:Loading attention filename: ../inference/weights/opt_6B_weights_half/layers_17_attention_wo_weight
+model-opt-6B-cpu-memory-6000-batch-size-1.log:Loading attention filename: ../inference/weights/opt_6B_weights_half/layers_28_attention_wo_weight
+model-opt-6B-cpu-memory-6000-batch-size-1.log:Loading attention filename: ../inference/weights/opt_6B_weights_half/layers_7_attention_wo_weight
+model-opt-6B-cpu-memory-6000-batch-size-1.log:Loading attention filename: ../inference/weights/opt_6B_weights_half/layers_22_attention_wo_weight
+model-opt-6B-cpu-memory-6000-batch-size-1.log:Loading attention filename: ../inference/weights/opt_6B_weights_half/layers_1_attention_wo_weight
+model-opt-6B-cpu-memory-6000-batch-size-1.log:Loading attention filename: ../inference/weights/opt_6B_weights_half/layers_12_attention_wo_weight
+model-opt-6B-cpu-memory-6000-batch-size-1.log:Loading attention filename: ../inference/weights/opt_6B_weights_half/layers_18_attention_wo_weight
+model-opt-6B-cpu-memory-6000-batch-size-1.log:Loading attention filename: ../inference/weights/opt_6B_weights_half/layers_13_attention_wo_weight
+model-opt-6B-cpu-memory-6000-batch-size-1.log:Loading attention filename: ../inference/weights/opt_6B_weights_half/layers_20_attention_wo_weight
+model-opt-6B-cpu-memory-6000-batch-size-1.log:Loading attention filename: ../inference/weights/opt_6B_weights_half/layers_5_attention_wo_weight
+model-opt-6B-cpu-memory-6000-batch-size-1.log:Loading attention filename: ../inference/weights/opt_6B_weights_half/layers_24_attention_wo_weight
+model-opt-6B-cpu-memory-6000-batch-size-1.log:Loading attention filename: ../inference/weights/opt_6B_weights_half/layers_21_attention_wo_weight
+model-opt-6B-cpu-memory-6000-batch-size-1.log:Loading attention filename: ../inference/weights/opt_6B_weights_half/layers_19_attention_wo_weight
+model-opt-6B-cpu-memory-6000-batch-size-1.log:Loading attention filename: ../inference/weights/opt_6B_weights_half/layers_23_attention_wo_weight
+model-opt-6B-cpu-memory-6000-batch-size-1.log:Loading attention filename: ../inference/weights/opt_125M_weights_half//layers_5_attention_wo_weight
+model-opt-6B-cpu-memory-6000-batch-size-1.log:Loading attention filename: ../inference/weights/opt_125M_weights_half//layers_1_attention_wo_weight
+model-opt-6B-cpu-memory-6000-batch-size-1.log:Loading attention filename: ../inference/weights/opt_125M_weights_half//layers_7_attention_wo_weight
+model-opt-6B-cpu-memory-6000-batch-size-1.log:Loading attention filename: ../inference/weights/opt_125M_weights_half//layers_4_attention_wo_weight
+model-opt-6B-cpu-memory-6000-batch-size-1.log:Loading attention filename: ../inference/weights/opt_125M_weights_half//layers_2_attention_wo_weight
+model-opt-6B-cpu-memory-6000-batch-size-1.log:Loading attention filename: ../inference/weights/opt_125M_weights_half//layers_0_attention_wo_weight
+model-opt-6B-cpu-memory-6000-batch-size-1.log:Loading attention filename: ../inference/weights/opt_125M_weights_half//layers_9_attention_wo_weight
+model-opt-6B-cpu-memory-6000-batch-size-1.log:Loading attention filename: ../inference/weights/opt_125M_weights_half//layers_6_attention_wo_weight
+model-opt-6B-cpu-memory-6000-batch-size-1.log:Loading attention filename: ../inference/weights/opt_125M_weights_half//layers_3_attention_wo_weight
+model-opt-6B-cpu-memory-6000-batch-size-1.log:Loading attention filename: ../inference/weights/opt_125M_weights_half//layers_8_attention_wo_weight
+model-opt-6B-cpu-memory-6000-batch-size-1.log:Loading attention filename: ../inference/weights/opt_125M_weights_half//layers_10_attention_wo_weight
+model-opt-6B-cpu-memory-6000-batch-size-1.log:Loading attention filename: ../inference/weights/opt_125M_weights_half//layers_11_attention_wo_weight
+model-opt-6B-cpu-memory-6000-batch-size-1.log:spec_infer: /home/lambda/SpecInfer-0727/src/runtime/request_manager.cu:33: static void FlexFlow::RequestManager::load_tokens_task(const Legion::Task*, const std::vector<Legion::PhysicalRegion>&, Legion::Context, Legion::Runtime*): Assertion `batch_config.num_tokens <= BatchConfig::MAX_NUM_TOKENS' failed.
+model-opt-13B-cpu-memory-8000-batch-size-1.log:Loading attention filename: ../inference/weights/opt_13B_weights_half/layers_39_attention_wo_weight
+model-opt-13B-cpu-memory-8000-batch-size-1.log:Loading attention filename: ../inference/weights/opt_13B_weights_half/layers_38_attention_wo_weight
+model-opt-13B-cpu-memory-8000-batch-size-1.log:Loading attention filename: ../inference/weights/opt_13B_weights_half/layers_37_attention_wo_weight
+model-opt-13B-cpu-memory-8000-batch-size-1.log:Loading attention filename: ../inference/weights/opt_13B_weights_half/layers_36_attention_wo_weight
+model-opt-13B-cpu-memory-8000-batch-size-1.log:Loading attention filename: ../inference/weights/opt_13B_weights_half/layers_35_attention_wo_weight
+model-opt-13B-cpu-memory-8000-batch-size-1.log:Loading attention filename: ../inference/weights/opt_13B_weights_half/layers_33_attention_wo_weight
+model-opt-13B-cpu-memory-8000-batch-size-1.log:Loading attention filename: ../inference/weights/opt_13B_weights_half/layers_31_attention_wo_weight
+model-opt-13B-cpu-memory-8000-batch-size-1.log:Loading attention filename: ../inference/weights/opt_13B_weights_half/layers_30_attention_wo_weight
+model-opt-13B-cpu-memory-8000-batch-size-1.log:Loading attention filename: ../inference/weights/opt_13B_weights_half/layers_29_attention_wo_weight
+model-opt-13B-cpu-memory-8000-batch-size-1.log:Loading attention filename: ../inference/weights/opt_13B_weights_half/layers_26_attention_wo_weight
+model-opt-13B-cpu-memory-8000-batch-size-1.log:Loading attention filename: ../inference/weights/opt_13B_weights_half/layers_25_attention_wo_weight
+model-opt-13B-cpu-memory-8000-batch-size-1.log:Loading attention filename: ../inference/weights/opt_13B_weights_half/layers_11_attention_wo_weight
+model-opt-13B-cpu-memory-8000-batch-size-1.log:Loading attention filename: ../inference/weights/opt_13B_weights_half/layers_10_attention_wo_weight
+model-opt-13B-cpu-memory-8000-batch-size-1.log:Loading attention filename: ../inference/weights/opt_13B_weights_half/layers_8_attention_wo_weight
+model-opt-13B-cpu-memory-8000-batch-size-1.log:Loading attention filename: ../inference/weights/opt_13B_weights_half/layers_3_attention_wo_weight
+model-opt-13B-cpu-memory-8000-batch-size-1.log:Loading attention filename: ../inference/weights/opt_13B_weights_half/layers_16_attention_wo_weight
+model-opt-13B-cpu-memory-8000-batch-size-1.log:Loading attention filename: ../inference/weights/opt_13B_weights_half/layers_6_attention_wo_weight
+model-opt-13B-cpu-memory-8000-batch-size-1.log:Loading attention filename: ../inference/weights/opt_13B_weights_half/layers_0_attention_wo_weight
+model-opt-13B-cpu-memory-8000-batch-size-1.log:Loading attention filename: ../inference/weights/opt_13B_weights_half/layers_15_attention_wo_weight
+model-opt-13B-cpu-memory-8000-batch-size-1.log:Loading attention filename: ../inference/weights/opt_13B_weights_half/layers_27_attention_wo_weight
+model-opt-13B-cpu-memory-8000-batch-size-1.log:Loading attention filename: ../inference/weights/opt_13B_weights_half/layers_2_attention_wo_weight
+model-opt-13B-cpu-memory-8000-batch-size-1.log:Loading attention filename: ../inference/weights/opt_13B_weights_half/layers_14_attention_wo_weight
+model-opt-13B-cpu-memory-8000-batch-size-1.log:Loading attention filename: ../inference/weights/opt_13B_weights_half/layers_4_attention_wo_weight
+model-opt-13B-cpu-memory-8000-batch-size-1.log:Loading attention filename: ../inference/weights/opt_13B_weights_half/layers_32_attention_wo_weight
+model-opt-13B-cpu-memory-8000-batch-size-1.log:Loading attention filename: ../inference/weights/opt_13B_weights_half/layers_9_attention_wo_weight
+model-opt-13B-cpu-memory-8000-batch-size-1.log:Loading attention filename: ../inference/weights/opt_13B_weights_half/layers_17_attention_wo_weight
+model-opt-13B-cpu-memory-8000-batch-size-1.log:Loading attention filename: ../inference/weights/opt_13B_weights_half/layers_28_attention_wo_weight
+model-opt-13B-cpu-memory-8000-batch-size-1.log:Loading attention filename: ../inference/weights/opt_13B_weights_half/layers_7_attention_wo_weight
+model-opt-13B-cpu-memory-8000-batch-size-1.log:Loading attention filename: ../inference/weights/opt_13B_weights_half/layers_22_attention_wo_weight
+model-opt-13B-cpu-memory-8000-batch-size-1.log:Loading attention filename: ../inference/weights/opt_13B_weights_half/layers_1_attention_wo_weight
+model-opt-13B-cpu-memory-8000-batch-size-1.log:Loading attention filename: ../inference/weights/opt_13B_weights_half/layers_12_attention_wo_weight
+model-opt-13B-cpu-memory-8000-batch-size-1.log:Loading attention filename: ../inference/weights/opt_13B_weights_half/layers_18_attention_wo_weight
+model-opt-13B-cpu-memory-8000-batch-size-1.log:Loading attention filename: ../inference/weights/opt_13B_weights_half/layers_13_attention_wo_weight
+model-opt-13B-cpu-memory-8000-batch-size-1.log:Loading attention filename: ../inference/weights/opt_13B_weights_half/layers_20_attention_wo_weight
+model-opt-13B-cpu-memory-8000-batch-size-1.log:Loading attention filename: ../inference/weights/opt_13B_weights_half/layers_34_attention_wo_weight
+model-opt-13B-cpu-memory-8000-batch-size-1.log:Loading attention filename: ../inference/weights/opt_13B_weights_half/layers_5_attention_wo_weight
+model-opt-13B-cpu-memory-8000-batch-size-1.log:Loading attention filename: ../inference/weights/opt_13B_weights_half/layers_24_attention_wo_weight
+model-opt-13B-cpu-memory-8000-batch-size-1.log:Loading attention filename: ../inference/weights/opt_13B_weights_half/layers_21_attention_wo_weight
+model-opt-13B-cpu-memory-8000-batch-size-1.log:Loading attention filename: ../inference/weights/opt_13B_weights_half/layers_19_attention_wo_weight
+model-opt-13B-cpu-memory-8000-batch-size-1.log:Loading attention filename: ../inference/weights/opt_13B_weights_half/layers_23_attention_wo_weight
+incr_6b_bs8.log:Loading attention filename: ../inference/weights/opt_6B_weights_half//layers_31_attention_wo_weight
+incr_6b_bs8.log:Loading attention filename: ../inference/weights/opt_6B_weights_half//layers_30_attention_wo_weight
+incr_6b_bs8.log:Loading attention filename: ../inference/weights/opt_6B_weights_half//layers_29_attention_wo_weight
+incr_6b_bs8.log:Loading attention filename: ../inference/weights/opt_6B_weights_half//layers_26_attention_wo_weight
+incr_6b_bs8.log:Loading attention filename: ../inference/weights/opt_6B_weights_half//layers_25_attention_wo_weight
+incr_6b_bs8.log:Loading attention filename: ../inference/weights/opt_6B_weights_half//layers_11_attention_wo_weight
+incr_6b_bs8.log:Loading attention filename: ../inference/weights/opt_6B_weights_half//layers_10_attention_wo_weight
+incr_6b_bs8.log:Loading attention filename: ../inference/weights/opt_6B_weights_half//layers_8_attention_wo_weight
+incr_6b_bs8.log:Loading attention filename: ../inference/weights/opt_6B_weights_half//layers_3_attention_wo_weight
+incr_6b_bs8.log:Loading attention filename: ../inference/weights/opt_6B_weights_half//layers_16_attention_wo_weight
+incr_6b_bs8.log:Loading attention filename: ../inference/weights/opt_6B_weights_half//layers_6_attention_wo_weight
+incr_6b_bs8.log:Loading attention filename: ../inference/weights/opt_6B_weights_half//layers_0_attention_wo_weight
+incr_6b_bs8.log:Loading attention filename: ../inference/weights/opt_6B_weights_half//layers_15_attention_wo_weight
+incr_6b_bs8.log:Loading attention filename: ../inference/weights/opt_6B_weights_half//layers_27_attention_wo_weight
+incr_6b_bs8.log:Loading attention filename: ../inference/weights/opt_6B_weights_half//layers_2_attention_wo_weight
+incr_6b_bs8.log:Loading attention filename: ../inference/weights/opt_6B_weights_half//layers_14_attention_wo_weight
+incr_6b_bs8.log:Loading attention filename: ../inference/weights/opt_6B_weights_half//layers_4_attention_wo_weight
+incr_6b_bs8.log:Loading attention filename: ../inference/weights/opt_6B_weights_half//layers_9_attention_wo_weight
+incr_6b_bs8.log:Loading attention filename: ../inference/weights/opt_6B_weights_half//layers_17_attention_wo_weight
+incr_6b_bs8.log:Loading attention filename: ../inference/weights/opt_6B_weights_half//layers_28_attention_wo_weight
+incr_6b_bs8.log:Loading attention filename: ../inference/weights/opt_6B_weights_half//layers_7_attention_wo_weight
+incr_6b_bs8.log:Loading attention filename: ../inference/weights/opt_6B_weights_half//layers_22_attention_wo_weight
+incr_6b_bs8.log:Loading attention filename: ../inference/weights/opt_6B_weights_half//layers_1_attention_wo_weight
+incr_6b_bs8.log:Loading attention filename: ../inference/weights/opt_6B_weights_half//layers_12_attention_wo_weight
+incr_6b_bs8.log:Loading attention filename: ../inference/weights/opt_6B_weights_half//layers_18_attention_wo_weight
+incr_6b_bs8.log:Loading attention filename: ../inference/weights/opt_6B_weights_half//layers_13_attention_wo_weight
+incr_6b_bs8.log:Loading attention filename: ../inference/weights/opt_6B_weights_half//layers_20_attention_wo_weight
+incr_6b_bs8.log:Loading attention filename: ../inference/weights/opt_6B_weights_half//layers_5_attention_wo_weight
+incr_6b_bs8.log:Loading attention filename: ../inference/weights/opt_6B_weights_half//layers_24_attention_wo_weight
+incr_6b_bs8.log:Loading attention filename: ../inference/weights/opt_6B_weights_half//layers_21_attention_wo_weight
+incr_6b_bs8.log:Loading attention filename: ../inference/weights/opt_6B_weights_half//layers_19_attention_wo_weight
+incr_6b_bs8.log:Loading attention filename: ../inference/weights/opt_6B_weights_half//layers_23_attention_wo_weight
+incr_6b_bs8.log:----------inference finished--------------
+evalute_incr_4GPU.sh:../build/inference/incr_decoding/incr_decoding \
+evalute_incr_4GPU.sh:-llm-model opt -llm-weight ../inference/weights/opt_6B_weights_half/ -llm-config ../inference/models/configs/opt_6B.json \
+evalute_incr_4GPU.sh:-tokenizer ../inference/tokenizer/ -prompt ../inference/prompt/chatgpt.json \
+evalute_incr_4GPU.sh:-output-file ../inference/output/incr_decoding_opt_6B_half_bs$bs.txt -pipeline-parallelism-degree 4 > incr_6b_bs$bs.log 2>&1 
+spec.log:Jun 29 07:08:14 ip-172-31-4-20 sudo[37349]:     root : TTY=pts/1 ; PWD=/home/ubuntu ; USER=test ; ENV=pem_path=/home/ubuntu/specinfer-project.pem ; COMMAND=/bin/bash -c bash
+spec.log:Jun 29 07:08:41 ip-172-31-4-20 sudo[37532]:     root : TTY=pts/1 ; PWD=/home/ubuntu ; USER=test ; ENV=pem_path=/home/ubuntu/specinfer-project.pem ; COMMAND=/bin/bash -c bash
+spec.log:Jun 29 07:09:13 ip-172-31-4-20 sudo[37829]:     root : TTY=pts/1 ; PWD=/home/ubuntu ; USER=test ; ENV=pem_path=/home/ubuntu/specinfer-project.pem ; COMMAND=/bin/bash -c bash
+spec.log:Jun 29 08:25:06 ip-172-31-4-20 sudo[42952]:   lambda : TTY=pts/4 ; PWD=/home/lambda/inference/build ; USER=root ; COMMAND=/usr/bin/apt update
+spec.log:Jun 29 08:25:23 ip-172-31-4-20 sudo[43616]:   lambda : TTY=pts/4 ; PWD=/home/lambda/inference/build ; USER=root ; COMMAND=/usr/bin/apt install cmake
+spec.log:Jun 29 08:25:38 ip-172-31-4-20 sudo[43710]:   lambda : TTY=pts/4 ; PWD=/home/lambda/inference/build ; USER=root ; COMMAND=/usr/local/bin/pip3 install cmake==3.21
+spec.log:Jun 29 08:38:29 ip-172-31-4-20 sudo[60469]:   lambda : TTY=pts/4 ; PWD=/home/lambda/inference/build ; USER=root ; COMMAND=/usr/bin/apt install python3
+spec.log:Jun 29 08:38:54 ip-172-31-4-20 sudo[60613]:   lambda : TTY=pts/4 ; PWD=/home/lambda/inference/build ; USER=root ; COMMAND=/usr/bin/apt install python-is-python3
+spec.log:Jul 20 13:48:08 ip-172-31-4-20 kernel: spec_infer[3970]: segfault at 7f2230c0dd90 ip 00007f307bcf5ad1 sp 00007f1a741dd280 error 4 in libflexflow.so.1[7f307b9da000+8ec000]
+spec.log:Jul 21 03:37:45 ip-172-31-4-20 kernel: NVRM: Xid (PCI:0000:00:1b): 31, pid=13427, name=spec_infer, Ch 00000008, intr 00000000. MMU Fault: ENGINE GRAPHICS GPCCLIENT_T1_0 faulted @ 0x7f62_19054000. Fault is of type FAULT_PDE ACCESS_TYPE_VIRT_READ
+cpp_gpu_tests.sh:	# "$FF_HOME"/build/examples/cpp/inference/LLAMA/LLAMA -ll:gpu "$GPUS" -ll:util 8 -ll:fsize "$FSIZE" -ll:zsize 30000 --only-data-parallel
+cpp_gpu_tests.sh:	#"$FF_HOME"/build/examples/cpp/inference/mixture_of_experts/inference_moe -ll:gpu "$GPUS" -ll:util 8 -ll:fsize "$FSIZE" -ll:zsize "$ZSIZE" --only-data-parallel
+cpp_gpu_tests.sh:	#"$FF_HOME"/build/examples/cpp/inference/transformers/inference_transformers -ll:gpu "$GPUS" -ll:util 8 -ll:fsize "$FSIZE" -ll:zsize "$ZSIZE" --only-data-parallel
+cpp_gpu_tests.sh:			#inference_moe -ll:gpu "$GPUS" -ll:util 8 -ll:fsize "$FSIZE" -ll:zsize "$ZSIZE" --only-data-parallel
+cpp_gpu_tests.sh:			#inference_transformers -ll:gpu "$GPUS" -ll:util 8 -ll:fsize "$FSIZE" -ll:zsize "$ZSIZE" --only-data-parallel
+his.log:  202  cd inference/
+his.log:  204  cd spec_infer/
+his.log:  216  cd inference/utils/
+his.log:  227  code inference_tests.sh 
+his.log:  273  git push upstream inference-opt-13B
+his.log:  364  cd inference/
+his.log:  366  cd  spec_infer/
+his.log:  375  cd ../inference/
+his.log:  407  cd inference/
+his.log:  420  cd SpecInfer-0720/inference/
+his.log:  440  git checkout inference
+his.log:  444  git pull origin inference
+his.log:  461  git clone --recursive -b inference https://github.com/flexflow/FlexFlow.git SpecInfer-0720
+his.log:  483  cd inference/
+his.log:  488  cp -r weights/ /home/lambda/SpecInfer-0720/inference
+his.log:  491  cp -r opt_13B_weights_half/ /home/lambda/SpecInfer-0720/inference/weights
+his.log:  500  cd inference/weights/
+his.log:  501  cp -r opt_13B_weights_half/ /home/lambda/SpecInfer-0720/inference/weights
+his.log:  511  cd inference/
+his.log:  544  cd inference/
+his.log:  560  cd inference/
+his.log:  564  cp spec_inference_opt_half_13B_tp4.txt  spec_inference_opt_half_13B_tp4-pp1-bath-size-1.txt
+his.log:  573  cd inference/
+his.log:  577  wget https://specinfer.s3.us-east-2.amazonaws.com/prompts/chatgpt.json
+his.log:  581  wget https://specinfer.s3.us-east-2.amazonaws.com/prompts/chatgpt.json
+his.log:  591  code inference_tests.sh 
+his.log:  593  python3 ../inference/utils/download_opt_weights.py
+his.log:  595  python3 ../inference/utils/download_opt_weights.py
+his.log:  597  cd inference/
+his.log:  611  git checkout -b inference-flexgen
+his.log:  617  cd inference/
+his.log:  625  code inference_tests.sh 
+his.log:  637  git push upstream inference-flexgen
+his.log:  642  code /home/lambda/SpecInfer-0720/tests/spec_infer_13b_half_tp4-pp-1-batch-size-1.log
+his.log:  651  git pull upstream inference-flexgen
+his.log:  654  git push upstream inference -flexgen
+his.log:  655  git push upstream inference-flexgen
+his.log:  657  git checkout -b inference-new
+his.log:  664  git checkout -b inference_batch_beam
+his.log:  703  code /home/lambda/SpecInfer-0720/tests/spec_infer_13b_half_tp4-pp-1-batch-size-1.log
+his.log:  744  cd inference/
+his.log:  756  cd inference/
+his.log:  834  cd inference/
+his.log:  844  cd inference/
+his.log:  846  cd spec_infer/
+his.log:  852  cd inference/
+his.log:  889  cd inference/
+his.log:  895  wget https://specinfer.s3.us-east-2.amazonaws.com/prompts/chatgpt.json
+his.log:  902  cd ../inference/weights/
+his.log:  920  cd inference/utils/
+his.log:  928  cd inference/utils/
+his.log: 1024  git checkout -b inference-0727
+his.log: 1026  git push upstream inference-0727
+his.log: 1040  cd inference/
+his.log: 1050  cd inference/
+his.log: 1052  cd spec_infer/
+offload_1GPU_7B.sh:../build/inference/spec_infer/spec_infer -ll:gpu 1 -ll:fsize 14000 \
+offload_1GPU_7B.sh:-llm-weight ../inference/weights/opt_6B_weights_half -llm-config ../inference/models/configs/opt_6B.json \
+offload_1GPU_7B.sh:-ssm-model opt -ssm-weight ../inference/weights/opt_125M_weights_half/ \
+offload_1GPU_7B.sh:-ssm-config ../inference/models/configs/opt_125M.json \
+offload_1GPU_7B.sh:-tokenizer ../inference/tokenizer/ \
+offload_1GPU_7B.sh:-prompt ../inference/prompt/chatgpt.json \
+offload_1GPU_7B.sh:-output-file ../inference/output/spec_inference_opt6B_half_BS$bs-cpu-memory-$offload_memory.txt \
+offload_1GPU_7B.sh:#./inference/spec_infer/spec_infer -ll:gpu 1 -ll:fsize 14000 -ll:zsize 30000 -llm-model llama -llm-weight ../inference/weights/ -llm-config ../inference/models/config/opt_13B.json  -ssm-model opt -ssm-weight ../inference/weights/opt_125M_weights/ -ssm-config ../inference/models/configs/opt_125M.json -tokenizer ../inference/tokenizer/ -prompt ../inference/prompt/chatgpt.json  -offload -offload-reserve-space-size $offload_memory > model-$model-cpu-memory-$offload_memory-batch-size-$bs.log 2>&1 
+grep: input file ‘infer.log’ is also the output
+model-opt-13B-cpu-memory-7000-batch-size-1.log:spec_infer: /home/lambda/SpecInfer-0727/inference/models/opt.h:71: FlexFlow::OPT::Config::Config(std::string): Assertion `false' failed.
+offload_1GPU.sh:../build/inference/spec_infer/spec_infer -ll:gpu 1 -ll:fsize 14000 \
+offload_1GPU.sh:-ll:zsize 50000  -llm-model opt -llm-weight ../inference/weights/opt_13B_weights_half \
+offload_1GPU.sh:-llm-config ../inference/models/configs/opt_13B.json \
+offload_1GPU.sh:-ssm-model opt -ssm-weight ../inference/weights/opt_125M_weights_half/ \
+offload_1GPU.sh:-ssm-config ../inference/models/configs/opt_125M.json -tokenizer ../inference/tokenizer/ \
+offload_1GPU.sh:-prompt ../inference/prompt/chatgpt.json \
+offload_1GPU.sh:-output-file ../inference/output/spec_inference_opt13B_half_BS$bs-cpu-memory-$offload_memory.txt \
+offload_1GPU.sh:#./inference/spec_infer/spec_infer -ll:gpu 1 -ll:fsize 14000 -ll:zsize 30000 -llm-model llama -llm-weight ../inference/weights/ -llm-config ../inference/models/config/opt_13B.json  -ssm-model opt -ssm-weight ../inference/weights/opt_125M_weights/ -ssm-config ../inference/models/configs/opt_125M.json -tokenizer ../inference/tokenizer/ -prompt ../inference/prompt/chatgpt.json  -offload -offload-reserve-space-size $offload_memory > model-$model-cpu-memory-$offload_memory-batch-size-$bs.log 2>&1 
+model-opt-6B-cpu-memory-6500-batch-size-1.log:Loading attention filename: ../inference/weights/opt_6B_weights_half/layers_31_attention_wo_weight
+model-opt-6B-cpu-memory-6500-batch-size-1.log:Loading attention filename: ../inference/weights/opt_6B_weights_half/layers_30_attention_wo_weight
+model-opt-6B-cpu-memory-6500-batch-size-1.log:Loading attention filename: ../inference/weights/opt_6B_weights_half/layers_29_attention_wo_weight
+model-opt-6B-cpu-memory-6500-batch-size-1.log:Loading attention filename: ../inference/weights/opt_6B_weights_half/layers_26_attention_wo_weight
+model-opt-6B-cpu-memory-6500-batch-size-1.log:Loading attention filename: ../inference/weights/opt_6B_weights_half/layers_25_attention_wo_weight
+model-opt-6B-cpu-memory-6500-batch-size-1.log:Loading attention filename: ../inference/weights/opt_6B_weights_half/layers_11_attention_wo_weight
+model-opt-6B-cpu-memory-6500-batch-size-1.log:Loading attention filename: ../inference/weights/opt_6B_weights_half/layers_10_attention_wo_weight
+model-opt-6B-cpu-memory-6500-batch-size-1.log:Loading attention filename: ../inference/weights/opt_6B_weights_half/layers_8_attention_wo_weight
+model-opt-6B-cpu-memory-6500-batch-size-1.log:Loading attention filename: ../inference/weights/opt_6B_weights_half/layers_3_attention_wo_weight
+model-opt-6B-cpu-memory-6500-batch-size-1.log:Loading attention filename: ../inference/weights/opt_6B_weights_half/layers_16_attention_wo_weight
+model-opt-6B-cpu-memory-6500-batch-size-1.log:Loading attention filename: ../inference/weights/opt_6B_weights_half/layers_6_attention_wo_weight
+model-opt-6B-cpu-memory-6500-batch-size-1.log:Loading attention filename: ../inference/weights/opt_6B_weights_half/layers_0_attention_wo_weight
+model-opt-6B-cpu-memory-6500-batch-size-1.log:Loading attention filename: ../inference/weights/opt_6B_weights_half/layers_15_attention_wo_weight
+model-opt-6B-cpu-memory-6500-batch-size-1.log:Loading attention filename: ../inference/weights/opt_6B_weights_half/layers_27_attention_wo_weight
+model-opt-6B-cpu-memory-6500-batch-size-1.log:Loading attention filename: ../inference/weights/opt_6B_weights_half/layers_2_attention_wo_weight
+model-opt-6B-cpu-memory-6500-batch-size-1.log:Loading attention filename: ../inference/weights/opt_6B_weights_half/layers_14_attention_wo_weight
+model-opt-6B-cpu-memory-6500-batch-size-1.log:Loading attention filename: ../inference/weights/opt_6B_weights_half/layers_4_attention_wo_weight
+model-opt-6B-cpu-memory-6500-batch-size-1.log:Loading attention filename: ../inference/weights/opt_6B_weights_half/layers_9_attention_wo_weight
+model-opt-6B-cpu-memory-6500-batch-size-1.log:Loading attention filename: ../inference/weights/opt_6B_weights_half/layers_17_attention_wo_weight
+model-opt-6B-cpu-memory-6500-batch-size-1.log:Loading attention filename: ../inference/weights/opt_6B_weights_half/layers_28_attention_wo_weight
+model-opt-6B-cpu-memory-6500-batch-size-1.log:Loading attention filename: ../inference/weights/opt_6B_weights_half/layers_7_attention_wo_weight
+model-opt-6B-cpu-memory-6500-batch-size-1.log:Loading attention filename: ../inference/weights/opt_6B_weights_half/layers_22_attention_wo_weight
+model-opt-6B-cpu-memory-6500-batch-size-1.log:Loading attention filename: ../inference/weights/opt_6B_weights_half/layers_1_attention_wo_weight
+model-opt-6B-cpu-memory-6500-batch-size-1.log:Loading attention filename: ../inference/weights/opt_6B_weights_half/layers_12_attention_wo_weight
+model-opt-6B-cpu-memory-6500-batch-size-1.log:Loading attention filename: ../inference/weights/opt_6B_weights_half/layers_18_attention_wo_weight
+model-opt-6B-cpu-memory-6500-batch-size-1.log:Loading attention filename: ../inference/weights/opt_6B_weights_half/layers_13_attention_wo_weight
+model-opt-6B-cpu-memory-6500-batch-size-1.log:Loading attention filename: ../inference/weights/opt_6B_weights_half/layers_20_attention_wo_weight
+model-opt-6B-cpu-memory-6500-batch-size-1.log:Loading attention filename: ../inference/weights/opt_6B_weights_half/layers_5_attention_wo_weight
+model-opt-6B-cpu-memory-6500-batch-size-1.log:Loading attention filename: ../inference/weights/opt_6B_weights_half/layers_24_attention_wo_weight
+model-opt-6B-cpu-memory-6500-batch-size-1.log:Loading attention filename: ../inference/weights/opt_6B_weights_half/layers_21_attention_wo_weight
+model-opt-6B-cpu-memory-6500-batch-size-1.log:Loading attention filename: ../inference/weights/opt_6B_weights_half/layers_19_attention_wo_weight
+model-opt-6B-cpu-memory-6500-batch-size-1.log:Loading attention filename: ../inference/weights/opt_6B_weights_half/layers_23_attention_wo_weight
+model-opt-6B-cpu-memory-6500-batch-size-1.log:Loading attention filename: ../inference/weights/opt_125M_weights_half//layers_5_attention_wo_weight
+model-opt-6B-cpu-memory-6500-batch-size-1.log:Loading attention filename: ../inference/weights/opt_125M_weights_half//layers_1_attention_wo_weight
+model-opt-6B-cpu-memory-6500-batch-size-1.log:Loading attention filename: ../inference/weights/opt_125M_weights_half//layers_7_attention_wo_weight
+model-opt-6B-cpu-memory-6500-batch-size-1.log:Loading attention filename: ../inference/weights/opt_125M_weights_half//layers_4_attention_wo_weight
+model-opt-6B-cpu-memory-6500-batch-size-1.log:Loading attention filename: ../inference/weights/opt_125M_weights_half//layers_2_attention_wo_weight
+model-opt-6B-cpu-memory-6500-batch-size-1.log:Loading attention filename: ../inference/weights/opt_125M_weights_half//layers_0_attention_wo_weight
+model-opt-6B-cpu-memory-6500-batch-size-1.log:Loading attention filename: ../inference/weights/opt_125M_weights_half//layers_9_attention_wo_weight
+model-opt-6B-cpu-memory-6500-batch-size-1.log:Loading attention filename: ../inference/weights/opt_125M_weights_half//layers_6_attention_wo_weight
+model-opt-6B-cpu-memory-6500-batch-size-1.log:Loading attention filename: ../inference/weights/opt_125M_weights_half//layers_3_attention_wo_weight
+model-opt-6B-cpu-memory-6500-batch-size-1.log:Loading attention filename: ../inference/weights/opt_125M_weights_half//layers_8_attention_wo_weight
+model-opt-6B-cpu-memory-6500-batch-size-1.log:Loading attention filename: ../inference/weights/opt_125M_weights_half//layers_10_attention_wo_weight
+model-opt-6B-cpu-memory-6500-batch-size-1.log:Loading attention filename: ../inference/weights/opt_125M_weights_half//layers_11_attention_wo_weight
+model-opt-6B-cpu-memory-6500-batch-size-1.log:spec_infer: /home/lambda/SpecInfer-0727/src/runtime/request_manager.cc:771: FlexFlow::TreeVerifyBatchConfig FlexFlow::RequestManager::prepare_next_batch_verify(const std::vector<FlexFlow::BeamSearchBatchConfig>&): Assertion `false && "Exceeding the space available in the TreeVerify batch"' failed.
+incr_6b_bs16.log:Loading attention filename: ../inference/weights/opt_6B_weights_half//layers_31_attention_wo_weight
+incr_6b_bs16.log:Loading attention filename: ../inference/weights/opt_6B_weights_half//layers_30_attention_wo_weight
+incr_6b_bs16.log:Loading attention filename: ../inference/weights/opt_6B_weights_half//layers_29_attention_wo_weight
+incr_6b_bs16.log:Loading attention filename: ../inference/weights/opt_6B_weights_half//layers_26_attention_wo_weight
+incr_6b_bs16.log:Loading attention filename: ../inference/weights/opt_6B_weights_half//layers_25_attention_wo_weight
+incr_6b_bs16.log:Loading attention filename: ../inference/weights/opt_6B_weights_half//layers_11_attention_wo_weight
+incr_6b_bs16.log:Loading attention filename: ../inference/weights/opt_6B_weights_half//layers_10_attention_wo_weight
+incr_6b_bs16.log:Loading attention filename: ../inference/weights/opt_6B_weights_half//layers_8_attention_wo_weight
+incr_6b_bs16.log:Loading attention filename: ../inference/weights/opt_6B_weights_half//layers_3_attention_wo_weight
+incr_6b_bs16.log:Loading attention filename: ../inference/weights/opt_6B_weights_half//layers_16_attention_wo_weight
+incr_6b_bs16.log:Loading attention filename: ../inference/weights/opt_6B_weights_half//layers_6_attention_wo_weight
+incr_6b_bs16.log:Loading attention filename: ../inference/weights/opt_6B_weights_half//layers_0_attention_wo_weight
+incr_6b_bs16.log:Loading attention filename: ../inference/weights/opt_6B_weights_half//layers_15_attention_wo_weight
+incr_6b_bs16.log:Loading attention filename: ../inference/weights/opt_6B_weights_half//layers_27_attention_wo_weight
+incr_6b_bs16.log:Loading attention filename: ../inference/weights/opt_6B_weights_half//layers_2_attention_wo_weight
+incr_6b_bs16.log:Loading attention filename: ../inference/weights/opt_6B_weights_half//layers_14_attention_wo_weight
+incr_6b_bs16.log:Loading attention filename: ../inference/weights/opt_6B_weights_half//layers_4_attention_wo_weight
+incr_6b_bs16.log:Loading attention filename: ../inference/weights/opt_6B_weights_half//layers_9_attention_wo_weight
+incr_6b_bs16.log:Loading attention filename: ../inference/weights/opt_6B_weights_half//layers_17_attention_wo_weight
+incr_6b_bs16.log:Loading attention filename: ../inference/weights/opt_6B_weights_half//layers_28_attention_wo_weight
+incr_6b_bs16.log:Loading attention filename: ../inference/weights/opt_6B_weights_half//layers_7_attention_wo_weight
+incr_6b_bs16.log:Loading attention filename: ../inference/weights/opt_6B_weights_half//layers_22_attention_wo_weight
+incr_6b_bs16.log:Loading attention filename: ../inference/weights/opt_6B_weights_half//layers_1_attention_wo_weight
+incr_6b_bs16.log:Loading attention filename: ../inference/weights/opt_6B_weights_half//layers_12_attention_wo_weight
+incr_6b_bs16.log:Loading attention filename: ../inference/weights/opt_6B_weights_half//layers_18_attention_wo_weight
+incr_6b_bs16.log:Loading attention filename: ../inference/weights/opt_6B_weights_half//layers_13_attention_wo_weight
+incr_6b_bs16.log:Loading attention filename: ../inference/weights/opt_6B_weights_half//layers_20_attention_wo_weight
+incr_6b_bs16.log:Loading attention filename: ../inference/weights/opt_6B_weights_half//layers_5_attention_wo_weight
+incr_6b_bs16.log:Loading attention filename: ../inference/weights/opt_6B_weights_half//layers_24_attention_wo_weight
+incr_6b_bs16.log:Loading attention filename: ../inference/weights/opt_6B_weights_half//layers_21_attention_wo_weight
+incr_6b_bs16.log:Loading attention filename: ../inference/weights/opt_6B_weights_half//layers_19_attention_wo_weight
+incr_6b_bs16.log:Loading attention filename: ../inference/weights/opt_6B_weights_half//layers_23_attention_wo_weight
+incr_6b_bs16.log:----------inference finished--------------
