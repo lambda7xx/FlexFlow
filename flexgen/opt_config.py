@@ -231,6 +231,7 @@ def download_opt_weights(model_name, path):
         hf_model_name = "facebook/" + model_name
 
     folder = snapshot_download(hf_model_name, allow_patterns="*.bin")
+    print(f"folder:{folder}")
     bin_files = glob.glob(os.path.join(folder, "*.bin"))
 
     if "/" in model_name:

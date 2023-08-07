@@ -1,0 +1,60 @@
+/home/ubuntu/.local/lib/python3.10/site-packages/torch/distributed/distributed_c10d.py:293: UserWarning: torch.distributed.reduce_op is deprecated, please use torch.distributed.ReduceOp instead
+  warnings.warn(
+/home/ubuntu/flexgen/flexgen/utils.py:132: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  data_ptr = tensor.storage().data_ptr()
+batch_size: 1 args.overlap: True , args.cut_gen_len: 5
+<run_flexgen>: args.model: facebook/opt-6.7b
+gen_len:256 and cut_gen_len:5
+get_test_inputs, prompt_len:32 and batch_size:1
+prompts:['Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.']
+len(prompt):102
+input_prompt:102
+get_test_inputs, prompt_len:64 and batch_size:1
+prompts:['Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.']
+len(prompt):102
+input_prompt:102
+model size: 12.386 GB, cache size: 0.156 GB, hidden size (prefill): 0.002 GB
+init weight...
+warmup - generate
+benchmark - generate
+num_prompts:1 and gen_len:256 and decode_latency:139.34624748001806
+Outputs:
+----------------------------------------------------------------------
+0: Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.
+
+Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.
+
+Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.
+
+Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.
+
+Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.
+
+Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.
+
+Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.
+
+Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.
+
+Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.
+
+Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.
+
+Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.
+
+Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.
+
+Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.
+
+Write a
+----------------------------------------------------------------------
+
+TorchDevice: cuda:0
+  cur_mem: 0.0079 GB,  peak_mem: 0.9534 GB
+TorchDevice: cpu
+  cur_mem: 12.7859 GB,  peak_mem: 0.0000 GB
+model size: 12.386 GB	cache size: 0.156 GB	hidden size (p): 0.002 GB
+peak gpu mem: 0.953 GB	projected: False
+prefill latency: 0.548 s	prefill throughput: 116.841 token/s
+decode latency: 139.346 s	decode throughput: 1.830 token/s
+total latency: 139.894 s	total throughput: 1.830 token/s

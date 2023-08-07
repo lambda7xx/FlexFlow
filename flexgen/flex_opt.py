@@ -477,6 +477,7 @@ class MLP:
 
     def init_weight(self, weight_home, path):
         h, dtype = (self.config.input_dim, self.config.dtype)
+        print(f"dtype:{dtype}")
         path = os.path.join(os.path.join(path, f"decoder.layers.{self.layer_id}."))
         weight_specs = [
             # wi
@@ -626,6 +627,7 @@ class OptLM:
         num_layers, num_gpu_batches = self.num_layers, self.policy.num_gpu_batches
 
         # cache[j][k]
+        print(f"num_layers:{num_layers} and num_gpu_batches:{num_gpu_batches}")
         self.cache_home = array_2d(num_layers, num_gpu_batches, ValueHolder)
         self.cache_read_buf = array_2d(num_layers, num_gpu_batches, ValueHolder)
         self.cache_write_buf = array_2d(num_layers, num_gpu_batches, ValueHolder)
@@ -1174,32 +1176,34 @@ def get_test_inputs(prompt_len, num_prompts, tokenizer, batch_size):
     #prompts = ["Paris is the capital city of"]
     bs = batch_size
     print(f"get_test_inputs, prompt_len:{prompt_len} and batch_size:{bs}")
-    with open('/home/lambda/FlexGen/flexgen/chatgpt.json', 'r') as file:
+    with open('/home/ubuntu/flexgen/flexgen/chatgpt.json', 'r') as file:
         prompts = json.load(file)[:bs]
+    prompts = ["Give three tips for staying healthy."] * batch_size
     print(f"prompts:{prompts}")
     for prompt in prompts:
         print(f"len(prompt):{len(prompt)}")
-        
     input_ids = tokenizer(prompts, padding="max_length",
                           max_length=prompt_len).input_ids
     input_prompt = tokenizer.batch_decode(input_ids, skip_special_tokens=True)
     # print(f"input_prompt:{input_prompt} and len(input_promot):{}")
     for prompt in input_prompt:
         print(f"input_prompt:{len(prompt)}")
+    print(f"input_ids:{input_ids}")
     return (input_ids[0],) * num_prompts
 
 
 def run_flexgen(args):
     global bs 
     print(f"<run_flexgen>: args.model: {args.model}")
-    if args.model == "facebook/galactica-30b":
-        tokenizer = AutoTokenizer.from_pretrained("facebook/galactica-30b", padding_side="left")
-    else:
-        tokenizer = AutoTokenizer.from_pretrained("facebook/opt-30b", padding_side="left")
+    # if args.model == "facebook/galactica-30b":
+    #     tokenizer = AutoTokenizer.from_pretrained("facebook/galactica-30b", padding_side="left")
+    # else:
+    #     tokenizer = AutoTokenizer.from_pretrained("facebook/opt-30b", padding_side="left")
+    tokenizer =  AutoTokenizer.from_pretrained(args.model, padding_side="left")
     num_prompts = args.num_gpu_batches * args.gpu_batch_size
     bs = num_prompts
     prompt_len, gen_len, cut_gen_len = args.prompt_len, args.gen_len, args.cut_gen_len
-
+    print(f"gen_len:{gen_len} and cut_gen_len:{cut_gen_len}")
     # Task and policy
     warmup_inputs = get_test_inputs(32, num_prompts, tokenizer, bs)
     inputs = get_test_inputs(prompt_len, num_prompts, tokenizer,bs )
@@ -1240,6 +1244,7 @@ def run_flexgen(args):
 
         print("benchmark - generate")
         timers("generate").reset()
+        cut_gen_len=None 
         output_ids = model.generate(
             inputs, max_new_tokens=args.gen_len,
             debug_mode=args.debug_mode, cut_gen_len=cut_gen_len, verbose=args.verbose)
@@ -1255,6 +1260,7 @@ def run_flexgen(args):
     else:
         decode_latency = sum(costs[1:])
     decode_throughput = num_prompts * (gen_len - 1) / max(decode_latency, 1e-10)
+    print(f"num_prompts:{num_prompts} and gen_len:{gen_len} and decode_latency:{decode_latency} ")
     num_generated_tokens = num_prompts * gen_len
     total_latency = prefill_latency + decode_latency
     total_throughput = num_generated_tokens / total_latency
@@ -1295,8 +1301,9 @@ def add_parser_arguments(parser):
              "FlexGen will automatically download them from HuggingFace.")
     parser.add_argument("--offload-dir", type=str, default="~/flexgen_offload_dir",
         help="The directory to offload tensors. ")
-    parser.add_argument("--prompt_len", type=int, default=64)
-    parser.add_argument("--gen_len", type=int, default=256)
+    parser.add_argument("--prompt_len", type=int, default=36)
+    
+    parser.add_argument("--gen_len", type=int, default=92)
     parser.add_argument("--cut_gen_len", type=int, default=5,help="Cut generation length for fast debugging.")
     parser.add_argument("--debug-mode", type=str,
         choices=["fewer_batch", "breakdown"])

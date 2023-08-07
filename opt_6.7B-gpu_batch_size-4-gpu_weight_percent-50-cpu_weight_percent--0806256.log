@@ -1,0 +1,165 @@
+/home/ubuntu/.local/lib/python3.10/site-packages/torch/distributed/distributed_c10d.py:293: UserWarning: torch.distributed.reduce_op is deprecated, please use torch.distributed.ReduceOp instead
+  warnings.warn(
+/home/ubuntu/flexgen/flexgen/utils.py:132: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  data_ptr = tensor.storage().data_ptr()
+batch_size: 4 args.overlap: True , args.cut_gen_len: 5
+<run_flexgen>: args.model: facebook/opt-6.7b
+gen_len:256 and cut_gen_len:5
+get_test_inputs, prompt_len:32 and batch_size:4
+prompts:['Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.', 'Write a short blog post (500 words) about the best dog toys for new dog owners.', 'ChatGPT is rewriting Genesis.', 'Please write the evolution of humans by natural selection in the form of a recipe.']
+len(prompt):102
+len(prompt):79
+len(prompt):29
+len(prompt):82
+input_prompt:102
+input_prompt:79
+input_prompt:29
+input_prompt:82
+get_test_inputs, prompt_len:64 and batch_size:4
+prompts:['Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.', 'Write a short blog post (500 words) about the best dog toys for new dog owners.', 'ChatGPT is rewriting Genesis.', 'Please write the evolution of humans by natural selection in the form of a recipe.']
+len(prompt):102
+len(prompt):79
+len(prompt):29
+len(prompt):82
+input_prompt:102
+input_prompt:79
+input_prompt:29
+input_prompt:82
+model size: 12.386 GB, cache size: 0.625 GB, hidden size (prefill): 0.010 GB
+init weight...
+warmup - generate
+benchmark - generate
+num_prompts:4 and gen_len:256 and decode_latency:70.94884675505091
+Outputs:
+----------------------------------------------------------------------
+0: Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.
+
+Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.
+
+Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.
+
+Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.
+
+Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.
+
+Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.
+
+Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.
+
+Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.
+
+Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.
+
+Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.
+
+Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.
+
+Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.
+
+Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.
+
+Write a
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+1: Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.
+
+Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.
+
+Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.
+
+Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.
+
+Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.
+
+Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.
+
+Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.
+
+Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.
+
+Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.
+
+Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.
+
+Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.
+
+Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.
+
+Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.
+
+Write a
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+2: Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.
+
+Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.
+
+Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.
+
+Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.
+
+Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.
+
+Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.
+
+Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.
+
+Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.
+
+Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.
+
+Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.
+
+Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.
+
+Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.
+
+Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.
+
+Write a
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+3: Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.
+
+Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.
+
+Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.
+
+Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.
+
+Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.
+
+Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.
+
+Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.
+
+Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.
+
+Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.
+
+Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.
+
+Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.
+
+Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.
+
+Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.
+
+Write a
+----------------------------------------------------------------------
+
+TorchDevice: cuda:0
+  cur_mem: 6.4088 GB,  peak_mem: 7.4857 GB
+TorchDevice: cpu
+  cur_mem: 6.3850 GB,  peak_mem: 0.0000 GB
+model size: 12.386 GB	cache size: 0.625 GB	hidden size (p): 0.010 GB
+peak gpu mem: 7.486 GB	projected: False
+prefill latency: 0.280 s	prefill throughput: 915.250 token/s
+decode latency: 70.949 s	decode throughput: 14.377 token/s
+total latency: 71.229 s	total throughput: 14.376 token/s

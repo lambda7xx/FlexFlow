@@ -1,0 +1,1052 @@
+batch_size: 32 args.overlap: True , args.cut_gen_len: 5
+<run_flexgen>: args.model: facebook/opt-6.7b
+gen_len:92 and cut_gen_len:5
+get_test_inputs, prompt_len:32 and batch_size:32
+prompts:['Give three tips for staying healthy.', 'Give three tips for staying healthy.', 'Give three tips for staying healthy.', 'Give three tips for staying healthy.', 'Give three tips for staying healthy.', 'Give three tips for staying healthy.', 'Give three tips for staying healthy.', 'Give three tips for staying healthy.', 'Give three tips for staying healthy.', 'Give three tips for staying healthy.', 'Give three tips for staying healthy.', 'Give three tips for staying healthy.', 'Give three tips for staying healthy.', 'Give three tips for staying healthy.', 'Give three tips for staying healthy.', 'Give three tips for staying healthy.', 'Give three tips for staying healthy.', 'Give three tips for staying healthy.', 'Give three tips for staying healthy.', 'Give three tips for staying healthy.', 'Give three tips for staying healthy.', 'Give three tips for staying healthy.', 'Give three tips for staying healthy.', 'Give three tips for staying healthy.', 'Give three tips for staying healthy.', 'Give three tips for staying healthy.', 'Give three tips for staying healthy.', 'Give three tips for staying healthy.', 'Give three tips for staying healthy.', 'Give three tips for staying healthy.', 'Give three tips for staying healthy.', 'Give three tips for staying healthy.']
+len(prompt):36
+len(prompt):36
+len(prompt):36
+len(prompt):36
+len(prompt):36
+len(prompt):36
+len(prompt):36
+len(prompt):36
+len(prompt):36
+len(prompt):36
+len(prompt):36
+len(prompt):36
+len(prompt):36
+len(prompt):36
+len(prompt):36
+len(prompt):36
+len(prompt):36
+len(prompt):36
+len(prompt):36
+len(prompt):36
+len(prompt):36
+len(prompt):36
+len(prompt):36
+len(prompt):36
+len(prompt):36
+len(prompt):36
+len(prompt):36
+len(prompt):36
+len(prompt):36
+len(prompt):36
+len(prompt):36
+len(prompt):36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_ids:[[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 31033, 130, 4965, 13, 4959, 2245, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 31033, 130, 4965, 13, 4959, 2245, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 31033, 130, 4965, 13, 4959, 2245, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 31033, 130, 4965, 13, 4959, 2245, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 31033, 130, 4965, 13, 4959, 2245, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 31033, 130, 4965, 13, 4959, 2245, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 31033, 130, 4965, 13, 4959, 2245, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 31033, 130, 4965, 13, 4959, 2245, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 31033, 130, 4965, 13, 4959, 2245, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 31033, 130, 4965, 13, 4959, 2245, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 31033, 130, 4965, 13, 4959, 2245, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 31033, 130, 4965, 13, 4959, 2245, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 31033, 130, 4965, 13, 4959, 2245, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 31033, 130, 4965, 13, 4959, 2245, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 31033, 130, 4965, 13, 4959, 2245, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 31033, 130, 4965, 13, 4959, 2245, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 31033, 130, 4965, 13, 4959, 2245, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 31033, 130, 4965, 13, 4959, 2245, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 31033, 130, 4965, 13, 4959, 2245, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 31033, 130, 4965, 13, 4959, 2245, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 31033, 130, 4965, 13, 4959, 2245, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 31033, 130, 4965, 13, 4959, 2245, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 31033, 130, 4965, 13, 4959, 2245, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 31033, 130, 4965, 13, 4959, 2245, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 31033, 130, 4965, 13, 4959, 2245, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 31033, 130, 4965, 13, 4959, 2245, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 31033, 130, 4965, 13, 4959, 2245, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 31033, 130, 4965, 13, 4959, 2245, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 31033, 130, 4965, 13, 4959, 2245, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 31033, 130, 4965, 13, 4959, 2245, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 31033, 130, 4965, 13, 4959, 2245, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 31033, 130, 4965, 13, 4959, 2245, 4]]
+get_test_inputs, prompt_len:36 and batch_size:32
+prompts:['Give three tips for staying healthy.', 'Give three tips for staying healthy.', 'Give three tips for staying healthy.', 'Give three tips for staying healthy.', 'Give three tips for staying healthy.', 'Give three tips for staying healthy.', 'Give three tips for staying healthy.', 'Give three tips for staying healthy.', 'Give three tips for staying healthy.', 'Give three tips for staying healthy.', 'Give three tips for staying healthy.', 'Give three tips for staying healthy.', 'Give three tips for staying healthy.', 'Give three tips for staying healthy.', 'Give three tips for staying healthy.', 'Give three tips for staying healthy.', 'Give three tips for staying healthy.', 'Give three tips for staying healthy.', 'Give three tips for staying healthy.', 'Give three tips for staying healthy.', 'Give three tips for staying healthy.', 'Give three tips for staying healthy.', 'Give three tips for staying healthy.', 'Give three tips for staying healthy.', 'Give three tips for staying healthy.', 'Give three tips for staying healthy.', 'Give three tips for staying healthy.', 'Give three tips for staying healthy.', 'Give three tips for staying healthy.', 'Give three tips for staying healthy.', 'Give three tips for staying healthy.', 'Give three tips for staying healthy.']
+len(prompt):36
+len(prompt):36
+len(prompt):36
+len(prompt):36
+len(prompt):36
+len(prompt):36
+len(prompt):36
+len(prompt):36
+len(prompt):36
+len(prompt):36
+len(prompt):36
+len(prompt):36
+len(prompt):36
+len(prompt):36
+len(prompt):36
+len(prompt):36
+len(prompt):36
+len(prompt):36
+len(prompt):36
+len(prompt):36
+len(prompt):36
+len(prompt):36
+len(prompt):36
+len(prompt):36
+len(prompt):36
+len(prompt):36
+len(prompt):36
+len(prompt):36
+len(prompt):36
+len(prompt):36
+len(prompt):36
+len(prompt):36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36/home/ubuntu/.local/lib/python3.10/site-packages/torch/distributed/distributed_c10d.py:293: UserWarning: torch.distributed.reduce_op is deprecated, please use torch.distributed.ReduceOp instead
+  warnings.warn(
+/home/ubuntu/flexgen-0807/flexgen/utils.py:132: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  data_ptr = tensor.storage().data_ptr()
+
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_ids:[[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 31033, 130, 4965, 13, 4959, 2245, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 31033, 130, 4965, 13, 4959, 2245, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 31033, 130, 4965, 13, 4959, 2245, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 31033, 130, 4965, 13, 4959, 2245, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 31033, 130, 4965, 13, 4959, 2245, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 31033, 130, 4965, 13, 4959, 2245, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 31033, 130, 4965, 13, 4959, 2245, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 31033, 130, 4965, 13, 4959, 2245, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 31033, 130, 4965, 13, 4959, 2245, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 31033, 130, 4965, 13, 4959, 2245, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 31033, 130, 4965, 13, 4959, 2245, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 31033, 130, 4965, 13, 4959, 2245, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 31033, 130, 4965, 13, 4959, 2245, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 31033, 130, 4965, 13, 4959, 2245, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 31033, 130, 4965, 13, 4959, 2245, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 31033, 130, 4965, 13, 4959, 2245, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 31033, 130, 4965, 13, 4959, 2245, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 31033, 130, 4965, 13, 4959, 2245, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 31033, 130, 4965, 13, 4959, 2245, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 31033, 130, 4965, 13, 4959, 2245, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 31033, 130, 4965, 13, 4959, 2245, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 31033, 130, 4965, 13, 4959, 2245, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 31033, 130, 4965, 13, 4959, 2245, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 31033, 130, 4965, 13, 4959, 2245, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 31033, 130, 4965, 13, 4959, 2245, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 31033, 130, 4965, 13, 4959, 2245, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 31033, 130, 4965, 13, 4959, 2245, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 31033, 130, 4965, 13, 4959, 2245, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 31033, 130, 4965, 13, 4959, 2245, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 31033, 130, 4965, 13, 4959, 2245, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 31033, 130, 4965, 13, 4959, 2245, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 31033, 130, 4965, 13, 4959, 2245, 4]]
+model size: 12.386 GB, cache size: 2.000 GB, hidden size (prefill): 0.031 GB
+init weight...
+num_layers:66 and num_gpu_batches:1
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+warmup - generate
+benchmark - generate
+num_prompts:32 and gen_len:92 and decode_latency:49.686009664994344 
+Outputs:
+----------------------------------------------------------------------
+0: Give three tips for staying healthy.
+
+1. Eat a healthy diet.
+
+2. Exercise regularly.
+
+3. Get enough sleep.
+
+What is your favorite healthy snack?
+
+I love to eat fresh fruit.
+
+What is your favorite healthy recipe?
+
+I love to make smoothies.
+
+What is your favorite healthy recipe?
+
+I love to make smoothies.
+
+What is your favorite healthy recipe?
+
+I love to
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+1: Give three tips for staying healthy.
+
+1. Eat a healthy diet.
+
+2. Exercise regularly.
+
+3. Get enough sleep.
+
+What is your favorite healthy snack?
+
+I love to eat fresh fruit.
+
+What is your favorite healthy recipe?
+
+I love to make smoothies.
+
+What is your favorite healthy recipe?
+
+I love to make smoothies.
+
+What is your favorite healthy recipe?
+
+I love to
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+2: Give three tips for staying healthy.
+
+1. Eat a healthy diet.
+
+2. Exercise regularly.
+
+3. Get enough sleep.
+
+What is your favorite healthy snack?
+
+I love to eat fresh fruit.
+
+What is your favorite healthy recipe?
+
+I love to make smoothies.
+
+What is your favorite healthy recipe?
+
+I love to make smoothies.
+
+What is your favorite healthy recipe?
+
+I love to
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+3: Give three tips for staying healthy.
+
+1. Eat a healthy diet.
+
+2. Exercise regularly.
+
+3. Get enough sleep.
+
+What is your favorite healthy snack?
+
+I love to eat fresh fruit.
+
+What is your favorite healthy recipe?
+
+I love to make smoothies.
+
+What is your favorite healthy recipe?
+
+I love to make smoothies.
+
+What is your favorite healthy recipe?
+
+I love to
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+4: Give three tips for staying healthy.
+
+1. Eat a healthy diet.
+
+2. Exercise regularly.
+
+3. Get enough sleep.
+
+What is your favorite healthy snack?
+
+I love to eat fresh fruit.
+
+What is your favorite healthy recipe?
+
+I love to make smoothies.
+
+What is your favorite healthy recipe?
+
+I love to make smoothies.
+
+What is your favorite healthy recipe?
+
+I love to
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+5: Give three tips for staying healthy.
+
+1. Eat a healthy diet.
+
+2. Exercise regularly.
+
+3. Get enough sleep.
+
+What is your favorite healthy snack?
+
+I love to eat fresh fruit.
+
+What is your favorite healthy recipe?
+
+I love to make smoothies.
+
+What is your favorite healthy recipe?
+
+I love to make smoothies.
+
+What is your favorite healthy recipe?
+
+I love to
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+6: Give three tips for staying healthy.
+
+1. Eat a healthy diet.
+
+2. Exercise regularly.
+
+3. Get enough sleep.
+
+What is your favorite healthy snack?
+
+I love to eat fresh fruit.
+
+What is your favorite healthy recipe?
+
+I love to make smoothies.
+
+What is your favorite healthy recipe?
+
+I love to make smoothies.
+
+What is your favorite healthy recipe?
+
+I love to
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+7: Give three tips for staying healthy.
+
+1. Eat a healthy diet.
+
+2. Exercise regularly.
+
+3. Get enough sleep.
+
+What is your favorite healthy snack?
+
+I love to eat fresh fruit.
+
+What is your favorite healthy recipe?
+
+I love to make smoothies.
+
+What is your favorite healthy recipe?
+
+I love to make smoothies.
+
+What is your favorite healthy recipe?
+
+I love to
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+8: Give three tips for staying healthy.
+
+1. Eat a healthy diet.
+
+2. Exercise regularly.
+
+3. Get enough sleep.
+
+What is your favorite healthy snack?
+
+I love to eat fresh fruit.
+
+What is your favorite healthy recipe?
+
+I love to make smoothies.
+
+What is your favorite healthy recipe?
+
+I love to make smoothies.
+
+What is your favorite healthy recipe?
+
+I love to
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+9: Give three tips for staying healthy.
+
+1. Eat a healthy diet.
+
+2. Exercise regularly.
+
+3. Get enough sleep.
+
+What is your favorite healthy snack?
+
+I love to eat fresh fruit.
+
+What is your favorite healthy recipe?
+
+I love to make smoothies.
+
+What is your favorite healthy recipe?
+
+I love to make smoothies.
+
+What is your favorite healthy recipe?
+
+I love to
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+10: Give three tips for staying healthy.
+
+1. Eat a healthy diet.
+
+2. Exercise regularly.
+
+3. Get enough sleep.
+
+What is your favorite healthy snack?
+
+I love to eat fresh fruit.
+
+What is your favorite healthy recipe?
+
+I love to make smoothies.
+
+What is your favorite healthy recipe?
+
+I love to make smoothies.
+
+What is your favorite healthy recipe?
+
+I love to
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+11: Give three tips for staying healthy.
+
+1. Eat a healthy diet.
+
+2. Exercise regularly.
+
+3. Get enough sleep.
+
+What is your favorite healthy snack?
+
+I love to eat fresh fruit.
+
+What is your favorite healthy recipe?
+
+I love to make smoothies.
+
+What is your favorite healthy recipe?
+
+I love to make smoothies.
+
+What is your favorite healthy recipe?
+
+I love to
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+12: Give three tips for staying healthy.
+
+1. Eat a healthy diet.
+
+2. Exercise regularly.
+
+3. Get enough sleep.
+
+What is your favorite healthy snack?
+
+I love to eat fresh fruit.
+
+What is your favorite healthy recipe?
+
+I love to make smoothies.
+
+What is your favorite healthy recipe?
+
+I love to make smoothies.
+
+What is your favorite healthy recipe?
+
+I love to
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+13: Give three tips for staying healthy.
+
+1. Eat a healthy diet.
+
+2. Exercise regularly.
+
+3. Get enough sleep.
+
+What is your favorite healthy snack?
+
+I love to eat fresh fruit.
+
+What is your favorite healthy recipe?
+
+I love to make smoothies.
+
+What is your favorite healthy recipe?
+
+I love to make smoothies.
+
+What is your favorite healthy recipe?
+
+I love to
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+14: Give three tips for staying healthy.
+
+1. Eat a healthy diet.
+
+2. Exercise regularly.
+
+3. Get enough sleep.
+
+What is your favorite healthy snack?
+
+I love to eat fresh fruit.
+
+What is your favorite healthy recipe?
+
+I love to make smoothies.
+
+What is your favorite healthy recipe?
+
+I love to make smoothies.
+
+What is your favorite healthy recipe?
+
+I love to
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+15: Give three tips for staying healthy.
+
+1. Eat a healthy diet.
+
+2. Exercise regularly.
+
+3. Get enough sleep.
+
+What is your favorite healthy snack?
+
+I love to eat fresh fruit.
+
+What is your favorite healthy recipe?
+
+I love to make smoothies.
+
+What is your favorite healthy recipe?
+
+I love to make smoothies.
+
+What is your favorite healthy recipe?
+
+I love to
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+16: Give three tips for staying healthy.
+
+1. Eat a healthy diet.
+
+2. Exercise regularly.
+
+3. Get enough sleep.
+
+What is your favorite healthy snack?
+
+I love to eat fresh fruit.
+
+What is your favorite healthy recipe?
+
+I love to make smoothies.
+
+What is your favorite healthy recipe?
+
+I love to make smoothies.
+
+What is your favorite healthy recipe?
+
+I love to
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+17: Give three tips for staying healthy.
+
+1. Eat a healthy diet.
+
+2. Exercise regularly.
+
+3. Get enough sleep.
+
+What is your favorite healthy snack?
+
+I love to eat fresh fruit.
+
+What is your favorite healthy recipe?
+
+I love to make smoothies.
+
+What is your favorite healthy recipe?
+
+I love to make smoothies.
+
+What is your favorite healthy recipe?
+
+I love to
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+18: Give three tips for staying healthy.
+
+1. Eat a healthy diet.
+
+2. Exercise regularly.
+
+3. Get enough sleep.
+
+What is your favorite healthy snack?
+
+I love to eat fresh fruit.
+
+What is your favorite healthy recipe?
+
+I love to make smoothies.
+
+What is your favorite healthy recipe?
+
+I love to make smoothies.
+
+What is your favorite healthy recipe?
+
+I love to
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+19: Give three tips for staying healthy.
+
+1. Eat a healthy diet.
+
+2. Exercise regularly.
+
+3. Get enough sleep.
+
+What is your favorite healthy snack?
+
+I love to eat fresh fruit.
+
+What is your favorite healthy recipe?
+
+I love to make smoothies.
+
+What is your favorite healthy recipe?
+
+I love to make smoothies.
+
+What is your favorite healthy recipe?
+
+I love to
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+20: Give three tips for staying healthy.
+
+1. Eat a healthy diet.
+
+2. Exercise regularly.
+
+3. Get enough sleep.
+
+What is your favorite healthy snack?
+
+I love to eat fresh fruit.
+
+What is your favorite healthy recipe?
+
+I love to make smoothies.
+
+What is your favorite healthy recipe?
+
+I love to make smoothies.
+
+What is your favorite healthy recipe?
+
+I love to
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+21: Give three tips for staying healthy.
+
+1. Eat a healthy diet.
+
+2. Exercise regularly.
+
+3. Get enough sleep.
+
+What is your favorite healthy snack?
+
+I love to eat fresh fruit.
+
+What is your favorite healthy recipe?
+
+I love to make smoothies.
+
+What is your favorite healthy recipe?
+
+I love to make smoothies.
+
+What is your favorite healthy recipe?
+
+I love to
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+22: Give three tips for staying healthy.
+
+1. Eat a healthy diet.
+
+2. Exercise regularly.
+
+3. Get enough sleep.
+
+What is your favorite healthy snack?
+
+I love to eat fresh fruit.
+
+What is your favorite healthy recipe?
+
+I love to make smoothies.
+
+What is your favorite healthy recipe?
+
+I love to make smoothies.
+
+What is your favorite healthy recipe?
+
+I love to
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+23: Give three tips for staying healthy.
+
+1. Eat a healthy diet.
+
+2. Exercise regularly.
+
+3. Get enough sleep.
+
+What is your favorite healthy snack?
+
+I love to eat fresh fruit.
+
+What is your favorite healthy recipe?
+
+I love to make smoothies.
+
+What is your favorite healthy recipe?
+
+I love to make smoothies.
+
+What is your favorite healthy recipe?
+
+I love to
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+24: Give three tips for staying healthy.
+
+1. Eat a healthy diet.
+
+2. Exercise regularly.
+
+3. Get enough sleep.
+
+What is your favorite healthy snack?
+
+I love to eat fresh fruit.
+
+What is your favorite healthy recipe?
+
+I love to make smoothies.
+
+What is your favorite healthy recipe?
+
+I love to make smoothies.
+
+What is your favorite healthy recipe?
+
+I love to
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+25: Give three tips for staying healthy.
+
+1. Eat a healthy diet.
+
+2. Exercise regularly.
+
+3. Get enough sleep.
+
+What is your favorite healthy snack?
+
+I love to eat fresh fruit.
+
+What is your favorite healthy recipe?
+
+I love to make smoothies.
+
+What is your favorite healthy recipe?
+
+I love to make smoothies.
+
+What is your favorite healthy recipe?
+
+I love to
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+26: Give three tips for staying healthy.
+
+1. Eat a healthy diet.
+
+2. Exercise regularly.
+
+3. Get enough sleep.
+
+What is your favorite healthy snack?
+
+I love to eat fresh fruit.
+
+What is your favorite healthy recipe?
+
+I love to make smoothies.
+
+What is your favorite healthy recipe?
+
+I love to make smoothies.
+
+What is your favorite healthy recipe?
+
+I love to
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+27: Give three tips for staying healthy.
+
+1. Eat a healthy diet.
+
+2. Exercise regularly.
+
+3. Get enough sleep.
+
+What is your favorite healthy snack?
+
+I love to eat fresh fruit.
+
+What is your favorite healthy recipe?
+
+I love to make smoothies.
+
+What is your favorite healthy recipe?
+
+I love to make smoothies.
+
+What is your favorite healthy recipe?
+
+I love to
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+28: Give three tips for staying healthy.
+
+1. Eat a healthy diet.
+
+2. Exercise regularly.
+
+3. Get enough sleep.
+
+What is your favorite healthy snack?
+
+I love to eat fresh fruit.
+
+What is your favorite healthy recipe?
+
+I love to make smoothies.
+
+What is your favorite healthy recipe?
+
+I love to make smoothies.
+
+What is your favorite healthy recipe?
+
+I love to
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+29: Give three tips for staying healthy.
+
+1. Eat a healthy diet.
+
+2. Exercise regularly.
+
+3. Get enough sleep.
+
+What is your favorite healthy snack?
+
+I love to eat fresh fruit.
+
+What is your favorite healthy recipe?
+
+I love to make smoothies.
+
+What is your favorite healthy recipe?
+
+I love to make smoothies.
+
+What is your favorite healthy recipe?
+
+I love to
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+30: Give three tips for staying healthy.
+
+1. Eat a healthy diet.
+
+2. Exercise regularly.
+
+3. Get enough sleep.
+
+What is your favorite healthy snack?
+
+I love to eat fresh fruit.
+
+What is your favorite healthy recipe?
+
+I love to make smoothies.
+
+What is your favorite healthy recipe?
+
+I love to make smoothies.
+
+What is your favorite healthy recipe?
+
+I love to
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+31: Give three tips for staying healthy.
+
+1. Eat a healthy diet.
+
+2. Exercise regularly.
+
+3. Get enough sleep.
+
+What is your favorite healthy snack?
+
+I love to eat fresh fruit.
+
+What is your favorite healthy recipe?
+
+I love to make smoothies.
+
+What is your favorite healthy recipe?
+
+I love to make smoothies.
+
+What is your favorite healthy recipe?
+
+I love to
+----------------------------------------------------------------------
+
+TorchDevice: cuda:0
+  cur_mem: 0.0079 GB,  peak_mem: 2.9066 GB
+TorchDevice: cpu
+  cur_mem: 12.7859 GB,  peak_mem: 0.0000 GB
+model size: 12.386 GB	cache size: 2.000 GB	hidden size (p): 0.031 GB
+peak gpu mem: 2.907 GB	projected: False
+prefill latency: 0.552 s	prefill throughput: 2087.860 token/s
+decode latency: 49.686 s	decode throughput: 58.608 token/s
+total latency: 50.238 s	total throughput: 58.601 token/s
