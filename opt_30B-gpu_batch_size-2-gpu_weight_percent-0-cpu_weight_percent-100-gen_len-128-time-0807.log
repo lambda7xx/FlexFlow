@@ -2,20 +2,24 @@
   warnings.warn(
 /home/ubuntu/flexgen/flexgen/utils.py:132: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
   data_ptr = tensor.storage().data_ptr()
-batch_size: 1 args.overlap: True , args.cut_gen_len: 5
+batch_size: 2 args.overlap: True , args.cut_gen_len: 5
 <run_flexgen>: args.model: facebook/opt-30b
 gen_len:92 and cut_gen_len:5
-get_test_inputs, prompt_len:32 and batch_size:1
-prompts:['Give three tips for staying healthy.']
+get_test_inputs, prompt_len:32 and batch_size:2
+prompts:['Give three tips for staying healthy.', 'Give three tips for staying healthy.']
+len(prompt):36
 len(prompt):36
 input_prompt:36
-input_ids:[[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 31033, 130, 4965, 13, 4959, 2245, 4]]
-get_test_inputs, prompt_len:36 and batch_size:1
-prompts:['Give three tips for staying healthy.']
+input_prompt:36
+input_ids:[[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 31033, 130, 4965, 13, 4959, 2245, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 31033, 130, 4965, 13, 4959, 2245, 4]]
+get_test_inputs, prompt_len:36 and batch_size:2
+prompts:['Give three tips for staying healthy.', 'Give three tips for staying healthy.']
+len(prompt):36
 len(prompt):36
 input_prompt:36
-input_ids:[[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 31033, 130, 4965, 13, 4959, 2245, 4]]
-model size: 55.803 GB, cache size: 0.164 GB, hidden size (prefill): 0.002 GB
+input_prompt:36
+input_ids:[[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 31033, 130, 4965, 13, 4959, 2245, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 31033, 130, 4965, 13, 4959, 2245, 4]]
+model size: 55.803 GB, cache size: 0.328 GB, hidden size (prefill): 0.003 GB
 init weight...
 num_layers:98 and num_gpu_batches:1
 dtype:<class 'numpy.float16'>
@@ -68,19 +72,25 @@ dtype:<class 'numpy.float16'>
 dtype:<class 'numpy.float16'>
 warmup - generate
 benchmark - generate
-num_prompts:1 and gen_len:92 and decode_latency:376.8165823779891 
+num_prompts:2 and gen_len:92 and decode_latency:410.4233087789971 
 Outputs:
 ----------------------------------------------------------------------
 0: Give three tips for staying healthy.
 1. Eat healthy. 2. Exercise. 3. Don't be a dick.                                                                          
 ----------------------------------------------------------------------
 
+Outputs:
+----------------------------------------------------------------------
+1: Give three tips for staying healthy.
+1. Eat healthy. 2. Exercise. 3. Don't be a dick.                                                                          
+----------------------------------------------------------------------
+
 TorchDevice: cuda:0
-  cur_mem: 4.6329 GB,  peak_mem: 6.2453 GB
+  cur_mem: 0.0079 GB,  peak_mem: 1.7798 GB
 TorchDevice: cpu
-  cur_mem: 51.8782 GB,  peak_mem: 0.0000 GB
-model size: 55.803 GB	cache size: 0.164 GB	hidden size (p): 0.002 GB
-peak gpu mem: 6.245 GB	projected: False
-prefill latency: 4.142 s	prefill throughput: 8.692 token/s
-decode latency: 376.817 s	decode throughput: 0.241 token/s
-total latency: 380.958 s	total throughput: 0.241 token/s
+  cur_mem: 56.5031 GB,  peak_mem: 0.0000 GB
+model size: 55.803 GB	cache size: 0.328 GB	hidden size (p): 0.003 GB
+peak gpu mem: 1.780 GB	projected: False
+prefill latency: 4.514 s	prefill throughput: 15.951 token/s
+decode latency: 410.423 s	decode throughput: 0.443 token/s
+total latency: 414.937 s	total throughput: 0.443 token/s
