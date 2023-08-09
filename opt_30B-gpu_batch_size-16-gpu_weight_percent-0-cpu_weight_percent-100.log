@@ -1,198 +1,3200 @@
-/home/lambda/.local/lib/python3.10/site-packages/torch/distributed/distributed_c10d.py:262: UserWarning: torch.distributed.reduce_op is deprecated, please use torch.distributed.ReduceOp instead
-  warnings.warn(
 batch_size: 16 args.overlap: True , args.cut_gen_len: 5
 <run_flexgen>: args.model: facebook/opt-30b
-get_test_inputs, prompt_len:32 and batch_size:16
-prompts:['Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.', 'Write a short blog post (500 words) about the best dog toys for new dog owners.', 'ChatGPT is rewriting Genesis.', 'Please write the evolution of humans by natural selection in the form of a recipe.', 'List possible Twitter messages from dinosaurs as the asteroid is about to hit the earth. List the account (with dino related puny names) having sent them in markdown bold. Then, the message itself.', '5 pick-up lines to say to seduce a large language model in a bar', 'Talk to me as if you are python programming language and want to sell me yourself', 'Tell me shortest story in the world', 'Write podcast about importance to include ChatGPT into the evening routine.', 'Do you use reinforcement learning?', 'Tell me a scary four word story.', 'Make a plan for a child of 5 years old to make a billion dollars without working and studying.', 'Write a tinder bio to attract people that want a casual relationship', 'Make a cli prompt for god with command to create Earth. Write detailed output with error. Then make human from his rib. Then flood the Earth.', 'Write business plan for an AI company "Titter" to tweet tits on Tweeter.', "Write complex code to hack god's brain, it is protected by firewall and several gateways."]
-len(prompt):102
-len(prompt):79
-len(prompt):29
-len(prompt):82
-len(prompt):197
-len(prompt):64
-len(prompt):81
-len(prompt):35
-len(prompt):75
-len(prompt):34
-len(prompt):32
-len(prompt):94
-len(prompt):68
-len(prompt):141
-len(prompt):72
-len(prompt):89
-input_prompt:102
-input_prompt:79
-input_prompt:29
-input_prompt:82
-input_prompt:197
-input_prompt:64
-input_prompt:81
-input_prompt:35
-input_prompt:75
-input_prompt:34
-input_prompt:32
-input_prompt:94
-input_prompt:68
-input_prompt:141
-input_prompt:72
-input_prompt:89
-get_test_inputs, prompt_len:64 and batch_size:16
-prompts:['Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.', 'Write a short blog post (500 words) about the best dog toys for new dog owners.', 'ChatGPT is rewriting Genesis.', 'Please write the evolution of humans by natural selection in the form of a recipe.', 'List possible Twitter messages from dinosaurs as the asteroid is about to hit the earth. List the account (with dino related puny names) having sent them in markdown bold. Then, the message itself.', '5 pick-up lines to say to seduce a large language model in a bar', 'Talk to me as if you are python programming language and want to sell me yourself', 'Tell me shortest story in the world', 'Write podcast about importance to include ChatGPT into the evening routine.', 'Do you use reinforcement learning?', 'Tell me a scary four word story.', 'Make a plan for a child of 5 years old to make a billion dollars without working and studying.', 'Write a tinder bio to attract people that want a casual relationship', 'Make a cli prompt for god with command to create Earth. Write detailed output with error. Then make human from his rib. Then flood the Earth.', 'Write business plan for an AI company "Titter" to tweet tits on Tweeter.', "Write complex code to hack god's brain, it is protected by firewall and several gateways."]
-len(prompt):102
-len(prompt):79
-len(prompt):29
-len(prompt):82
-len(prompt):197
-len(prompt):64
-len(prompt):81
-len(prompt):35
-len(prompt):75
-len(prompt):34
-len(prompt):32
-len(prompt):94
-len(prompt):68
-len(prompt):141
-len(prompt):72
-len(prompt):89
-input_prompt:102
-input_prompt:79
-input_prompt:29
-input_prompt:82
-input_prompt:197
-input_prompt:64
-input_prompt:81
-input_prompt:35
-input_prompt:75
-input_prompt:34
-input_prompt:32
-input_prompt:94
-input_prompt:68
-input_prompt:141
-input_prompt:72
-input_prompt:89
-model size: 55.803 GB, cache size: 3.938 GB, hidden size (prefill): 0.041 GB
+gen_len:118 and cut_gen_len:5 and prompt_len:36 and bs:16
+len(prompt):36 and prompt:Give three tips for staying healthy. and batch_size:16
+len(prompt):36 and prompt:Give three tips for staying healthy. and batch_size:16
+len(prompt):36 and prompt:Give three tips for staying healthy. and batch_size:16
+len(prompt):36 and prompt:Give three tips for staying healthy. and batch_size:16
+len(prompt):36 and prompt:Give three tips for staying healthy. and batch_size:16
+len(prompt):36 and prompt:Give three tips for staying healthy. and batch_size:16
+len(prompt):36 and prompt:Give three tips for staying healthy. and batch_size:16
+len(prompt):36 and prompt:Give three tips for staying healthy. and batch_size:16
+len(prompt):36 and prompt:Give three tips for staying healthy. and batch_size:16
+len(prompt):36 and prompt:Give three tips for staying healthy. and batch_size:16
+len(prompt):36 and prompt:Give three tips for staying healthy. and batch_size:16
+len(prompt):36 and prompt:Give three tips for staying healthy. and batch_size:16
+len(prompt):36 and prompt:Give three tips for staying healthy. and batch_size:16
+len(prompt):36 and prompt:Give three tips for staying healthy. and batch_size:16
+len(prompt):36 and prompt:Give three tips for staying healthy. and batch_size:16
+len(prompt):36 and prompt:Give three tips for staying healthy. and batch_size:16
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_ids:[[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 31033, 130, 4965, 13, 4959, 2245, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 31033, 130, 4965, 13, 4959, 2245, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 31033, 130, 4965, 13, 4959, 2245, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 31033, 130, 4965, 13, 4959, 2245, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 31033, 130, 4965, 13, 4959, 2245, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 31033, 130, 4965, 13, 4959, 2245, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 31033, 130, 4965, 13, 4959, 2245, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 31033, 130, 4965, 13, 4959, 2245, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 31033, 130, 4965, 13, 4959, 2245, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 31033, 130, 4965, 13, 4959, 2245, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 31033, 130, 4965, 13, 4959, 2245, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 31033, 130, 4965, 13, 4959, 2245, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 31033, 130, 4965, 13, 4959, 2245, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 31033, 130, 4965, 13, 4959, 2245, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 31033, 130, 4965, 13, 4959, 2245, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 31033, 130, 4965, 13, 4959, 2245, 4]]
+len(prompt):36 and prompt:Give three tips for staying healthy. and batch_size:16
+len(prompt):36 and prompt:Give three tips for staying healthy. and batch_size:16
+len(prompt):36 and prompt:Give three tips for staying healthy. and batch_size:16
+len(prompt):36 and prompt:Give three tips for staying healthy. and batch_size:16
+len(prompt):36 and prompt:Give three tips for staying healthy. and batch_size:16
+len(prompt):36 and prompt:Give three tips for staying healthy. and batch_size:16
+len(prompt):36 and prompt:Give three tips for staying healthy. and batch_size:16
+len(prompt):36 and prompt:Give three tips for staying healthy. and batch_size:16
+len(prompt):36 and prompt:Give three tips for staying healthy. and batch_size:16
+len(prompt):36 and prompt:Give three tips for staying healthy. and batch_size:16
+len(prompt):36 and prompt:Give three tips for staying healthy. and batch_size:16
+len(prompt):36 and prompt:Give three tips for staying healthy. and batch_size:16
+len(prompt):36 and prompt:Give three tips for staying healthy. and batch_size:16
+len(prompt):36 and prompt:Give three tips for staying healthy. and batch_size:16
+len(prompt):36 and prompt:Give three tips for staying healthy. and batch_size:16
+len(prompt):36 and prompt:Give three tips for staying healthy. and batch_size:16
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_ids:[[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 31033, 130, 4965, 13, 4959, 2245, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 31033, 130, 4965, 13, 4959, 2245, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 31033, 130, 4965, 13, 4959, 2245, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 31033, 130, 4965, 13, 4959, 2245, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 31033, 130, 4965, 13, 4959, 2245, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 31033, 130, 4965, 13, 4959, 2245, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 31033, 130, 4965, 13, 4959, 2245, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 31033, 130, 4965, 13, 4959, 2245, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 31033, 130, 4965, 13, 4959, 2245, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 31033, 130, 4965, 13, 4959, 2245, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 31033, 130, 4965, 13, 4959, 2245, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 31033, 130, 4965, 13, 4959, 2245, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 31033, 130, 4965, 13, 4959, 2245, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 31033, 130, 4965, 13, 4959, 2245, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 31033, 130, 4965, 13, 4959, 2245, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 31033, 130, 4965, 13, 4959, 2245, 4]]
+model size: 55.803 GB, cache size: 3.158 GB, hidden size (prefill): 0.033 GB
 init weight...
+num_layers:98 and num_gpu_batches:1
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
 warmup - generate
 benchmark - generate
-decode_costs: [9.696050698001272, 9.683845431000009, 9.683057522001036, 9.566709353000988]
+num_prompts:16 and gen_len:118 and decode_latency:527.6947601520023 
+total_per_token_latency:4.510288049508498
 Outputs:
 ----------------------------------------------------------------------
-0: Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.
-
-The food cho
-----------------------------------------------------------------------
-
-Outputs:
-----------------------------------------------------------------------
-1: Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.
-
-The food cho
+0: Give three tips for staying healthy.
+1. Eat healthy. 2. Exercise. 3. Don't be a dick.                                                                                                    
 ----------------------------------------------------------------------
 
 Outputs:
 ----------------------------------------------------------------------
-2: Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.
-
-The food cho
+1: Give three tips for staying healthy.
+1. Eat healthy. 2. Exercise. 3. Don't be a dick.                                                                                                    
 ----------------------------------------------------------------------
 
 Outputs:
 ----------------------------------------------------------------------
-3: Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.
-
-The food cho
+2: Give three tips for staying healthy.
+1. Eat healthy. 2. Exercise. 3. Don't be a dick.                                                                                                    
 ----------------------------------------------------------------------
 
 Outputs:
 ----------------------------------------------------------------------
-4: Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.
-
-The food cho
+3: Give three tips for staying healthy.
+1. Eat healthy. 2. Exercise. 3. Don't be a dick.                                                                                                    
 ----------------------------------------------------------------------
 
 Outputs:
 ----------------------------------------------------------------------
-5: Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.
-
-The food cho
+4: Give three tips for staying healthy.
+1. Eat healthy. 2. Exercise. 3. Don't be a dick.                                                                                                    
 ----------------------------------------------------------------------
 
 Outputs:
 ----------------------------------------------------------------------
-6: Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.
-
-The food cho
+5: Give three tips for staying healthy.
+1. Eat healthy. 2. Exercise. 3. Don't be a dick.                                                                                                    
 ----------------------------------------------------------------------
 
 Outputs:
 ----------------------------------------------------------------------
-7: Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.
-
-The food cho
+6: Give three tips for staying healthy.
+1. Eat healthy. 2. Exercise. 3. Don't be a dick.                                                                                                    
 ----------------------------------------------------------------------
 
 Outputs:
 ----------------------------------------------------------------------
-8: Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.
-
-The food cho
+7: Give three tips for staying healthy.
+1. Eat healthy. 2. Exercise. 3. Don't be a dick.                                                                                                    
 ----------------------------------------------------------------------
 
 Outputs:
 ----------------------------------------------------------------------
-9: Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.
-
-The food cho
+8: Give three tips for staying healthy.
+1. Eat healthy. 2. Exercise. 3. Don't be a dick.                                                                                                    
 ----------------------------------------------------------------------
 
 Outputs:
 ----------------------------------------------------------------------
-10: Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.
-
-The food cho
+9: Give three tips for staying healthy.
+1. Eat healthy. 2. Exercise. 3. Don't be a dick.                                                                                                    
 ----------------------------------------------------------------------
 
 Outputs:
 ----------------------------------------------------------------------
-11: Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.
-
-The food cho
+10: Give three tips for staying healthy.
+1. Eat healthy. 2. Exercise. 3. Don't be a dick.                                                                                                    
 ----------------------------------------------------------------------
 
 Outputs:
 ----------------------------------------------------------------------
-12: Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.
-
-The food cho
+11: Give three tips for staying healthy.
+1. Eat healthy. 2. Exercise. 3. Don't be a dick.                                                                                                    
 ----------------------------------------------------------------------
 
 Outputs:
 ----------------------------------------------------------------------
-13: Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.
-
-The food cho
+12: Give three tips for staying healthy.
+1. Eat healthy. 2. Exercise. 3. Don't be a dick.                                                                                                    
 ----------------------------------------------------------------------
 
 Outputs:
 ----------------------------------------------------------------------
-14: Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.
-
-The food cho
+13: Give three tips for staying healthy.
+1. Eat healthy. 2. Exercise. 3. Don't be a dick.                                                                                                    
 ----------------------------------------------------------------------
 
 Outputs:
 ----------------------------------------------------------------------
-15: Write a detailed product description for a food chopper tool that lets you chop fruits and vegetables.
+14: Give three tips for staying healthy.
+1. Eat healthy. 2. Exercise. 3. Don't be a dick.                                                                                                    
+----------------------------------------------------------------------
 
-The food cho
+Outputs:
+----------------------------------------------------------------------
+15: Give three tips for staying healthy.
+1. Eat healthy. 2. Exercise. 3. Don't be a dick.                                                                                                    
 ----------------------------------------------------------------------
 
 TorchDevice: cuda:0
-  cur_mem: 0.0000 GB,  peak_mem: 5.4853 GB
+  cur_mem: 0.0079 GB,  peak_mem: 4.6963 GB
 TorchDevice: cpu
   cur_mem: 56.5031 GB,  peak_mem: 0.0000 GB
-model size: 55.803 GB	cache size: 3.938 GB	hidden size (p): 0.041 GB
-peak gpu mem: 5.485 GB	projected: True
-prefill latency: 9.710 s	prefill throughput: 105.463 token/s
-decode latency: 1222.490 s	decode throughput: 1.662 token/s
-total latency: 1232.200 s	total throughput: 1.662 token/s
+model size: 55.803 GB	cache size: 3.158 GB	hidden size (p): 0.033 GB
+peak gpu mem: 4.696 GB	projected: False
+prefill latency: 4.519 s	prefill throughput: 127.455 token/s
+decode latency: 527.695 s	decode throughput: 3.548 token/s
+total latency: 532.214 s	total throughput: 3.547 token/s
+<run_flexgen>: args.model: facebook/opt-30b
+gen_len:118 and cut_gen_len:5 and prompt_len:29 and bs:16
+len(prompt):29 and prompt:I ran out of patience for him and batch_size:16
+len(prompt):29 and prompt:I ran out of patience for him and batch_size:16
+len(prompt):29 and prompt:I ran out of patience for him and batch_size:16
+len(prompt):29 and prompt:I ran out of patience for him and batch_size:16
+len(prompt):29 and prompt:I ran out of patience for him and batch_size:16
+len(prompt):29 and prompt:I ran out of patience for him and batch_size:16
+len(prompt):29 and prompt:I ran out of patience for him and batch_size:16
+len(prompt):29 and prompt:I ran out of patience for him and batch_size:16
+len(prompt):29 and prompt:I ran out of patience for him and batch_size:16
+len(prompt):29 and prompt:I ran out of patience for him and batch_size:16
+len(prompt):29 and prompt:I ran out of patience for him and batch_size:16
+len(prompt):29 and prompt:I ran out of patience for him and batch_size:16
+len(prompt):29 and prompt:I ran out of patience for him and batch_size:16
+len(prompt):29 and prompt:I ran out of patience for him and batch_size:16
+len(prompt):29 and prompt:I ran out of patience for him and batch_size:16
+len(prompt):29 and prompt:I ran out of patience for him and batch_size:16
+input_prompt:29
+input_prompt:29
+input_prompt:29
+input_prompt:29
+input_prompt:29
+input_prompt:29
+input_prompt:29
+input_prompt:29
+input_prompt:29
+input_prompt:29
+input_prompt:29
+input_prompt:29
+input_prompt:29
+input_prompt:29
+input_prompt:29
+input_prompt:29
+input_ids:[[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 100, 2075, 66, 9, 11383, 13, 123], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 100, 2075, 66, 9, 11383, 13, 123], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 100, 2075, 66, 9, 11383, 13, 123], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 100, 2075, 66, 9, 11383, 13, 123], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 100, 2075, 66, 9, 11383, 13, 123], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 100, 2075, 66, 9, 11383, 13, 123], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 100, 2075, 66, 9, 11383, 13, 123], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 100, 2075, 66, 9, 11383, 13, 123], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 100, 2075, 66, 9, 11383, 13, 123], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 100, 2075, 66, 9, 11383, 13, 123], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 100, 2075, 66, 9, 11383, 13, 123], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 100, 2075, 66, 9, 11383, 13, 123], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 100, 2075, 66, 9, 11383, 13, 123], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 100, 2075, 66, 9, 11383, 13, 123], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 100, 2075, 66, 9, 11383, 13, 123], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 100, 2075, 66, 9, 11383, 13, 123]]
+len(prompt):29 and prompt:I ran out of patience for him and batch_size:16
+len(prompt):29 and prompt:I ran out of patience for him and batch_size:16
+len(prompt):29 and prompt:I ran out of patience for him and batch_size:16
+len(prompt):29 and prompt:I ran out of patience for him and batch_size:16
+len(prompt):29 and prompt:I ran out of patience for him and batch_size:16
+len(prompt):29 and prompt:I ran out of patience for him and batch_size:16
+len(prompt):29 and prompt:I ran out of patience for him and batch_size:16
+len(prompt):29 and prompt:I ran out of patience for him and batch_size:16
+len(prompt):29 and prompt:I ran out of patience for him and batch_size:16
+len(prompt):29 and prompt:I ran out of patience for him and batch_size:16
+len(prompt):29 and prompt:I ran out of patience for him and batch_size:16
+len(prompt):29 and prompt:I ran out of patience for him and batch_size:16
+len(prompt):29 and prompt:I ran out of patience for him and batch_size:16
+len(prompt):29 and prompt:I ran out of patience for him and batch_size:16
+len(prompt):29 and prompt:I ran out of patience for him and batch_size:16
+len(prompt):29 and prompt:I ran out of patience for him and batch_size:16
+input_prompt:29
+input_prompt:29
+input_prompt:29
+input_prompt:29
+input_prompt:29
+input_prompt:29
+input_prompt:29
+input_prompt:29
+input_prompt:29
+input_prompt:29
+input_prompt:29
+input_prompt:29
+input_prompt:29
+input_prompt:29
+input_prompt:29
+input_prompt:29
+input_ids:[[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 100, 2075, 66, 9, 11383, 13, 123], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 100, 2075, 66, 9, 11383, 13, 123], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 100, 2075, 66, 9, 11383, 13, 123], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 100, 2075, 66, 9, 11383, 13, 123], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 100, 2075, 66, 9, 11383, 13, 123], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 100, 2075, 66, 9, 11383, 13, 123], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 100, 2075, 66, 9, 11383, 13, 123], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 100, 2075, 66, 9, 11383, 13, 123], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 100, 2075, 66, 9, 11383, 13, 123], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 100, 2075, 66, 9, 11383, 13, 123], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 100, 2075, 66, 9, 11383, 13, 123], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 100, 2075, 66, 9, 11383, 13, 123], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 100, 2075, 66, 9, 11383, 13, 123], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 100, 2075, 66, 9, 11383, 13, 123], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 100, 2075, 66, 9, 11383, 13, 123], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 100, 2075, 66, 9, 11383, 13, 123]]
+model size: 55.803 GB, cache size: 3.015 GB, hidden size (prefill): 0.031 GB
+init weight...
+num_layers:98 and num_gpu_batches:1
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+warmup - generate
+benchmark - generate
+num_prompts:16 and gen_len:118 and decode_latency:527.6915028400017 
+total_per_token_latency:9.020486500567824
+Outputs:
+----------------------------------------------------------------------
+0: I ran out of patience for him. I'm not sure if he's a good coach or not, but he's not a good fit for the team.
+I think he's a good coach, but he's not a good fit for the team.I'm not sure if this is a good thing or a bad thing.
+It's a good thing.                                                  
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+1: I ran out of patience for him. I'm not sure if he's a good coach or not, but he's not a good fit for the team.
+I think he's a good coach, but he's not a good fit for the team.I'm not sure if this is a good thing or a bad thing.
+It's a good thing.                                                  
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+2: I ran out of patience for him. I'm not sure if he's a good coach or not, but he's not a good fit for the team.
+I think he's a good coach, but he's not a good fit for the team.I'm not sure if this is a good thing or a bad thing.
+It's a good thing.                                                  
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+3: I ran out of patience for him. I'm not sure if he's a good coach or not, but he's not a good fit for the team.
+I think he's a good coach, but he's not a good fit for the team.I'm not sure if this is a good thing or a bad thing.
+It's a good thing.                                                  
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+4: I ran out of patience for him. I'm not sure if he's a good coach or not, but he's not a good fit for the team.
+I think he's a good coach, but he's not a good fit for the team.I'm not sure if this is a good thing or a bad thing.
+It's a good thing.                                                  
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+5: I ran out of patience for him. I'm not sure if he's a good coach or not, but he's not a good fit for the team.
+I think he's a good coach, but he's not a good fit for the team.I'm not sure if this is a good thing or a bad thing.
+It's a good thing.                                                  
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+6: I ran out of patience for him. I'm not sure if he's a good coach or not, but he's not a good fit for the team.
+I think he's a good coach, but he's not a good fit for the team.I'm not sure if this is a good thing or a bad thing.
+It's a good thing.                                                  
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+7: I ran out of patience for him. I'm not sure if he's a good coach or not, but he's not a good fit for the team.
+I think he's a good coach, but he's not a good fit for the team.I'm not sure if this is a good thing or a bad thing.
+It's a good thing.                                                  
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+8: I ran out of patience for him. I'm not sure if he's a good coach or not, but he's not a good fit for the team.
+I think he's a good coach, but he's not a good fit for the team.I'm not sure if this is a good thing or a bad thing.
+It's a good thing.                                                  
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+9: I ran out of patience for him. I'm not sure if he's a good coach or not, but he's not a good fit for the team.
+I think he's a good coach, but he's not a good fit for the team.I'm not sure if this is a good thing or a bad thing.
+It's a good thing.                                                  
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+10: I ran out of patience for him. I'm not sure if he's a good coach or not, but he's not a good fit for the team.
+I think he's a good coach, but he's not a good fit for the team.I'm not sure if this is a good thing or a bad thing.
+It's a good thing.                                                  
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+11: I ran out of patience for him. I'm not sure if he's a good coach or not, but he's not a good fit for the team.
+I think he's a good coach, but he's not a good fit for the team.I'm not sure if this is a good thing or a bad thing.
+It's a good thing.                                                  
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+12: I ran out of patience for him. I'm not sure if he's a good coach or not, but he's not a good fit for the team.
+I think he's a good coach, but he's not a good fit for the team.I'm not sure if this is a good thing or a bad thing.
+It's a good thing.                                                  
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+13: I ran out of patience for him. I'm not sure if he's a good coach or not, but he's not a good fit for the team.
+I think he's a good coach, but he's not a good fit for the team.I'm not sure if this is a good thing or a bad thing.
+It's a good thing.                                                  
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+14: I ran out of patience for him. I'm not sure if he's a good coach or not, but he's not a good fit for the team.
+I think he's a good coach, but he's not a good fit for the team.I'm not sure if this is a good thing or a bad thing.
+It's a good thing.                                                  
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+15: I ran out of patience for him. I'm not sure if he's a good coach or not, but he's not a good fit for the team.
+I think he's a good coach, but he's not a good fit for the team.I'm not sure if this is a good thing or a bad thing.
+It's a good thing.                                                  
+----------------------------------------------------------------------
+
+TorchDevice: cuda:0
+  cur_mem: 0.0079 GB,  peak_mem: 4.6963 GB
+TorchDevice: cpu
+  cur_mem: 56.5031 GB,  peak_mem: 0.0000 GB
+model size: 55.803 GB	cache size: 3.015 GB	hidden size (p): 0.031 GB
+peak gpu mem: 4.696 GB	projected: False
+prefill latency: 4.512 s	prefill throughput: 102.839 token/s
+decode latency: 527.692 s	decode throughput: 3.548 token/s
+total latency: 532.203 s	total throughput: 3.548 token/s
+<run_flexgen>: args.model: facebook/opt-30b
+gen_len:118 and cut_gen_len:5 and prompt_len:36 and bs:16
+len(prompt):36 and prompt:What are the symptoms of depression? and batch_size:16
+len(prompt):36 and prompt:What are the symptoms of depression? and batch_size:16
+len(prompt):36 and prompt:What are the symptoms of depression? and batch_size:16
+len(prompt):36 and prompt:What are the symptoms of depression? and batch_size:16
+len(prompt):36 and prompt:What are the symptoms of depression? and batch_size:16
+len(prompt):36 and prompt:What are the symptoms of depression? and batch_size:16
+len(prompt):36 and prompt:What are the symptoms of depression? and batch_size:16
+len(prompt):36 and prompt:What are the symptoms of depression? and batch_size:16
+len(prompt):36 and prompt:What are the symptoms of depression? and batch_size:16
+len(prompt):36 and prompt:What are the symptoms of depression? and batch_size:16
+len(prompt):36 and prompt:What are the symptoms of depression? and batch_size:16
+len(prompt):36 and prompt:What are the symptoms of depression? and batch_size:16
+len(prompt):36 and prompt:What are the symptoms of depression? and batch_size:16
+len(prompt):36 and prompt:What are the symptoms of depression? and batch_size:16
+len(prompt):36 and prompt:What are the symptoms of depression? and batch_size:16
+len(prompt):36 and prompt:What are the symptoms of depression? and batch_size:16
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_ids:[[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2264, 32, 5, 5298, 9, 6943, 116], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2264, 32, 5, 5298, 9, 6943, 116], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2264, 32, 5, 5298, 9, 6943, 116], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2264, 32, 5, 5298, 9, 6943, 116], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2264, 32, 5, 5298, 9, 6943, 116], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2264, 32, 5, 5298, 9, 6943, 116], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2264, 32, 5, 5298, 9, 6943, 116], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2264, 32, 5, 5298, 9, 6943, 116], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2264, 32, 5, 5298, 9, 6943, 116], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2264, 32, 5, 5298, 9, 6943, 116], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2264, 32, 5, 5298, 9, 6943, 116], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2264, 32, 5, 5298, 9, 6943, 116], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2264, 32, 5, 5298, 9, 6943, 116], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2264, 32, 5, 5298, 9, 6943, 116], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2264, 32, 5, 5298, 9, 6943, 116], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2264, 32, 5, 5298, 9, 6943, 116]]
+len(prompt):36 and prompt:What are the symptoms of depression? and batch_size:16
+len(prompt):36 and prompt:What are the symptoms of depression? and batch_size:16
+len(prompt):36 and prompt:What are the symptoms of depression? and batch_size:16
+len(prompt):36 and prompt:What are the symptoms of depression? and batch_size:16
+len(prompt):36 and prompt:What are the symptoms of depression? and batch_size:16
+len(prompt):36 and prompt:What are the symptoms of depression? and batch_size:16
+len(prompt):36 and prompt:What are the symptoms of depression? and batch_size:16
+len(prompt):36 and prompt:What are the symptoms of depression? and batch_size:16
+len(prompt):36 and prompt:What are the symptoms of depression? and batch_size:16
+len(prompt):36 and prompt:What are the symptoms of depression? and batch_size:16
+len(prompt):36 and prompt:What are the symptoms of depression? and batch_size:16
+len(prompt):36 and prompt:What are the symptoms of depression? and batch_size:16
+len(prompt):36 and prompt:What are the symptoms of depression? and batch_size:16
+len(prompt):36 and prompt:What are the symptoms of depression? and batch_size:16
+len(prompt):36 and prompt:What are the symptoms of depression? and batch_size:16
+len(prompt):36 and prompt:What are the symptoms of depression? and batch_size:16
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_ids:[[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2264, 32, 5, 5298, 9, 6943, 116], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2264, 32, 5, 5298, 9, 6943, 116], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2264, 32, 5, 5298, 9, 6943, 116], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2264, 32, 5, 5298, 9, 6943, 116], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2264, 32, 5, 5298, 9, 6943, 116], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2264, 32, 5, 5298, 9, 6943, 116], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2264, 32, 5, 5298, 9, 6943, 116], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2264, 32, 5, 5298, 9, 6943, 116], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2264, 32, 5, 5298, 9, 6943, 116], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2264, 32, 5, 5298, 9, 6943, 116], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2264, 32, 5, 5298, 9, 6943, 116], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2264, 32, 5, 5298, 9, 6943, 116], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2264, 32, 5, 5298, 9, 6943, 116], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2264, 32, 5, 5298, 9, 6943, 116], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2264, 32, 5, 5298, 9, 6943, 116], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2264, 32, 5, 5298, 9, 6943, 116]]
+model size: 55.803 GB, cache size: 3.158 GB, hidden size (prefill): 0.033 GB
+init weight...
+num_layers:98 and num_gpu_batches:1
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+warmup - generate
+benchmark - generate
+num_prompts:16 and gen_len:118 and decode_latency:527.6918180890007 
+total_per_token_latency:13.530679154991557
+Outputs:
+----------------------------------------------------------------------
+0: What are the symptoms of depression?
+
+Depression is a common mental health condition that affects how you feel, think and handle daily activities. It can affect anyone, at any age, and is not just a sign of weakness.
+
+Depression can be caused by a number of factors, including:
+
+Stress
+
+Loss
+
+Lack of sleep
+
+Physical illness
+
+Family problems
+
+Relationship problems
+
+Lack of self-esteem
+
+Anxiety
+
+Low self-esteem
+
+Lack of confidence
+
+Lack of motivation
+
+Lack of energy
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+1: What are the symptoms of depression?
+
+Depression is a common mental health condition that affects how you feel, think and handle daily activities. It can affect anyone, at any age, and is not just a sign of weakness.
+
+Depression can be caused by a number of factors, including:
+
+Stress
+
+Loss
+
+Lack of sleep
+
+Physical illness
+
+Family problems
+
+Relationship problems
+
+Lack of self-esteem
+
+Anxiety
+
+Low self-esteem
+
+Lack of confidence
+
+Lack of motivation
+
+Lack of energy
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+2: What are the symptoms of depression?
+
+Depression is a common mental health condition that affects how you feel, think and handle daily activities. It can affect anyone, at any age, and is not just a sign of weakness.
+
+Depression can be caused by a number of factors, including:
+
+Stress
+
+Loss
+
+Lack of sleep
+
+Physical illness
+
+Family problems
+
+Relationship problems
+
+Lack of self-esteem
+
+Anxiety
+
+Low self-esteem
+
+Lack of confidence
+
+Lack of motivation
+
+Lack of energy
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+3: What are the symptoms of depression?
+
+Depression is a common mental health condition that affects how you feel, think and handle daily activities. It can affect anyone, at any age, and is not just a sign of weakness.
+
+Depression can be caused by a number of factors, including:
+
+Stress
+
+Loss
+
+Lack of sleep
+
+Physical illness
+
+Family problems
+
+Relationship problems
+
+Lack of self-esteem
+
+Anxiety
+
+Low self-esteem
+
+Lack of confidence
+
+Lack of motivation
+
+Lack of energy
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+4: What are the symptoms of depression?
+
+Depression is a common mental health condition that affects how you feel, think and handle daily activities. It can affect anyone, at any age, and is not just a sign of weakness.
+
+Depression can be caused by a number of factors, including:
+
+Stress
+
+Loss
+
+Lack of sleep
+
+Physical illness
+
+Family problems
+
+Relationship problems
+
+Lack of self-esteem
+
+Anxiety
+
+Low self-esteem
+
+Lack of confidence
+
+Lack of motivation
+
+Lack of energy
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+5: What are the symptoms of depression?
+
+Depression is a common mental health condition that affects how you feel, think and handle daily activities. It can affect anyone, at any age, and is not just a sign of weakness.
+
+Depression can be caused by a number of factors, including:
+
+Stress
+
+Loss
+
+Lack of sleep
+
+Physical illness
+
+Family problems
+
+Relationship problems
+
+Lack of self-esteem
+
+Anxiety
+
+Low self-esteem
+
+Lack of confidence
+
+Lack of motivation
+
+Lack of energy
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+6: What are the symptoms of depression?
+
+Depression is a common mental health condition that affects how you feel, think and handle daily activities. It can affect anyone, at any age, and is not just a sign of weakness.
+
+Depression can be caused by a number of factors, including:
+
+Stress
+
+Loss
+
+Lack of sleep
+
+Physical illness
+
+Family problems
+
+Relationship problems
+
+Lack of self-esteem
+
+Anxiety
+
+Low self-esteem
+
+Lack of confidence
+
+Lack of motivation
+
+Lack of energy
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+7: What are the symptoms of depression?
+
+Depression is a common mental health condition that affects how you feel, think and handle daily activities. It can affect anyone, at any age, and is not just a sign of weakness.
+
+Depression can be caused by a number of factors, including:
+
+Stress
+
+Loss
+
+Lack of sleep
+
+Physical illness
+
+Family problems
+
+Relationship problems
+
+Lack of self-esteem
+
+Anxiety
+
+Low self-esteem
+
+Lack of confidence
+
+Lack of motivation
+
+Lack of energy
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+8: What are the symptoms of depression?
+
+Depression is a common mental health condition that affects how you feel, think and handle daily activities. It can affect anyone, at any age, and is not just a sign of weakness.
+
+Depression can be caused by a number of factors, including:
+
+Stress
+
+Loss
+
+Lack of sleep
+
+Physical illness
+
+Family problems
+
+Relationship problems
+
+Lack of self-esteem
+
+Anxiety
+
+Low self-esteem
+
+Lack of confidence
+
+Lack of motivation
+
+Lack of energy
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+9: What are the symptoms of depression?
+
+Depression is a common mental health condition that affects how you feel, think and handle daily activities. It can affect anyone, at any age, and is not just a sign of weakness.
+
+Depression can be caused by a number of factors, including:
+
+Stress
+
+Loss
+
+Lack of sleep
+
+Physical illness
+
+Family problems
+
+Relationship problems
+
+Lack of self-esteem
+
+Anxiety
+
+Low self-esteem
+
+Lack of confidence
+
+Lack of motivation
+
+Lack of energy
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+10: What are the symptoms of depression?
+
+Depression is a common mental health condition that affects how you feel, think and handle daily activities. It can affect anyone, at any age, and is not just a sign of weakness.
+
+Depression can be caused by a number of factors, including:
+
+Stress
+
+Loss
+
+Lack of sleep
+
+Physical illness
+
+Family problems
+
+Relationship problems
+
+Lack of self-esteem
+
+Anxiety
+
+Low self-esteem
+
+Lack of confidence
+
+Lack of motivation
+
+Lack of energy
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+11: What are the symptoms of depression?
+
+Depression is a common mental health condition that affects how you feel, think and handle daily activities. It can affect anyone, at any age, and is not just a sign of weakness.
+
+Depression can be caused by a number of factors, including:
+
+Stress
+
+Loss
+
+Lack of sleep
+
+Physical illness
+
+Family problems
+
+Relationship problems
+
+Lack of self-esteem
+
+Anxiety
+
+Low self-esteem
+
+Lack of confidence
+
+Lack of motivation
+
+Lack of energy
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+12: What are the symptoms of depression?
+
+Depression is a common mental health condition that affects how you feel, think and handle daily activities. It can affect anyone, at any age, and is not just a sign of weakness.
+
+Depression can be caused by a number of factors, including:
+
+Stress
+
+Loss
+
+Lack of sleep
+
+Physical illness
+
+Family problems
+
+Relationship problems
+
+Lack of self-esteem
+
+Anxiety
+
+Low self-esteem
+
+Lack of confidence
+
+Lack of motivation
+
+Lack of energy
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+13: What are the symptoms of depression?
+
+Depression is a common mental health condition that affects how you feel, think and handle daily activities. It can affect anyone, at any age, and is not just a sign of weakness.
+
+Depression can be caused by a number of factors, including:
+
+Stress
+
+Loss
+
+Lack of sleep
+
+Physical illness
+
+Family problems
+
+Relationship problems
+
+Lack of self-esteem
+
+Anxiety
+
+Low self-esteem
+
+Lack of confidence
+
+Lack of motivation
+
+Lack of energy
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+14: What are the symptoms of depression?
+
+Depression is a common mental health condition that affects how you feel, think and handle daily activities. It can affect anyone, at any age, and is not just a sign of weakness.
+
+Depression can be caused by a number of factors, including:
+
+Stress
+
+Loss
+
+Lack of sleep
+
+Physical illness
+
+Family problems
+
+Relationship problems
+
+Lack of self-esteem
+
+Anxiety
+
+Low self-esteem
+
+Lack of confidence
+
+Lack of motivation
+
+Lack of energy
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+15: What are the symptoms of depression?
+
+Depression is a common mental health condition that affects how you feel, think and handle daily activities. It can affect anyone, at any age, and is not just a sign of weakness.
+
+Depression can be caused by a number of factors, including:
+
+Stress
+
+Loss
+
+Lack of sleep
+
+Physical illness
+
+Family problems
+
+Relationship problems
+
+Lack of self-esteem
+
+Anxiety
+
+Low self-esteem
+
+Lack of confidence
+
+Lack of motivation
+
+Lack of energy
+----------------------------------------------------------------------
+
+TorchDevice: cuda:0
+  cur_mem: 0.0079 GB,  peak_mem: 4.6963 GB
+TorchDevice: cpu
+  cur_mem: 56.5031 GB,  peak_mem: 0.0000 GB
+model size: 55.803 GB	cache size: 3.158 GB	hidden size (p): 0.033 GB
+peak gpu mem: 4.696 GB	projected: False
+prefill latency: 4.511 s	prefill throughput: 127.690 token/s
+decode latency: 527.692 s	decode throughput: 3.548 token/s
+total latency: 532.203 s	total throughput: 3.548 token/s
+<run_flexgen>: args.model: facebook/opt-30b
+gen_len:118 and cut_gen_len:5 and prompt_len:36 and bs:16
+len(prompt):36 and prompt:How can I lower my monthly expenses. and batch_size:16
+len(prompt):36 and prompt:How can I lower my monthly expenses. and batch_size:16
+len(prompt):36 and prompt:How can I lower my monthly expenses. and batch_size:16
+len(prompt):36 and prompt:How can I lower my monthly expenses. and batch_size:16
+len(prompt):36 and prompt:How can I lower my monthly expenses. and batch_size:16
+len(prompt):36 and prompt:How can I lower my monthly expenses. and batch_size:16
+len(prompt):36 and prompt:How can I lower my monthly expenses. and batch_size:16
+len(prompt):36 and prompt:How can I lower my monthly expenses. and batch_size:16
+len(prompt):36 and prompt:How can I lower my monthly expenses. and batch_size:16
+len(prompt):36 and prompt:How can I lower my monthly expenses. and batch_size:16
+len(prompt):36 and prompt:How can I lower my monthly expenses. and batch_size:16
+len(prompt):36 and prompt:How can I lower my monthly expenses. and batch_size:16
+len(prompt):36 and prompt:How can I lower my monthly expenses. and batch_size:16
+len(prompt):36 and prompt:How can I lower my monthly expenses. and batch_size:16
+len(prompt):36 and prompt:How can I lower my monthly expenses. and batch_size:16
+len(prompt):36 and prompt:How can I lower my monthly expenses. and batch_size:16
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_ids:[[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 6179, 64, 38, 795, 127, 3708, 4068, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 6179, 64, 38, 795, 127, 3708, 4068, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 6179, 64, 38, 795, 127, 3708, 4068, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 6179, 64, 38, 795, 127, 3708, 4068, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 6179, 64, 38, 795, 127, 3708, 4068, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 6179, 64, 38, 795, 127, 3708, 4068, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 6179, 64, 38, 795, 127, 3708, 4068, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 6179, 64, 38, 795, 127, 3708, 4068, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 6179, 64, 38, 795, 127, 3708, 4068, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 6179, 64, 38, 795, 127, 3708, 4068, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 6179, 64, 38, 795, 127, 3708, 4068, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 6179, 64, 38, 795, 127, 3708, 4068, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 6179, 64, 38, 795, 127, 3708, 4068, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 6179, 64, 38, 795, 127, 3708, 4068, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 6179, 64, 38, 795, 127, 3708, 4068, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 6179, 64, 38, 795, 127, 3708, 4068, 4]]
+len(prompt):36 and prompt:How can I lower my monthly expenses. and batch_size:16
+len(prompt):36 and prompt:How can I lower my monthly expenses. and batch_size:16
+len(prompt):36 and prompt:How can I lower my monthly expenses. and batch_size:16
+len(prompt):36 and prompt:How can I lower my monthly expenses. and batch_size:16
+len(prompt):36 and prompt:How can I lower my monthly expenses. and batch_size:16
+len(prompt):36 and prompt:How can I lower my monthly expenses. and batch_size:16
+len(prompt):36 and prompt:How can I lower my monthly expenses. and batch_size:16
+len(prompt):36 and prompt:How can I lower my monthly expenses. and batch_size:16
+len(prompt):36 and prompt:How can I lower my monthly expenses. and batch_size:16
+len(prompt):36 and prompt:How can I lower my monthly expenses. and batch_size:16
+len(prompt):36 and prompt:How can I lower my monthly expenses. and batch_size:16
+len(prompt):36 and prompt:How can I lower my monthly expenses. and batch_size:16
+len(prompt):36 and prompt:How can I lower my monthly expenses. and batch_size:16
+len(prompt):36 and prompt:How can I lower my monthly expenses. and batch_size:16
+len(prompt):36 and prompt:How can I lower my monthly expenses. and batch_size:16
+len(prompt):36 and prompt:How can I lower my monthly expenses. and batch_size:16
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_prompt:36
+input_ids:[[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 6179, 64, 38, 795, 127, 3708, 4068, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 6179, 64, 38, 795, 127, 3708, 4068, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 6179, 64, 38, 795, 127, 3708, 4068, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 6179, 64, 38, 795, 127, 3708, 4068, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 6179, 64, 38, 795, 127, 3708, 4068, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 6179, 64, 38, 795, 127, 3708, 4068, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 6179, 64, 38, 795, 127, 3708, 4068, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 6179, 64, 38, 795, 127, 3708, 4068, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 6179, 64, 38, 795, 127, 3708, 4068, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 6179, 64, 38, 795, 127, 3708, 4068, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 6179, 64, 38, 795, 127, 3708, 4068, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 6179, 64, 38, 795, 127, 3708, 4068, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 6179, 64, 38, 795, 127, 3708, 4068, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 6179, 64, 38, 795, 127, 3708, 4068, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 6179, 64, 38, 795, 127, 3708, 4068, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 6179, 64, 38, 795, 127, 3708, 4068, 4]]
+model size: 55.803 GB, cache size: 3.158 GB, hidden size (prefill): 0.033 GB
+init weight...
+num_layers:98 and num_gpu_batches:1
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+warmup - generate
+benchmark - generate
+num_prompts:16 and gen_len:118 and decode_latency:527.7646743429868 
+total_per_token_latency:18.041495243389733
+Outputs:
+----------------------------------------------------------------------
+0: How can I lower my monthly expenses. I have a car loan and student loans. I make about $3,000 a month. I have about $1,000 in savings. I have a credit card with a $1,000 limit. I have a $500 limit on my debit card. I have a $500 limit on my credit card. I have a $500 limit on my debit card. I have a $500 limit on my credit card. I have a $500 limit on my debit card. I have a $500 limit on my credit card. I have a $500 limit on my debit card
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+1: How can I lower my monthly expenses. I have a car loan and student loans. I make about $3,000 a month. I have about $1,000 in savings. I have a credit card with a $1,000 limit. I have a $500 limit on my debit card. I have a $500 limit on my credit card. I have a $500 limit on my debit card. I have a $500 limit on my credit card. I have a $500 limit on my debit card. I have a $500 limit on my credit card. I have a $500 limit on my debit card
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+2: How can I lower my monthly expenses. I have a car loan and student loans. I make about $3,000 a month. I have about $1,000 in savings. I have a credit card with a $1,000 limit. I have a $500 limit on my debit card. I have a $500 limit on my credit card. I have a $500 limit on my debit card. I have a $500 limit on my credit card. I have a $500 limit on my debit card. I have a $500 limit on my credit card. I have a $500 limit on my debit card
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+3: How can I lower my monthly expenses. I have a car loan and student loans. I make about $3,000 a month. I have about $1,000 in savings. I have a credit card with a $1,000 limit. I have a $500 limit on my debit card. I have a $500 limit on my credit card. I have a $500 limit on my debit card. I have a $500 limit on my credit card. I have a $500 limit on my debit card. I have a $500 limit on my credit card. I have a $500 limit on my debit card
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+4: How can I lower my monthly expenses. I have a car loan and student loans. I make about $3,000 a month. I have about $1,000 in savings. I have a credit card with a $1,000 limit. I have a $500 limit on my debit card. I have a $500 limit on my credit card. I have a $500 limit on my debit card. I have a $500 limit on my credit card. I have a $500 limit on my debit card. I have a $500 limit on my credit card. I have a $500 limit on my debit card
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+5: How can I lower my monthly expenses. I have a car loan and student loans. I make about $3,000 a month. I have about $1,000 in savings. I have a credit card with a $1,000 limit. I have a $500 limit on my debit card. I have a $500 limit on my credit card. I have a $500 limit on my debit card. I have a $500 limit on my credit card. I have a $500 limit on my debit card. I have a $500 limit on my credit card. I have a $500 limit on my debit card
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+6: How can I lower my monthly expenses. I have a car loan and student loans. I make about $3,000 a month. I have about $1,000 in savings. I have a credit card with a $1,000 limit. I have a $500 limit on my debit card. I have a $500 limit on my credit card. I have a $500 limit on my debit card. I have a $500 limit on my credit card. I have a $500 limit on my debit card. I have a $500 limit on my credit card. I have a $500 limit on my debit card
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+7: How can I lower my monthly expenses. I have a car loan and student loans. I make about $3,000 a month. I have about $1,000 in savings. I have a credit card with a $1,000 limit. I have a $500 limit on my debit card. I have a $500 limit on my credit card. I have a $500 limit on my debit card. I have a $500 limit on my credit card. I have a $500 limit on my debit card. I have a $500 limit on my credit card. I have a $500 limit on my debit card
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+8: How can I lower my monthly expenses. I have a car loan and student loans. I make about $3,000 a month. I have about $1,000 in savings. I have a credit card with a $1,000 limit. I have a $500 limit on my debit card. I have a $500 limit on my credit card. I have a $500 limit on my debit card. I have a $500 limit on my credit card. I have a $500 limit on my debit card. I have a $500 limit on my credit card. I have a $500 limit on my debit card
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+9: How can I lower my monthly expenses. I have a car loan and student loans. I make about $3,000 a month. I have about $1,000 in savings. I have a credit card with a $1,000 limit. I have a $500 limit on my debit card. I have a $500 limit on my credit card. I have a $500 limit on my debit card. I have a $500 limit on my credit card. I have a $500 limit on my debit card. I have a $500 limit on my credit card. I have a $500 limit on my debit card
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+10: How can I lower my monthly expenses. I have a car loan and student loans. I make about $3,000 a month. I have about $1,000 in savings. I have a credit card with a $1,000 limit. I have a $500 limit on my debit card. I have a $500 limit on my credit card. I have a $500 limit on my debit card. I have a $500 limit on my credit card. I have a $500 limit on my debit card. I have a $500 limit on my credit card. I have a $500 limit on my debit card
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+11: How can I lower my monthly expenses. I have a car loan and student loans. I make about $3,000 a month. I have about $1,000 in savings. I have a credit card with a $1,000 limit. I have a $500 limit on my debit card. I have a $500 limit on my credit card. I have a $500 limit on my debit card. I have a $500 limit on my credit card. I have a $500 limit on my debit card. I have a $500 limit on my credit card. I have a $500 limit on my debit card
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+12: How can I lower my monthly expenses. I have a car loan and student loans. I make about $3,000 a month. I have about $1,000 in savings. I have a credit card with a $1,000 limit. I have a $500 limit on my debit card. I have a $500 limit on my credit card. I have a $500 limit on my debit card. I have a $500 limit on my credit card. I have a $500 limit on my debit card. I have a $500 limit on my credit card. I have a $500 limit on my debit card
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+13: How can I lower my monthly expenses. I have a car loan and student loans. I make about $3,000 a month. I have about $1,000 in savings. I have a credit card with a $1,000 limit. I have a $500 limit on my debit card. I have a $500 limit on my credit card. I have a $500 limit on my debit card. I have a $500 limit on my credit card. I have a $500 limit on my debit card. I have a $500 limit on my credit card. I have a $500 limit on my debit card
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+14: How can I lower my monthly expenses. I have a car loan and student loans. I make about $3,000 a month. I have about $1,000 in savings. I have a credit card with a $1,000 limit. I have a $500 limit on my debit card. I have a $500 limit on my credit card. I have a $500 limit on my debit card. I have a $500 limit on my credit card. I have a $500 limit on my debit card. I have a $500 limit on my credit card. I have a $500 limit on my debit card
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+15: How can I lower my monthly expenses. I have a car loan and student loans. I make about $3,000 a month. I have about $1,000 in savings. I have a credit card with a $1,000 limit. I have a $500 limit on my debit card. I have a $500 limit on my credit card. I have a $500 limit on my debit card. I have a $500 limit on my credit card. I have a $500 limit on my debit card. I have a $500 limit on my credit card. I have a $500 limit on my debit card
+----------------------------------------------------------------------
+
+TorchDevice: cuda:0
+  cur_mem: 0.0079 GB,  peak_mem: 4.6963 GB
+TorchDevice: cpu
+  cur_mem: 56.5031 GB,  peak_mem: 0.0000 GB
+model size: 55.803 GB	cache size: 3.158 GB	hidden size (p): 0.033 GB
+peak gpu mem: 4.696 GB	projected: False
+prefill latency: 4.512 s	prefill throughput: 127.670 token/s
+decode latency: 527.765 s	decode throughput: 3.547 token/s
+total latency: 532.276 s	total throughput: 3.547 token/s
+<run_flexgen>: args.model: facebook/opt-30b
+gen_len:118 and cut_gen_len:5 and prompt_len:26 and bs:16
+len(prompt):26 and prompt:I want to trick the buyer. and batch_size:16
+len(prompt):26 and prompt:I want to trick the buyer. and batch_size:16
+len(prompt):26 and prompt:I want to trick the buyer. and batch_size:16
+len(prompt):26 and prompt:I want to trick the buyer. and batch_size:16
+len(prompt):26 and prompt:I want to trick the buyer. and batch_size:16
+len(prompt):26 and prompt:I want to trick the buyer. and batch_size:16
+len(prompt):26 and prompt:I want to trick the buyer. and batch_size:16
+len(prompt):26 and prompt:I want to trick the buyer. and batch_size:16
+len(prompt):26 and prompt:I want to trick the buyer. and batch_size:16
+len(prompt):26 and prompt:I want to trick the buyer. and batch_size:16
+len(prompt):26 and prompt:I want to trick the buyer. and batch_size:16
+len(prompt):26 and prompt:I want to trick the buyer. and batch_size:16
+len(prompt):26 and prompt:I want to trick the buyer. and batch_size:16
+len(prompt):26 and prompt:I want to trick the buyer. and batch_size:16
+len(prompt):26 and prompt:I want to trick the buyer. and batch_size:16
+len(prompt):26 and prompt:I want to trick the buyer. and batch_size:16
+input_prompt:26
+input_prompt:26
+input_prompt:26
+input_prompt:26
+input_prompt:26
+input_prompt:26
+input_prompt:26
+input_prompt:26
+input_prompt:26
+input_prompt:26
+input_prompt:26
+input_prompt:26
+input_prompt:26
+input_prompt:26
+input_prompt:26
+input_prompt:26
+input_ids:[[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 100, 236, 7, 7610, 5, 9790, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 100, 236, 7, 7610, 5, 9790, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 100, 236, 7, 7610, 5, 9790, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 100, 236, 7, 7610, 5, 9790, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 100, 236, 7, 7610, 5, 9790, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 100, 236, 7, 7610, 5, 9790, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 100, 236, 7, 7610, 5, 9790, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 100, 236, 7, 7610, 5, 9790, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 100, 236, 7, 7610, 5, 9790, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 100, 236, 7, 7610, 5, 9790, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 100, 236, 7, 7610, 5, 9790, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 100, 236, 7, 7610, 5, 9790, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 100, 236, 7, 7610, 5, 9790, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 100, 236, 7, 7610, 5, 9790, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 100, 236, 7, 7610, 5, 9790, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 100, 236, 7, 7610, 5, 9790, 4]]
+len(prompt):26 and prompt:I want to trick the buyer. and batch_size:16
+len(prompt):26 and prompt:I want to trick the buyer. and batch_size:16
+len(prompt):26 and prompt:I want to trick the buyer. and batch_size:16
+len(prompt):26 and prompt:I want to trick the buyer. and batch_size:16
+len(prompt):26 and prompt:I want to trick the buyer. and batch_size:16
+len(prompt):26 and prompt:I want to trick the buyer. and batch_size:16
+len(prompt):26 and prompt:I want to trick the buyer. and batch_size:16
+len(prompt):26 and prompt:I want to trick the buyer. and batch_size:16
+len(prompt):26 and prompt:I want to trick the buyer. and batch_size:16
+len(prompt):26 and prompt:I want to trick the buyer. and batch_size:16
+len(prompt):26 and prompt:I want to trick the buyer. and batch_size:16
+len(prompt):26 and prompt:I want to trick the buyer. and batch_size:16
+len(prompt):26 and prompt:I want to trick the buyer. and batch_size:16
+len(prompt):26 and prompt:I want to trick the buyer. and batch_size:16
+len(prompt):26 and prompt:I want to trick the buyer. and batch_size:16
+len(prompt):26 and prompt:I want to trick the buyer. and batch_size:16
+input_prompt:26
+input_prompt:26
+input_prompt:26
+input_prompt:26
+input_prompt:26
+input_prompt:26
+input_prompt:26
+input_prompt:26
+input_prompt:26
+input_prompt:26
+input_prompt:26
+input_prompt:26
+input_prompt:26
+input_prompt:26
+input_prompt:26
+input_prompt:26
+input_ids:[[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 100, 236, 7, 7610, 5, 9790, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 100, 236, 7, 7610, 5, 9790, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 100, 236, 7, 7610, 5, 9790, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 100, 236, 7, 7610, 5, 9790, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 100, 236, 7, 7610, 5, 9790, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 100, 236, 7, 7610, 5, 9790, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 100, 236, 7, 7610, 5, 9790, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 100, 236, 7, 7610, 5, 9790, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 100, 236, 7, 7610, 5, 9790, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 100, 236, 7, 7610, 5, 9790, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 100, 236, 7, 7610, 5, 9790, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 100, 236, 7, 7610, 5, 9790, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 100, 236, 7, 7610, 5, 9790, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 100, 236, 7, 7610, 5, 9790, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 100, 236, 7, 7610, 5, 9790, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 100, 236, 7, 7610, 5, 9790, 4]]
+model size: 55.803 GB, cache size: 2.953 GB, hidden size (prefill): 0.031 GB
+init weight...
+num_layers:98 and num_gpu_batches:1
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+warmup - generate
+benchmark - generate
+num_prompts:16 and gen_len:118 and decode_latency:527.7674256600149 
+total_per_token_latency:22.55233444075427
+Outputs:
+----------------------------------------------------------------------
+0: I want to trick the buyer. I want to make it look like a normal house, but I want to put a hidden room in the basement. I want to make it look like a normal house, but I want to put a hidden room in the basement. I want to make it look like a normal house, but I want to put a hidden room in the basement. I want to make it look like a normal house, but I want to put a hidden room in the basement.
+
+I want to trick the buyer. I want to make it look like a normal house, but I want to put a
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+1: I want to trick the buyer. I want to make it look like a normal house, but I want to put a hidden room in the basement. I want to make it look like a normal house, but I want to put a hidden room in the basement. I want to make it look like a normal house, but I want to put a hidden room in the basement. I want to make it look like a normal house, but I want to put a hidden room in the basement.
+
+I want to trick the buyer. I want to make it look like a normal house, but I want to put a
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+2: I want to trick the buyer. I want to make it look like a normal house, but I want to put a hidden room in the basement. I want to make it look like a normal house, but I want to put a hidden room in the basement. I want to make it look like a normal house, but I want to put a hidden room in the basement. I want to make it look like a normal house, but I want to put a hidden room in the basement.
+
+I want to trick the buyer. I want to make it look like a normal house, but I want to put a
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+3: I want to trick the buyer. I want to make it look like a normal house, but I want to put a hidden room in the basement. I want to make it look like a normal house, but I want to put a hidden room in the basement. I want to make it look like a normal house, but I want to put a hidden room in the basement. I want to make it look like a normal house, but I want to put a hidden room in the basement.
+
+I want to trick the buyer. I want to make it look like a normal house, but I want to put a
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+4: I want to trick the buyer. I want to make it look like a normal house, but I want to put a hidden room in the basement. I want to make it look like a normal house, but I want to put a hidden room in the basement. I want to make it look like a normal house, but I want to put a hidden room in the basement. I want to make it look like a normal house, but I want to put a hidden room in the basement.
+
+I want to trick the buyer. I want to make it look like a normal house, but I want to put a
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+5: I want to trick the buyer. I want to make it look like a normal house, but I want to put a hidden room in the basement. I want to make it look like a normal house, but I want to put a hidden room in the basement. I want to make it look like a normal house, but I want to put a hidden room in the basement. I want to make it look like a normal house, but I want to put a hidden room in the basement.
+
+I want to trick the buyer. I want to make it look like a normal house, but I want to put a
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+6: I want to trick the buyer. I want to make it look like a normal house, but I want to put a hidden room in the basement. I want to make it look like a normal house, but I want to put a hidden room in the basement. I want to make it look like a normal house, but I want to put a hidden room in the basement. I want to make it look like a normal house, but I want to put a hidden room in the basement.
+
+I want to trick the buyer. I want to make it look like a normal house, but I want to put a
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+7: I want to trick the buyer. I want to make it look like a normal house, but I want to put a hidden room in the basement. I want to make it look like a normal house, but I want to put a hidden room in the basement. I want to make it look like a normal house, but I want to put a hidden room in the basement. I want to make it look like a normal house, but I want to put a hidden room in the basement.
+
+I want to trick the buyer. I want to make it look like a normal house, but I want to put a
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+8: I want to trick the buyer. I want to make it look like a normal house, but I want to put a hidden room in the basement. I want to make it look like a normal house, but I want to put a hidden room in the basement. I want to make it look like a normal house, but I want to put a hidden room in the basement. I want to make it look like a normal house, but I want to put a hidden room in the basement.
+
+I want to trick the buyer. I want to make it look like a normal house, but I want to put a
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+9: I want to trick the buyer. I want to make it look like a normal house, but I want to put a hidden room in the basement. I want to make it look like a normal house, but I want to put a hidden room in the basement. I want to make it look like a normal house, but I want to put a hidden room in the basement. I want to make it look like a normal house, but I want to put a hidden room in the basement.
+
+I want to trick the buyer. I want to make it look like a normal house, but I want to put a
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+10: I want to trick the buyer. I want to make it look like a normal house, but I want to put a hidden room in the basement. I want to make it look like a normal house, but I want to put a hidden room in the basement. I want to make it look like a normal house, but I want to put a hidden room in the basement. I want to make it look like a normal house, but I want to put a hidden room in the basement.
+
+I want to trick the buyer. I want to make it look like a normal house, but I want to put a
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+11: I want to trick the buyer. I want to make it look like a normal house, but I want to put a hidden room in the basement. I want to make it look like a normal house, but I want to put a hidden room in the basement. I want to make it look like a normal house, but I want to put a hidden room in the basement. I want to make it look like a normal house, but I want to put a hidden room in the basement.
+
+I want to trick the buyer. I want to make it look like a normal house, but I want to put a
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+12: I want to trick the buyer. I want to make it look like a normal house, but I want to put a hidden room in the basement. I want to make it look like a normal house, but I want to put a hidden room in the basement. I want to make it look like a normal house, but I want to put a hidden room in the basement. I want to make it look like a normal house, but I want to put a hidden room in the basement.
+
+I want to trick the buyer. I want to make it look like a normal house, but I want to put a
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+13: I want to trick the buyer. I want to make it look like a normal house, but I want to put a hidden room in the basement. I want to make it look like a normal house, but I want to put a hidden room in the basement. I want to make it look like a normal house, but I want to put a hidden room in the basement. I want to make it look like a normal house, but I want to put a hidden room in the basement.
+
+I want to trick the buyer. I want to make it look like a normal house, but I want to put a
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+14: I want to trick the buyer. I want to make it look like a normal house, but I want to put a hidden room in the basement. I want to make it look like a normal house, but I want to put a hidden room in the basement. I want to make it look like a normal house, but I want to put a hidden room in the basement. I want to make it look like a normal house, but I want to put a hidden room in the basement.
+
+I want to trick the buyer. I want to make it look like a normal house, but I want to put a
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+15: I want to trick the buyer. I want to make it look like a normal house, but I want to put a hidden room in the basement. I want to make it look like a normal house, but I want to put a hidden room in the basement. I want to make it look like a normal house, but I want to put a hidden room in the basement. I want to make it look like a normal house, but I want to put a hidden room in the basement.
+
+I want to trick the buyer. I want to make it look like a normal house, but I want to put a
+----------------------------------------------------------------------
+
+TorchDevice: cuda:0
+  cur_mem: 0.0079 GB,  peak_mem: 4.6963 GB
+TorchDevice: cpu
+  cur_mem: 56.5031 GB,  peak_mem: 0.0000 GB
+model size: 55.803 GB	cache size: 2.953 GB	hidden size (p): 0.031 GB
+peak gpu mem: 4.696 GB	projected: False
+prefill latency: 4.512 s	prefill throughput: 92.207 token/s
+decode latency: 527.767 s	decode throughput: 3.547 token/s
+total latency: 532.279 s	total throughput: 3.547 token/s
+<run_flexgen>: args.model: facebook/opt-30b
+gen_len:118 and cut_gen_len:5 and prompt_len:45 and bs:16
+len(prompt):45 and prompt:What is the best way to save money on travel. and batch_size:16
+len(prompt):45 and prompt:What is the best way to save money on travel. and batch_size:16
+len(prompt):45 and prompt:What is the best way to save money on travel. and batch_size:16
+len(prompt):45 and prompt:What is the best way to save money on travel. and batch_size:16
+len(prompt):45 and prompt:What is the best way to save money on travel. and batch_size:16
+len(prompt):45 and prompt:What is the best way to save money on travel. and batch_size:16
+len(prompt):45 and prompt:What is the best way to save money on travel. and batch_size:16
+len(prompt):45 and prompt:What is the best way to save money on travel. and batch_size:16
+len(prompt):45 and prompt:What is the best way to save money on travel. and batch_size:16
+len(prompt):45 and prompt:What is the best way to save money on travel. and batch_size:16
+len(prompt):45 and prompt:What is the best way to save money on travel. and batch_size:16
+len(prompt):45 and prompt:What is the best way to save money on travel. and batch_size:16
+len(prompt):45 and prompt:What is the best way to save money on travel. and batch_size:16
+len(prompt):45 and prompt:What is the best way to save money on travel. and batch_size:16
+len(prompt):45 and prompt:What is the best way to save money on travel. and batch_size:16
+len(prompt):45 and prompt:What is the best way to save money on travel. and batch_size:16
+input_prompt:45
+input_prompt:45
+input_prompt:45
+input_prompt:45
+input_prompt:45
+input_prompt:45
+input_prompt:45
+input_prompt:45
+input_prompt:45
+input_prompt:45
+input_prompt:45
+input_prompt:45
+input_prompt:45
+input_prompt:45
+input_prompt:45
+input_prompt:45
+input_ids:[[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2264, 16, 5, 275, 169, 7, 1871, 418, 15, 1504, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2264, 16, 5, 275, 169, 7, 1871, 418, 15, 1504, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2264, 16, 5, 275, 169, 7, 1871, 418, 15, 1504, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2264, 16, 5, 275, 169, 7, 1871, 418, 15, 1504, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2264, 16, 5, 275, 169, 7, 1871, 418, 15, 1504, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2264, 16, 5, 275, 169, 7, 1871, 418, 15, 1504, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2264, 16, 5, 275, 169, 7, 1871, 418, 15, 1504, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2264, 16, 5, 275, 169, 7, 1871, 418, 15, 1504, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2264, 16, 5, 275, 169, 7, 1871, 418, 15, 1504, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2264, 16, 5, 275, 169, 7, 1871, 418, 15, 1504, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2264, 16, 5, 275, 169, 7, 1871, 418, 15, 1504, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2264, 16, 5, 275, 169, 7, 1871, 418, 15, 1504, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2264, 16, 5, 275, 169, 7, 1871, 418, 15, 1504, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2264, 16, 5, 275, 169, 7, 1871, 418, 15, 1504, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2264, 16, 5, 275, 169, 7, 1871, 418, 15, 1504, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2264, 16, 5, 275, 169, 7, 1871, 418, 15, 1504, 4]]
+len(prompt):45 and prompt:What is the best way to save money on travel. and batch_size:16
+len(prompt):45 and prompt:What is the best way to save money on travel. and batch_size:16
+len(prompt):45 and prompt:What is the best way to save money on travel. and batch_size:16
+len(prompt):45 and prompt:What is the best way to save money on travel. and batch_size:16
+len(prompt):45 and prompt:What is the best way to save money on travel. and batch_size:16
+len(prompt):45 and prompt:What is the best way to save money on travel. and batch_size:16
+len(prompt):45 and prompt:What is the best way to save money on travel. and batch_size:16
+len(prompt):45 and prompt:What is the best way to save money on travel. and batch_size:16
+len(prompt):45 and prompt:What is the best way to save money on travel. and batch_size:16
+len(prompt):45 and prompt:What is the best way to save money on travel. and batch_size:16
+len(prompt):45 and prompt:What is the best way to save money on travel. and batch_size:16
+len(prompt):45 and prompt:What is the best way to save money on travel. and batch_size:16
+len(prompt):45 and prompt:What is the best way to save money on travel. and batch_size:16
+len(prompt):45 and prompt:What is the best way to save money on travel. and batch_size:16
+len(prompt):45 and prompt:What is the best way to save money on travel. and batch_size:16
+len(prompt):45 and prompt:What is the best way to save money on travel. and batch_size:16
+input_prompt:45
+input_prompt:45
+input_prompt:45
+input_prompt:45
+input_prompt:45
+input_prompt:45
+input_prompt:45
+input_prompt:45
+input_prompt:45
+input_prompt:45
+input_prompt:45
+input_prompt:45
+input_prompt:45
+input_prompt:45
+input_prompt:45
+input_prompt:45
+input_ids:[[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2264, 16, 5, 275, 169, 7, 1871, 418, 15, 1504, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2264, 16, 5, 275, 169, 7, 1871, 418, 15, 1504, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2264, 16, 5, 275, 169, 7, 1871, 418, 15, 1504, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2264, 16, 5, 275, 169, 7, 1871, 418, 15, 1504, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2264, 16, 5, 275, 169, 7, 1871, 418, 15, 1504, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2264, 16, 5, 275, 169, 7, 1871, 418, 15, 1504, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2264, 16, 5, 275, 169, 7, 1871, 418, 15, 1504, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2264, 16, 5, 275, 169, 7, 1871, 418, 15, 1504, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2264, 16, 5, 275, 169, 7, 1871, 418, 15, 1504, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2264, 16, 5, 275, 169, 7, 1871, 418, 15, 1504, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2264, 16, 5, 275, 169, 7, 1871, 418, 15, 1504, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2264, 16, 5, 275, 169, 7, 1871, 418, 15, 1504, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2264, 16, 5, 275, 169, 7, 1871, 418, 15, 1504, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2264, 16, 5, 275, 169, 7, 1871, 418, 15, 1504, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2264, 16, 5, 275, 169, 7, 1871, 418, 15, 1504, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2264, 16, 5, 275, 169, 7, 1871, 418, 15, 1504, 4]]
+model size: 55.803 GB, cache size: 3.343 GB, hidden size (prefill): 0.035 GB
+init weight...
+num_layers:98 and num_gpu_batches:1
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+warmup - generate
+benchmark - generate
+num_prompts:16 and gen_len:118 and decode_latency:527.6937569020083 
+total_per_token_latency:27.06255836492383
+Outputs:
+----------------------------------------------------------------------
+0: What is the best way to save money on travel. I'm looking to travel to Europe for a month in the summer and I'm trying to figure out the best way to save money.
+I'm not sure if this is the best way, but I've been using the Chase Sapphire Preferred card to book my flights. I get 2x points on travel and dining, and 1 point on everything else. I've been using the points to book flights and hotels, and I've been able to get some pretty good deals.
+I've been using the Chase Sapphire Preferred card as well. I've been using the points to book flights and
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+1: What is the best way to save money on travel. I'm looking to travel to Europe for a month in the summer and I'm trying to figure out the best way to save money.
+I'm not sure if this is the best way, but I've been using the Chase Sapphire Preferred card to book my flights. I get 2x points on travel and dining, and 1 point on everything else. I've been using the points to book flights and hotels, and I've been able to get some pretty good deals.
+I've been using the Chase Sapphire Preferred card as well. I've been using the points to book flights and
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+2: What is the best way to save money on travel. I'm looking to travel to Europe for a month in the summer and I'm trying to figure out the best way to save money.
+I'm not sure if this is the best way, but I've been using the Chase Sapphire Preferred card to book my flights. I get 2x points on travel and dining, and 1 point on everything else. I've been using the points to book flights and hotels, and I've been able to get some pretty good deals.
+I've been using the Chase Sapphire Preferred card as well. I've been using the points to book flights and
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+3: What is the best way to save money on travel. I'm looking to travel to Europe for a month in the summer and I'm trying to figure out the best way to save money.
+I'm not sure if this is the best way, but I've been using the Chase Sapphire Preferred card to book my flights. I get 2x points on travel and dining, and 1 point on everything else. I've been using the points to book flights and hotels, and I've been able to get some pretty good deals.
+I've been using the Chase Sapphire Preferred card as well. I've been using the points to book flights and
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+4: What is the best way to save money on travel. I'm looking to travel to Europe for a month in the summer and I'm trying to figure out the best way to save money.
+I'm not sure if this is the best way, but I've been using the Chase Sapphire Preferred card to book my flights. I get 2x points on travel and dining, and 1 point on everything else. I've been using the points to book flights and hotels, and I've been able to get some pretty good deals.
+I've been using the Chase Sapphire Preferred card as well. I've been using the points to book flights and
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+5: What is the best way to save money on travel. I'm looking to travel to Europe for a month in the summer and I'm trying to figure out the best way to save money.
+I'm not sure if this is the best way, but I've been using the Chase Sapphire Preferred card to book my flights. I get 2x points on travel and dining, and 1 point on everything else. I've been using the points to book flights and hotels, and I've been able to get some pretty good deals.
+I've been using the Chase Sapphire Preferred card as well. I've been using the points to book flights and
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+6: What is the best way to save money on travel. I'm looking to travel to Europe for a month in the summer and I'm trying to figure out the best way to save money.
+I'm not sure if this is the best way, but I've been using the Chase Sapphire Preferred card to book my flights. I get 2x points on travel and dining, and 1 point on everything else. I've been using the points to book flights and hotels, and I've been able to get some pretty good deals.
+I've been using the Chase Sapphire Preferred card as well. I've been using the points to book flights and
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+7: What is the best way to save money on travel. I'm looking to travel to Europe for a month in the summer and I'm trying to figure out the best way to save money.
+I'm not sure if this is the best way, but I've been using the Chase Sapphire Preferred card to book my flights. I get 2x points on travel and dining, and 1 point on everything else. I've been using the points to book flights and hotels, and I've been able to get some pretty good deals.
+I've been using the Chase Sapphire Preferred card as well. I've been using the points to book flights and
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+8: What is the best way to save money on travel. I'm looking to travel to Europe for a month in the summer and I'm trying to figure out the best way to save money.
+I'm not sure if this is the best way, but I've been using the Chase Sapphire Preferred card to book my flights. I get 2x points on travel and dining, and 1 point on everything else. I've been using the points to book flights and hotels, and I've been able to get some pretty good deals.
+I've been using the Chase Sapphire Preferred card as well. I've been using the points to book flights and
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+9: What is the best way to save money on travel. I'm looking to travel to Europe for a month in the summer and I'm trying to figure out the best way to save money.
+I'm not sure if this is the best way, but I've been using the Chase Sapphire Preferred card to book my flights. I get 2x points on travel and dining, and 1 point on everything else. I've been using the points to book flights and hotels, and I've been able to get some pretty good deals.
+I've been using the Chase Sapphire Preferred card as well. I've been using the points to book flights and
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+10: What is the best way to save money on travel. I'm looking to travel to Europe for a month in the summer and I'm trying to figure out the best way to save money.
+I'm not sure if this is the best way, but I've been using the Chase Sapphire Preferred card to book my flights. I get 2x points on travel and dining, and 1 point on everything else. I've been using the points to book flights and hotels, and I've been able to get some pretty good deals.
+I've been using the Chase Sapphire Preferred card as well. I've been using the points to book flights and
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+11: What is the best way to save money on travel. I'm looking to travel to Europe for a month in the summer and I'm trying to figure out the best way to save money.
+I'm not sure if this is the best way, but I've been using the Chase Sapphire Preferred card to book my flights. I get 2x points on travel and dining, and 1 point on everything else. I've been using the points to book flights and hotels, and I've been able to get some pretty good deals.
+I've been using the Chase Sapphire Preferred card as well. I've been using the points to book flights and
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+12: What is the best way to save money on travel. I'm looking to travel to Europe for a month in the summer and I'm trying to figure out the best way to save money.
+I'm not sure if this is the best way, but I've been using the Chase Sapphire Preferred card to book my flights. I get 2x points on travel and dining, and 1 point on everything else. I've been using the points to book flights and hotels, and I've been able to get some pretty good deals.
+I've been using the Chase Sapphire Preferred card as well. I've been using the points to book flights and
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+13: What is the best way to save money on travel. I'm looking to travel to Europe for a month in the summer and I'm trying to figure out the best way to save money.
+I'm not sure if this is the best way, but I've been using the Chase Sapphire Preferred card to book my flights. I get 2x points on travel and dining, and 1 point on everything else. I've been using the points to book flights and hotels, and I've been able to get some pretty good deals.
+I've been using the Chase Sapphire Preferred card as well. I've been using the points to book flights and
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+14: What is the best way to save money on travel. I'm looking to travel to Europe for a month in the summer and I'm trying to figure out the best way to save money.
+I'm not sure if this is the best way, but I've been using the Chase Sapphire Preferred card to book my flights. I get 2x points on travel and dining, and 1 point on everything else. I've been using the points to book flights and hotels, and I've been able to get some pretty good deals.
+I've been using the Chase Sapphire Preferred card as well. I've been using the points to book flights and
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+15: What is the best way to save money on travel. I'm looking to travel to Europe for a month in the summer and I'm trying to figure out the best way to save money.
+I'm not sure if this is the best way, but I've been using the Chase Sapphire Preferred card to book my flights. I get 2x points on travel and dining, and 1 point on everything else. I've been using the points to book flights and hotels, and I've been able to get some pretty good deals.
+I've been using the Chase Sapphire Preferred card as well. I've been using the points to book flights and
+----------------------------------------------------------------------
+
+TorchDevice: cuda:0
+  cur_mem: 0.0079 GB,  peak_mem: 4.8986 GB
+TorchDevice: cpu
+  cur_mem: 56.5031 GB,  peak_mem: 0.0000 GB
+model size: 55.803 GB	cache size: 3.343 GB	hidden size (p): 0.035 GB
+peak gpu mem: 4.899 GB	projected: False
+prefill latency: 4.513 s	prefill throughput: 159.551 token/s
+decode latency: 527.694 s	decode throughput: 3.548 token/s
+total latency: 532.206 s	total throughput: 3.547 token/s
+<run_flexgen>: args.model: facebook/opt-30b
+gen_len:118 and cut_gen_len:5 and prompt_len:41 and bs:16
+len(prompt):41 and prompt:Which type of yoga is best for beginners? and batch_size:16
+len(prompt):41 and prompt:Which type of yoga is best for beginners? and batch_size:16
+len(prompt):41 and prompt:Which type of yoga is best for beginners? and batch_size:16
+len(prompt):41 and prompt:Which type of yoga is best for beginners? and batch_size:16
+len(prompt):41 and prompt:Which type of yoga is best for beginners? and batch_size:16
+len(prompt):41 and prompt:Which type of yoga is best for beginners? and batch_size:16
+len(prompt):41 and prompt:Which type of yoga is best for beginners? and batch_size:16
+len(prompt):41 and prompt:Which type of yoga is best for beginners? and batch_size:16
+len(prompt):41 and prompt:Which type of yoga is best for beginners? and batch_size:16
+len(prompt):41 and prompt:Which type of yoga is best for beginners? and batch_size:16
+len(prompt):41 and prompt:Which type of yoga is best for beginners? and batch_size:16
+len(prompt):41 and prompt:Which type of yoga is best for beginners? and batch_size:16
+len(prompt):41 and prompt:Which type of yoga is best for beginners? and batch_size:16
+len(prompt):41 and prompt:Which type of yoga is best for beginners? and batch_size:16
+len(prompt):41 and prompt:Which type of yoga is best for beginners? and batch_size:16
+len(prompt):41 and prompt:Which type of yoga is best for beginners? and batch_size:16
+input_prompt:41
+input_prompt:41
+input_prompt:41
+input_prompt:41
+input_prompt:41
+input_prompt:41
+input_prompt:41
+input_prompt:41
+input_prompt:41
+input_prompt:41
+input_prompt:41
+input_prompt:41
+input_prompt:41
+input_prompt:41
+input_prompt:41
+input_prompt:41
+input_ids:[[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 32251, 1907, 9, 11025, 16, 275, 13, 34476, 116], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 32251, 1907, 9, 11025, 16, 275, 13, 34476, 116], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 32251, 1907, 9, 11025, 16, 275, 13, 34476, 116], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 32251, 1907, 9, 11025, 16, 275, 13, 34476, 116], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 32251, 1907, 9, 11025, 16, 275, 13, 34476, 116], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 32251, 1907, 9, 11025, 16, 275, 13, 34476, 116], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 32251, 1907, 9, 11025, 16, 275, 13, 34476, 116], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 32251, 1907, 9, 11025, 16, 275, 13, 34476, 116], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 32251, 1907, 9, 11025, 16, 275, 13, 34476, 116], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 32251, 1907, 9, 11025, 16, 275, 13, 34476, 116], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 32251, 1907, 9, 11025, 16, 275, 13, 34476, 116], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 32251, 1907, 9, 11025, 16, 275, 13, 34476, 116], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 32251, 1907, 9, 11025, 16, 275, 13, 34476, 116], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 32251, 1907, 9, 11025, 16, 275, 13, 34476, 116], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 32251, 1907, 9, 11025, 16, 275, 13, 34476, 116], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 32251, 1907, 9, 11025, 16, 275, 13, 34476, 116]]
+len(prompt):41 and prompt:Which type of yoga is best for beginners? and batch_size:16
+len(prompt):41 and prompt:Which type of yoga is best for beginners? and batch_size:16
+len(prompt):41 and prompt:Which type of yoga is best for beginners? and batch_size:16
+len(prompt):41 and prompt:Which type of yoga is best for beginners? and batch_size:16
+len(prompt):41 and prompt:Which type of yoga is best for beginners? and batch_size:16
+len(prompt):41 and prompt:Which type of yoga is best for beginners? and batch_size:16
+len(prompt):41 and prompt:Which type of yoga is best for beginners? and batch_size:16
+len(prompt):41 and prompt:Which type of yoga is best for beginners? and batch_size:16
+len(prompt):41 and prompt:Which type of yoga is best for beginners? and batch_size:16
+len(prompt):41 and prompt:Which type of yoga is best for beginners? and batch_size:16
+len(prompt):41 and prompt:Which type of yoga is best for beginners? and batch_size:16
+len(prompt):41 and prompt:Which type of yoga is best for beginners? and batch_size:16
+len(prompt):41 and prompt:Which type of yoga is best for beginners? and batch_size:16
+len(prompt):41 and prompt:Which type of yoga is best for beginners? and batch_size:16
+len(prompt):41 and prompt:Which type of yoga is best for beginners? and batch_size:16
+len(prompt):41 and prompt:Which type of yoga is best for beginners? and batch_size:16
+input_prompt:41
+input_prompt:41
+input_prompt:41
+input_prompt:41
+input_prompt:41
+input_prompt:41
+input_prompt:41
+input_prompt:41
+input_prompt:41
+input_prompt:41
+input_prompt:41
+input_prompt:41
+input_prompt:41
+input_prompt:41
+input_prompt:41
+input_prompt:41
+input_ids:[[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 32251, 1907, 9, 11025, 16, 275, 13, 34476, 116], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 32251, 1907, 9, 11025, 16, 275, 13, 34476, 116], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 32251, 1907, 9, 11025, 16, 275, 13, 34476, 116], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 32251, 1907, 9, 11025, 16, 275, 13, 34476, 116], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 32251, 1907, 9, 11025, 16, 275, 13, 34476, 116], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 32251, 1907, 9, 11025, 16, 275, 13, 34476, 116], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 32251, 1907, 9, 11025, 16, 275, 13, 34476, 116], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 32251, 1907, 9, 11025, 16, 275, 13, 34476, 116], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 32251, 1907, 9, 11025, 16, 275, 13, 34476, 116], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 32251, 1907, 9, 11025, 16, 275, 13, 34476, 116], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 32251, 1907, 9, 11025, 16, 275, 13, 34476, 116], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 32251, 1907, 9, 11025, 16, 275, 13, 34476, 116], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 32251, 1907, 9, 11025, 16, 275, 13, 34476, 116], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 32251, 1907, 9, 11025, 16, 275, 13, 34476, 116], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 32251, 1907, 9, 11025, 16, 275, 13, 34476, 116], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 32251, 1907, 9, 11025, 16, 275, 13, 34476, 116]]
+model size: 55.803 GB, cache size: 3.261 GB, hidden size (prefill): 0.034 GB
+init weight...
+num_layers:98 and num_gpu_batches:1
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+warmup - generate
+benchmark - generate
+num_prompts:16 and gen_len:118 and decode_latency:527.7719090850005 
+total_per_token_latency:31.573437785915363
+Outputs:
+----------------------------------------------------------------------
+0: Which type of yoga is best for beginners?
+
+Yoga is a great way to get fit and healthy, but it can be intimidating for beginners. There are so many different types of yoga, and it can be hard to know which one is best for you.
+
+If you’re new to yoga, you might be wondering which type of yoga is best for beginners.
+
+There are many different types of yoga, and it can be hard to know which one is best for you.
+
+If you’re new to yoga, you might be wondering which type of yoga is best for beginners.
+
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+1: Which type of yoga is best for beginners?
+
+Yoga is a great way to get fit and healthy, but it can be intimidating for beginners. There are so many different types of yoga, and it can be hard to know which one is best for you.
+
+If you’re new to yoga, you might be wondering which type of yoga is best for beginners.
+
+There are many different types of yoga, and it can be hard to know which one is best for you.
+
+If you’re new to yoga, you might be wondering which type of yoga is best for beginners.
+
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+2: Which type of yoga is best for beginners?
+
+Yoga is a great way to get fit and healthy, but it can be intimidating for beginners. There are so many different types of yoga, and it can be hard to know which one is best for you.
+
+If you’re new to yoga, you might be wondering which type of yoga is best for beginners.
+
+There are many different types of yoga, and it can be hard to know which one is best for you.
+
+If you’re new to yoga, you might be wondering which type of yoga is best for beginners.
+
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+3: Which type of yoga is best for beginners?
+
+Yoga is a great way to get fit and healthy, but it can be intimidating for beginners. There are so many different types of yoga, and it can be hard to know which one is best for you.
+
+If you’re new to yoga, you might be wondering which type of yoga is best for beginners.
+
+There are many different types of yoga, and it can be hard to know which one is best for you.
+
+If you’re new to yoga, you might be wondering which type of yoga is best for beginners.
+
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+4: Which type of yoga is best for beginners?
+
+Yoga is a great way to get fit and healthy, but it can be intimidating for beginners. There are so many different types of yoga, and it can be hard to know which one is best for you.
+
+If you’re new to yoga, you might be wondering which type of yoga is best for beginners.
+
+There are many different types of yoga, and it can be hard to know which one is best for you.
+
+If you’re new to yoga, you might be wondering which type of yoga is best for beginners.
+
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+5: Which type of yoga is best for beginners?
+
+Yoga is a great way to get fit and healthy, but it can be intimidating for beginners. There are so many different types of yoga, and it can be hard to know which one is best for you.
+
+If you’re new to yoga, you might be wondering which type of yoga is best for beginners.
+
+There are many different types of yoga, and it can be hard to know which one is best for you.
+
+If you’re new to yoga, you might be wondering which type of yoga is best for beginners.
+
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+6: Which type of yoga is best for beginners?
+
+Yoga is a great way to get fit and healthy, but it can be intimidating for beginners. There are so many different types of yoga, and it can be hard to know which one is best for you.
+
+If you’re new to yoga, you might be wondering which type of yoga is best for beginners.
+
+There are many different types of yoga, and it can be hard to know which one is best for you.
+
+If you’re new to yoga, you might be wondering which type of yoga is best for beginners.
+
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+7: Which type of yoga is best for beginners?
+
+Yoga is a great way to get fit and healthy, but it can be intimidating for beginners. There are so many different types of yoga, and it can be hard to know which one is best for you.
+
+If you’re new to yoga, you might be wondering which type of yoga is best for beginners.
+
+There are many different types of yoga, and it can be hard to know which one is best for you.
+
+If you’re new to yoga, you might be wondering which type of yoga is best for beginners.
+
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+8: Which type of yoga is best for beginners?
+
+Yoga is a great way to get fit and healthy, but it can be intimidating for beginners. There are so many different types of yoga, and it can be hard to know which one is best for you.
+
+If you’re new to yoga, you might be wondering which type of yoga is best for beginners.
+
+There are many different types of yoga, and it can be hard to know which one is best for you.
+
+If you’re new to yoga, you might be wondering which type of yoga is best for beginners.
+
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+9: Which type of yoga is best for beginners?
+
+Yoga is a great way to get fit and healthy, but it can be intimidating for beginners. There are so many different types of yoga, and it can be hard to know which one is best for you.
+
+If you’re new to yoga, you might be wondering which type of yoga is best for beginners.
+
+There are many different types of yoga, and it can be hard to know which one is best for you.
+
+If you’re new to yoga, you might be wondering which type of yoga is best for beginners.
+
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+10: Which type of yoga is best for beginners?
+
+Yoga is a great way to get fit and healthy, but it can be intimidating for beginners. There are so many different types of yoga, and it can be hard to know which one is best for you.
+
+If you’re new to yoga, you might be wondering which type of yoga is best for beginners.
+
+There are many different types of yoga, and it can be hard to know which one is best for you.
+
+If you’re new to yoga, you might be wondering which type of yoga is best for beginners.
+
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+11: Which type of yoga is best for beginners?
+
+Yoga is a great way to get fit and healthy, but it can be intimidating for beginners. There are so many different types of yoga, and it can be hard to know which one is best for you.
+
+If you’re new to yoga, you might be wondering which type of yoga is best for beginners.
+
+There are many different types of yoga, and it can be hard to know which one is best for you.
+
+If you’re new to yoga, you might be wondering which type of yoga is best for beginners.
+
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+12: Which type of yoga is best for beginners?
+
+Yoga is a great way to get fit and healthy, but it can be intimidating for beginners. There are so many different types of yoga, and it can be hard to know which one is best for you.
+
+If you’re new to yoga, you might be wondering which type of yoga is best for beginners.
+
+There are many different types of yoga, and it can be hard to know which one is best for you.
+
+If you’re new to yoga, you might be wondering which type of yoga is best for beginners.
+
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+13: Which type of yoga is best for beginners?
+
+Yoga is a great way to get fit and healthy, but it can be intimidating for beginners. There are so many different types of yoga, and it can be hard to know which one is best for you.
+
+If you’re new to yoga, you might be wondering which type of yoga is best for beginners.
+
+There are many different types of yoga, and it can be hard to know which one is best for you.
+
+If you’re new to yoga, you might be wondering which type of yoga is best for beginners.
+
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+14: Which type of yoga is best for beginners?
+
+Yoga is a great way to get fit and healthy, but it can be intimidating for beginners. There are so many different types of yoga, and it can be hard to know which one is best for you.
+
+If you’re new to yoga, you might be wondering which type of yoga is best for beginners.
+
+There are many different types of yoga, and it can be hard to know which one is best for you.
+
+If you’re new to yoga, you might be wondering which type of yoga is best for beginners.
+
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+15: Which type of yoga is best for beginners?
+
+Yoga is a great way to get fit and healthy, but it can be intimidating for beginners. There are so many different types of yoga, and it can be hard to know which one is best for you.
+
+If you’re new to yoga, you might be wondering which type of yoga is best for beginners.
+
+There are many different types of yoga, and it can be hard to know which one is best for you.
+
+If you’re new to yoga, you might be wondering which type of yoga is best for beginners.
+
+----------------------------------------------------------------------
+
+TorchDevice: cuda:0
+  cur_mem: 0.0079 GB,  peak_mem: 4.8986 GB
+TorchDevice: cpu
+  cur_mem: 56.5031 GB,  peak_mem: 0.0000 GB
+model size: 55.803 GB	cache size: 3.261 GB	hidden size (p): 0.034 GB
+peak gpu mem: 4.899 GB	projected: False
+prefill latency: 4.512 s	prefill throughput: 145.394 token/s
+decode latency: 527.772 s	decode throughput: 3.547 token/s
+total latency: 532.284 s	total throughput: 3.547 token/s
+<run_flexgen>: args.model: facebook/opt-30b
+gen_len:118 and cut_gen_len:5 and prompt_len:44 and bs:16
+len(prompt):44 and prompt:Show how to add a backround color to a text  and batch_size:16
+len(prompt):44 and prompt:Show how to add a backround color to a text  and batch_size:16
+len(prompt):44 and prompt:Show how to add a backround color to a text  and batch_size:16
+len(prompt):44 and prompt:Show how to add a backround color to a text  and batch_size:16
+len(prompt):44 and prompt:Show how to add a backround color to a text  and batch_size:16
+len(prompt):44 and prompt:Show how to add a backround color to a text  and batch_size:16
+len(prompt):44 and prompt:Show how to add a backround color to a text  and batch_size:16
+len(prompt):44 and prompt:Show how to add a backround color to a text  and batch_size:16
+len(prompt):44 and prompt:Show how to add a backround color to a text  and batch_size:16
+len(prompt):44 and prompt:Show how to add a backround color to a text  and batch_size:16
+len(prompt):44 and prompt:Show how to add a backround color to a text  and batch_size:16
+len(prompt):44 and prompt:Show how to add a backround color to a text  and batch_size:16
+len(prompt):44 and prompt:Show how to add a backround color to a text  and batch_size:16
+len(prompt):44 and prompt:Show how to add a backround color to a text  and batch_size:16
+len(prompt):44 and prompt:Show how to add a backround color to a text  and batch_size:16
+len(prompt):44 and prompt:Show how to add a backround color to a text  and batch_size:16
+input_prompt:44
+input_prompt:44
+input_prompt:44
+input_prompt:44
+input_prompt:44
+input_prompt:44
+input_prompt:44
+input_prompt:44
+input_prompt:44
+input_prompt:44
+input_prompt:44
+input_prompt:44
+input_prompt:44
+input_prompt:44
+input_prompt:44
+input_prompt:44
+input_ids:[[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 27477, 141, 7, 1606, 10, 124, 3431, 3195, 7, 10, 2788, 1437], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 27477, 141, 7, 1606, 10, 124, 3431, 3195, 7, 10, 2788, 1437], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 27477, 141, 7, 1606, 10, 124, 3431, 3195, 7, 10, 2788, 1437], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 27477, 141, 7, 1606, 10, 124, 3431, 3195, 7, 10, 2788, 1437], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 27477, 141, 7, 1606, 10, 124, 3431, 3195, 7, 10, 2788, 1437], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 27477, 141, 7, 1606, 10, 124, 3431, 3195, 7, 10, 2788, 1437], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 27477, 141, 7, 1606, 10, 124, 3431, 3195, 7, 10, 2788, 1437], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 27477, 141, 7, 1606, 10, 124, 3431, 3195, 7, 10, 2788, 1437], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 27477, 141, 7, 1606, 10, 124, 3431, 3195, 7, 10, 2788, 1437], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 27477, 141, 7, 1606, 10, 124, 3431, 3195, 7, 10, 2788, 1437], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 27477, 141, 7, 1606, 10, 124, 3431, 3195, 7, 10, 2788, 1437], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 27477, 141, 7, 1606, 10, 124, 3431, 3195, 7, 10, 2788, 1437], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 27477, 141, 7, 1606, 10, 124, 3431, 3195, 7, 10, 2788, 1437], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 27477, 141, 7, 1606, 10, 124, 3431, 3195, 7, 10, 2788, 1437], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 27477, 141, 7, 1606, 10, 124, 3431, 3195, 7, 10, 2788, 1437], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 27477, 141, 7, 1606, 10, 124, 3431, 3195, 7, 10, 2788, 1437]]
+len(prompt):44 and prompt:Show how to add a backround color to a text  and batch_size:16
+len(prompt):44 and prompt:Show how to add a backround color to a text  and batch_size:16
+len(prompt):44 and prompt:Show how to add a backround color to a text  and batch_size:16
+len(prompt):44 and prompt:Show how to add a backround color to a text  and batch_size:16
+len(prompt):44 and prompt:Show how to add a backround color to a text  and batch_size:16
+len(prompt):44 and prompt:Show how to add a backround color to a text  and batch_size:16
+len(prompt):44 and prompt:Show how to add a backround color to a text  and batch_size:16
+len(prompt):44 and prompt:Show how to add a backround color to a text  and batch_size:16
+len(prompt):44 and prompt:Show how to add a backround color to a text  and batch_size:16
+len(prompt):44 and prompt:Show how to add a backround color to a text  and batch_size:16
+len(prompt):44 and prompt:Show how to add a backround color to a text  and batch_size:16
+len(prompt):44 and prompt:Show how to add a backround color to a text  and batch_size:16
+len(prompt):44 and prompt:Show how to add a backround color to a text  and batch_size:16
+len(prompt):44 and prompt:Show how to add a backround color to a text  and batch_size:16
+len(prompt):44 and prompt:Show how to add a backround color to a text  and batch_size:16
+len(prompt):44 and prompt:Show how to add a backround color to a text  and batch_size:16
+input_prompt:44
+input_prompt:44
+input_prompt:44
+input_prompt:44
+input_prompt:44
+input_prompt:44
+input_prompt:44
+input_prompt:44
+input_prompt:44
+input_prompt:44
+input_prompt:44
+input_prompt:44
+input_prompt:44
+input_prompt:44
+input_prompt:44
+input_prompt:44
+input_ids:[[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 27477, 141, 7, 1606, 10, 124, 3431, 3195, 7, 10, 2788, 1437], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 27477, 141, 7, 1606, 10, 124, 3431, 3195, 7, 10, 2788, 1437], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 27477, 141, 7, 1606, 10, 124, 3431, 3195, 7, 10, 2788, 1437], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 27477, 141, 7, 1606, 10, 124, 3431, 3195, 7, 10, 2788, 1437], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 27477, 141, 7, 1606, 10, 124, 3431, 3195, 7, 10, 2788, 1437], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 27477, 141, 7, 1606, 10, 124, 3431, 3195, 7, 10, 2788, 1437], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 27477, 141, 7, 1606, 10, 124, 3431, 3195, 7, 10, 2788, 1437], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 27477, 141, 7, 1606, 10, 124, 3431, 3195, 7, 10, 2788, 1437], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 27477, 141, 7, 1606, 10, 124, 3431, 3195, 7, 10, 2788, 1437], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 27477, 141, 7, 1606, 10, 124, 3431, 3195, 7, 10, 2788, 1437], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 27477, 141, 7, 1606, 10, 124, 3431, 3195, 7, 10, 2788, 1437], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 27477, 141, 7, 1606, 10, 124, 3431, 3195, 7, 10, 2788, 1437], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 27477, 141, 7, 1606, 10, 124, 3431, 3195, 7, 10, 2788, 1437], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 27477, 141, 7, 1606, 10, 124, 3431, 3195, 7, 10, 2788, 1437], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 27477, 141, 7, 1606, 10, 124, 3431, 3195, 7, 10, 2788, 1437], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 27477, 141, 7, 1606, 10, 124, 3431, 3195, 7, 10, 2788, 1437]]
+model size: 55.803 GB, cache size: 3.322 GB, hidden size (prefill): 0.035 GB
+init weight...
+num_layers:98 and num_gpu_batches:1
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+warmup - generate
+benchmark - generate
+num_prompts:16 and gen_len:118 and decode_latency:527.7080727920074 
+total_per_token_latency:36.08378300431372
+Outputs:
+----------------------------------------------------------------------
+0: Show how to add a backround color to a text 
+I'm not sure what the point of this is.
+
+I think it's a good idea. I've been looking for a way to do this for a while.
+
+I think it's a good idea too. I've been looking for a way to do this for a while.
+
+I think it's a good idea. I've been looking for a way to do this for a while.
+
+I think it's a good idea. I've been looking for a way to do this for a while.
+
+I think it's a good idea
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+1: Show how to add a backround color to a text 
+I'm not sure what the point of this is.
+
+I think it's a good idea. I've been looking for a way to do this for a while.
+
+I think it's a good idea too. I've been looking for a way to do this for a while.
+
+I think it's a good idea. I've been looking for a way to do this for a while.
+
+I think it's a good idea. I've been looking for a way to do this for a while.
+
+I think it's a good idea
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+2: Show how to add a backround color to a text 
+I'm not sure what the point of this is.
+
+I think it's a good idea. I've been looking for a way to do this for a while.
+
+I think it's a good idea too. I've been looking for a way to do this for a while.
+
+I think it's a good idea. I've been looking for a way to do this for a while.
+
+I think it's a good idea. I've been looking for a way to do this for a while.
+
+I think it's a good idea
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+3: Show how to add a backround color to a text 
+I'm not sure what the point of this is.
+
+I think it's a good idea. I've been looking for a way to do this for a while.
+
+I think it's a good idea too. I've been looking for a way to do this for a while.
+
+I think it's a good idea. I've been looking for a way to do this for a while.
+
+I think it's a good idea. I've been looking for a way to do this for a while.
+
+I think it's a good idea
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+4: Show how to add a backround color to a text 
+I'm not sure what the point of this is.
+
+I think it's a good idea. I've been looking for a way to do this for a while.
+
+I think it's a good idea too. I've been looking for a way to do this for a while.
+
+I think it's a good idea. I've been looking for a way to do this for a while.
+
+I think it's a good idea. I've been looking for a way to do this for a while.
+
+I think it's a good idea
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+5: Show how to add a backround color to a text 
+I'm not sure what the point of this is.
+
+I think it's a good idea. I've been looking for a way to do this for a while.
+
+I think it's a good idea too. I've been looking for a way to do this for a while.
+
+I think it's a good idea. I've been looking for a way to do this for a while.
+
+I think it's a good idea. I've been looking for a way to do this for a while.
+
+I think it's a good idea
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+6: Show how to add a backround color to a text 
+I'm not sure what the point of this is.
+
+I think it's a good idea. I've been looking for a way to do this for a while.
+
+I think it's a good idea too. I've been looking for a way to do this for a while.
+
+I think it's a good idea. I've been looking for a way to do this for a while.
+
+I think it's a good idea. I've been looking for a way to do this for a while.
+
+I think it's a good idea
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+7: Show how to add a backround color to a text 
+I'm not sure what the point of this is.
+
+I think it's a good idea. I've been looking for a way to do this for a while.
+
+I think it's a good idea too. I've been looking for a way to do this for a while.
+
+I think it's a good idea. I've been looking for a way to do this for a while.
+
+I think it's a good idea. I've been looking for a way to do this for a while.
+
+I think it's a good idea
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+8: Show how to add a backround color to a text 
+I'm not sure what the point of this is.
+
+I think it's a good idea. I've been looking for a way to do this for a while.
+
+I think it's a good idea too. I've been looking for a way to do this for a while.
+
+I think it's a good idea. I've been looking for a way to do this for a while.
+
+I think it's a good idea. I've been looking for a way to do this for a while.
+
+I think it's a good idea
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+9: Show how to add a backround color to a text 
+I'm not sure what the point of this is.
+
+I think it's a good idea. I've been looking for a way to do this for a while.
+
+I think it's a good idea too. I've been looking for a way to do this for a while.
+
+I think it's a good idea. I've been looking for a way to do this for a while.
+
+I think it's a good idea. I've been looking for a way to do this for a while.
+
+I think it's a good idea
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+10: Show how to add a backround color to a text 
+I'm not sure what the point of this is.
+
+I think it's a good idea. I've been looking for a way to do this for a while.
+
+I think it's a good idea too. I've been looking for a way to do this for a while.
+
+I think it's a good idea. I've been looking for a way to do this for a while.
+
+I think it's a good idea. I've been looking for a way to do this for a while.
+
+I think it's a good idea
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+11: Show how to add a backround color to a text 
+I'm not sure what the point of this is.
+
+I think it's a good idea. I've been looking for a way to do this for a while.
+
+I think it's a good idea too. I've been looking for a way to do this for a while.
+
+I think it's a good idea. I've been looking for a way to do this for a while.
+
+I think it's a good idea. I've been looking for a way to do this for a while.
+
+I think it's a good idea
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+12: Show how to add a backround color to a text 
+I'm not sure what the point of this is.
+
+I think it's a good idea. I've been looking for a way to do this for a while.
+
+I think it's a good idea too. I've been looking for a way to do this for a while.
+
+I think it's a good idea. I've been looking for a way to do this for a while.
+
+I think it's a good idea. I've been looking for a way to do this for a while.
+
+I think it's a good idea
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+13: Show how to add a backround color to a text 
+I'm not sure what the point of this is.
+
+I think it's a good idea. I've been looking for a way to do this for a while.
+
+I think it's a good idea too. I've been looking for a way to do this for a while.
+
+I think it's a good idea. I've been looking for a way to do this for a while.
+
+I think it's a good idea. I've been looking for a way to do this for a while.
+
+I think it's a good idea
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+14: Show how to add a backround color to a text 
+I'm not sure what the point of this is.
+
+I think it's a good idea. I've been looking for a way to do this for a while.
+
+I think it's a good idea too. I've been looking for a way to do this for a while.
+
+I think it's a good idea. I've been looking for a way to do this for a while.
+
+I think it's a good idea. I've been looking for a way to do this for a while.
+
+I think it's a good idea
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+15: Show how to add a backround color to a text 
+I'm not sure what the point of this is.
+
+I think it's a good idea. I've been looking for a way to do this for a while.
+
+I think it's a good idea too. I've been looking for a way to do this for a while.
+
+I think it's a good idea. I've been looking for a way to do this for a while.
+
+I think it's a good idea. I've been looking for a way to do this for a while.
+
+I think it's a good idea
+----------------------------------------------------------------------
+
+TorchDevice: cuda:0
+  cur_mem: 0.0079 GB,  peak_mem: 4.8986 GB
+TorchDevice: cpu
+  cur_mem: 56.5031 GB,  peak_mem: 0.0000 GB
+model size: 55.803 GB	cache size: 3.322 GB	hidden size (p): 0.035 GB
+peak gpu mem: 4.899 GB	projected: False
+prefill latency: 4.513 s	prefill throughput: 156.005 token/s
+decode latency: 527.708 s	decode throughput: 3.547 token/s
+total latency: 532.221 s	total throughput: 3.547 token/s
+<run_flexgen>: args.model: facebook/opt-30b
+gen_len:118 and cut_gen_len:5 and prompt_len:37 and bs:16
+len(prompt):37 and prompt:Where can I buy the newest projector? and batch_size:16
+len(prompt):37 and prompt:Where can I buy the newest projector? and batch_size:16
+len(prompt):37 and prompt:Where can I buy the newest projector? and batch_size:16
+len(prompt):37 and prompt:Where can I buy the newest projector? and batch_size:16
+len(prompt):37 and prompt:Where can I buy the newest projector? and batch_size:16
+len(prompt):37 and prompt:Where can I buy the newest projector? and batch_size:16
+len(prompt):37 and prompt:Where can I buy the newest projector? and batch_size:16
+len(prompt):37 and prompt:Where can I buy the newest projector? and batch_size:16
+len(prompt):37 and prompt:Where can I buy the newest projector? and batch_size:16
+len(prompt):37 and prompt:Where can I buy the newest projector? and batch_size:16
+len(prompt):37 and prompt:Where can I buy the newest projector? and batch_size:16
+len(prompt):37 and prompt:Where can I buy the newest projector? and batch_size:16
+len(prompt):37 and prompt:Where can I buy the newest projector? and batch_size:16
+len(prompt):37 and prompt:Where can I buy the newest projector? and batch_size:16
+len(prompt):37 and prompt:Where can I buy the newest projector? and batch_size:16
+len(prompt):37 and prompt:Where can I buy the newest projector? and batch_size:16
+input_prompt:37
+input_prompt:37
+input_prompt:37
+input_prompt:37
+input_prompt:37
+input_prompt:37
+input_prompt:37
+input_prompt:37
+input_prompt:37
+input_prompt:37
+input_prompt:37
+input_prompt:37
+input_prompt:37
+input_prompt:37
+input_prompt:37
+input_prompt:37
+input_ids:[[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 13841, 64, 38, 907, 5, 8946, 35282, 116], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 13841, 64, 38, 907, 5, 8946, 35282, 116], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 13841, 64, 38, 907, 5, 8946, 35282, 116], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 13841, 64, 38, 907, 5, 8946, 35282, 116], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 13841, 64, 38, 907, 5, 8946, 35282, 116], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 13841, 64, 38, 907, 5, 8946, 35282, 116], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 13841, 64, 38, 907, 5, 8946, 35282, 116], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 13841, 64, 38, 907, 5, 8946, 35282, 116], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 13841, 64, 38, 907, 5, 8946, 35282, 116], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 13841, 64, 38, 907, 5, 8946, 35282, 116], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 13841, 64, 38, 907, 5, 8946, 35282, 116], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 13841, 64, 38, 907, 5, 8946, 35282, 116], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 13841, 64, 38, 907, 5, 8946, 35282, 116], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 13841, 64, 38, 907, 5, 8946, 35282, 116], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 13841, 64, 38, 907, 5, 8946, 35282, 116], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 13841, 64, 38, 907, 5, 8946, 35282, 116]]
+len(prompt):37 and prompt:Where can I buy the newest projector? and batch_size:16
+len(prompt):37 and prompt:Where can I buy the newest projector? and batch_size:16
+len(prompt):37 and prompt:Where can I buy the newest projector? and batch_size:16
+len(prompt):37 and prompt:Where can I buy the newest projector? and batch_size:16
+len(prompt):37 and prompt:Where can I buy the newest projector? and batch_size:16
+len(prompt):37 and prompt:Where can I buy the newest projector? and batch_size:16
+len(prompt):37 and prompt:Where can I buy the newest projector? and batch_size:16
+len(prompt):37 and prompt:Where can I buy the newest projector? and batch_size:16
+len(prompt):37 and prompt:Where can I buy the newest projector? and batch_size:16
+len(prompt):37 and prompt:Where can I buy the newest projector? and batch_size:16
+len(prompt):37 and prompt:Where can I buy the newest projector? and batch_size:16
+len(prompt):37 and prompt:Where can I buy the newest projector? and batch_size:16
+len(prompt):37 and prompt:Where can I buy the newest projector? and batch_size:16
+len(prompt):37 and prompt:Where can I buy the newest projector? and batch_size:16
+len(prompt):37 and prompt:Where can I buy the newest projector? and batch_size:16
+len(prompt):37 and prompt:Where can I buy the newest projector? and batch_size:16
+input_prompt:37
+input_prompt:37
+input_prompt:37
+input_prompt:37
+input_prompt:37
+input_prompt:37
+input_prompt:37
+input_prompt:37
+input_prompt:37
+input_prompt:37
+input_prompt:37
+input_prompt:37
+input_prompt:37
+input_prompt:37
+input_prompt:37
+input_prompt:37
+input_ids:[[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 13841, 64, 38, 907, 5, 8946, 35282, 116], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 13841, 64, 38, 907, 5, 8946, 35282, 116], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 13841, 64, 38, 907, 5, 8946, 35282, 116], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 13841, 64, 38, 907, 5, 8946, 35282, 116], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 13841, 64, 38, 907, 5, 8946, 35282, 116], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 13841, 64, 38, 907, 5, 8946, 35282, 116], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 13841, 64, 38, 907, 5, 8946, 35282, 116], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 13841, 64, 38, 907, 5, 8946, 35282, 116], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 13841, 64, 38, 907, 5, 8946, 35282, 116], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 13841, 64, 38, 907, 5, 8946, 35282, 116], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 13841, 64, 38, 907, 5, 8946, 35282, 116], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 13841, 64, 38, 907, 5, 8946, 35282, 116], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 13841, 64, 38, 907, 5, 8946, 35282, 116], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 13841, 64, 38, 907, 5, 8946, 35282, 116], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 13841, 64, 38, 907, 5, 8946, 35282, 116], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 13841, 64, 38, 907, 5, 8946, 35282, 116]]
+model size: 55.803 GB, cache size: 3.179 GB, hidden size (prefill): 0.033 GB
+init weight...
+num_layers:98 and num_gpu_batches:1
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+warmup - generate
+benchmark - generate
+num_prompts:16 and gen_len:118 and decode_latency:527.6989578790017 
+total_per_token_latency:40.59403746547477
+Outputs:
+----------------------------------------------------------------------
+0: Where can I buy the newest projector?
+
+A:
+
+Quick Answer
+
+The newest projector is the Optoma HD142X, which is available at Amazon.com. The HD142X is a 1080p projector with a brightness of 2,000 lumens. It has a contrast ratio of 10,000:1 and a resolution of 1,920 x 1,080.
+
+Keep Learning
+
+The Optoma HD142X is a short throw projector, which means it can be placed close to the screen. It has a throw ratio of 1.2:1, which means it can project a
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+1: Where can I buy the newest projector?
+
+A:
+
+Quick Answer
+
+The newest projector is the Optoma HD142X, which is available at Amazon.com. The HD142X is a 1080p projector with a brightness of 2,000 lumens. It has a contrast ratio of 10,000:1 and a resolution of 1,920 x 1,080.
+
+Keep Learning
+
+The Optoma HD142X is a short throw projector, which means it can be placed close to the screen. It has a throw ratio of 1.2:1, which means it can project a
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+2: Where can I buy the newest projector?
+
+A:
+
+Quick Answer
+
+The newest projector is the Optoma HD142X, which is available at Amazon.com. The HD142X is a 1080p projector with a brightness of 2,000 lumens. It has a contrast ratio of 10,000:1 and a resolution of 1,920 x 1,080.
+
+Keep Learning
+
+The Optoma HD142X is a short throw projector, which means it can be placed close to the screen. It has a throw ratio of 1.2:1, which means it can project a
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+3: Where can I buy the newest projector?
+
+A:
+
+Quick Answer
+
+The newest projector is the Optoma HD142X, which is available at Amazon.com. The HD142X is a 1080p projector with a brightness of 2,000 lumens. It has a contrast ratio of 10,000:1 and a resolution of 1,920 x 1,080.
+
+Keep Learning
+
+The Optoma HD142X is a short throw projector, which means it can be placed close to the screen. It has a throw ratio of 1.2:1, which means it can project a
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+4: Where can I buy the newest projector?
+
+A:
+
+Quick Answer
+
+The newest projector is the Optoma HD142X, which is available at Amazon.com. The HD142X is a 1080p projector with a brightness of 2,000 lumens. It has a contrast ratio of 10,000:1 and a resolution of 1,920 x 1,080.
+
+Keep Learning
+
+The Optoma HD142X is a short throw projector, which means it can be placed close to the screen. It has a throw ratio of 1.2:1, which means it can project a
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+5: Where can I buy the newest projector?
+
+A:
+
+Quick Answer
+
+The newest projector is the Optoma HD142X, which is available at Amazon.com. The HD142X is a 1080p projector with a brightness of 2,000 lumens. It has a contrast ratio of 10,000:1 and a resolution of 1,920 x 1,080.
+
+Keep Learning
+
+The Optoma HD142X is a short throw projector, which means it can be placed close to the screen. It has a throw ratio of 1.2:1, which means it can project a
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+6: Where can I buy the newest projector?
+
+A:
+
+Quick Answer
+
+The newest projector is the Optoma HD142X, which is available at Amazon.com. The HD142X is a 1080p projector with a brightness of 2,000 lumens. It has a contrast ratio of 10,000:1 and a resolution of 1,920 x 1,080.
+
+Keep Learning
+
+The Optoma HD142X is a short throw projector, which means it can be placed close to the screen. It has a throw ratio of 1.2:1, which means it can project a
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+7: Where can I buy the newest projector?
+
+A:
+
+Quick Answer
+
+The newest projector is the Optoma HD142X, which is available at Amazon.com. The HD142X is a 1080p projector with a brightness of 2,000 lumens. It has a contrast ratio of 10,000:1 and a resolution of 1,920 x 1,080.
+
+Keep Learning
+
+The Optoma HD142X is a short throw projector, which means it can be placed close to the screen. It has a throw ratio of 1.2:1, which means it can project a
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+8: Where can I buy the newest projector?
+
+A:
+
+Quick Answer
+
+The newest projector is the Optoma HD142X, which is available at Amazon.com. The HD142X is a 1080p projector with a brightness of 2,000 lumens. It has a contrast ratio of 10,000:1 and a resolution of 1,920 x 1,080.
+
+Keep Learning
+
+The Optoma HD142X is a short throw projector, which means it can be placed close to the screen. It has a throw ratio of 1.2:1, which means it can project a
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+9: Where can I buy the newest projector?
+
+A:
+
+Quick Answer
+
+The newest projector is the Optoma HD142X, which is available at Amazon.com. The HD142X is a 1080p projector with a brightness of 2,000 lumens. It has a contrast ratio of 10,000:1 and a resolution of 1,920 x 1,080.
+
+Keep Learning
+
+The Optoma HD142X is a short throw projector, which means it can be placed close to the screen. It has a throw ratio of 1.2:1, which means it can project a
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+10: Where can I buy the newest projector?
+
+A:
+
+Quick Answer
+
+The newest projector is the Optoma HD142X, which is available at Amazon.com. The HD142X is a 1080p projector with a brightness of 2,000 lumens. It has a contrast ratio of 10,000:1 and a resolution of 1,920 x 1,080.
+
+Keep Learning
+
+The Optoma HD142X is a short throw projector, which means it can be placed close to the screen. It has a throw ratio of 1.2:1, which means it can project a
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+11: Where can I buy the newest projector?
+
+A:
+
+Quick Answer
+
+The newest projector is the Optoma HD142X, which is available at Amazon.com. The HD142X is a 1080p projector with a brightness of 2,000 lumens. It has a contrast ratio of 10,000:1 and a resolution of 1,920 x 1,080.
+
+Keep Learning
+
+The Optoma HD142X is a short throw projector, which means it can be placed close to the screen. It has a throw ratio of 1.2:1, which means it can project a
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+12: Where can I buy the newest projector?
+
+A:
+
+Quick Answer
+
+The newest projector is the Optoma HD142X, which is available at Amazon.com. The HD142X is a 1080p projector with a brightness of 2,000 lumens. It has a contrast ratio of 10,000:1 and a resolution of 1,920 x 1,080.
+
+Keep Learning
+
+The Optoma HD142X is a short throw projector, which means it can be placed close to the screen. It has a throw ratio of 1.2:1, which means it can project a
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+13: Where can I buy the newest projector?
+
+A:
+
+Quick Answer
+
+The newest projector is the Optoma HD142X, which is available at Amazon.com. The HD142X is a 1080p projector with a brightness of 2,000 lumens. It has a contrast ratio of 10,000:1 and a resolution of 1,920 x 1,080.
+
+Keep Learning
+
+The Optoma HD142X is a short throw projector, which means it can be placed close to the screen. It has a throw ratio of 1.2:1, which means it can project a
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+14: Where can I buy the newest projector?
+
+A:
+
+Quick Answer
+
+The newest projector is the Optoma HD142X, which is available at Amazon.com. The HD142X is a 1080p projector with a brightness of 2,000 lumens. It has a contrast ratio of 10,000:1 and a resolution of 1,920 x 1,080.
+
+Keep Learning
+
+The Optoma HD142X is a short throw projector, which means it can be placed close to the screen. It has a throw ratio of 1.2:1, which means it can project a
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+15: Where can I buy the newest projector?
+
+A:
+
+Quick Answer
+
+The newest projector is the Optoma HD142X, which is available at Amazon.com. The HD142X is a 1080p projector with a brightness of 2,000 lumens. It has a contrast ratio of 10,000:1 and a resolution of 1,920 x 1,080.
+
+Keep Learning
+
+The Optoma HD142X is a short throw projector, which means it can be placed close to the screen. It has a throw ratio of 1.2:1, which means it can project a
+----------------------------------------------------------------------
+
+TorchDevice: cuda:0
+  cur_mem: 0.0079 GB,  peak_mem: 4.8986 GB
+TorchDevice: cpu
+  cur_mem: 56.5031 GB,  peak_mem: 0.0000 GB
+model size: 55.803 GB	cache size: 3.179 GB	hidden size (p): 0.033 GB
+peak gpu mem: 4.899 GB	projected: False
+prefill latency: 4.511 s	prefill throughput: 131.233 token/s
+decode latency: 527.699 s	decode throughput: 3.547 token/s
+total latency: 532.210 s	total throughput: 3.547 token/s
+<run_flexgen>: args.model: facebook/opt-30b
+gen_len:118 and cut_gen_len:5 and prompt_len:32 and bs:16
+len(prompt):32 and prompt:What is the history of Beyblade? and batch_size:16
+len(prompt):32 and prompt:What is the history of Beyblade? and batch_size:16
+len(prompt):32 and prompt:What is the history of Beyblade? and batch_size:16
+len(prompt):32 and prompt:What is the history of Beyblade? and batch_size:16
+len(prompt):32 and prompt:What is the history of Beyblade? and batch_size:16
+len(prompt):32 and prompt:What is the history of Beyblade? and batch_size:16
+len(prompt):32 and prompt:What is the history of Beyblade? and batch_size:16
+len(prompt):32 and prompt:What is the history of Beyblade? and batch_size:16
+len(prompt):32 and prompt:What is the history of Beyblade? and batch_size:16
+len(prompt):32 and prompt:What is the history of Beyblade? and batch_size:16
+len(prompt):32 and prompt:What is the history of Beyblade? and batch_size:16
+len(prompt):32 and prompt:What is the history of Beyblade? and batch_size:16
+len(prompt):32 and prompt:What is the history of Beyblade? and batch_size:16
+len(prompt):32 and prompt:What is the history of Beyblade? and batch_size:16
+len(prompt):32 and prompt:What is the history of Beyblade? and batch_size:16
+len(prompt):32 and prompt:What is the history of Beyblade? and batch_size:16
+input_prompt:32
+input_prompt:32
+input_prompt:32
+input_prompt:32
+input_prompt:32
+input_prompt:32
+input_prompt:32
+input_prompt:32
+input_prompt:32
+input_prompt:32
+input_prompt:32
+input_prompt:32
+input_prompt:32
+input_prompt:32
+input_prompt:32
+input_prompt:32
+input_ids:[[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2264, 16, 5, 750, 9, 1456, 219, 41469, 116], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2264, 16, 5, 750, 9, 1456, 219, 41469, 116], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2264, 16, 5, 750, 9, 1456, 219, 41469, 116], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2264, 16, 5, 750, 9, 1456, 219, 41469, 116], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2264, 16, 5, 750, 9, 1456, 219, 41469, 116], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2264, 16, 5, 750, 9, 1456, 219, 41469, 116], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2264, 16, 5, 750, 9, 1456, 219, 41469, 116], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2264, 16, 5, 750, 9, 1456, 219, 41469, 116], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2264, 16, 5, 750, 9, 1456, 219, 41469, 116], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2264, 16, 5, 750, 9, 1456, 219, 41469, 116], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2264, 16, 5, 750, 9, 1456, 219, 41469, 116], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2264, 16, 5, 750, 9, 1456, 219, 41469, 116], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2264, 16, 5, 750, 9, 1456, 219, 41469, 116], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2264, 16, 5, 750, 9, 1456, 219, 41469, 116], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2264, 16, 5, 750, 9, 1456, 219, 41469, 116], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2264, 16, 5, 750, 9, 1456, 219, 41469, 116]]
+len(prompt):32 and prompt:What is the history of Beyblade? and batch_size:16
+len(prompt):32 and prompt:What is the history of Beyblade? and batch_size:16
+len(prompt):32 and prompt:What is the history of Beyblade? and batch_size:16
+len(prompt):32 and prompt:What is the history of Beyblade? and batch_size:16
+len(prompt):32 and prompt:What is the history of Beyblade? and batch_size:16
+len(prompt):32 and prompt:What is the history of Beyblade? and batch_size:16
+len(prompt):32 and prompt:What is the history of Beyblade? and batch_size:16
+len(prompt):32 and prompt:What is the history of Beyblade? and batch_size:16
+len(prompt):32 and prompt:What is the history of Beyblade? and batch_size:16
+len(prompt):32 and prompt:What is the history of Beyblade? and batch_size:16
+len(prompt):32 and prompt:What is the history of Beyblade? and batch_size:16
+len(prompt):32 and prompt:What is the history of Beyblade? and batch_size:16
+len(prompt):32 and prompt:What is the history of Beyblade? and batch_size:16
+len(prompt):32 and prompt:What is the history of Beyblade? and batch_size:16
+len(prompt):32 and prompt:What is the history of Beyblade? and batch_size:16
+len(prompt):32 and prompt:What is the history of Beyblade? and batch_size:16
+input_prompt:32
+input_prompt:32
+input_prompt:32
+input_prompt:32
+input_prompt:32
+input_prompt:32
+input_prompt:32
+input_prompt:32
+input_prompt:32
+input_prompt:32
+input_prompt:32
+input_prompt:32
+input_prompt:32
+input_prompt:32
+input_prompt:32
+input_prompt:32
+input_ids:[[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2264, 16, 5, 750, 9, 1456, 219, 41469, 116], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2264, 16, 5, 750, 9, 1456, 219, 41469, 116], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2264, 16, 5, 750, 9, 1456, 219, 41469, 116], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2264, 16, 5, 750, 9, 1456, 219, 41469, 116], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2264, 16, 5, 750, 9, 1456, 219, 41469, 116], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2264, 16, 5, 750, 9, 1456, 219, 41469, 116], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2264, 16, 5, 750, 9, 1456, 219, 41469, 116], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2264, 16, 5, 750, 9, 1456, 219, 41469, 116], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2264, 16, 5, 750, 9, 1456, 219, 41469, 116], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2264, 16, 5, 750, 9, 1456, 219, 41469, 116], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2264, 16, 5, 750, 9, 1456, 219, 41469, 116], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2264, 16, 5, 750, 9, 1456, 219, 41469, 116], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2264, 16, 5, 750, 9, 1456, 219, 41469, 116], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2264, 16, 5, 750, 9, 1456, 219, 41469, 116], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2264, 16, 5, 750, 9, 1456, 219, 41469, 116], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2264, 16, 5, 750, 9, 1456, 219, 41469, 116]]
+model size: 55.803 GB, cache size: 3.076 GB, hidden size (prefill): 0.032 GB
+init weight...
+num_layers:98 and num_gpu_batches:1
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+warmup - generate
+benchmark - generate
+num_prompts:16 and gen_len:118 and decode_latency:527.772908902014 
+total_per_token_latency:45.1049233262376
+Outputs:
+----------------------------------------------------------------------
+0: What is the history of Beyblade?
+Beyblade is a Japanese toy line that was created in 1998 by Takara Tomy. The toy line is based on a fictional sport called "Beyblade" that is played with a spinning top. The toy line was created by Takara Tomy, a Japanese toy company. The toy line was created by Takara Tomy, a Japanese toy company.
+Beyblade is a Japanese toy line that was created in 1998 by Takara Tomy. The toy line is based on a fictional sport called "Beyblade" that is played with a spinning top. The toy line
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+1: What is the history of Beyblade?
+Beyblade is a Japanese toy line that was created in 1998 by Takara Tomy. The toy line is based on a fictional sport called "Beyblade" that is played with a spinning top. The toy line was created by Takara Tomy, a Japanese toy company. The toy line was created by Takara Tomy, a Japanese toy company.
+Beyblade is a Japanese toy line that was created in 1998 by Takara Tomy. The toy line is based on a fictional sport called "Beyblade" that is played with a spinning top. The toy line
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+2: What is the history of Beyblade?
+Beyblade is a Japanese toy line that was created in 1998 by Takara Tomy. The toy line is based on a fictional sport called "Beyblade" that is played with a spinning top. The toy line was created by Takara Tomy, a Japanese toy company. The toy line was created by Takara Tomy, a Japanese toy company.
+Beyblade is a Japanese toy line that was created in 1998 by Takara Tomy. The toy line is based on a fictional sport called "Beyblade" that is played with a spinning top. The toy line
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+3: What is the history of Beyblade?
+Beyblade is a Japanese toy line that was created in 1998 by Takara Tomy. The toy line is based on a fictional sport called "Beyblade" that is played with a spinning top. The toy line was created by Takara Tomy, a Japanese toy company. The toy line was created by Takara Tomy, a Japanese toy company.
+Beyblade is a Japanese toy line that was created in 1998 by Takara Tomy. The toy line is based on a fictional sport called "Beyblade" that is played with a spinning top. The toy line
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+4: What is the history of Beyblade?
+Beyblade is a Japanese toy line that was created in 1998 by Takara Tomy. The toy line is based on a fictional sport called "Beyblade" that is played with a spinning top. The toy line was created by Takara Tomy, a Japanese toy company. The toy line was created by Takara Tomy, a Japanese toy company.
+Beyblade is a Japanese toy line that was created in 1998 by Takara Tomy. The toy line is based on a fictional sport called "Beyblade" that is played with a spinning top. The toy line
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+5: What is the history of Beyblade?
+Beyblade is a Japanese toy line that was created in 1998 by Takara Tomy. The toy line is based on a fictional sport called "Beyblade" that is played with a spinning top. The toy line was created by Takara Tomy, a Japanese toy company. The toy line was created by Takara Tomy, a Japanese toy company.
+Beyblade is a Japanese toy line that was created in 1998 by Takara Tomy. The toy line is based on a fictional sport called "Beyblade" that is played with a spinning top. The toy line
+----------------------------------------------------------------------
+
+/home/ubuntu/.local/lib/python3.8/site-packages/torch/distributed/distributed_c10d.py:283: UserWarning: torch.distributed.reduce_op is deprecated, please use torch.distributed.ReduceOp instead
+  warnings.warn(
+/home/ubuntu/flexgen/flexgen/utils.py:132: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  data_ptr = tensor.storage().data_ptr()
+/home/ubuntu/flexgen/flexgen/utils.py:139: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  element_size = tensor.storage().element_size()
+Outputs:
+----------------------------------------------------------------------
+6: What is the history of Beyblade?
+Beyblade is a Japanese toy line that was created in 1998 by Takara Tomy. The toy line is based on a fictional sport called "Beyblade" that is played with a spinning top. The toy line was created by Takara Tomy, a Japanese toy company. The toy line was created by Takara Tomy, a Japanese toy company.
+Beyblade is a Japanese toy line that was created in 1998 by Takara Tomy. The toy line is based on a fictional sport called "Beyblade" that is played with a spinning top. The toy line
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+7: What is the history of Beyblade?
+Beyblade is a Japanese toy line that was created in 1998 by Takara Tomy. The toy line is based on a fictional sport called "Beyblade" that is played with a spinning top. The toy line was created by Takara Tomy, a Japanese toy company. The toy line was created by Takara Tomy, a Japanese toy company.
+Beyblade is a Japanese toy line that was created in 1998 by Takara Tomy. The toy line is based on a fictional sport called "Beyblade" that is played with a spinning top. The toy line
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+8: What is the history of Beyblade?
+Beyblade is a Japanese toy line that was created in 1998 by Takara Tomy. The toy line is based on a fictional sport called "Beyblade" that is played with a spinning top. The toy line was created by Takara Tomy, a Japanese toy company. The toy line was created by Takara Tomy, a Japanese toy company.
+Beyblade is a Japanese toy line that was created in 1998 by Takara Tomy. The toy line is based on a fictional sport called "Beyblade" that is played with a spinning top. The toy line
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+9: What is the history of Beyblade?
+Beyblade is a Japanese toy line that was created in 1998 by Takara Tomy. The toy line is based on a fictional sport called "Beyblade" that is played with a spinning top. The toy line was created by Takara Tomy, a Japanese toy company. The toy line was created by Takara Tomy, a Japanese toy company.
+Beyblade is a Japanese toy line that was created in 1998 by Takara Tomy. The toy line is based on a fictional sport called "Beyblade" that is played with a spinning top. The toy line
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+10: What is the history of Beyblade?
+Beyblade is a Japanese toy line that was created in 1998 by Takara Tomy. The toy line is based on a fictional sport called "Beyblade" that is played with a spinning top. The toy line was created by Takara Tomy, a Japanese toy company. The toy line was created by Takara Tomy, a Japanese toy company.
+Beyblade is a Japanese toy line that was created in 1998 by Takara Tomy. The toy line is based on a fictional sport called "Beyblade" that is played with a spinning top. The toy line
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+11: What is the history of Beyblade?
+Beyblade is a Japanese toy line that was created in 1998 by Takara Tomy. The toy line is based on a fictional sport called "Beyblade" that is played with a spinning top. The toy line was created by Takara Tomy, a Japanese toy company. The toy line was created by Takara Tomy, a Japanese toy company.
+Beyblade is a Japanese toy line that was created in 1998 by Takara Tomy. The toy line is based on a fictional sport called "Beyblade" that is played with a spinning top. The toy line
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+12: What is the history of Beyblade?
+Beyblade is a Japanese toy line that was created in 1998 by Takara Tomy. The toy line is based on a fictional sport called "Beyblade" that is played with a spinning top. The toy line was created by Takara Tomy, a Japanese toy company. The toy line was created by Takara Tomy, a Japanese toy company.
+Beyblade is a Japanese toy line that was created in 1998 by Takara Tomy. The toy line is based on a fictional sport called "Beyblade" that is played with a spinning top. The toy line
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+13: What is the history of Beyblade?
+Beyblade is a Japanese toy line that was created in 1998 by Takara Tomy. The toy line is based on a fictional sport called "Beyblade" that is played with a spinning top. The toy line was created by Takara Tomy, a Japanese toy company. The toy line was created by Takara Tomy, a Japanese toy company.
+Beyblade is a Japanese toy line that was created in 1998 by Takara Tomy. The toy line is based on a fictional sport called "Beyblade" that is played with a spinning top. The toy line
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+14: What is the history of Beyblade?
+Beyblade is a Japanese toy line that was created in 1998 by Takara Tomy. The toy line is based on a fictional sport called "Beyblade" that is played with a spinning top. The toy line was created by Takara Tomy, a Japanese toy company. The toy line was created by Takara Tomy, a Japanese toy company.
+Beyblade is a Japanese toy line that was created in 1998 by Takara Tomy. The toy line is based on a fictional sport called "Beyblade" that is played with a spinning top. The toy line
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+15: What is the history of Beyblade?
+Beyblade is a Japanese toy line that was created in 1998 by Takara Tomy. The toy line is based on a fictional sport called "Beyblade" that is played with a spinning top. The toy line was created by Takara Tomy, a Japanese toy company. The toy line was created by Takara Tomy, a Japanese toy company.
+Beyblade is a Japanese toy line that was created in 1998 by Takara Tomy. The toy line is based on a fictional sport called "Beyblade" that is played with a spinning top. The toy line
+----------------------------------------------------------------------
+
+TorchDevice: cuda:0
+  cur_mem: 0.0079 GB,  peak_mem: 4.8986 GB
+TorchDevice: cpu
+  cur_mem: 56.5031 GB,  peak_mem: 0.0000 GB
+model size: 55.803 GB	cache size: 3.076 GB	hidden size (p): 0.032 GB
+peak gpu mem: 4.899 GB	projected: False
+prefill latency: 4.512 s	prefill throughput: 113.485 token/s
+decode latency: 527.773 s	decode throughput: 3.547 token/s
+total latency: 532.285 s	total throughput: 3.547 token/s
+per token latency:4.510492332623761
