@@ -3,9 +3,9 @@ gpu_batch_sizes=(1 2 4 8 16)
 gpu_weight_percent=0
 cpu_weight_percent=100 
 
-gen_len=128
+gen_len=119
 
-time_current=0807
+time_current=0808
 for gpu_batch_size in "${gpu_batch_sizes[@]}"
 do 
     python3 -m flexgen.flex_opt --model facebook/opt-6.7b --percent  $gpu_weight_percent $cpu_weight_percent 100 0 100 0 --gpu_batch_size $gpu_batch_size --overlap > opt_6.7B-gpu_batch_size-$gpu_batch_size-gpu_weight_percent-$gpu_weight_percent-cpu_weight_percent-$cpu_weight_percent-gen_len-$gen_len-time-$time_current.log 2>&1 

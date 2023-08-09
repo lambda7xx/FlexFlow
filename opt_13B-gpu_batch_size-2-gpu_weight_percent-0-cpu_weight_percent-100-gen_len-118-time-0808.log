@@ -1,0 +1,894 @@
+batch_size: 2 args.overlap: True , args.cut_gen_len: 5
+<run_flexgen>: args.model: facebook/opt-13b
+gen_len:118 and cut_gen_len:5 and prompt_len:36 and bs:2
+len(prompt):36 and prompt:Give three tips for staying healthy. and batch_size:2
+len(prompt):36 and prompt:Give three tips for staying healthy. and batch_size:2
+input_prompt:36
+input_prompt:36
+input_ids:[[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 31033, 130, 4965, 13, 4959, 2245, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 31033, 130, 4965, 13, 4959, 2245, 4]]
+len(prompt):36 and prompt:Give three tips for staying healthy. and batch_size:2
+len(prompt):36 and prompt:Give three tips for staying healthy. and batch_size:2
+input_prompt:36
+input_prompt:36
+input_ids:[[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 31033, 130, 4965, 13, 4959, 2245, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 31033, 130, 4965, 13, 4959, 2245, 4]]
+model size: 23.921 GB, cache size: 0.235 GB, hidden size (prefill): 0.003 GB
+init weight...
+num_layers:82 and num_gpu_batches:1
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+warmup - generate
+benchmark - generate
+num_prompts:2 and gen_len:118 and decode_latency:228.39223496001614 
+total_per_token_latency:1.9520898332204863
+Outputs:
+----------------------------------------------------------------------
+0: Give three tips for staying healthy.
+
+1. Eat a balanced diet.
+
+2. Exercise regularly.
+
+3. Get enough sleep.
+
+What is your favorite healthy food?
+
+I love to eat a variety of foods. I love to eat a variety of foods. I love to eat a variety of foods. I love to eat a variety of foods. I love to eat a variety of foods. I love to eat a variety of foods. I love to eat a variety of foods. I love to eat a variety of foods. I love to eat a variety of foods. I love
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+1: Give three tips for staying healthy.
+
+1. Eat a balanced diet.
+
+2. Exercise regularly.
+
+3. Get enough sleep.
+
+What is your favorite healthy food?
+
+I love to eat a variety of foods. I love to eat a variety of foods. I love to eat a variety of foods. I love to eat a variety of foods. I love to eat a variety of foods. I love to eat a variety of foods. I love to eat a variety of foods. I love to eat a variety of foods. I love to eat a variety of foods. I love
+----------------------------------------------------------------------
+
+TorchDevice: cuda:0
+  cur_mem: 0.0079 GB,  peak_mem: 1.2273 GB
+TorchDevice: cpu
+  cur_mem: 24.4209 GB,  peak_mem: 0.0000 GB
+model size: 23.921 GB	cache size: 0.235 GB	hidden size (p): 0.003 GB
+peak gpu mem: 1.227 GB	projected: False
+prefill latency: 1.954 s	prefill throughput: 36.841 token/s
+decode latency: 228.392 s	decode throughput: 1.025 token/s
+total latency: 230.347 s	total throughput: 1.025 token/s
+<run_flexgen>: args.model: facebook/opt-13b
+gen_len:118 and cut_gen_len:5 and prompt_len:29 and bs:2
+len(prompt):29 and prompt:I ran out of patience for him and batch_size:2
+len(prompt):29 and prompt:I ran out of patience for him and batch_size:2
+input_prompt:29
+input_prompt:29
+input_ids:[[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 100, 2075, 66, 9, 11383, 13, 123], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 100, 2075, 66, 9, 11383, 13, 123]]
+len(prompt):29 and prompt:I ran out of patience for him and batch_size:2
+len(prompt):29 and prompt:I ran out of patience for him and batch_size:2
+input_prompt:29
+input_prompt:29
+input_ids:[[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 100, 2075, 66, 9, 11383, 13, 123], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 100, 2075, 66, 9, 11383, 13, 123]]
+model size: 23.921 GB, cache size: 0.224 GB, hidden size (prefill): 0.003 GB
+init weight...
+num_layers:82 and num_gpu_batches:1
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+warmup - generate
+benchmark - generate
+num_prompts:2 and gen_len:118 and decode_latency:228.39652391700292 
+total_per_token_latency:3.904201884923893
+Outputs:
+----------------------------------------------------------------------
+0: I ran out of patience for him. I'm not sure if it's because I'm getting older or if I just don't like his style anymore.
+I think it's because you're getting older. I'm in my early 20s and I'm not a huge fan of his style either.I'm not sure if this is a good thing or a bad thing.
+It's a good thing.                                         
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+1: I ran out of patience for him. I'm not sure if it's because I'm getting older or if I just don't like his style anymore.
+I think it's because you're getting older. I'm in my early 20s and I'm not a huge fan of his style either.I'm not sure if this is a good thing or a bad thing.
+It's a good thing.                                         
+----------------------------------------------------------------------
+
+TorchDevice: cuda:0
+  cur_mem: 0.0079 GB,  peak_mem: 1.2273 GB
+TorchDevice: cpu
+  cur_mem: 24.4209 GB,  peak_mem: 0.0000 GB
+model size: 23.921 GB	cache size: 0.224 GB	hidden size (p): 0.003 GB
+peak gpu mem: 1.227 GB	projected: False
+prefill latency: 1.953 s	prefill throughput: 29.702 token/s
+decode latency: 228.397 s	decode throughput: 1.025 token/s
+total latency: 230.349 s	total throughput: 1.025 token/s
+<run_flexgen>: args.model: facebook/opt-13b
+gen_len:118 and cut_gen_len:5 and prompt_len:36 and bs:2
+len(prompt):36 and prompt:What are the symptoms of depression? and batch_size:2
+len(prompt):36 and prompt:What are the symptoms of depression? and batch_size:2
+input_prompt:36
+input_prompt:36
+input_ids:[[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2264, 32, 5, 5298, 9, 6943, 116], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2264, 32, 5, 5298, 9, 6943, 116]]
+len(prompt):36 and prompt:What are the symptoms of depression? and batch_size:2
+len(prompt):36 and prompt:What are the symptoms of depression? and batch_size:2
+input_prompt:36
+input_prompt:36
+input_ids:[[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2264, 32, 5, 5298, 9, 6943, 116], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2264, 32, 5, 5298, 9, 6943, 116]]
+model size: 23.921 GB, cache size: 0.235 GB, hidden size (prefill): 0.003 GB
+init weight...
+num_layers:82 and num_gpu_batches:1
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+warmup - generate
+benchmark - generate
+num_prompts:2 and gen_len:118 and decode_latency:228.42102525900555 
+total_per_token_latency:5.856522819712078
+Outputs:
+----------------------------------------------------------------------
+0: What are the symptoms of depression?
+
+Depression is a common mental health problem that affects people of all ages. It is a serious illness that can cause serious problems in your life.
+
+Depression is a common mental health problem that affects people of all ages. It is a serious illness that can cause serious problems in your life.
+
+Depression is a common mental health problem that affects people of all ages. It is a serious illness that can cause serious problems in your life.
+
+Depression is a common mental health problem that affects people of all ages. It is a serious illness that can cause
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+1: What are the symptoms of depression?
+
+Depression is a common mental health problem that affects people of all ages. It is a serious illness that can cause serious problems in your life.
+
+Depression is a common mental health problem that affects people of all ages. It is a serious illness that can cause serious problems in your life.
+
+Depression is a common mental health problem that affects people of all ages. It is a serious illness that can cause serious problems in your life.
+
+Depression is a common mental health problem that affects people of all ages. It is a serious illness that can cause
+----------------------------------------------------------------------
+
+TorchDevice: cuda:0
+  cur_mem: 0.0079 GB,  peak_mem: 1.2273 GB
+TorchDevice: cpu
+  cur_mem: 24.4209 GB,  peak_mem: 0.0000 GB
+model size: 23.921 GB	cache size: 0.235 GB	hidden size (p): 0.003 GB
+peak gpu mem: 1.227 GB	projected: False
+prefill latency: 1.953 s	prefill throughput: 36.869 token/s
+decode latency: 228.421 s	decode throughput: 1.024 token/s
+total latency: 230.374 s	total throughput: 1.024 token/s
+<run_flexgen>: args.model: facebook/opt-13b
+gen_len:118 and cut_gen_len:5 and prompt_len:36 and bs:2
+len(prompt):36 and prompt:How can I lower my monthly expenses. and batch_size:2
+len(prompt):36 and prompt:How can I lower my monthly expenses. and batch_size:2
+input_prompt:36
+input_prompt:36
+input_ids:[[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 6179, 64, 38, 795, 127, 3708, 4068, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 6179, 64, 38, 795, 127, 3708, 4068, 4]]
+len(prompt):36 and prompt:How can I lower my monthly expenses. and batch_size:2
+len(prompt):36 and prompt:How can I lower my monthly expenses. and batch_size:2
+input_prompt:36
+input_prompt:36
+input_ids:[[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 6179, 64, 38, 795, 127, 3708, 4068, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 6179, 64, 38, 795, 127, 3708, 4068, 4]]
+model size: 23.921 GB, cache size: 0.235 GB, hidden size (prefill): 0.003 GB
+init weight...
+num_layers:82 and num_gpu_batches:1
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+warmup - generate
+benchmark - generate
+num_prompts:2 and gen_len:118 and decode_latency:228.43418730500525 
+total_per_token_latency:7.808955959178217
+Outputs:
+----------------------------------------------------------------------
+0: How can I lower my monthly expenses. I'm currently paying $1,200 a month for rent and utilities. I'm not sure if I can lower it any more.
+What are your expenses?I'm not sure if this is a good thing or a bad thing.
+It's a good thing.                                                              
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+1: How can I lower my monthly expenses. I'm currently paying $1,200 a month for rent and utilities. I'm not sure if I can lower it any more.
+What are your expenses?I'm not sure if this is a good thing or a bad thing.
+It's a good thing.                                                              
+----------------------------------------------------------------------
+
+TorchDevice: cuda:0
+  cur_mem: 0.0079 GB,  peak_mem: 1.2273 GB
+TorchDevice: cpu
+  cur_mem: 24.4209 GB,  peak_mem: 0.0000 GB
+model size: 23.921 GB	cache size: 0.235 GB	hidden size (p): 0.003 GB
+peak gpu mem: 1.227 GB	projected: False
+prefill latency: 1.953 s	prefill throughput: 36.868 token/s
+decode latency: 228.434 s	decode throughput: 1.024 token/s
+total latency: 230.387 s	total throughput: 1.024 token/s
+<run_flexgen>: args.model: facebook/opt-13b
+gen_len:118 and cut_gen_len:5 and prompt_len:26 and bs:2
+len(prompt):26 and prompt:I want to trick the buyer. and batch_size:2
+len(prompt):26 and prompt:I want to trick the buyer. and batch_size:2
+input_prompt:26
+input_prompt:26
+input_ids:[[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 100, 236, 7, 7610, 5, 9790, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 100, 236, 7, 7610, 5, 9790, 4]]
+len(prompt):26 and prompt:I want to trick the buyer. and batch_size:2
+len(prompt):26 and prompt:I want to trick the buyer. and batch_size:2
+input_prompt:26
+input_prompt:26
+input_ids:[[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 100, 236, 7, 7610, 5, 9790, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 100, 236, 7, 7610, 5, 9790, 4]]
+model size: 23.921 GB, cache size: 0.220 GB, hidden size (prefill): 0.003 GB
+init weight...
+num_layers:82 and num_gpu_batches:1
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+warmup - generate
+benchmark - generate
+num_prompts:2 and gen_len:118 and decode_latency:228.3973010930058 
+total_per_token_latency:9.761083390390137
+Outputs:
+----------------------------------------------------------------------
+0: I want to trick the buyer. I want to make them think they are getting a good deal, but then I want to make them realize they are getting ripped off.
+I'm not sure if you're being sarcastic or not, but I'm going to assume you are.                                                                     
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+1: I want to trick the buyer. I want to make them think they are getting a good deal, but then I want to make them realize they are getting ripped off.
+I'm not sure if you're being sarcastic or not, but I'm going to assume you are.                                                                     
+----------------------------------------------------------------------
+
+TorchDevice: cuda:0
+  cur_mem: 0.0079 GB,  peak_mem: 1.2273 GB
+TorchDevice: cpu
+  cur_mem: 24.4209 GB,  peak_mem: 0.0000 GB
+model size: 23.921 GB	cache size: 0.220 GB	hidden size (p): 0.003 GB
+peak gpu mem: 1.227 GB	projected: False
+prefill latency: 1.954 s	prefill throughput: 26.616 token/s
+decode latency: 228.397 s	decode throughput: 1.025 token/s
+total latency: 230.351 s	total throughput: 1.025 token/s
+<run_flexgen>: args.model: facebook/opt-13b
+gen_len:118 and cut_gen_len:5 and prompt_len:45 and bs:2
+len(prompt):45 and prompt:What is the best way to save money on travel. and batch_size:2
+len(prompt):45 and prompt:What is the best way to save money on travel. and batch_size:2
+input_prompt:45
+input_prompt:45
+input_ids:[[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2264, 16, 5, 275, 169, 7, 1871, 418, 15, 1504, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2264, 16, 5, 275, 169, 7, 1871, 418, 15, 1504, 4]]
+len(prompt):45 and prompt:What is the best way to save money on travel. and batch_size:2
+len(prompt):45 and prompt:What is the best way to save money on travel. and batch_size:2
+input_prompt:45
+input_prompt:45
+input_ids:[[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2264, 16, 5, 275, 169, 7, 1871, 418, 15, 1504, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2264, 16, 5, 275, 169, 7, 1871, 418, 15, 1504, 4]]
+model size: 23.921 GB, cache size: 0.249 GB, hidden size (prefill): 0.003 GB
+init weight...
+num_layers:82 and num_gpu_batches:1
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+warmup - generate
+benchmark - generate
+num_prompts:2 and gen_len:118 and decode_latency:228.4337670380046 
+total_per_token_latency:11.713514361415609
+Outputs:
+----------------------------------------------------------------------
+0: What is the best way to save money on travel. I am a student and I am trying to save money on travel. I am going to be traveling to Europe in the summer and I am trying to figure out the best way to save money.
+
+I am going to be traveling to Europe in the summer and I am trying to figure out the best way to save money.
+
+I am going to be traveling to Europe in the summer and I am trying to figure out the best way to save money.
+
+I am going to be traveling to Europe in the summer and I am trying to figure out the best way to save
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+1: What is the best way to save money on travel. I am a student and I am trying to save money on travel. I am going to be traveling to Europe in the summer and I am trying to figure out the best way to save money.
+
+I am going to be traveling to Europe in the summer and I am trying to figure out the best way to save money.
+
+I am going to be traveling to Europe in the summer and I am trying to figure out the best way to save money.
+
+I am going to be traveling to Europe in the summer and I am trying to figure out the best way to save
+----------------------------------------------------------------------
+
+TorchDevice: cuda:0
+  cur_mem: 0.0079 GB,  peak_mem: 1.2428 GB
+TorchDevice: cpu
+  cur_mem: 24.4209 GB,  peak_mem: 0.0000 GB
+model size: 23.921 GB	cache size: 0.249 GB	hidden size (p): 0.003 GB
+peak gpu mem: 1.243 GB	projected: False
+prefill latency: 1.953 s	prefill throughput: 46.081 token/s
+decode latency: 228.434 s	decode throughput: 1.024 token/s
+total latency: 230.387 s	total throughput: 1.024 token/s
+<run_flexgen>: args.model: facebook/opt-13b
+gen_len:118 and cut_gen_len:5 and prompt_len:41 and bs:2
+len(prompt):41 and prompt:Which type of yoga is best for beginners? and batch_size:2
+len(prompt):41 and prompt:Which type of yoga is best for beginners? and batch_size:2
+input_prompt:41
+input_prompt:41
+input_ids:[[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 32251, 1907, 9, 11025, 16, 275, 13, 34476, 116], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 32251, 1907, 9, 11025, 16, 275, 13, 34476, 116]]
+len(prompt):41 and prompt:Which type of yoga is best for beginners? and batch_size:2
+len(prompt):41 and prompt:Which type of yoga is best for beginners? and batch_size:2
+input_prompt:41
+input_prompt:41
+input_ids:[[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 32251, 1907, 9, 11025, 16, 275, 13, 34476, 116], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 32251, 1907, 9, 11025, 16, 275, 13, 34476, 116]]
+model size: 23.921 GB, cache size: 0.243 GB, hidden size (prefill): 0.003 GB
+init weight...
+num_layers:82 and num_gpu_batches:1
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+warmup - generate
+benchmark - generate
+num_prompts:2 and gen_len:118 and decode_latency:228.3985649219885 
+total_per_token_latency:13.665642583373145
+Outputs:
+----------------------------------------------------------------------
+0: Which type of yoga is best for beginners?
+
+Yoga is a great way to improve your flexibility, strength, and overall health. It can also be a great way to relieve stress and anxiety.
+
+Yoga is a great way to improve your flexibility, strength, and overall health. It can also be a great way to relieve stress and anxiety.
+
+Yoga is a great way to improve your flexibility, strength, and overall health. It can also be a great way to relieve stress and anxiety.
+
+Yoga is a great way to improve your flexibility, strength, and overall health. It can also
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+1: Which type of yoga is best for beginners?
+
+Yoga is a great way to improve your flexibility, strength, and overall health. It can also be a great way to relieve stress and anxiety.
+
+Yoga is a great way to improve your flexibility, strength, and overall health. It can also be a great way to relieve stress and anxiety.
+
+Yoga is a great way to improve your flexibility, strength, and overall health. It can also be a great way to relieve stress and anxiety.
+
+Yoga is a great way to improve your flexibility, strength, and overall health. It can also
+----------------------------------------------------------------------
+
+TorchDevice: cuda:0
+  cur_mem: 0.0079 GB,  peak_mem: 1.2428 GB
+TorchDevice: cpu
+  cur_mem: 24.4209 GB,  peak_mem: 0.0000 GB
+model size: 23.921 GB	cache size: 0.243 GB	hidden size (p): 0.003 GB
+peak gpu mem: 1.243 GB	projected: False
+prefill latency: 1.953 s	prefill throughput: 41.996 token/s
+decode latency: 228.399 s	decode throughput: 1.025 token/s
+total latency: 230.351 s	total throughput: 1.025 token/s
+<run_flexgen>: args.model: facebook/opt-13b
+gen_len:118 and cut_gen_len:5 and prompt_len:44 and bs:2
+len(prompt):44 and prompt:Show how to add a backround color to a text  and batch_size:2
+len(prompt):44 and prompt:Show how to add a backround color to a text  and batch_size:2
+input_prompt:44
+input_prompt:44
+input_ids:[[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 27477, 141, 7, 1606, 10, 124, 3431, 3195, 7, 10, 2788, 1437], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 27477, 141, 7, 1606, 10, 124, 3431, 3195, 7, 10, 2788, 1437]]
+len(prompt):44 and prompt:Show how to add a backround color to a text  and batch_size:2
+len(prompt):44 and prompt:Show how to add a backround color to a text  and batch_size:2
+input_prompt:44
+input_prompt:44
+input_ids:[[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 27477, 141, 7, 1606, 10, 124, 3431, 3195, 7, 10, 2788, 1437], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 27477, 141, 7, 1606, 10, 124, 3431, 3195, 7, 10, 2788, 1437]]
+model size: 23.921 GB, cache size: 0.247 GB, hidden size (prefill): 0.003 GB
+init weight...
+num_layers:82 and num_gpu_batches:1
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+warmup - generate
+benchmark - generate
+num_prompts:2 and gen_len:118 and decode_latency:228.3959436120076 
+total_per_token_latency:15.617750379729134
+Outputs:
+----------------------------------------------------------------------
+0: Show how to add a backround color to a text 
+I'm not sure if this is the right place to ask this, but I'm trying to add a background color to a text box. I've tried using the background color property, but it doesn't seem to work. I've also tried using the background-color property, but it doesn't seem to work either.
+I'm using the latest version of jQuery, and I'm using the latest version of jQuery UI.
+Any help would be greatly appreciated.
+
+I'm not sure if this is the right place to ask this, but I'm trying to add a
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+1: Show how to add a backround color to a text 
+I'm not sure if this is the right place to ask this, but I'm trying to add a background color to a text box. I've tried using the background color property, but it doesn't seem to work. I've also tried using the background-color property, but it doesn't seem to work either.
+I'm using the latest version of jQuery, and I'm using the latest version of jQuery UI.
+Any help would be greatly appreciated.
+
+I'm not sure if this is the right place to ask this, but I'm trying to add a
+----------------------------------------------------------------------
+
+TorchDevice: cuda:0
+  cur_mem: 0.0079 GB,  peak_mem: 1.2428 GB
+TorchDevice: cpu
+  cur_mem: 24.4209 GB,  peak_mem: 0.0000 GB
+model size: 23.921 GB	cache size: 0.247 GB	hidden size (p): 0.003 GB
+peak gpu mem: 1.243 GB	projected: False
+prefill latency: 1.953 s	prefill throughput: 45.064 token/s
+decode latency: 228.396 s	decode throughput: 1.025 token/s
+total latency: 230.349 s	total throughput: 1.025 token/s
+<run_flexgen>: args.model: facebook/opt-13b
+gen_len:118 and cut_gen_len:5 and prompt_len:37 and bs:2
+len(prompt):37 and prompt:Where can I buy the newest projector? and batch_size:2
+len(prompt):37 and prompt:Where can I buy the newest projector? and batch_size:2
+input_prompt:37
+input_prompt:37
+input_ids:[[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 13841, 64, 38, 907, 5, 8946, 35282, 116], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 13841, 64, 38, 907, 5, 8946, 35282, 116]]
+len(prompt):37 and prompt:Where can I buy the newest projector? and batch_size:2
+len(prompt):37 and prompt:Where can I buy the newest projector? and batch_size:2
+input_prompt:37
+input_prompt:37
+input_ids:[[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 13841, 64, 38, 907, 5, 8946, 35282, 116], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 13841, 64, 38, 907, 5, 8946, 35282, 116]]
+model size: 23.921 GB, cache size: 0.237 GB, hidden size (prefill): 0.003 GB
+init weight...
+num_layers:82 and num_gpu_batches:1
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+warmup - generate
+benchmark - generate
+num_prompts:2 and gen_len:118 and decode_latency:228.43395927797974 
+total_per_token_latency:17.570180941644217
+Outputs:
+----------------------------------------------------------------------
+0: Where can I buy the newest projector?
+
+A:
+
+Quick Answer
+
+The newest projector is the Optoma HD142X, which is available at Amazon.com, BestBuy.com and other online retailers. The projector is available in black, white and silver.
+
+Keep Learning
+
+The Optoma HD142X is a 1080p projector with a native resolution of 1,920 x 1,080. It has a contrast ratio of 1,000,000:1 and a brightness of 1,500 lumens. The projector has a built-in speaker and a built-in microphone. It
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+1: Where can I buy the newest projector?
+
+A:
+
+Quick Answer
+
+The newest projector is the Optoma HD142X, which is available at Amazon.com, BestBuy.com and other online retailers. The projector is available in black, white and silver.
+
+Keep Learning
+
+The Optoma HD142X is a 1080p projector with a native resolution of 1,920 x 1,080. It has a contrast ratio of 1,000,000:1 and a brightness of 1,500 lumens. The projector has a built-in speaker and a built-in microphone. It
+----------------------------------------------------------------------
+
+TorchDevice: cuda:0
+  cur_mem: 0.0079 GB,  peak_mem: 1.2428 GB
+TorchDevice: cpu
+  cur_mem: 24.4209 GB,  peak_mem: 0.0000 GB
+model size: 23.921 GB	cache size: 0.237 GB	hidden size (p): 0.003 GB
+peak gpu mem: 1.243 GB	projected: False
+prefill latency: 1.953 s	prefill throughput: 37.893 token/s
+decode latency: 228.434 s	decode throughput: 1.024 token/s
+total latency: 230.387 s	total throughput: 1.024 token/s
+<run_flexgen>: args.model: facebook/opt-13b
+gen_len:118 and cut_gen_len:5 and prompt_len:32 and bs:2
+len(prompt):32 and prompt:What is the history of Beyblade? and batch_size:2
+len(prompt):32 and prompt:What is the history of Beyblade? and batch_size:2
+input_prompt:32
+input_prompt:32
+input_ids:[[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2264, 16, 5, 750, 9, 1456, 219, 41469, 116], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2264, 16, 5, 750, 9, 1456, 219, 41469, 116]]
+len(prompt):32 and prompt:What is the history of Beyblade? and batch_size:2
+len(prompt):32 and prompt:What is the history of Beyblade? and batch_size:2
+input_prompt:32
+input_prompt:32
+input_ids:[[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2264, 16, 5, 750, 9, 1456, 219, 41469, 116], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2264, 16, 5, 750, 9, 1456, 219, 41469, 116]]
+model size: 23.921 GB, cache size: 0.229 GB, hidden size (prefill): 0.003 GB
+init weight...
+num_layers:82 and num_gpu_batches:1
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+warmup - generate
+benchmark - generate
+num_prompts:2 and gen_len:118 and decode_latency:228.39302234198658 
+total_per_token_latency:19.52226065753394
+Outputs:
+----------------------------------------------------------------------
+0: What is the history of Beyblade?
+
+The Beyblade is a Japanese toy that was created in the year 2000. It was created by the company Bandai. The Beyblade is a spinning top that is made of plastic. The Beyblade is a toy that is used to battle with other Beyblades. The Beyblade is a toy that is used to battle with other Beyblades. The Beyblade is a toy that is used to battle with other Beyblades. The Beyblade is a toy that is used to battle with other Beyblades. The
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+1: What is the history of Beyblade?
+
+The Beyblade is a Japanese toy that was created in the year 2000. It was created by the company Bandai. The Beyblade is a spinning top that is made of plastic. The Beyblade is a toy that is used to battle with other Beyblades. The Beyblade is a toy that is used to battle with other Beyblades. The Beyblade is a toy that is used to battle with other Beyblades. The Beyblade is a toy that is used to battle with other Beyblades. The
+----------------------------------------------------------------------
+
+TorchDevice: cuda:0
+  cur_mem: 0.0079 GB,  peak_mem: 1.2428 GB
+TorchDevice: cpu
+/home/ubuntu/.local/lib/python3.8/site-packages/torch/distributed/distributed_c10d.py:293: UserWarning: torch.distributed.reduce_op is deprecated, please use torch.distributed.ReduceOp instead
+  warnings.warn(
+/home/ubuntu/flexgen/flexgen/utils.py:132: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  data_ptr = tensor.storage().data_ptr()
+  cur_mem: 24.4209 GB,  peak_mem: 0.0000 GB
+model size: 23.921 GB	cache size: 0.229 GB	hidden size (p): 0.003 GB
+peak gpu mem: 1.243 GB	projected: False
+prefill latency: 1.952 s	prefill throughput: 32.780 token/s
+decode latency: 228.393 s	decode throughput: 1.025 token/s
+total latency: 230.345 s	total throughput: 1.025 token/s
+per token latency:1.952226065753394

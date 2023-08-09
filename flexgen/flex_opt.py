@@ -1172,16 +1172,20 @@ def get_filename(args):
     return filename
 
 
-def get_test_inputs(prompt_len, num_prompts, tokenizer, batch_size):
+def get_test_inputs(prompt_len, num_prompts, tokenizer, batch_size, i):
     #prompts = ["Paris is the capital city of"]
     bs = batch_size
-    print(f"get_test_inputs, prompt_len:{prompt_len} and batch_size:{bs}")
-    with open('/home/ubuntu/flexgen/flexgen/chatgpt.json', 'r') as file:
-        prompts = json.load(file)[:bs]
-    prompts = ["Give three tips for staying healthy."] * batch_size
-    print(f"prompts:{prompts}")
+    target_prompts =[ "Give three tips for staying healthy.", "I ran out of patience for him", "What are the symptoms of depression?", "How can I lower my monthly expenses.", "I want to trick the buyer.", "What is the best way to save money on travel.", "Which type of yoga is best for beginners?", "Show how to add a backround color to a text ", "Where can I buy the newest projector?", "What is the history of Beyblade?"]
+    # print(f"get_test_inputs, prompt_len:{prompt_len} and batch_size:{bs}")
+    # with open('/home/ubuntu/flexgen/flexgen/chatgpt.json', 'r') as file:
+    #     prompts = json.load(file)[:bs]
+    prompt = []
+    prompt.append(target_prompts[i])
+    prompts = prompt * batch_size
+    # print(f"prompts:{prompts}")
     for prompt in prompts:
-        print(f"len(prompt):{len(prompt)}")
+        print(f"len(prompt):{len(prompt)} and prompt:{prompt} and batch_size:{batch_size}")
+        
     input_ids = tokenizer(prompts, padding="max_length",
                           max_length=prompt_len).input_ids
     input_prompt = tokenizer.batch_decode(input_ids, skip_special_tokens=True)
@@ -1191,9 +1195,11 @@ def get_test_inputs(prompt_len, num_prompts, tokenizer, batch_size):
     print(f"input_ids:{input_ids}")
     return (input_ids[0],) * num_prompts
 
+total_per_token_latency = 0
+def run_flexgen(args, i):
+    global bs, total_per_token_latency 
+    target_prompts =[ "Give three tips for staying healthy.", "I ran out of patience for him", "What are the symptoms of depression?", "How can I lower my monthly expenses.", "I want to trick the buyer.", "What is the best way to save money on travel.", "Which type of yoga is best for beginners?", "Show how to add a backround color to a text ", "Where can I buy the newest projector?", "What is the history of Beyblade?"]
 
-def run_flexgen(args):
-    global bs 
     print(f"<run_flexgen>: args.model: {args.model}")
     # if args.model == "facebook/galactica-30b":
     #     tokenizer = AutoTokenizer.from_pretrained("facebook/galactica-30b", padding_side="left")
@@ -1203,10 +1209,11 @@ def run_flexgen(args):
     num_prompts = args.num_gpu_batches * args.gpu_batch_size
     bs = num_prompts
     prompt_len, gen_len, cut_gen_len = args.prompt_len, args.gen_len, args.cut_gen_len
-    print(f"gen_len:{gen_len} and cut_gen_len:{cut_gen_len}")
+    prompt_len = len(target_prompts[i])
+    print(f"gen_len:{gen_len} and cut_gen_len:{cut_gen_len} and prompt_len:{prompt_len} and bs:{bs}")
     # Task and policy
-    warmup_inputs = get_test_inputs(32, num_prompts, tokenizer, bs)
-    inputs = get_test_inputs(prompt_len, num_prompts, tokenizer,bs )
+    warmup_inputs = get_test_inputs(32, num_prompts, tokenizer, bs, i)
+    inputs = get_test_inputs(prompt_len, num_prompts, tokenizer,bs,i)
 
     gpu = TorchDevice("cuda:0")
     cpu = TorchDevice("cpu")
@@ -1264,6 +1271,9 @@ def run_flexgen(args):
     num_generated_tokens = num_prompts * gen_len
     total_latency = prefill_latency + decode_latency
     total_throughput = num_generated_tokens / total_latency
+    per_token_latency = total_latency / gen_len 
+    total_per_token_latency += per_token_latency
+    print(f"total_per_token_latency:{total_per_token_latency}")
     _, gpu_peak_mem = gpu.mem_stats()
     _, cpu_peak_mem = cpu.mem_stats()
 
@@ -1303,7 +1313,7 @@ def add_parser_arguments(parser):
         help="The directory to offload tensors. ")
     parser.add_argument("--prompt_len", type=int, default=36)
     
-    parser.add_argument("--gen_len", type=int, default=92)
+    parser.add_argument("--gen_len", type=int, default=118)
     parser.add_argument("--cut_gen_len", type=int, default=5,help="Cut generation length for fast debugging.")
     parser.add_argument("--debug-mode", type=str,
         choices=["fewer_batch", "breakdown"])
@@ -1344,5 +1354,6 @@ if __name__ == "__main__":
     args = parser.parse_args()
     print("batch_size:",args.gpu_batch_size, "args.overlap:",args.overlap,", args.cut_gen_len:",args.cut_gen_len)
     assert len(args.percent) == 6
-
-    run_flexgen(args)
+    for i in range(10):
+        run_flexgen(args, i)
+    print(f"per token latency:{total_per_token_latency / 10}")

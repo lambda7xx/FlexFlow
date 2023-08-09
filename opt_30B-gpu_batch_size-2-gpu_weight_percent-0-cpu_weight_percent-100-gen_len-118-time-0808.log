@@ -1,0 +1,185 @@
+batch_size: 2 args.overlap: True , args.cut_gen_len: 5
+<run_flexgen>: args.model: facebook/opt-30b
+gen_len:118 and cut_gen_len:5 and prompt_len:36 and bs:2
+len(prompt):36 and prompt:Give three tips for staying healthy. and batch_size:2
+len(prompt):36 and prompt:Give three tips for staying healthy. and batch_size:2
+input_prompt:36
+input_prompt:36
+input_ids:[[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 31033, 130, 4965, 13, 4959, 2245, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 31033, 130, 4965, 13, 4959, 2245, 4]]
+len(prompt):36 and prompt:Give three tips for staying healthy. and batch_size:2
+len(prompt):36 and prompt:Give three tips for staying healthy. and batch_size:2
+input_prompt:36
+input_prompt:36
+input_ids:[[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 31033, 130, 4965, 13, 4959, 2245, 4], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 31033, 130, 4965, 13, 4959, 2245, 4]]
+model size: 55.803 GB, cache size: 0.395 GB, hidden size (prefill): 0.004 GB
+init weight...
+num_layers:98 and num_gpu_batches:1
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+warmup - generate
+benchmark - generate
+num_prompts:2 and gen_len:118 and decode_latency:527.6780698679722 
+total_per_token_latency:4.510099858703158
+Outputs:
+----------------------------------------------------------------------
+0: Give three tips for staying healthy.
+1. Eat healthy. 2. Exercise. 3. Don't be a dick.                                                                                                    
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+1: Give three tips for staying healthy.
+1. Eat healthy. 2. Exercise. 3. Don't be a dick.                                                                                                    
+----------------------------------------------------------------------
+
+TorchDevice: cuda:0
+  cur_mem: 0.0079 GB,  peak_mem: 1.8464 GB
+TorchDevice: cpu
+  cur_mem: 56.5031 GB,  peak_mem: 0.0000 GB
+model size: 55.803 GB	cache size: 0.395 GB	hidden size (p): 0.004 GB
+peak gpu mem: 1.846 GB	projected: False
+prefill latency: 4.514 s	prefill throughput: 15.951 token/s
+decode latency: 527.678 s	decode throughput: 0.443 token/s
+total latency: 532.192 s	total throughput: 0.443 token/s
+<run_flexgen>: args.model: facebook/opt-30b
+gen_len:118 and cut_gen_len:5 and prompt_len:29 and bs:2
+len(prompt):29 and prompt:I ran out of patience for him and batch_size:2
+len(prompt):29 and prompt:I ran out of patience for him and batch_size:2
+input_prompt:29
+input_prompt:29
+input_ids:[[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 100, 2075, 66, 9, 11383, 13, 123], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 100, 2075, 66, 9, 11383, 13, 123]]
+len(prompt):29 and prompt:I ran out of patience for him and batch_size:2
+len(prompt):29 and prompt:I ran out of patience for him and batch_size:2
+input_prompt:29
+input_prompt:29
+input_ids:[[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 100, 2075, 66, 9, 11383, 13, 123], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 100, 2075, 66, 9, 11383, 13, 123]]
+model size: 55.803 GB, cache size: 0.377 GB, hidden size (prefill): 0.004 GB
+init weight...
+num_layers:98 and num_gpu_batches:1
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+dtype:<class 'numpy.float16'>
+warmup - generate
+benchmark - generate
+num_prompts:2 and gen_len:118 and decode_latency:527.6851630510027 
+total_per_token_latency:9.020237888559137
+Outputs:
+----------------------------------------------------------------------
+0: I ran out of patience for him. I'm not sure if he's a good coach or not, but he's not a good fit for the team.
+I think he's a good coach, but he's not a good fit for the team.I'm not sure if this is a good thing or a bad thing.
+It's a good thing.                                                  
+----------------------------------------------------------------------
+
+Outputs:
+----------------------------------------------------------------------
+1: I ran out of patience for him. I'm not sure if he's a good coach or not, but he's not a good fit for the team.
+I think he's a good coach, but he's not a good fit for the team.I'm not sure if this is a good thing or a bad thing.
+It's a good thing.                                                  
+----------------------------------------------------------------------
+
+TorchDevice: cuda:0
+  cur_mem: 0.0079 GB,  peak_mem: 1.8464 GB
+TorchDevice: cpu
+  cur_mem: 56.5031 GB,  peak_mem: 0.0000 GB
+model size: 55.803 GB	cache size: 0.377 GB	hidden size (p): 0.004 GB
+peak gpu mem: 1.846 GB	projected: False
+prefill latency: 4.511 s	prefill throughput: 12.857 token/s
+decode latency: 527.685 s	decode throughput: 0.443 token/s
+total latency: 532.196 s	total throughput: 0.443 token/s
+<run_flexgen>: args.model: facebook/opt-30b
+gen_len:118 and cut_gen_len:5 and prompt_len:36 and bs:2
+len(prompt):36 and prompt:What are the symptoms of depression? and batch_size:2
+len(prompt):36 and prompt:What are the symptoms of depression? and batch_size:2
+input_prompt:36
+input_prompt:36
