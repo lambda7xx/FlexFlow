@@ -74,59 +74,48 @@ region_idx_t get_region_idx(TaskArgumentsFormat const &,
                             parallel_tensor_guid_t const &);
 DataType get_datatype(TaskArgumentsFormat const &, region_idx_t const &);
 
-struct ITaskArgumentAccessor {
-  template <typename T> T const &get_argument(slot_id slot) const ;
+template<typename T, Permissions PRIV>struct ITaskArgumentAccessor {
+  virtual T const &get_argument(slot_id slot) const = 0 ;
 
-  template <Permissions PRIV> privilege_mode_to_accessor<PRIV> get_tensor(slot_id slot) const ;
+  virtual privilege_mode_to_accessor<PRIV> get_tensor(slot_id slot) const -0 ;
 
-  template <Permissions PRIV>
-  std::vector<privilege_mode_to_accessor<PRIV>>
-      get_variadic_tensor(slot_id slot) const ;
+  virtual std::vector<privilege_mode_to_accessor<PRIV>>
+      get_variadic_tensor(slot_id slot) const =0 ;
 
-  template <typename T>
-  optional<T> get_optional_argument(slot_id) const  ;
+  virtual optional<T> get_optional_argument(slot_id) const = 0;
 
-  template <typename T>
-  std::vector<T> get_variadic_argument(slot_id) const ;
+  virtual std::vector<T> get_variadic_argument(slot_id) const =0 ;
 
-  template <Permissions PRIV>
-  privilege_mode_to_accessor<PRIV>
-      get_generic_accessor(region_idx_t const &idx) const ;
+  virtual privilege_mode_to_accessor<PRIV>
+      get_generic_accessor(region_idx_t const &idx) const =0 ;
 
-template <Permissions PRIV>
-  privilege_mode_to_accessor<PRIV> get_tensor_grad(slot_id slot) const;
+  virtual  privilege_mode_to_accessor<PRIV> get_tensor_grad(slot_id slot) const = 0;
 
-template <Permissions PRIV>
-  std::vector<privilege_mode_to_accessor<PRIV>>
-      get_variadic_tensor_grad(slot_id slot) const ;
+  virtual std::vector<privilege_mode_to_accessor<PRIV>>
+      get_variadic_tensor_grad(slot_id slot) const = 0;
 
   virtual size_t get_device_idx() const = 0;
 };
 
-struct LegionTaskArgumentAccessor : public ITaskArgumentAccessor {
+template<typename T, Permissions PRIV>struct LegionTaskArgumentAccessor : public ITaskArgumentAccessor {
 public:
-  template <typename T>
-  T const &get_argument(slot_id slot) const ;
+  
+  T const &get_argument(slot_id slot) const override ;
 
-  template <Permissions PRIV>
-  privilege_mode_to_accessor<PRIV> get_tensor(slot_id slot) const ;
+ 
+  privilege_mode_to_accessor<PRIV> get_tensor(slot_id slot) const override;
 
-  template <Permissions PRIV>
   std::vector<privilege_mode_to_accessor<PRIV>>
-      get_variadic_tensor(slot_id slot) const ;
+      get_variadic_tensor(slot_id slot) const override ;
 
-  template <typename T>
-  optional<T> get_optional_argument(slot_id) const ;
+  optional<T> get_optional_argument(slot_id) const override ;
 
-  template <typename T>
-  std::vector<T> get_variadic_argument(slot_id) const ;
+  std::vector<T> get_variadic_argument(slot_id) const override;
 
-  template <Permissions PRIV>
-  privilege_mode_to_accessor<PRIV> get_tensor_grad(slot_id slot) const ;
+  privilege_mode_to_accessor<PRIV> get_tensor_grad(slot_id slot) const override;
 
-  template <Permissions PRIV>
   std::vector<privilege_mode_to_accessor<PRIV>>
-      get_variadic_tensor_grad(slot_id slot) const ;
+      get_variadic_tensor_grad(slot_id slot) const override;
 
   size_t get_device_idx() const override;
 
@@ -144,30 +133,23 @@ private:
   TaskArgumentsFormat const &args_fmt;
 };
 
-struct LocalTaskArgumentAccessor : public ITaskArgumentAccessor {
+template<typename T, Permissions PRIV> struct LocalTaskArgumentAccessor : public ITaskArgumentAccessor {
 public:
-  template <typename T>
-  T const &get_argument(slot_id slot) const;
+  T const &get_argument(slot_id slot) const override;
 
-  template <Permissions PRIV>
-  privilege_mode_to_accessor<PRIV> get_tensor(slot_id slot) const ;
+  privilege_mode_to_accessor<PRIV> get_tensor(slot_id slot) const override;
 
-  template <Permissions PRIV>
   std::vector<privilege_mode_to_accessor<PRIV>>
-      get_variadic_tensor(slot_id slot) const;
+      get_variadic_tensor(slot_id slot) const override;
 
-  template <typename T>
-  optional<T> get_optional_argument(slot_id) const ;
+  optional<T> get_optional_argument(slot_id) const override;
 
-  template <typename T>
-  std::vector<T> get_variadic_argument(slot_id) const ;
+  std::vector<T> get_variadic_argument(slot_id) const override ;
 
-  template <Permissions PRIV>
-  privilege_mode_to_accessor<PRIV> get_tensor_grad(slot_id slot) const ;
+  privilege_mode_to_accessor<PRIV> get_tensor_grad(slot_id slot) const override ;
 
-  template <Permissions PRIV>
   std::vector<privilege_mode_to_accessor<PRIV>>
-      get_variadic_tensor_grad(slot_id slot) const ;
+      get_variadic_tensor_grad(slot_id slot) const override;
 
   size_t get_device_idx() const override;
 
