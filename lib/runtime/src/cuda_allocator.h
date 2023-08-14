@@ -7,7 +7,8 @@
 namespace FlexFlow {
 
 struct CudaAllocator : public IAllocator {
-  ~CudaAllocator() override;
+  ~CudaAllocator()=default;
+  CudaAllocator()=default;
 
   void *allocate(size_t) override;
   void deallocate(void *) override;

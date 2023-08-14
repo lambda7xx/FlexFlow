@@ -1,12 +1,15 @@
 #ifndef _FLEXFLOW_RUNTIME_SRC_TASK_ARGUMENT_ACCESSOR_H
 #define _FLEXFLOW_RUNTIME_SRC_TASK_ARGUMENT_ACCESSOR_H
 
+#include "sim_environment.h" // for SimTaskBinding
 #include "accessor.h"
+#include "cuda_allocator.h"
 #include "kernels/allocation.h"
 #include "runtime/config.h"
 #include "task_invocation.h"
 #include "utils/exception.h"
 #include "utils/stack_map.h"
+
 #include "utils/strong_typedef.h"
 #include <vector>
 
@@ -72,32 +75,30 @@ region_idx_t get_region_idx(TaskArgumentsFormat const &,
 DataType get_datatype(TaskArgumentsFormat const &, region_idx_t const &);
 
 struct ITaskArgumentAccessor {
-  virtual template <typename T>
-  T const &get_argument(slot_id slot) const = 0;
+  template <typename T> T const &get_argument(slot_id slot) const ;
 
-  virtual template <Permissions PRIV>
-  privilege_mode_to_accessor<PRIV> get_tensor(slot_id slot) const = 0;
+  template <Permissions PRIV> privilege_mode_to_accessor<PRIV> get_tensor(slot_id slot) const ;
 
-  virtual template <Permissions PRIV>
+  template <Permissions PRIV>
   std::vector<privilege_mode_to_accessor<PRIV>>
-      get_variadic_tensor(slot_id slot) const = 0;
+      get_variadic_tensor(slot_id slot) const ;
 
-  virtual template <typename T>
-  optional<T> get_optional_argument(slot_id) const = 0;
+  template <typename T>
+  optional<T> get_optional_argument(slot_id) const  ;
 
-  virtual template <typename T>
-  std::vector<T> get_variadic_argument(slot_id) const = 0;
+  template <typename T>
+  std::vector<T> get_variadic_argument(slot_id) const ;
 
-  virtual template <Permissions PRIV>
+  template <Permissions PRIV>
   privilege_mode_to_accessor<PRIV>
-      get_generic_accessor(region_idx_t const &idx) const = 0;
+      get_generic_accessor(region_idx_t const &idx) const ;
 
-  virtual template <Permissions PRIV>
-  privilege_mode_to_accessor<PRIV> get_tensor_grad(slot_id slot) const = 0;
+template <Permissions PRIV>
+  privilege_mode_to_accessor<PRIV> get_tensor_grad(slot_id slot) const;
 
-  virtual template <Permissions PRIV>
+template <Permissions PRIV>
   std::vector<privilege_mode_to_accessor<PRIV>>
-      get_variadic_tensor_grad(slot_id slot) const = 0;
+      get_variadic_tensor_grad(slot_id slot) const ;
 
   virtual size_t get_device_idx() const = 0;
 };
@@ -105,35 +106,35 @@ struct ITaskArgumentAccessor {
 struct LegionTaskArgumentAccessor : public ITaskArgumentAccessor {
 public:
   template <typename T>
-  T const &get_argument(slot_id slot) const override;
+  T const &get_argument(slot_id slot) const ;
 
   template <Permissions PRIV>
-  privilege_mode_to_accessor<PRIV> get_tensor(slot_id slot) const override;
-
-  template <Permissions PRIV>
-  std::vector<privilege_mode_to_accessor<PRIV>>
-      get_variadic_tensor(slot_id slot) const override;
-
-  template <typename T>
-  optional<T> get_optional_argument(slot_id) const override;
-
-  template <typename T>
-  std::vector<T> get_variadic_argument(slot_id) const override;
-
-  template <Permissions PRIV>
-  privilege_mode_to_accessor<PRIV> get_tensor_grad(slot_id slot) const override;
+  privilege_mode_to_accessor<PRIV> get_tensor(slot_id slot) const ;
 
   template <Permissions PRIV>
   std::vector<privilege_mode_to_accessor<PRIV>>
-      get_variadic_tensor_grad(slot_id slot) const override;
+      get_variadic_tensor(slot_id slot) const ;
+
+  template <typename T>
+  optional<T> get_optional_argument(slot_id) const ;
+
+  template <typename T>
+  std::vector<T> get_variadic_argument(slot_id) const ;
+
+  template <Permissions PRIV>
+  privilege_mode_to_accessor<PRIV> get_tensor_grad(slot_id slot) const ;
+
+  template <Permissions PRIV>
+  std::vector<privilege_mode_to_accessor<PRIV>>
+      get_variadic_tensor_grad(slot_id slot) const ;
 
   size_t get_device_idx() const override;
 
   LegionTaskArgumentAccessor(Legion::Task const *task,
                              std::vector<Legion::PhysicalRegion> const &regions,
                              Legion::Context ctx,
-                             Legion::Runtime *runtime)
-      : task(task), regions(regions), ctx(ctx), runtime(runtime) {}
+                             Legion::Runtime *runtime);
+    //  : task(task), regions(regions), ctx(ctx), runtime(runtime) {}
 
 private:
   Legion::Task const *task;
@@ -146,33 +147,34 @@ private:
 struct LocalTaskArgumentAccessor : public ITaskArgumentAccessor {
 public:
   template <typename T>
-  T const &get_argument(slot_id slot) const override;
+  T const &get_argument(slot_id slot) const;
 
   template <Permissions PRIV>
-  privilege_mode_to_accessor<PRIV> get_tensor(slot_id slot) const override;
-
-  template <Permissions PRIV>
-  std::vector<privilege_mode_to_accessor<PRIV>>
-      get_variadic_tensor(slot_id slot) const override;
-
-  template <typename T>
-  optional<T> get_optional_argument(slot_id) const override;
-
-  template <typename T>
-  std::vector<T> get_variadic_argument(slot_id) const override;
-
-  template <Permissions PRIV>
-  privilege_mode_to_accessor<PRIV> get_tensor_grad(slot_id slot) const override;
+  privilege_mode_to_accessor<PRIV> get_tensor(slot_id slot) const ;
 
   template <Permissions PRIV>
   std::vector<privilege_mode_to_accessor<PRIV>>
-      get_variadic_tensor_grad(slot_id slot) const override;
+      get_variadic_tensor(slot_id slot) const;
+
+  template <typename T>
+  optional<T> get_optional_argument(slot_id) const ;
+
+  template <typename T>
+  std::vector<T> get_variadic_argument(slot_id) const ;
+
+  template <Permissions PRIV>
+  privilege_mode_to_accessor<PRIV> get_tensor_grad(slot_id slot) const ;
+
+  template <Permissions PRIV>
+  std::vector<privilege_mode_to_accessor<PRIV>>
+      get_variadic_tensor_grad(slot_id slot) const ;
 
   size_t get_device_idx() const override;
 
   LocalTaskArgumentAccessor(
-      std::shared_ptr<SimTaskBinding const> &sim_task_binding)
-      : sim_task_binding(sim_task_binding), memory_usage(0) {
+      std::shared_ptr<SimTaskBinding const> const &sim_task_binding)
+      : sim_task_binding(sim_task_binding)  {
+    memory_usage = 0;
     local_allocator = Allocator::create<CudaAllocator>();
   }
 
@@ -184,7 +186,7 @@ public:
   void deallocate(void *ptr);
 
 private:
-  std::shared_ptr<SimTaskBinding const> sim_task_binding;
+  std::shared_ptr<SimTaskBinding const> const sim_task_binding;
   Allocator local_allocator;
   size_t memory_usage;
 };

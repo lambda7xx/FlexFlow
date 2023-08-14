@@ -25,6 +25,8 @@ struct Allocator {
   }
 
 private:
+  Allocator(std::shared_ptr<IAllocator> const & i_allocator)
+      : i_allocator(i_allocator) {}
   std::shared_ptr<IAllocator> i_allocator;
 };
 

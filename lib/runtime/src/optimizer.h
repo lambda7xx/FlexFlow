@@ -20,19 +20,16 @@
 #include "legion.h"
 #include "pcg/optimizer.h"
 #include "pcg/parallel_tensor.h"
+#include "tasks.h"
+#include "task_spec/task_invocation.h"
 
 namespace FlexFlow {
 
-template <>
-void register_task<PS_PREFETCH_TASK_ID>();
-template <>
-void register_task<SGD_UPD_PS_TASK_ID>();
-template <>
-void register_task<SGD_UPD_NCCL_TASK_ID>();
-template <>
-void register_task<ADAM_UPD_PS_TASK_ID>();
-template <>
-void register_task<ADAM_UPD_NCCL_TASK_ID>();
+template <> void register_task<PS_PREFETCH_TASK_ID>();
+template <> void register_task<SGD_UPD_PS_TASK_ID>();
+template <> void register_task<SGD_UPD_NCCL_TASK_ID>();
+template <> void register_task<ADAM_UPD_PS_TASK_ID>();
+template <> void register_task<ADAM_UPD_NCCL_TASK_ID>();
 
 /* class Optimizer { */
 /* public: */
