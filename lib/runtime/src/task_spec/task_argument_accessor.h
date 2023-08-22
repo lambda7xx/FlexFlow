@@ -4,6 +4,7 @@
 #include "accessor.h"
 #include "cuda_allocator.h"
 #include "kernels/allocation.h"
+#include "permissions.h"
 #include "runtime/config.h"
 #include "sim_environment.h"
 #include "task_invocation.h"
@@ -177,36 +178,36 @@ private:
   size_t memory_usage;
 };
 
+template <typename T, Permissions PRIV>
 struct TaskArgumentAccessor {
-  template <typename T>
+
   T const &get_argument(slot_id slot) const {
-    return this->ptr->get_argument<T>(slot);
+    return this->ptr->get_argument(slot);
   }
 
-  template <Permissions PRIV>
   privilege_mode_to_accessor<PRIV> get_tensor(slot_id slot) const {
-    return this->ptr->get_tensor<PRIV>(slot);
+    return this->ptr->get_tensor(slot);
   }
 
-  template <Permissions PRIV>
   std::vector<privilege_mode_to_accessor<PRIV>>
       get_variadic_tensor(slot_id slot) const {
-    return this->ptr->get_variadic_tensor<PRIV>(slot);
+    return this->ptr->get_variadic_tensor(slot);
   }
 
-  template <typename T, typename... Args>
-  static
-      typename std::enable_if<std::is_base_of<ITaskArgumentAccessor, T>::value,
-                              TaskArgumentAccessor>::type
+  template <typename... Args>
+  static typename std::enable_if<
+      std::is_base_of<ITaskArgumentAccessor<T, PRIV>, T>::value,
+      TaskArgumentAccessor>::type
       create(Args &&...args) {
     return TaskArgumentAccessor(
         std::make_shared<T>(std::forward<Args>(args)...));
   }
 
 private:
-  TaskArgumentAccessor(std::shared_ptr<ITaskArgumentAccessor const> &ptr)
+  TaskArgumentAccessor(
+      std::shared_ptr<ITaskArgumentAccessor<T, PRIV> const> ptr)
       : ptr(ptr) {}
-  std::shared_ptr<ITaskArgumentAccessor const> ptr;
+  std::shared_ptr<ITaskArgumentAccessor<T, PRIV> const> ptr;
 };
 
 } // namespace FlexFlow

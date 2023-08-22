@@ -19,22 +19,20 @@ void *LocalTaskArgumentAccessor::allocate(size_t size) {
   void *cpu_ptr = malloc(size);
   memory_usage += size;
   memset(cpu_ptr, 0, size);
-  checkCUDA(
-      cudaMemcpy(ptr, cpu_ptr, size, cudaMemcpyHostToDevice));
+  checkCUDA(cudaMemcpy(ptr, cpu_ptr, size, cudaMemcpyHostToDevice));
   free(cpu_ptr);
   return ptr;
 }
 
 template <Permissions PRIV>
-privilege_mode_to_accessor<PRIV> LocalTaskArgumentAccessor::get_tensor(
-    slot_id slot) const {
+privilege_mode_to_accessor<PRIV>
+    LocalTaskArgumentAccessor::get_tensor(slot_id slot) const {
   SimTensorSpec const &spec = this->tensor_shape_bindings.at(slot);
   if (slot == GATE_PREDS || slot == GATE_ASSIGN) {
     InputParallelTensorDesc gate_preds = get<InputParallelTensorDesc>(
         this->sim_task_binding->tensor_shape_bindings.at(slot));
     DataType data_type = gate_preds.shape.data_type;
-    ArrayShape array_shape = {
-        gate_preds.shape.dims.get_dims()};
+    ArrayShape array_shape = {gate_preds.shape.dims.get_dims()};
     size_t shape_size = gate_preds.shape.dims.get_volume() * size_of(data_type);
     void *ptr = allocate(shape_size);
     return gate_preds_accessor{data_type, array_shape, ptr};
@@ -42,8 +40,7 @@ privilege_mode_to_accessor<PRIV> LocalTaskArgumentAccessor::get_tensor(
     ParallelTensorShape output_shape = get<ParallelTensorShape>(
         this->sim_task_binding->tensor_shape_bindings.at(slot));
     DataType data_type = output_shape.data_type;
-    ArrayShape array_shape = {
-        output_shape.dims.get_dims()};
+    ArrayShape array_shape = {output_shape.dims.get_dims()};
     size_t shape_size = output_shape.dims.get_volume() * size_of(data_type);
     void *ptr = allocate(shape_size);
     return {data_type, array_shape, ptr};
@@ -54,15 +51,14 @@ privilege_mode_to_accessor<PRIV> LocalTaskArgumentAccessor::get_tensor(
 }
 
 template <Permissions PRIV>
-std::vector<privilege_mode_to_accessor<PRIV>> LocalTaskArgumentAccessor::get_variadic_tensor(
-    slot_id slot) const {
+std::vector<privilege_mode_to_accessor<PRIV>>
+    LocalTaskArgumentAccessor::get_variadic_tensor(slot_id slot) const {
   std::vector<privilege_mode_to_accessor<PRIV>> result;
   InputVariadicParallelTensorDesc const &spec =
       get<InputVariadicParallelTensorDesc>(
           this->sim_task_binding->tensor_shape_bindings.at(slot));
   for (auto const &shape : spec.shapes) {
-    ArrayShape array_shape = {
-        shape.dims.get_dims()};
+    ArrayShape array_shape = {shape.dims.get_dims()};
     size_t shape_size = shape.dims.get_volume() * size_of(shape.data_type);
     void *ptr = allocate(shape_size);
     DataType data_type = shape.data_type;
