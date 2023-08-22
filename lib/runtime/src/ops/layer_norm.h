@@ -2,7 +2,7 @@
 #define _FLEXFLOW_RUNTIME_SRC_OPS_LAYER_NORM_H
 
 #include "op-attrs/ops/layer_norm.h"
-#include "op_task_invocation.h"
+#include "task_spec/op_task_invocation.h"
 #include "sim_environment.h"
 
 namespace FlexFlow {

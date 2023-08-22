@@ -2,7 +2,7 @@
 #include "kernels/dropout_kernels.h"
 #include "legion/legion_utilities.h"
 #include "task_invocation.h"
-#include "task_signature.h"
+#include "task_spec/task_signature.h"
 #include "utils/hash-utils.h"
 
 namespace FlexFlow {

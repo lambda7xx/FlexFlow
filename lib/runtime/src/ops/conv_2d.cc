@@ -1,9 +1,9 @@
 #include "conv_2d.h"
 #include "kernels/conv_2d_kernels.h"
-#include "layer.h"
+#include "pcg/layer.h"
 #include "legion/legion_utilities.h"
 #include "mpark/variant.hpp"
-#include "task_spec.h"
+//#include "task_spec.h"
 #include "utils/hash-utils.h"
 
 namespace FlexFlow {

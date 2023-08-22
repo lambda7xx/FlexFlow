@@ -1,6 +1,6 @@
 #include "linear.h"
 #include "kernels/linear_kernels.h"
-#include "layer.h"
+#include "pcg/layer.h"
 #include "legion/legion_utilities.h"
 #include "utils/hash-utils.h"
 

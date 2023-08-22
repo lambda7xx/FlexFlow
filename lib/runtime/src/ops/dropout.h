@@ -2,7 +2,7 @@
 #define _FLEXFLOW_DROPOUT_H
 
 #include "op-attrs/ops/dropout.h"
-#include "op_task_invocation.h"
+#include "task_spec/op_task_invocation.h"
 #include "sim_environment.h"
 #include "tasks.h"
 

@@ -2,7 +2,7 @@
 #define _FLEXFLOW_FUSED_H_
 
 #include "fused_op_attrs.h"
-#include "op_task_invocation.h"
+#include "task_spec/op_task_invocation.h"
 
 namespace FlexFlow {
 

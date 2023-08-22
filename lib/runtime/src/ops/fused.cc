@@ -19,7 +19,7 @@
 #include "kernels/batch_norm_kernels.h"
 #include "kernels/concat_kernels.h"
 #include "kernels/conv_2d_kernels.h"
-#include "kernels/cuda_helper.h"
+//#include "kernels/cuda_helper.h"
 #include "kernels/dropout_kernels.h"
 #include "kernels/element_binary_kernels.h"
 #include "kernels/element_unary_kernels.h"

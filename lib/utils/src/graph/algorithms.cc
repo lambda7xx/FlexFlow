@@ -143,6 +143,29 @@ void remove_edges(UndirectedGraph &g,
   }
 }
 
+
+bool contains_edge(MultiDiGraph const &, MultiDiEdge const &) {
+  return true;
+}
+
+bool contains_edge(DiGraph const &, DirectedEdge const &) {
+  return true;
+}
+
+bool contains_edge(UndirectedGraph const &, UndirectedEdge const &) {
+  return true;
+}
+
+std::unordered_set<Node> get_dominators(DiGraphView const & g, Node const & n) {
+  return get_dominators(g).at(n);
+}
+
+std::unordered_set<Node> get_dominators(DiGraphView const &,
+                                        std::unordered_set<Node> const &) {
+            std::unordered_set<Node> result;
+            return result;
+            }
+
 std::unordered_set<MultiDiEdge> get_edges(MultiDiGraphView const &g) {
   return g.query_edges(MultiDiEdgeQuery::all());
 }

@@ -4,7 +4,7 @@
 #include "kernels/accessor.h"
 #include "kernels/device.h"
 #include "kernels/per_device_op_state.h"
-#include "op-attrs/ffconst.h"
+//#include "op-attrs/ffconst.h"
 
 namespace FlexFlow {
 

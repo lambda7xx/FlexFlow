@@ -2,7 +2,7 @@
 #define _FLEXFLOW_CONV_2D_H
 
 #include "op-attrs/ops/conv_2d.h"
-#include "op_task_invocation.h"
+#include "task_spec/op_task_invocation.h"
 #include "sim_environment.h"
 
 namespace FlexFlow {

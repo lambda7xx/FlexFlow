@@ -16,7 +16,7 @@
 #include "batch_norm.h"
 #include "kernels/batch_norm_kernels.h"
 #include "legion/legion_utilities.h"
-#include "task_spec.h"
+//#include "task_spec.h"
 
 using namespace FlexFlow::Kernels::BatchNorm;
 
