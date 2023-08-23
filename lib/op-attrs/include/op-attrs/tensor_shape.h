@@ -15,8 +15,8 @@ struct TensorShape : public use_visitable_cmp<TensorShape> {
   TensorShape() = delete;
 
   template <typename Dims>
-  TensorShape(Dims const &dims, DataType data_type)
-      : dims(dims), data_type(data_type) {}
+  TensorShape(Dims const &dims, DataType data_type);
+  //     : dims(dims), data_type(data_type) {}
 
   size_t at(ff_dim_t) const;
   size_t operator[](ff_dim_t) const;
