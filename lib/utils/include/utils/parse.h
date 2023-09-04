@@ -9,12 +9,12 @@
 #include <unordered_map>
 namespace FlexFlow {
 
-using VariantType = variant<int, bool, float, std::string>;
+using AllowedArgTypes = variant<int, bool, float, std::string>;
 
 class ArgsParser {
 private:
   std::unordered_map<std::string, std::string> mArgs;
-  std::unordered_map<std::string, VariantType> mDefaultValues;
+  std::unordered_map<std::string, AllowedArgTypes> mDefaultValues;
   std::unordered_map<std::string, std::string> mDescriptions;
 
   std::string parseKey(std::string const &arg) const {
@@ -39,10 +39,10 @@ public:
   }
 
   template <typename T>
-  T get_from_variant(VariantType const &v) const;
+  T get_from_variant(AllowedArgTypes const &v) const;
 
   void add_argument(std::string const &key,
-                    VariantType const &value,
+                    AllowedArgTypes const &value,
                     std::string const &description) {
     mDefaultValues[parseKey(key)] = std::move(value);
     mDescriptions[key] = description;
@@ -95,23 +95,23 @@ std::string ArgsParser::convert<std::string>(std::string const &s) const {
 }
 
 template <>
-int ArgsParser::get_from_variant<int>(VariantType const &v) const {
+int ArgsParser::get_from_variant<int>(AllowedArgTypes const &v) const {
   return mpark::get<int>(v);
 }
 
 template <>
-float ArgsParser::get_from_variant<float>(VariantType const &v) const {
+float ArgsParser::get_from_variant<float>(AllowedArgTypes const &v) const {
   return mpark::get<float>(v);
 }
 
 template <>
-bool ArgsParser::get_from_variant<bool>(VariantType const &v) const {
+bool ArgsParser::get_from_variant<bool>(AllowedArgTypes const &v) const {
   return mpark::get<bool>(v);
 }
 
 template <>
 std::string
-    ArgsParser::get_from_variant<std::string>(VariantType const &v) const {
+    ArgsParser::get_from_variant<std::string>(AllowedArgTypes const &v) const {
   return mpark::get<std::string>(v);
 }
 
