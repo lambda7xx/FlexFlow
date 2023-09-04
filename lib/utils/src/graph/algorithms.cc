@@ -16,6 +16,25 @@ std::vector<Node> add_nodes(DiGraph &g, int num_nodes) {
   return nodes;
 }
 
+bool contains_edge(MultiDiGraph const & g, MultiDiEdge const & e) {
+  return false;
+}
+bool contains_edge(DiGraph const & g, DirectedEdge const & e) {
+  return false;
+}
+bool contains_edge(UndirectedGraph const & g, UndirectedEdge const &e) {
+  return false;
+}
+
+std::unordered_set<Node> get_dominators(DiGraphView const & g, Node const &n) {
+  return std::unordered_set<Node>();
+}
+std::unordered_set<Node> get_dominators(DiGraphView const & g,
+                                        std::unordered_set<Node> const &nodes) {
+                                        return std::unordered_set<Node>();
+                                        }
+
+
 std::unordered_set<Node> get_nodes(GraphView const &g) {
   return g.query_nodes(NodeQuery::all());
 }
