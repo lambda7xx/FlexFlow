@@ -1,9 +1,18 @@
-// #include "parse.h"
-// #include "containers.h"
+// #include "utils/parse.h"
+// #include "utils/containers.h"
 
 // namespace FlexFlow{
 
-// ArgsParser::parse_arg(int argc, char **argv) {
+// std::string parseKey(std::string const &arg) {
+//   if (arg.substr(0, 2) == "--") {
+//     return arg.substr(2);
+//   } else {
+//     return arg;
+//   }
+// }
+
+
+// void ArgsParser::parse_args(int argc, char **argv) {
 //     for (int i = 1; i < argc; i += 2) {
 //       std::string key = parseKey(argv[i]);
 //       if (key == "help" || key == "h") {
@@ -14,26 +23,28 @@
 //     }
 //   }
 
-//   template <typename T>
-//   ArgumentReference<T> ArgsParser::add_argument(std::string const &key,
+//   ArgumentReference ArgsParser::add_argument(std::string const &key,
 //                     AllowedArgTypes const &value,
-//                     std::string const &description) {
+//                     std::string const &description) const {
 //     mDefaultValues[parseKey(key)] = value;
 //     mDescriptions[key] = description;
-//     AllowedArgTypes v = value;
-//     return ArgumentReference<T>(v,  description, key);
+//     //AllowedArgTypes v = value;
+//     return ArgumentReference{value, key};
 // }
 
 //   template <typename T>
-//   T ArgsParser::get(ArgumentReference<T> const &arg_ref) const {
-//     if (contains(mArgs, arg_ref.default_key())) {
+//   T ArgsParser::get(ArgumentReference const &arg_ref) const {
+//     std::string key = arg_ref.key; 
+//     auto it = mArgs.find(key);
+//     if (it != mArgs.end()) {
 //       return convert<T>(it->second);
 //     } else {
-//       if (contains(mDefaultValues, arg_ref.default_key())) {
-//         return get_from_variant<T>(arg_ref.default_value());
+//       auto def_it = mDefaultValues.find(key);
+//       if (def_it != mDefaultValues.end()) {
+//         return get_from_variant<T>(def_it->second);
 //       }
-//     }
-//     throw mk_runtime_error("Key not found: " + key);
+//     throw mk_runtime_error("Key not found: " + arg_ref.key);
+//   }
 //   }
 
 //   void ArgsParser::showDescriptions() const {
