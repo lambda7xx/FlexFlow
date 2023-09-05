@@ -1,7 +1,6 @@
 #ifndef _FLEXFLOW_UTILS_INCLUDE_UTILS_PARSE_H
 #define _FLEXFLOW_UTILS_INCLUDE_UTILS_PARSE_H
 
-//#include "runtime/config.h"
 #include "utils/exception.h"
 #include "utils/variant.h"
 #include <ostream>
@@ -43,11 +42,8 @@ public:
 
   void add_argument(std::string const &key,
                     AllowedArgTypes const &value,
-                    std::string const &description) {
-    mDefaultValues[parseKey(key)] = std::move(value);
-    mDescriptions[key] = description;
-  }
-
+                    std::string const &description);
+                    
   template <typename T>
   T get(std::string const &key) const {
     auto it = mArgs.find(key);
@@ -62,11 +58,7 @@ public:
     throw mk_runtime_error("Key not found: " + key);
   }
 
-  void showDescriptions() const {
-    for (auto const &kv : mDescriptions) {
-      std::cout << kv.first << ": " << kv.second << std::endl;
-    }
-  }
+  void showDescriptions() const;
 
   template <typename T>
   T convert(std::string const &s) const;
@@ -74,51 +66,7 @@ public:
   friend std::ostream &operator<<(std::ostream &out, ArgsParser const &args);
 };
 
-template <>
-int ArgsParser::convert<int>(std::string const &s) const {
-  return std::stoi(s);
-}
 
-template <>
-float ArgsParser::convert<float>(std::string const &s) const {
-  return std::stof(s);
-}
-
-template <>
-bool ArgsParser::convert<bool>(std::string const &s) const {
-  return s == "true" || s == "1";
-}
-
-template <>
-std::string ArgsParser::convert<std::string>(std::string const &s) const {
-  return s;
-}
-
-template <>
-int ArgsParser::get_from_variant<int>(AllowedArgTypes const &v) const {
-  return mpark::get<int>(v);
-}
-
-template <>
-float ArgsParser::get_from_variant<float>(AllowedArgTypes const &v) const {
-  return mpark::get<float>(v);
-}
-
-template <>
-bool ArgsParser::get_from_variant<bool>(AllowedArgTypes const &v) const {
-  return mpark::get<bool>(v);
-}
-
-template <>
-std::string
-    ArgsParser::get_from_variant<std::string>(AllowedArgTypes const &v) const {
-  return mpark::get<std::string>(v);
-}
-
-std::ostream &operator<<(std::ostream &out, ArgsParser const &args) {
-  args.showDescriptions();
-  return out;
-}
 
 // void FFConfig::parse_args(char **argv, int argc) {
 //   ArgsParser args;
