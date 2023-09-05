@@ -27,4 +27,5 @@ TEST_CASE("Test ArgsParser basic functionality") {
   CHECK(args.get<float>("learning-rate") == 0.5f);
   CHECK(args.get<bool>("fusion") == true);
   CHECK(args.get<int>("-ll:gpus") == 6);
+  args.get<int>("epochsss");//throw exception
 }
