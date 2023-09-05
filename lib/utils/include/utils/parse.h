@@ -1,6 +1,7 @@
 #ifndef _FLEXFLOW_UTILS_INCLUDE_UTILS_PARSE_H
 #define _FLEXFLOW_UTILS_INCLUDE_UTILS_PARSE_H
 
+#include "utils/containers.h"
 #include "utils/exception.h"
 #include "utils/variant.h"
 #include <ostream>
@@ -48,14 +49,11 @@ public:
                     
   template <typename T>
   T get(std::string const &key) const {
-    auto it = mArgs.find(key);
-    if (it != mArgs.end()) {
-      return convert<T>(it->second);
+    if (contains_key(mArgs, key)) {
+     return convert<T>(mArgs.at(key));
     } else {
-      auto def_it = mDefaultValues.find(key);
-      if (def_it != mDefaultValues.end()) {
-        //return get_from_variant<T>(def_it->second);
-        return mpark::get<T>(def_it->second);
+      if (contains_key(mDefaultValues, key)) {
+        return mpark::get<T>(mDefaultValues.at(key));
       }
     }
     throw mk_runtime_error("Key not found: " + key);
