@@ -4,6 +4,14 @@
 
 namespace FlexFlow{
 
+std::string parseKey(std::string arg) {
+    if (arg.substr(0, 2) == "--") {
+      return arg.substr(2);
+    } else {
+      return arg;
+    }
+  }
+
 void ArgsParser::add_argument(std::string const &key,
                     AllowedArgTypes const &value,
                     std::string const &description) {
@@ -24,32 +32,6 @@ float ArgsParser::convert<float>(std::string const &s) const {
 template <>
 bool ArgsParser::convert<bool>(std::string const &s) const {
   return s == "true" || s == "1" || s == "yes";
-}
-
-template <>
-std::string ArgsParser::convert<std::string>(std::string const &s) const {
-  return s;
-}
-
-template <>
-int ArgsParser::get_from_variant<int>(AllowedArgTypes const &v) const {
-  return mpark::get<int>(v);
-}
-
-template <>
-float ArgsParser::get_from_variant<float>(AllowedArgTypes const &v) const {
-  return mpark::get<float>(v);
-}
-
-template <>
-bool ArgsParser::get_from_variant<bool>(AllowedArgTypes const &v) const {
-  return mpark::get<bool>(v);
-}
-
-template <>
-std::string
-    ArgsParser::get_from_variant<std::string>(AllowedArgTypes const &v) const {
-  return mpark::get<std::string>(v);
 }
 
 void ArgsParser::showDescriptions() const {

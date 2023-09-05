@@ -8,6 +8,8 @@
 #include <unordered_map>
 namespace FlexFlow {
 
+std::string parseKey(std::string arg);
+
 using AllowedArgTypes = variant<int, bool, float, std::string>;
 
 class ArgsParser {
@@ -52,7 +54,8 @@ public:
     } else {
       auto def_it = mDefaultValues.find(key);
       if (def_it != mDefaultValues.end()) {
-        return get_from_variant<T>(def_it->second);
+        //return get_from_variant<T>(def_it->second);
+        return mpark::get<T>(def_it->second);
       }
     }
     throw mk_runtime_error("Key not found: " + key);
