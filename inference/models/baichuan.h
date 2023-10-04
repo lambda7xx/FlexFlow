@@ -33,13 +33,13 @@ public:
                 try {
                     json model_config;
                     config_file >> model_config;
-                    num_hidden_layers = model_config["n_layer"];
+                    num_hidden_layers = model_config["num_hidden_layers"];
                     vocab_size = model_config["vocab_size"];   
-                    num_attention_heads = model_config["n_head"];
-                    hidden_size = model_config["n_embd"];
+                    num_attention_heads = model_config["num_attention_heads"];
+                    hidden_size = model_config["num_hidden_layers"];
                     rms_norm_eps = model_config["rms_norm_eps"];
                     intermediate_size = model_config["intermediate_size"];
-                    max_position_embeddings = model_config["n_positions"];
+                    max_position_embeddings = model_config["max_position_embeddings"];
                 } catch (json::exception const &e) {
                     std::cerr << "Error parsing BAICHUAN config from JSON file: "
                     << e.what() << std::endl;

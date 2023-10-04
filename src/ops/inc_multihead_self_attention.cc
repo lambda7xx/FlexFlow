@@ -28,6 +28,8 @@
 using namespace at::indexing;
 #endif
 
+#include <iostream>
+
 namespace FlexFlow {
 
 // declare Legion names
@@ -75,6 +77,7 @@ Tensor FFModel::inc_multihead_self_attention(const Tensor input,
                                              bool qk_prod_scaling,
                                              bool position_bias,
                                              char const *name) {
+  std::cout<<"name:"<<name<<std::endl;
   return inc_multiquery_self_attention(input,
                                        embed_dim,
                                        num_heads,

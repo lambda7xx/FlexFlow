@@ -57,7 +57,8 @@ void BAICHUAN::create_baichuan_model(FFModel &ff,
                          AGGR_MODE_NONE,
                          DT_FLOAT,
                          NULL,
-                         embed_init);
+                         embed_init,
+                         "token_embedding");
   } else {
     token = ff.embedding(input,
                          baichuan_config.vocab_size,
@@ -65,18 +66,20 @@ void BAICHUAN::create_baichuan_model(FFModel &ff,
                          AGGR_MODE_NONE,
                          DT_HALF,
                          NULL,
-                         embed_init);
+                         embed_init,
+                         "token_embedding");
   }
 
   Layer *embedding = ff.layers.back();
-  weights_layers.emplace("tok_embeddings_weight", embedding);
+  weights_layers.emplace("token_embedding_weight", embedding);
 
   for(int i = 0; i < baichuan_config.num_hidden_layers; i++) {
     //set transformer layer id
     ff.set_transformer_layer_id(i);
 
     //step 1: rms_norm
-    Tensor rms_norm = ff.rms_norm(token, baichuan_config.rms_norm_eps, baichuan_config.hidden_size);
+    Tensor rms_norm = ff.rms_norm(token, baichuan_config.rms_norm_eps, baichuan_config.hidden_size, DT_NONE, std::string("layers_" + std::to_string(i) + "_attention_norm")
+              .c_str());
     Layer *attention_norm = ff.layers.back();
     weights_layers.emplace("layers_" + std::to_string(i) +
                                "_attention_norm_weight",
@@ -98,7 +101,8 @@ void BAICHUAN::create_baichuan_model(FFModel &ff,
             false,
             DT_NONE,
             NULL,
-            true);
+            true,
+            std::string("layers_" + std::to_string(i) + "_attention").c_str());
         break;
       }
       case TREE_VERIFY_MODE: {
@@ -114,7 +118,8 @@ void BAICHUAN::create_baichuan_model(FFModel &ff,
             false,   /*add_zero_attn*/
             DT_NONE, /*data_type*/
             nullptr, /*kernel_initializer*/
-            true     /*apply_rotary_embedding*/
+            true,     /*apply_rotary_embedding*/
+            std::string("layers_" + std::to_string(i) + "_attention").c_str()
         );
         break;
       }
@@ -131,7 +136,8 @@ void BAICHUAN::create_baichuan_model(FFModel &ff,
             false,   /*add_zero_attn*/
             DT_NONE, /*data_type*/
             nullptr, /*kernel_initializer*/
-            true     /*apply_rotary_embedding*/
+            true ,    /*apply_rotary_embedding*/
+            std::string("layers_" + std::to_string(i) + "_attention").c_str()
         );
         break;
       }
