@@ -61,8 +61,13 @@ void LLAMA::create_llama_model(FFModel &ff,
                               "tok_embeddings");
 
   Tensor w2 = nullptr;
+  std::cout<<"after embedding, the token shape:[";
+  for(int i = 0;  i < token->num_dims; i++ ){
+    std::cout<<token->dims[i]<<" , ";
+  }
+  std::cout<<std::endl;
 
-  for (int i = 0; i < llama_config.num_hidden_layers; i++) {
+  for (int i = 0; i < 3; i++) {
     // set transformer layer id
     ff.set_transformer_layer_id(i);
 
@@ -90,6 +95,12 @@ void LLAMA::create_llama_model(FFModel &ff,
       token = token_att_norm[0];
       att_norm = token_att_norm[1];
     }
+    std::cout<<"layer i "<<i<<", the attn norm shape:[";
+    for(int i =0; i < att_norm->num_dims; i++) {
+      std::cout<<att_norm->dims[i]<<" , ";
+    }
+
+    std::cout<<std::endl;
 
     Tensor mha;
     switch (mode) {

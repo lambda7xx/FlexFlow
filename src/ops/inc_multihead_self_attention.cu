@@ -513,11 +513,12 @@ void compute_qkv_kernel(IncMultiHeadSelfAttentionMeta const *m,
   {
     DT alpha = 1.0f, beta = 0.0f;
     // after transpositions
+    //todo(xiao)0116: m->qProjSize/m->kProjSize/m->vProjSize是什么？
     int m_q = m->qProjSize * m->num_q_heads;
     int m_k = m->kProjSize * m->num_q_heads;
     int m_v = m->vProjSize * m->num_q_heads;
     assert(m_q == m_k && m_k == m_v); // keep things simple for now
-    int n = bc->num_active_tokens();
+    int n = bc->num_active_tokens();//todo(xiao):这个是request manager的，以后看
     int k = m->qSize;
     int m_ = m_q * QKV_WEIGHT_NUM;
     // before transpositions
@@ -527,7 +528,13 @@ void compute_qkv_kernel(IncMultiHeadSelfAttentionMeta const *m,
     // matrix B: input
     // matrix B's layout: [qSize (hidden_dim), num_new_tokens]
     // matrix C: devQKVProjArray
-    // matrix B's layout: [qProjSize, num_heads, 3, num_new_tokens]
+    // matrix c's layout: [qProjSize, num_heads, 3, num_new_tokens]
+    //todo(xiao)0116:search the cublasGemmEx API
+    //A shape:[m, k], B:[k, n], c: [m, n]
+    //for A, transa = CUBLAS_OP_T, for B, transb =  CUBLAS_OP_N, so op(B):
+    //C =alpha * 
+    std::cout<<"compute_qkv_kernel, 1 m->qProjsize:"<< m->qProjSize <<"  and m->num_q_heads:" <<  m->num_q_heads<<" m->kProjSize:"<<m->kProjSize<<" m->vProjSize:"<<m->vProjSize <<std::endl;
+    std::cout<<"compute_qkv_kernel, 2 k(m->qsize):"<<k<<" and QKV_WEIGHT_NUM:"<<QKV_WEIGHT_NUM<<" m_:"<<m_ <<std::endl;
     checkCUDA(cublasGemmEx(m->handle.blas,
                            CUBLAS_OP_T,
                            CUBLAS_OP_N,
@@ -535,14 +542,14 @@ void compute_qkv_kernel(IncMultiHeadSelfAttentionMeta const *m,
                            n,
                            k,
                            &alpha,
-                           weight_ptr,
+                           weight_ptr,//A
                            cublas_data_type,
                            lda,
-                           input_ptr,
+                           input_ptr,//B
                            cublas_data_type,
                            ldb,
                            &beta,
-                           output_ptr,
+                           output_ptr,//C
                            cublas_data_type,
                            ldc,
                            compute_type,
@@ -550,10 +557,14 @@ void compute_qkv_kernel(IncMultiHeadSelfAttentionMeta const *m,
   }
 
   int num_tokens = bc->num_active_tokens();
-  int parallelism = m->kProjSize * num_tokens * m->num_q_heads;
+  int parallelism = m->kProjSize * num_tokens * m->num_q_heads;//question(xiao):为什么这个是表示parallelism
   size_t q_array_size = m->qProjSize * num_tokens * m->num_q_heads;
 
   // Step 2: apply bias for QKV, or scale the query
+  std::cout<<"compute_qkv_kernel, 3 num_tokens:"<<num_tokens<<" parallelism :"<<parallelism<< " q_array_size: "<<q_array_size<<" *m->qkv_bias:"<<*m->qkv_bias<<" m->scaling_query:"<<m->scaling_query<<std::endl;
+  //GET_BLOKCS(parallelism)返回多少个threadblock, 1d 
+  //min(CUDA_NUM_THREADS, parallelism)表示一个threadblock多少个thread, 也是1d
+  std::cout<<"compute_qkv_kernel, 4 shard_id:"<<shard_id<<"num_tokens:" <<num_tokens <<" m->global_num_q_heads:"<<m->global_num_q_heads<<" m->num_q_heads:"<<m->num_q_heads<<" m->hidden_size:"<<m->hidden_size<<std::endl;
   if (*m->qkv_bias) {
     apply_proj_bias_qkv<<<GET_BLOCKS(parallelism),
                           min(CUDA_NUM_THREADS, parallelism),

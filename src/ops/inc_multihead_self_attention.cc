@@ -24,6 +24,8 @@
 #include "flexflow/utils/hash_utils.h"
 #include "legion/legion_utilities.h"
 
+#include <iostream>
+
 namespace FlexFlow {
 
 // declare Legion names
@@ -139,12 +141,22 @@ Tensor FFModel::inc_multiquery_self_attention(const Tensor input,
   {
     int numdims = input->num_dims;
     int dims[MAX_TENSOR_DIM];
-    for (int i = 0; i < numdims; i++) {
-      dims[i] = input->dims[i];
+    printf("1 inc_multiquery_self_attention, the input shape:[");
+    for (int j = 0; j < numdims; j++) {
+      dims[j] = input->dims[j];
+      printf("%d , ", input->dims[j]);
     }
-    dims[0] = embed_dim;
+    printf("]\n");
+    printf("2 inc_multiquery_self_attention, the output shape:[");
+    dims[0] = embed_dim;//hidden_size 
     li->outputs[0] = create_tensor_legion_ordering(
         numdims, dims, data_type, li, 0, true /*create_grad*/);
+      
+    for(int i = 0; i < li->outputs[0]->num_dims; i++) {
+      printf("%d , ", li->outputs[0]->dims[i]);
+    }
+    printf("\n");
+    
   }
   // Compute weight size
   int qProjSize = kdim, kProjSize = kdim, vProjSize = kdim,
@@ -154,11 +166,13 @@ Tensor FFModel::inc_multiquery_self_attention(const Tensor input,
   int kParas = kProjSize * kSize;
   int vParas = vProjSize * vSize;
   int oParas = oProjSize * (vProjSize > 0 ? vProjSize : vSize);
-
+  std::cout<<"3 inc_multiquery_self_attention,qProjSize(kProjSize(vProjSize)):"<<kdim <<" qSize(input->dims[0]):"<<input->dims[0]<<" qkvParas:"<<qParas <<" and oProjSize:"<<oProjSize <<"  oParas " <<  oParas<<std::endl;
   // allocate num_q_heads for key, value for replication
   int weight_size = qParas * num_q_heads + kParas * num_q_heads +
                     vParas * num_q_heads + oParas * num_q_heads;
   int one_head_size = qParas + kParas + vParas + oParas;
+
+  std::cout<<"4 inc_multiquery_self_attention, the weight_size:"<<weight_size<<" one_head_size:"<<one_head_size<<std::endl;
 
   {
     // compress the weight size if quantization.
@@ -175,6 +189,12 @@ Tensor FFModel::inc_multiquery_self_attention(const Tensor input,
         true /*create_grad*/,
         kernel_initializer,
         CHOSEN_SYNC_TYPE);
+    std::cout<<"5 inc_multiquery_self_attention, the li->weights[0] shape:["<<std::endl;
+
+    for(int i = 0; i < li->weights[0]->num_dims; i++) {
+      std::cout<<li->weights[0]->dims[i]<<", ";
+    }
+    std::cout<<std::endl;
   }
   if (qkv_bias || final_bias) {
     // q, k, v, o

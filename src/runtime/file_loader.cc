@@ -137,6 +137,7 @@ void load_attention_bias_v2(DT *ptr,
                             std::string layer_name,
                             std::string weights_folder) {
   std::string q_file = layer_name + "_wq_bias";
+  //hidden_dim是hidden_size, 
   std::string k_file = layer_name + "_wk_bias";
   std::string v_file = layer_name + "_wv_bias";
   std::vector<std::string> bias_files = {q_file, k_file, v_file};
@@ -218,7 +219,7 @@ void load_attention_weights_v2(DT *ptr,
                                size_t volume,
                                int tensor_parallelism_degree) {
   // layers_0_attention_wq_weight
-  // layers_0_self_attn_q_proj_weight
+  // layers_0_self_attn_q_proj_weight， qkv_inner_dim是指每个head的大小=hidden_size // num_attention_heads
   std::string q_file = layer_name + "_wq_weight";
   std::string k_file = layer_name + "_wk_weight";
   std::string v_file = layer_name + "_wv_weight";
@@ -735,6 +736,8 @@ void FileDataLoader::load_single_weight_tensor(FFModel *ff,
                weight_filename.rfind("attention") ==
                    weight_filename.length() - strlen("attention")) {
       if (weight_idx == 0) {
+        //这里load attention weights 
+        std::cout<<"FileDataLoader::load_single_weight_tensor, load attention weights, the num_heads:"<<num_heads<<", num_kv_heads:"<<num_kv_heads<<", hidden_dim:"<<hidden_dim<<", qkv_inner_dim:"<<qkv_inner_dim<<", volume:"<<volume<<std::endl;
         load_attention_weights_v2(data,
                                   num_heads,
                                   num_kv_heads,
@@ -800,6 +803,7 @@ void FileDataLoader::load_weights(FFModel *ff) {
       if (weight == NULL) {
         continue;
       }
+      std::cout<<"the layer name:"<<l->name << " and weight data type:"<< weight->data_type <<std::endl; //"layers_" + std::to_string(i) + "_attention""
       switch (weight->data_type) {
         case DT_HALF:
           load_single_weight_tensor<half>(ff, l, i);
