@@ -510,7 +510,7 @@ void InferenceManager::load_positions(FFModel *model,
   launcher.add_future(bc);
   launcher.add_region_requirement(RegionRequirement(position_input->part,
                                                     0 /*projection id*/,
-                                                    WRITE_ONLY,
+                                                  WRITE_ONLY,
                                                     EXCLUSIVE,
                                                     position_input->region));
   launcher.add_field(0, FID_DATA);
